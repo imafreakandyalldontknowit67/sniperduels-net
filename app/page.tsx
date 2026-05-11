@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import type { Metadata } from 'next';
+import { Zap, ShieldCheck, Coins } from 'lucide-react';
 import BuyCTA from '@/components/BuyCTA';
 import PriceLadder from '@/components/PriceLadder';
 import TrustRow from '@/components/TrustRow';
@@ -55,25 +56,25 @@ export default function Home() {
       {/* Why us */}
       <section className="mb-12 grid gap-6 md:grid-cols-3">
         <div className="card">
-          <div className="mb-2 text-3xl">⚡</div>
-          <h3 className="mb-2 text-lg font-bold">Instant Auto-Delivery</h3>
+          <Zap className="mb-3 h-8 w-8 text-accent" strokeWidth={2.5} />
+          <h3 className="mb-2 text-lg font-bold uppercase tracking-wider">Instant Auto-Delivery</h3>
           <p className="text-sm text-gray-400">
-            The Sniper Duels trade bot is online 24/7. Most orders deliver in under 5 minutes.
+            Trade bot online 24/7. Most orders deliver in under 5 minutes.
           </p>
         </div>
         <div className="card">
-          <div className="mb-2 text-3xl">🔒</div>
-          <h3 className="mb-2 text-lg font-bold">Free Middleman</h3>
+          <ShieldCheck className="mb-3 h-8 w-8 text-accent" strokeWidth={2.5} />
+          <h3 className="mb-2 text-lg font-bold uppercase tracking-wider">Free Middleman</h3>
           <p className="text-sm text-gray-400">
-            Trading high-value items? Open a middleman ticket — we hold both sides until everyone confirms. No fees, no scams.{' '}
+            Trading high-value items? MM holds the item until payment lands.{' '}
             <Link href="/middleman" className="text-accent hover:underline">Learn more →</Link>
           </p>
         </div>
         <div className="card">
-          <div className="mb-2 text-3xl">💸</div>
-          <h3 className="mb-2 text-lg font-bold">Cheaper Than Roblox</h3>
+          <Coins className="mb-3 h-8 w-8 text-accent" strokeWidth={2.5} />
+          <h3 className="mb-2 text-lg font-bold uppercase tracking-wider">Cheaper Than Roblox</h3>
           <p className="text-sm text-gray-400">
-            Up to 30% less than the in-game Robux price for the same gem amount. Multiple vendors compete for your order.
+            Up to 30% less than the in-game Robux rate. Vendors compete on price.
           </p>
         </div>
       </section>

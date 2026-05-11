@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Lock, Zap, Coins } from 'lucide-react';
 import { DISCORD_INVITE, SHOP_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
@@ -37,26 +38,24 @@ export default function MiddlemanPage() {
 
       <section className="mb-10 grid gap-6 md:grid-cols-3">
         <div className="card">
-          <div className="mb-2 text-3xl">🔒</div>
-          <h3 className="mb-2 text-lg font-bold">Item held first</h3>
+          <Lock className="mb-3 h-8 w-8 text-accent" strokeWidth={2.5} />
+          <h3 className="mb-2 text-lg font-bold uppercase tracking-wider">Item held first</h3>
           <p className="text-sm text-gray-400">
-            Seller hands their in-game item to a verified middleman. The MM holds it until the buyer&apos;s payment is confirmed.
-            No payment, no item release — buyer-side scam impossible.
+            Seller hands the item to a verified MM. Held until buyer&apos;s payment lands — buyer-side scam impossible.
           </p>
         </div>
         <div className="card">
-          <div className="mb-2 text-3xl">⚡</div>
-          <h3 className="mb-2 text-lg font-bold">Fast (~5 min)</h3>
+          <Zap className="mb-3 h-8 w-8 text-accent" strokeWidth={2.5} />
+          <h3 className="mb-2 text-lg font-bold uppercase tracking-wider">Fast (~5 min)</h3>
           <p className="text-sm text-gray-400">
-            Middlemen are on standby. Open a ticket, seller sends item, buyer sends funds, MM releases both.
-            Done in about 5 minutes.
+            Middlemen on standby. Seller sends item, buyer sends funds, MM releases both.
           </p>
         </div>
         <div className="card">
-          <div className="mb-2 text-3xl">💰</div>
-          <h3 className="mb-2 text-lg font-bold">Free always</h3>
+          <Coins className="mb-3 h-8 w-8 text-accent" strokeWidth={2.5} />
+          <h3 className="mb-2 text-lg font-bold uppercase tracking-wider">Free always</h3>
           <p className="text-sm text-gray-400">
-            We don&apos;t charge for middleman service. The shop business covers it — we just want safe trades for the community.
+            No fees, ever. The shop business covers it — we just want safe community trades.
           </p>
         </div>
       </section>

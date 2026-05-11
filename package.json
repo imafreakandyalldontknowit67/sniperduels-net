@@ -2,7 +2,9 @@
   "name": "sniperduels-net",
   "version": "0.1.0",
   "private": true,
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "predev": "node scripts/fetch-sdvalues.mjs",
     "dev": "next dev",
@@ -12,6 +14,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "lucide-react": "^1.14.0",
     "next": "^14.2.21",
     "react": "^18.3.1",
     "react-dom": "^18.3.1"
