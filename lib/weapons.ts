@@ -5,17 +5,18 @@ export type Weapon = {
   id: string;
   /** 'snipers' | 'knives' — populated by the fetch script */
   category?: string;
-  name: string;
+  /** Optional — fields below are slimmed off when passed to client components. */
+  name?: string;
   displayName: string;
   weaponType: string;
   rarity: string;
   crate: string | null;
   imagePath: string | null;
   demand: string;
-  tradeable: boolean;
+  tradeable?: boolean;
   marketStatus?: string;
   defaultVariantIndex?: number;
-  description: string | null;
+  description?: string | null;
   variants: Variant[];
 };
 
@@ -70,6 +71,31 @@ export function defaultPrice(w: Weapon): number {
 /** Top (max) variant price — used on detail pages and rarity-sort. */
 export function topPrice(w: Weapon): number {
   return Math.max(0, ...w.variants.map(v => v.price));
+}
+
+/** Slim a weapon for the client browser. Drops fields ValuesBrowser/WeaponCard
+ *  don't read (description, name, marketStatus, tradeable, category) and trims
+ *  variants[] to only the default one (the only price ever shown on a card).
+ *  Cuts the RSC payload roughly 30% across /snipers /knives /values. */
+export type SlimWeapon = Pick<Weapon, 'id' | 'displayName' | 'weaponType' | 'rarity' | 'crate' | 'imagePath' | 'demand' | 'defaultVariantIndex'> & {
+  variants: Variant[];
+};
+export function slimForBrowser(weapons: Weapon[]): SlimWeapon[] {
+  return weapons.map(w => {
+    const idx = w.defaultVariantIndex ?? 0;
+    const def = w.variants[idx] ?? w.variants.find(v => v.price > 0) ?? w.variants[0];
+    return {
+      id: w.id,
+      displayName: w.displayName,
+      weaponType: w.weaponType,
+      rarity: w.rarity,
+      crate: w.crate,
+      imagePath: w.imagePath,
+      demand: w.demand,
+      defaultVariantIndex: 0,
+      variants: def ? [def] : [],
+    };
+  });
 }
 
 export function rarityClasses(rarity: string): string {

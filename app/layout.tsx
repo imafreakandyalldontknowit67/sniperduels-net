@@ -8,7 +8,9 @@ import { SITE_URL, SHOP_URL, DISCORD_INVITE } from '@/lib/config';
 const pixelEmulator = localFont({
   src: '../public/fonts/PixelEmulator-xq08.ttf',
   variable: '--font-pixel',
-  display: 'swap',
+  // 'optional' avoids the FOIT→swap CLS on H1. The 21KB TTF nearly always
+  // loads within 100ms; if not, fallback monospace renders and we don't swap.
+  display: 'optional',
 });
 
 export const metadata: Metadata = {
@@ -37,13 +39,13 @@ export const metadata: Metadata = {
     description:
       'Buy Sniper Duels gems from $2.65/k. Plus skins, sharkmats and free middleman trades. Auto-delivery in minutes.',
     url: SITE_URL,
-    images: ['/og-banner.png'],
+    images: ['/og-banner.webp'],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Sniper Duels — Cheapest Gems, Skins & Supplies',
     description: 'Buy Sniper Duels gems, skins and supplies. Same-day auto-delivery.',
-    images: ['/og-banner.png'],
+    images: ['/og-banner.webp'],
   },
   alternates: { canonical: SITE_URL },
   robots: { index: true, follow: true },

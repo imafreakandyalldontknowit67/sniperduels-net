@@ -5,7 +5,7 @@ import BuyCTA from '@/components/BuyCTA';
 import SectionBanner from '@/components/SectionBanner';
 import ValuesBrowser from '@/components/values/ValuesBrowser';
 import SsrWeaponGrid from '@/components/values/SsrWeaponGrid';
-import { allWeapons, weaponsByCategory } from '@/lib/weapons';
+import { allWeapons, weaponsByCategory, slimForBrowser } from '@/lib/weapons';
 import { SITE_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
@@ -17,6 +17,7 @@ export const metadata: Metadata = {
 
 export default function ValuesIndexPage() {
   const weapons = allWeapons();
+  const slimWeapons = slimForBrowser(weapons);
   const sniperCount = weaponsByCategory('snipers').length;
   const knifeCount = weaponsByCategory('knives').length;
 
@@ -62,8 +63,8 @@ export default function ValuesIndexPage() {
         Combined Browser
       </SectionBanner>
 
-      <Suspense fallback={<SsrWeaponGrid weapons={weapons} take={24} />}>
-        <ValuesBrowser weapons={weapons} label="weapons" />
+      <Suspense fallback={<SsrWeaponGrid weapons={slimWeapons} take={24} />}>
+        <ValuesBrowser weapons={slimWeapons} label="weapons" />
       </Suspense>
 
       <div className="mt-12">
@@ -88,7 +89,7 @@ export default function ValuesIndexPage() {
               name: 'Sniper Duels Item Values',
               description: `Live community-tracked values for ${weapons.length} Sniper Duels weapons across rarity tiers.`,
               numberOfItems: weapons.length,
-              itemListElement: weapons.map((w, i) => ({
+              itemListElement: weapons.slice(0, 10).map((w, i) => ({
                 '@type': 'ListItem',
                 position: i + 1,
                 url: `${SITE_URL}/values/${w.id}`,

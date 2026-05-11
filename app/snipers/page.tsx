@@ -4,7 +4,7 @@ import BuyCTA from '@/components/BuyCTA';
 import SectionBanner from '@/components/SectionBanner';
 import ValuesBrowser from '@/components/values/ValuesBrowser';
 import SsrWeaponGrid from '@/components/values/SsrWeaponGrid';
-import { weaponsByCategory, allWeapons } from '@/lib/weapons';
+import { weaponsByCategory, allWeapons, slimForBrowser } from '@/lib/weapons';
 import { SITE_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
@@ -18,6 +18,7 @@ export default function SnipersPage() {
   const snipers = weaponsByCategory('snipers');
   const fallback = snipers.length === 0 ? allWeapons().filter(w => (w.rarity || '').toLowerCase() !== 'knife') : snipers;
   const list = snipers.length ? snipers : fallback;
+  const slimList = slimForBrowser(list);
 
   return (
     <>
@@ -30,8 +31,8 @@ export default function SnipersPage() {
         </p>
       </header>
 
-      <Suspense fallback={<SsrWeaponGrid weapons={list} take={24} />}>
-        <ValuesBrowser weapons={list} label="snipers" />
+      <Suspense fallback={<SsrWeaponGrid weapons={slimList} take={24} />}>
+        <ValuesBrowser weapons={slimList} label="snipers" />
       </Suspense>
 
       <div className="mt-12">
@@ -57,7 +58,9 @@ export default function SnipersPage() {
               name: 'Sniper Duels Sniper Values',
               description: `Community-tracked values for ${list.length} sniper rifles in Sniper Duels.`,
               numberOfItems: list.length,
-              itemListElement: list.map((w, i) => ({
+              // First 10 items only — Google Rich Results doesn't require
+              // an exhaustive list and shipping all 117 added ~12KB per page.
+              itemListElement: list.slice(0, 10).map((w, i) => ({
                 '@type': 'ListItem',
                 position: i + 1,
                 url: `${SITE_URL}/values/${w.id}`,

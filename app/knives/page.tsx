@@ -3,7 +3,7 @@ import { Suspense } from 'react';
 import BuyCTA from '@/components/BuyCTA';
 import ValuesBrowser from '@/components/values/ValuesBrowser';
 import SsrWeaponGrid from '@/components/values/SsrWeaponGrid';
-import { weaponsByCategory, allWeapons } from '@/lib/weapons';
+import { weaponsByCategory, allWeapons, slimForBrowser } from '@/lib/weapons';
 import { SITE_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
@@ -17,6 +17,7 @@ export default function KnivesPage() {
   const knives = weaponsByCategory('knives');
   const fallback = knives.length === 0 ? allWeapons().filter(w => (w.rarity || '').toLowerCase() === 'knife') : knives;
   const list = knives.length ? knives : fallback;
+  const slimList = slimForBrowser(list);
 
   return (
     <>
@@ -29,8 +30,8 @@ export default function KnivesPage() {
         </p>
       </header>
 
-      <Suspense fallback={<SsrWeaponGrid weapons={list} take={24} />}>
-        <ValuesBrowser weapons={list} label="knives" />
+      <Suspense fallback={<SsrWeaponGrid weapons={slimList} take={24} />}>
+        <ValuesBrowser weapons={slimList} label="knives" />
       </Suspense>
 
       <div className="mt-12">
@@ -56,7 +57,7 @@ export default function KnivesPage() {
               name: 'Sniper Duels Knife Values',
               description: `Community-tracked values for ${list.length} knives in Sniper Duels.`,
               numberOfItems: list.length,
-              itemListElement: list.map((w, i) => ({
+              itemListElement: list.slice(0, 10).map((w, i) => ({
                 '@type': 'ListItem',
                 position: i + 1,
                 url: `${SITE_URL}/values/${w.id}`,
