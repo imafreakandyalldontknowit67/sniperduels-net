@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import type { Weapon } from '@/lib/weapons';
 import { rarityClasses, defaultPrice } from '@/lib/weapons';
 import { formatGems, demandStars } from '@/lib/values-filter';
@@ -40,14 +39,19 @@ export default function WeaponCard({ weapon, priority = false }: Props) {
     >
       <div className="relative aspect-square overflow-hidden bg-gradient-to-br from-dark-800 to-dark-900">
         {weapon.imagePath ? (
-          <Image
+          // Raw <img> against images.sniperduels.com directly — Cloudflare CDN
+          // serves cached WebP in ~100ms globally. Skips Next/Image's transcode
+          // bottleneck (had been serializing 1100+ transcodes on cold container,
+          // causing slow first-paint per image). The 1024×1024 webp is ~185KB,
+          // browser downscales for the card. Lazy + async = no blocking.
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
             src={weapon.imagePath}
             alt={weapon.displayName}
-            fill
-            sizes="(max-width: 640px) 50vw, (max-width: 768px) 33vw, (max-width: 1024px) 25vw, (max-width: 1280px) 20vw, 220px"
-            className="object-contain p-2 transition-transform duration-200 group-hover:scale-105"
             loading={priority ? 'eager' : 'lazy'}
-            priority={priority}
+            decoding="async"
+            fetchPriority={priority ? 'high' : 'low'}
+            className="absolute inset-0 h-full w-full object-contain p-2 transition-transform duration-200 group-hover:scale-105"
           />
         ) : (
           <div className="flex h-full items-center justify-center text-3xl text-dark-500">?</div>

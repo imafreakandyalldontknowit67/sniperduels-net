@@ -87,6 +87,13 @@ const SITE_JSON_LD = [
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={pixelEmulator.variable}>
+      <head>
+        {/* Preconnect to the weapon-image CDN so the TLS handshake is warm by
+            the time we paint cards. Critical when /snipers /knives hydrate
+            with raw <img> to images.sniperduels.com. */}
+        <link rel="preconnect" href="https://images.sniperduels.com" crossOrigin="" />
+        <link rel="dns-prefetch" href="https://images.sniperduels.com" />
+      </head>
       <body className="min-h-screen bg-dark-900 text-white">
         <Header />
         <main className="mx-auto max-w-[1100px] px-4 pt-[64px] sm:pt-[72px] md:pt-[80px] pb-12">{children}</main>
