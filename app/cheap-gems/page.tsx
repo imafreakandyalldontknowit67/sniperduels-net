@@ -5,7 +5,7 @@ import PriceLadder from '@/components/PriceLadder';
 import { shopLink, SHOP_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
-  title: 'Cheap Sniper Duels Gems — Cheapest Live Rate $2.65/k | sniperduels.net',
+  title: 'Cheap Sniper Duels Gems — Cheapest Live Rate $2.65/k',
   description:
     'The cheapest Sniper Duels gems on the market — $2.65 per 1k bulk. Compared to Robux ($3.75/k), Eldorado ($3.20/k), and eBay ($3.00/k). Live competitor table updated daily.',
   alternates: { canonical: 'https://sniperduels.net/cheap-gems' },

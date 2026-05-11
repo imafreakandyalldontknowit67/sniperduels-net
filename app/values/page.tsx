@@ -4,11 +4,12 @@ import Link from 'next/link';
 import BuyCTA from '@/components/BuyCTA';
 import SectionBanner from '@/components/SectionBanner';
 import ValuesBrowser from '@/components/values/ValuesBrowser';
+import SsrWeaponGrid from '@/components/values/SsrWeaponGrid';
 import { allWeapons, weaponsByCategory } from '@/lib/weapons';
 import { SITE_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
-  title: 'Sniper Duels Item Values & Trade Calculator | sniperduels.net',
+  title: 'Sniper Duels Item Values — All Snipers & Knives',
   description:
     'Live value list for every Sniper Duels weapon — snipers + knives, all conditions and rarities. Search, filter, sort. Updated every 6 hours.',
   alternates: { canonical: 'https://sniperduels.net/values' },
@@ -61,7 +62,7 @@ export default function ValuesIndexPage() {
         Combined Browser
       </SectionBanner>
 
-      <Suspense fallback={<div className="border-[3px] border-dark-500 bg-dark-700 p-10 text-center text-sm text-gray-500">Loading browser…</div>}>
+      <Suspense fallback={<SsrWeaponGrid weapons={weapons} take={24} />}>
         <ValuesBrowser weapons={weapons} label="weapons" />
       </Suspense>
 
@@ -72,35 +73,29 @@ export default function ValuesIndexPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'ItemList',
-            name: 'Sniper Duels Item Values',
-            description: `Live community-tracked values for ${weapons.length} Sniper Duels weapons across rarity tiers.`,
-            numberOfItems: weapons.length,
-            itemListElement: weapons.slice(0, 50).map((w, i) => {
-              const top = Math.max(0, ...w.variants.map(v => v.price));
-              return {
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+                { '@type': 'ListItem', position: 2, name: 'Values', item: `${SITE_URL}/values` },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'ItemList',
+              name: 'Sniper Duels Item Values',
+              description: `Live community-tracked values for ${weapons.length} Sniper Duels weapons across rarity tiers.`,
+              numberOfItems: weapons.length,
+              itemListElement: weapons.map((w, i) => ({
                 '@type': 'ListItem',
                 position: i + 1,
                 url: `${SITE_URL}/values/${w.id}`,
-                item: {
-                  '@type': 'Product',
-                  name: w.displayName,
-                  category: `${w.rarity} ${w.weaponType}`,
-                  url: `${SITE_URL}/values/${w.id}`,
-                  ...(top > 0 && {
-                    offers: {
-                      '@type': 'Offer',
-                      price: top,
-                      priceCurrency: 'GEM',
-                      availability: 'https://schema.org/InStock',
-                    },
-                  }),
-                },
-              };
-            }),
-          }),
+                name: w.displayName,
+              })),
+            },
+          ]),
         }}
       />
     </>

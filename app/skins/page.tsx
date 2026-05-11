@@ -5,7 +5,7 @@ import { SKINS, DISCORD_INVITE } from '@/lib/config';
 import DiscordButton from '@/components/DiscordButton';
 
 export const metadata: Metadata = {
-  title: 'Sniper Duels Skins for Sale — Frankenawp & Hallows Punisher | sniperduels.net',
+  title: 'Sniper Duels Skins for Sale — Frankenawp & Hallows Punisher',
   description:
     'Buy verified Sniper Duels skins — Green & Gray Frankenawp, Purple & Orange Hallows Punisher. Fixed prices from $9 each, instant delivery via sniperduels.shop.',
   alternates: { canonical: 'https://sniperduels.net/skins' },

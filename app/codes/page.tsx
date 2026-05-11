@@ -8,7 +8,7 @@ const MONTH_YEAR = NOW.toLocaleString('en-US', { month: 'long', year: 'numeric' 
 const SHORT = NOW.toLocaleString('en-US', { month: 'short', year: 'numeric' });
 
 export const metadata: Metadata = {
-  title: `Sniper Duels Codes (${MONTH_YEAR}) — Active List | sniperduels.net`,
+  title: `Sniper Duels Codes (${MONTH_YEAR}) — Active List`,
   description: `Looking for active Sniper Duels codes in ${MONTH_YEAR}? Currently the game has no public code-redemption system. Here's the easiest way to get gems instead.`,
   alternates: { canonical: 'https://sniperduels.net/codes' },
 };
@@ -71,28 +71,72 @@ export default function CodesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: [
-              {
-                '@type': 'Question',
-                name: `Are there any active Sniper Duels codes in ${MONTH_YEAR}?`,
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'No. As of ' + MONTH_YEAR + ', Sniper Duels does not have a code-redemption system. The developers have not added one yet. Any codes claimed to work in YouTube videos or older articles are not real.',
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sniperduels.net' },
+                { '@type': 'ListItem', position: 2, name: 'Codes', item: 'https://sniperduels.net/codes' },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Article',
+              headline: `Sniper Duels Codes (${MONTH_YEAR})`,
+              datePublished: NOW.toISOString(),
+              dateModified: NOW.toISOString(),
+              author: { '@type': 'Organization', name: 'sniperduels.net' },
+              publisher: { '@type': 'Organization', name: 'sniperduels.net', logo: { '@type': 'ImageObject', url: 'https://sniperduels.net/gem_icon.png' } },
+              description: `Active Sniper Duels code list for ${MONTH_YEAR}. Updated weekly.`,
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: [
+                {
+                  '@type': 'Question',
+                  name: `Are there any active Sniper Duels codes in ${MONTH_YEAR}?`,
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: `No. As of ${MONTH_YEAR}, Sniper Duels does not have a code-redemption system. The developers have not added one yet. Any codes claimed to work in YouTube videos or older articles are not real.`,
+                  },
                 },
-              },
-              {
-                '@type': 'Question',
-                name: 'How do I get free gems in Sniper Duels?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'There is no official way to get free gems. The cheapest way to obtain gems is through community marketplaces — sniperduels.shop currently lists bulk gems from $2.65 per 1,000.',
+                {
+                  '@type': 'Question',
+                  name: 'How do I get free gems in Sniper Duels?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'There is no official way to get free gems. The cheapest way to obtain gems is through community marketplaces — sniperduels.shop currently lists bulk gems from $2.65 per 1,000.',
+                  },
                 },
-              },
-            ],
-          }),
+                {
+                  '@type': 'Question',
+                  name: 'When will Sniper Duels add a codes system?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'No date has been announced. The developers have not signaled plans to add code redemption. We re-check this page every week and will update the moment any system is announced or shipped in-game.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'How do I redeem codes in Sniper Duels?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'No redemption interface exists in-game today. When the developers add a Codes / Settings menu, you would paste the code there and click redeem — but that menu does not currently exist in Sniper Duels.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Are YouTube Sniper Duels code videos real?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'No. Code-list YouTube videos for Sniper Duels are AI-generated content farming clicks. There is no working code redemption system. Skip the videos.',
+                  },
+                },
+              ],
+            },
+          ]),
         }}
       />
     </>

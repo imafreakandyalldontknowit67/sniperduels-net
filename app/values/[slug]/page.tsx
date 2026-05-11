@@ -2,9 +2,10 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import BuyCTA from '@/components/BuyCTA';
-import { allWeaponsIncludingUnpriced, weaponBySlug, rarityClasses, demandClasses, shopSellsThis } from '@/lib/weapons';
-import { shopLink, DISCORD_INVITE } from '@/lib/config';
+import { allWeaponsIncludingUnpriced, weaponBySlug, rarityClasses, demandClasses, shopSellsThis, allWeapons, defaultPrice } from '@/lib/weapons';
+import { shopLink, DISCORD_INVITE, SITE_URL } from '@/lib/config';
 import DiscordButton from '@/components/DiscordButton';
+import WeaponCard from '@/components/values/WeaponCard';
 
 export function generateStaticParams() {
   // Generate detail pages for ALL weapons even unpriced ones — direct links shouldn't 404.
@@ -73,7 +74,9 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
               </span>
             )}
           </div>
-          <h1 className="mb-2 text-2xl font-bold uppercase tracking-wider sm:text-3xl md:text-4xl">{w.displayName}</h1>
+          <h1 className="mb-2 text-2xl font-bold uppercase tracking-wider sm:text-3xl md:text-4xl">
+            {w.displayName} <span className="text-accent">Value</span>
+          </h1>
           {top > 0 ? (
             <p className="text-lg text-gray-400">
               Top value: <span className="font-bold text-accent">{top.toLocaleString()} gems</span>
@@ -157,6 +160,39 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
         </p>
       </section>
 
+      {/* Related items */}
+      {(() => {
+        const all = allWeapons();
+        const sameCrate = w.crate
+          ? all.filter(x => x.id !== w.id && x.crate === w.crate).slice(0, 6)
+          : [];
+        const sameType = all
+          .filter(x => x.id !== w.id && x.weaponType === w.weaponType && (!w.crate || x.crate !== w.crate))
+          .sort((a, b) => defaultPrice(b) - defaultPrice(a))
+          .slice(0, 6);
+        if (sameCrate.length === 0 && sameType.length === 0) return null;
+        return (
+          <section className="mt-12">
+            {sameCrate.length > 0 && (
+              <>
+                <h2 className="heading-pixel mb-4 text-accent">More from {w.crate}</h2>
+                <div className="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
+                  {sameCrate.map(x => <WeaponCard key={x.id} weapon={x} />)}
+                </div>
+              </>
+            )}
+            {sameType.length > 0 && (
+              <>
+                <h2 className="heading-pixel mb-4 text-pixel-blue-light">More {w.weaponType}s</h2>
+                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
+                  {sameType.map(x => <WeaponCard key={x.id} weapon={x} />)}
+                </div>
+              </>
+            )}
+          </section>
+        );
+      })()}
+
       <p className="mt-8 text-sm text-gray-500">
         Browse other items: <Link href="/values" className="text-accent hover:underline">All Sniper Duels values →</Link>
       </p>
@@ -164,22 +200,33 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Product',
-            name: `${w.displayName} (Sniper Duels)`,
-            description: `${w.rarity} ${w.weaponType} weapon in Sniper Duels. Top value: ${top.toLocaleString()} gems.`,
-            image: w.imagePath || undefined,
-            brand: { '@type': 'Brand', name: 'Sniper Duels' },
-            category: w.weaponType,
-            offers: top > 0 ? {
-              '@type': 'Offer',
-              price: top,
-              priceCurrency: 'GEM',
-              availability: 'https://schema.org/InStock',
-              url: `https://sniperduels.net/values/${w.id}`,
-            } : undefined,
-          }),
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+                { '@type': 'ListItem', position: 2, name: 'Values', item: `${SITE_URL}/values` },
+                {
+                  '@type': 'ListItem',
+                  position: 3,
+                  name: w.rarity?.toLowerCase() === 'knife' ? 'Knives' : 'Snipers',
+                  item: w.rarity?.toLowerCase() === 'knife' ? `${SITE_URL}/knives` : `${SITE_URL}/snipers`,
+                },
+                { '@type': 'ListItem', position: 4, name: w.displayName, item: `${SITE_URL}/values/${w.id}` },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Product',
+              name: `${w.displayName} (Sniper Duels)`,
+              description: `${w.rarity} ${w.weaponType} weapon in Sniper Duels${top > 0 ? `. Top value: ${top.toLocaleString()} gems.` : '.'}`,
+              image: w.imagePath || undefined,
+              brand: { '@type': 'Brand', name: 'Sniper Duels' },
+              category: w.weaponType,
+              url: `${SITE_URL}/values/${w.id}`,
+            },
+          ]),
         }}
       />
     </>

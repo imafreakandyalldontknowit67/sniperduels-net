@@ -4,7 +4,7 @@ import BuyCTA from '@/components/BuyCTA';
 import { SUPPLY_PRICING, shopLink } from '@/lib/config';
 
 export const metadata: Metadata = {
-  title: 'Sniper Duels Supplies — Bluesteels, Vanillas, Collectibles | sniperduels.net',
+  title: 'Sniper Duels Supplies — Bluesteels, Vanillas, Collectibles',
   description:
     'Buy Sniper Duels supplies — Bluesteels from $3.85/k, Survivor Vanillas, Collectibles, Epics and Legendaries. Bulk pricing, instant delivery.',
   alternates: { canonical: 'https://sniperduels.net/supplies' },

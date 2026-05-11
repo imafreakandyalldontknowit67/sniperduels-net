@@ -7,7 +7,7 @@ import SectionBanner from '@/components/SectionBanner';
 import { shopLink, SHOP_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
-  title: 'Buy Sniper Duels Gems — Cheapest Prices, Auto-Delivery | sniperduels.net',
+  title: 'Buy Sniper Duels Gems — Cheapest Prices, Auto-Delivery',
   description:
     'Buy Sniper Duels gems from $2.65/k bulk or $2.90/k retail. Same-day automated delivery from 13+ verified vendors. Cheaper than Robux, no risk, full refund guarantee.',
   alternates: { canonical: 'https://sniperduels.net/gems' },
@@ -33,6 +33,14 @@ const FAQS = [
   {
     q: 'Can I buy gems without a Discord account?',
     a: 'Yes — checkout is available directly through sniperduels.shop without Discord. You\'ll receive order updates by email. Linking Discord is optional but unlocks a 2.5% first-purchase discount.',
+  },
+  {
+    q: 'Will I get banned for buying Sniper Duels gems?',
+    a: 'No. The trade bot exchanges gems with your account in-game — no account credentials are ever shared. Roblox prohibits account sharing, not in-game item trading. You cannot be banned for this as long as you never share your password.',
+  },
+  {
+    q: 'Is buying Sniper Duels gems against Roblox TOS?',
+    a: 'In-game trading between accounts is not against Roblox TOS. Account sharing is — and we never ask for credentials. Real-money item trades happen exclusively in-game between two Roblox accounts in a private server, brokered by our trade bot.',
   },
 ];
 
@@ -152,6 +160,25 @@ export default function GemsPage() {
               name: f.q,
               acceptedAnswer: { '@type': 'Answer', text: f.a },
             })),
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'HowTo',
+            name: 'How to buy Sniper Duels gems',
+            description: '5-step process to buy Sniper Duels gems via the sniperduels.shop auto-trade bot.',
+            totalTime: 'PT5M',
+            step: [
+              { '@type': 'HowToStep', position: 1, name: 'Pick gem amount', text: 'Pick the gem amount you want on sniperduels.shop' },
+              { '@type': 'HowToStep', position: 2, name: 'Pay', text: 'Pay with your preferred method — fiat or crypto' },
+              { '@type': 'HowToStep', position: 3, name: 'Receive Discord ping', text: 'Get a Discord ping when the bot is ready to trade you' },
+              { '@type': 'HowToStep', position: 4, name: 'Trade with bot', text: "Join the private server, hit \"I'm Ready\", trade with the bot" },
+              { '@type': 'HowToStep', position: 5, name: 'Done', text: 'Gems delivered.' },
+            ],
           }),
         }}
       />

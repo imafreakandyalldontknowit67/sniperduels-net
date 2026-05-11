@@ -7,7 +7,7 @@ import SectionBanner from '@/components/SectionBanner';
 import SpritePanel from '@/components/SpritePanel';
 
 export const metadata: Metadata = {
-  title: 'Free Sniper Duels Middleman — Trade Safely | sniperduels.net',
+  title: 'Free Sniper Duels Middleman — Trade Safely',
   description:
     'Free verified middleman service for Sniper Duels trades. MM holds the seller\'s item until the buyer\'s payment lands, then releases both. No fees, no scams.',
   alternates: { canonical: 'https://sniperduels.net/middleman' },
@@ -130,16 +130,62 @@ export default function MiddlemanPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Service',
-            serviceType: 'Sniper Duels Middleman',
-            provider: { '@type': 'Organization', name: 'sniperduels.net' },
-            areaServed: 'Sniper Duels (Roblox)',
-            offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
-            description: 'Free verified middleman service for Sniper Duels trades. MM holds the seller\'s item until the buyer\'s payment lands.',
-            url: 'https://sniperduels.net/middleman',
-          }),
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Service',
+              serviceType: 'Sniper Duels Middleman',
+              provider: { '@type': 'Organization', name: 'sniperduels.net', url: 'https://sniperduels.net' },
+              areaServed: 'Sniper Duels (Roblox)',
+              offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
+              description: 'Free verified middleman service for Sniper Duels trades. MM holds the seller\'s item until the buyer\'s payment lands.',
+              url: 'https://sniperduels.net/middleman',
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sniperduels.net' },
+                { '@type': 'ListItem', position: 2, name: 'Middleman', item: 'https://sniperduels.net/middleman' },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'HowTo',
+              name: 'How a Sniper Duels middleman trade works',
+              description: '6-step verified middleman process: seller deposits item first, buyer pays second, MM releases both.',
+              totalTime: 'PT5M',
+              step: [
+                { '@type': 'HowToStep', position: 1, name: 'Open ticket', text: 'Both traders open a single middleman ticket on Discord' },
+                { '@type': 'HowToStep', position: 2, name: 'MM joins', text: 'A verified middleman claims the ticket and joins the private Roblox server' },
+                { '@type': 'HowToStep', position: 3, name: 'Seller deposits', text: 'Seller hands the item to the middleman first — MM confirms FX, condition, and stat match' },
+                { '@type': 'HowToStep', position: 4, name: 'Buyer pays', text: 'Buyer sends payment (gems, crypto, or fiat) — MM verifies funds landed' },
+                { '@type': 'HowToStep', position: 5, name: 'MM releases', text: 'Middleman releases the item to the buyer and forwards the payment to the seller' },
+                { '@type': 'HowToStep', position: 6, name: 'Done', text: 'Trade complete — ticket auto-closed, transcript logged' },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: [
+                {
+                  '@type': 'Question',
+                  name: 'How much does a Sniper Duels middleman cost?',
+                  acceptedAnswer: { '@type': 'Answer', text: 'Nothing. The middleman service on sniperduels.net is always free — sniperduels.shop covers the cost as a community service.' },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Are Sniper Duels middlemen verified?',
+                  acceptedAnswer: { '@type': 'Answer', text: 'Yes. Every middleman is vetted by the head moderator team. Tiers (Trial / MM / Senior MM / Head MM) cap each MM at the trade value they\'re authorized to broker.' },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Who deposits first in a middleman trade?',
+                  acceptedAnswer: { '@type': 'Answer', text: 'The seller hands the item to the middleman first. Once the MM confirms the item, the buyer sends payment. Then the MM releases both. Buyer-side scams become impossible because the item is already in escrow.' },
+                },
+              ],
+            },
+          ]),
         }}
       />
     </>

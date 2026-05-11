@@ -1,12 +1,13 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Check, X } from 'lucide-react';
 import BuyCTA from '@/components/BuyCTA';
 import DiscordButton from '@/components/DiscordButton';
 import SectionBanner from '@/components/SectionBanner';
 import { DISCORD_INVITE } from '@/lib/config';
 
 export const metadata: Metadata = {
-  title: 'Is Buying Sniper Duels Gems Safe? | sniperduels.net',
+  title: 'Is Buying Sniper Duels Gems Safe?',
   description:
     'Yes — buying Sniper Duels gems through sniperduels.shop is fully safe. Here\'s exactly how the auto-trade bot works, what protections you get, and what to watch out for elsewhere.',
   alternates: { canonical: 'https://sniperduels.net/safe-trading' },
@@ -28,23 +29,23 @@ export default function SafeTradingPage() {
         <div className="border-[3px] border-emerald-500/60 bg-emerald-500/5 p-6">
           <div className="mb-2 text-xs font-bold uppercase tracking-wider text-emerald-300">Safe</div>
           <h2 className="mb-2 text-xl font-black uppercase tracking-wider text-white">sniperduels.shop</h2>
-          <ul className="space-y-1 text-sm text-gray-200">
-            <li>✓ Automated trade bot in private Roblox server</li>
-            <li>✓ Wallet held until delivery confirmed</li>
-            <li>✓ Auto-refund if bot can&apos;t reach you in 30 min</li>
-            <li>✓ 13+ verified vendors, all background-checked</li>
-            <li>✓ Full transcript of every order</li>
+          <ul className="space-y-1.5 text-sm text-gray-200">
+            <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-400" strokeWidth={3} />Automated trade bot in private Roblox server</li>
+            <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-400" strokeWidth={3} />Wallet held until delivery confirmed</li>
+            <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-400" strokeWidth={3} />Auto-refund if bot can&apos;t reach you in 30 min</li>
+            <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-400" strokeWidth={3} />13+ verified vendors, all background-checked</li>
+            <li className="flex items-start gap-2"><Check className="mt-0.5 h-4 w-4 flex-shrink-0 text-emerald-400" strokeWidth={3} />Full transcript of every order</li>
           </ul>
         </div>
         <div className="border-[3px] border-red-500/60 bg-red-500/5 p-6">
           <div className="mb-2 text-xs font-bold uppercase tracking-wider text-red-300">Risky</div>
           <h2 className="mb-2 text-xl font-black uppercase tracking-wider text-white">Random sellers</h2>
-          <ul className="space-y-1 text-sm text-gray-200">
-            <li>✗ Pay first, hope they deliver</li>
-            <li>✗ No middleman — common scam vector</li>
-            <li>✗ No refund if they ghost you</li>
-            <li>✗ Account-sharing = TOS violation, ban risk</li>
-            <li>✗ Stolen-account inventory (chargebacks → your loss)</li>
+          <ul className="space-y-1.5 text-sm text-gray-200">
+            <li className="flex items-start gap-2"><X className="mt-0.5 h-4 w-4 flex-shrink-0 text-red-400" strokeWidth={3} />Pay first, hope they deliver</li>
+            <li className="flex items-start gap-2"><X className="mt-0.5 h-4 w-4 flex-shrink-0 text-red-400" strokeWidth={3} />No middleman — common scam vector</li>
+            <li className="flex items-start gap-2"><X className="mt-0.5 h-4 w-4 flex-shrink-0 text-red-400" strokeWidth={3} />No refund if they ghost you</li>
+            <li className="flex items-start gap-2"><X className="mt-0.5 h-4 w-4 flex-shrink-0 text-red-400" strokeWidth={3} />Account-sharing = TOS violation, ban risk</li>
+            <li className="flex items-start gap-2"><X className="mt-0.5 h-4 w-4 flex-shrink-0 text-red-400" strokeWidth={3} />Stolen-account inventory (chargebacks → your loss)</li>
           </ul>
         </div>
       </section>
@@ -95,36 +96,60 @@ export default function SafeTradingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: [
-              {
-                '@type': 'Question',
-                name: 'Is buying Sniper Duels gems safe?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'Yes — buying Sniper Duels gems via sniperduels.shop is safe. Orders are brokered by an automated trade bot in a private Roblox server. Your money is held in escrow until delivery is confirmed, and orders are auto-refunded if the bot cannot reach you within 30 minutes.',
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sniperduels.net' },
+                { '@type': 'ListItem', position: 2, name: 'Safe Trading', item: 'https://sniperduels.net/safe-trading' },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: [
+                {
+                  '@type': 'Question',
+                  name: 'Is buying Sniper Duels gems safe?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Yes — buying Sniper Duels gems via sniperduels.shop is safe. Orders are brokered by an automated trade bot in a private Roblox server. Your money is held in escrow until delivery is confirmed, and orders are auto-refunded if the bot cannot reach you within 30 minutes.',
+                  },
                 },
-              },
-              {
-                '@type': 'Question',
-                name: 'Can I get banned for buying Sniper Duels gems?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'No. The trade bot exchanges gems with your account in-game — no account credentials are ever shared. Roblox prohibits account sharing, not in-game item trading. As long as you never share your password, you cannot be banned for this.',
+                {
+                  '@type': 'Question',
+                  name: 'Can I get banned for buying Sniper Duels gems?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'No. The trade bot exchanges gems with your account in-game — no account credentials are ever shared. Roblox prohibits account sharing, not in-game item trading. As long as you never share your password, you cannot be banned for this.',
+                  },
                 },
-              },
-              {
-                '@type': 'Question',
-                name: 'What if the seller scams me?',
-                acceptedAnswer: {
-                  '@type': 'Answer',
-                  text: 'On sniperduels.shop the trade bot delivers, not the vendor — so a vendor cannot scam you directly. If anything goes wrong (bot offline, no inventory, etc.) you are auto-refunded to your wallet within 30 minutes.',
+                {
+                  '@type': 'Question',
+                  name: 'What if the seller scams me?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'On sniperduels.shop the trade bot delivers, not the vendor — so a vendor cannot scam you directly. If anything goes wrong (bot offline, no inventory, etc.) you are auto-refunded to your wallet within 30 minutes.',
+                  },
                 },
-              },
-            ],
-          }),
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'HowTo',
+              name: 'How safe Sniper Duels gem buying works',
+              description: '6-step safe-flow: escrow → bot pulls order → Discord ping → trade in private server → confirm → auto-refund if anything fails.',
+              step: [
+                { '@type': 'HowToStep', position: 1, text: 'Pick a gem amount and pay on sniperduels.shop. Money goes to escrow.' },
+                { '@type': 'HowToStep', position: 2, text: 'Trade bot pulls your order off the queue and finds an available vendor.' },
+                { '@type': 'HowToStep', position: 3, text: 'You get a Discord ping when the bot is ready to trade. Join the private Roblox server.' },
+                { '@type': 'HowToStep', position: 4, text: "Hit \"I'm Ready\". The bot trades you the exact gem amount." },
+                { '@type': 'HowToStep', position: 5, text: 'Delivery confirmed → escrow releases to vendor. Done.' },
+                { '@type': 'HowToStep', position: 6, text: 'If the bot can\'t reach you within 30 minutes, you\'re auto-refunded to wallet.' },
+              ],
+            },
+          ]),
         }}
       />
     </>

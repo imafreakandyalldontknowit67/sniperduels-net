@@ -3,7 +3,7 @@ import localFont from 'next/font/local';
 import './globals.css';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
-import { SITE_URL } from '@/lib/config';
+import { SITE_URL, SHOP_URL, DISCORD_INVITE } from '@/lib/config';
 
 const pixelEmulator = localFont({
   src: '../public/fonts/PixelEmulator-xq08.ttf',
@@ -55,6 +55,35 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
+const SITE_JSON_LD = [
+  {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    '@id': `${SITE_URL}#org`,
+    name: 'sniperduels.net',
+    url: SITE_URL,
+    logo: `${SITE_URL}/gem_icon.png`,
+    sameAs: [SHOP_URL, DISCORD_INVITE],
+    description: 'Community marketplace and value list for Sniper Duels (Roblox).',
+  },
+  {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    '@id': `${SITE_URL}#site`,
+    name: 'sniperduels.net',
+    url: SITE_URL,
+    publisher: { '@id': `${SITE_URL}#org` },
+    potentialAction: {
+      '@type': 'SearchAction',
+      target: {
+        '@type': 'EntryPoint',
+        urlTemplate: `${SITE_URL}/values?q={search_term_string}`,
+      },
+      'query-input': 'required name=search_term_string',
+    },
+  },
+];
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={pixelEmulator.variable}>
@@ -62,6 +91,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <Header />
         <main className="mx-auto max-w-[1100px] px-4 pt-[64px] sm:pt-[72px] md:pt-[80px] pb-12">{children}</main>
         <Footer />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(SITE_JSON_LD) }}
+        />
       </body>
     </html>
   );

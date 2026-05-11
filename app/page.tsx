@@ -39,21 +39,21 @@ export default function Home() {
         <div className="relative mx-auto mt-6 mb-8 hidden h-[180px] w-full max-w-3xl sm:block md:h-[220px]">
           <div className="absolute left-[6%] bottom-0 flex flex-col items-center gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/pixel/badge-fully-automated.svg" alt="" className="h-12 w-auto md:h-14" style={{ imageRendering: 'pixelated' }} />
+            <img src="/images/pixel/badge-fully-automated.svg" alt="Fully automated trade bot" className="h-12 w-auto md:h-14" style={{ imageRendering: 'pixelated' }} />
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/pixel/character-red.svg" alt="" className="h-[90px] w-auto md:h-[120px]" style={{ transform: 'scaleX(-1)' }} />
+            <img src="/images/pixel/character-red.svg" alt="Pixel red sniper character" className="h-[90px] w-auto md:h-[120px]" style={{ transform: 'scaleX(-1)' }} />
           </div>
           <div className="absolute left-1/2 top-0 flex -translate-x-1/2 flex-col items-center gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/pixel/badge-delivery-2min.svg" alt="" className="h-12 w-auto md:h-14" style={{ imageRendering: 'pixelated' }} />
+            <img src="/images/pixel/badge-delivery-2min.svg" alt="Average 2 minute gem delivery" className="h-12 w-auto md:h-14" style={{ imageRendering: 'pixelated' }} />
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/pixel/character-green.svg" alt="" className="h-20 w-auto md:h-[100px]" />
+            <img src="/images/pixel/character-green.svg" alt="Pixel green sniper character" className="h-20 w-auto md:h-[100px]" />
           </div>
           <div className="absolute right-[6%] bottom-0 flex flex-col items-center gap-2">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/pixel/badge-available-247.svg" alt="" className="h-12 w-auto md:h-14" style={{ imageRendering: 'pixelated' }} />
+            <img src="/images/pixel/badge-available-247.svg" alt="Discord vendors online 24/7" className="h-12 w-auto md:h-14" style={{ imageRendering: 'pixelated' }} />
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src="/images/pixel/character-blue.svg" alt="" className="h-20 w-auto md:h-[100px]" />
+            <img src="/images/pixel/character-blue.svg" alt="Pixel blue sniper character" className="h-20 w-auto md:h-[100px]" />
           </div>
         </div>
 
@@ -156,21 +156,6 @@ export default function Home() {
       </section>
 
       <BuyCTA campaign="home-banner" variant="banner" />
-
-      {/* JSON-LD */}
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Organization',
-            name: 'sniperduels.net',
-            url: 'https://sniperduels.net',
-            sameAs: [SHOP_URL, DISCORD_INVITE],
-            description: 'Community marketplace and price guide for Sniper Duels (Roblox).',
-          }),
-        }}
-      />
     </>
   );
 }

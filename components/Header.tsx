@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
+import { Menu, X } from 'lucide-react';
 import { shopLink, DISCORD_INVITE } from '@/lib/config';
 import SpriteButton from './SpriteButton';
 import DiscordButton from './DiscordButton';
@@ -11,8 +12,9 @@ const NAV = [
   { href: '/gems', label: 'Gems' },
   { href: '/snipers', label: 'Snipers' },
   { href: '/knives', label: 'Knives' },
-  { href: '/skins', label: 'Skins' },
+  { href: '/values', label: 'Values' },
   { href: '/middleman', label: 'Middleman' },
+  { href: '/codes', label: 'Codes' },
 ];
 
 export default function Header() {
@@ -65,7 +67,7 @@ export default function Header() {
             aria-label={open ? 'Close menu' : 'Open menu'}
             className="btn-icon ml-1 md:hidden"
           >
-            {open ? '✕' : '☰'}
+            {open ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
           </button>
         </div>
       </div>
