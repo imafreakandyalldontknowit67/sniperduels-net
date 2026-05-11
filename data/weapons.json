@@ -1,0 +1,2738 @@
+{
+  "generatedAt": "2026-05-11T03:37:13.146Z",
+  "count": 122,
+  "weapons": [
+    {
+      "id": "hallows-basket-awp-bewitched",
+      "name": "bewitched",
+      "displayName": "Bewitched",
+      "weaponType": "AWP",
+      "rarity": "legendary",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444709170-Bewitched-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 300
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 850
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-awp-borealis",
+      "name": "borealis",
+      "displayName": "Borealis",
+      "weaponType": "AWP",
+      "rarity": "legendary",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444763855-Borealis_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 110
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 180
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 250
+        }
+      ]
+    },
+    {
+      "id": "release-case-awp-bubble-gum",
+      "name": "bubble gum",
+      "displayName": "Bubble Gum",
+      "weaponType": "AWP",
+      "rarity": "legendary",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444699334-Bubble_Gum-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 150
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 250
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 400
+        }
+      ]
+    },
+    {
+      "id": "classic-case-awp-cerulean-ozymandias",
+      "name": "cerulean ozymandias",
+      "displayName": "Cerulean Ozymandias",
+      "weaponType": "AWP",
+      "rarity": "legendary",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369221510-Cerulean_Ozymandias.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 120
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 250
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 350
+        }
+      ]
+    },
+    {
+      "id": "classic-case-awp-crimson-ozymandias",
+      "name": "crimson ozymandias",
+      "displayName": "Crimson Ozymandias",
+      "weaponType": "AWP",
+      "rarity": "legendary",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369246880-Crimson_Ozymandias.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 120
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 250
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 350
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-awp-drifter",
+      "name": "drifter",
+      "displayName": "Drifter",
+      "weaponType": "AWP",
+      "rarity": "legendary",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444723968-Drifter-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 75
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 180
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 250
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-intervention-evergreen-winter",
+      "name": "evergreen winter",
+      "displayName": "Evergreen Winter",
+      "weaponType": "Intervention",
+      "rarity": "legendary",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444777502-Evergreen_Winter-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 110
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 180
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 250
+        }
+      ]
+    },
+    {
+      "id": "v-day-awp-fantasy",
+      "name": "fantasy",
+      "displayName": "Fantasy",
+      "weaponType": "AWP",
+      "rarity": "legendary",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770535364742-Fantasy.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 50
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 75
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 100
+        }
+      ]
+    },
+    {
+      "id": "april-fools-case-shotgun-gems-are-infinite",
+      "name": "gems are infinite",
+      "displayName": "Gems Are Infinite",
+      "weaponType": "Shotgun",
+      "rarity": "legendary",
+      "crate": "april-fools-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1775172869863-Gems_Are_Infinite.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "v-day-intervention-heartbreak",
+      "name": "heartbreak",
+      "displayName": "Heartbreak",
+      "weaponType": "Intervention",
+      "rarity": "legendary",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770535143698-Heartbreak.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 75
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 125
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 175
+        }
+      ]
+    },
+    {
+      "id": "hallows-basket-intervention-reaper",
+      "name": "reaper",
+      "displayName": "Reaper",
+      "weaponType": "Intervention",
+      "rarity": "legendary",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444706535-Reaper-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 300
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 800
+        }
+      ]
+    },
+    {
+      "id": "release-case-awp-vanilla",
+      "name": "vanilla",
+      "displayName": "Vanilla",
+      "weaponType": "AWP",
+      "rarity": "legendary",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444698626-Vanilla-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 150
+        }
+      ]
+    },
+    {
+      "id": "release-case-intervention-vanilla",
+      "name": "vanilla",
+      "displayName": "Vanilla",
+      "weaponType": "Intervention",
+      "rarity": "legendary",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444699949-Vanilla-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 150
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-deagle-vanilla",
+      "name": "vanilla",
+      "displayName": "Vanilla",
+      "weaponType": "Deagle",
+      "rarity": "legendary",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444713377-Vanilla-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 50
+        }
+      ]
+    },
+    {
+      "id": "classic-case-shotgun-wanwood",
+      "name": "wanwood",
+      "displayName": "Wanwood",
+      "weaponType": "Shotgun",
+      "rarity": "legendary",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369485594-WW_Shotgun.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 120
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 250
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 350
+        }
+      ]
+    },
+    {
+      "id": "hallows-basket-awp-white-spiral",
+      "name": "white spiral",
+      "displayName": "White Spiral",
+      "weaponType": "AWP",
+      "rarity": "legendary",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444750317-White_Spiral-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 300
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 800
+        }
+      ]
+    },
+    {
+      "id": "release-case-intervention-apex",
+      "name": "apex",
+      "displayName": "Apex",
+      "weaponType": "Intervention",
+      "rarity": "epic",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444695622-Apex-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Standard Issue",
+          "price": 550
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 700
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-awp-arctic-recon",
+      "name": "arctic recon",
+      "displayName": "Arctic Recon",
+      "weaponType": "AWP",
+      "rarity": "epic",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444762930-Arctic_Recon_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 400
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 670
+        }
+      ]
+    },
+    {
+      "id": "hallows-basket-intervention-blackknight",
+      "name": "black-knight",
+      "displayName": "Black Knight",
+      "weaponType": "Intervention",
+      "rarity": "epic",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444712677-Black_Knight-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 350
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 1000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-intervention-black-valk",
+      "name": "black valk",
+      "displayName": "Black Valk",
+      "weaponType": "Intervention",
+      "rarity": "epic",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368612585-Black_Valk.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 250
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 750
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-intervention-blossom",
+      "name": "blossom",
+      "displayName": "Blossom",
+      "weaponType": "Intervention",
+      "rarity": "epic",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444726547-Blossom-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 150
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 350
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 500
+        }
+      ]
+    },
+    {
+      "id": "v-day-deagle-cupid",
+      "name": "cupid",
+      "displayName": "Cupid",
+      "weaponType": "Deagle",
+      "rarity": "epic",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770534876593-Cupid.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 150
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 250
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 350
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-awp-dynasty",
+      "name": "dynasty",
+      "displayName": "Dynasty",
+      "weaponType": "AWP",
+      "rarity": "epic",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444724705-Dynasty-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 150
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 350
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 500
+        }
+      ]
+    },
+    {
+      "id": "april-fools-case-shotgun-epic-face",
+      "name": "epic face",
+      "displayName": "Epic Face",
+      "weaponType": "Shotgun",
+      "rarity": "epic",
+      "crate": "april-fools-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1775172841720-Epic_Face.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-intervention-gingerbread",
+      "name": "gingerbread",
+      "displayName": "Gingerbread",
+      "weaponType": "Intervention",
+      "rarity": "epic",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444776737-Gingerbread-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 400
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 670
+        }
+      ]
+    },
+    {
+      "id": "v-day-awp-jewel",
+      "name": "jewel",
+      "displayName": "Jewel",
+      "weaponType": "AWP",
+      "rarity": "epic",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770535043444-Jewel.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 150
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 250
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 350
+        }
+      ]
+    },
+    {
+      "id": "hallows-basket-awp-red-spiral",
+      "name": "red spiral",
+      "displayName": "Red Spiral",
+      "weaponType": "AWP",
+      "rarity": "epic",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444693588-Red_Spiral-watermarked.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 1200
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 1600
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 2000
+        }
+      ]
+    },
+    {
+      "id": "v-day-shotgun-royal",
+      "name": "royal",
+      "displayName": "Royal",
+      "weaponType": "Shotgun",
+      "rarity": "epic",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770534843653-Royal.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 200
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 350
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 500
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-awp-shogun",
+      "name": "shogun",
+      "displayName": "Shogun",
+      "weaponType": "AWP",
+      "rarity": "epic",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444725600-Shogun-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 150
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 350
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 500
+        }
+      ]
+    },
+    {
+      "id": "present-deagle-snowflake",
+      "name": "snowflake",
+      "displayName": "Snowflake",
+      "weaponType": "Deagle",
+      "rarity": "epic",
+      "crate": "present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444771379-Snowflake-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 250
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 300
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 450
+        }
+      ]
+    },
+    {
+      "id": "release-case-awp-sunset-runner",
+      "name": "sunset runner",
+      "displayName": "Sunset Runner",
+      "weaponType": "AWP",
+      "rarity": "epic",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444700730-Sunset_Runner-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Standard Issue",
+          "price": 550
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 750
+        }
+      ]
+    },
+    {
+      "id": "classic-case-intervention-valk",
+      "name": "valk",
+      "displayName": "Valk",
+      "weaponType": "Intervention",
+      "rarity": "epic",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369344236-Valk.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 250
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 750
+        }
+      ]
+    },
+    {
+      "id": "classic-case-default-abyss",
+      "name": "abyss",
+      "displayName": "Abyss",
+      "weaponType": "Default",
+      "rarity": "rare",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368535474-Abyss.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 30
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 50
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 70
+        }
+      ]
+    },
+    {
+      "id": "hallows-basket-default-cauldron",
+      "name": "cauldron",
+      "displayName": "Cauldron",
+      "weaponType": "Default",
+      "rarity": "rare",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444749478-Cauldron-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 150
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 150
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 150
+        }
+      ]
+    },
+    {
+      "id": "release-case-default-crime-scene",
+      "name": "crime scene",
+      "displayName": "Crime Scene",
+      "weaponType": "DEFAULT",
+      "rarity": "rare",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444698049-Crime_Scene-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 50
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 50
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 50
+        }
+      ]
+    },
+    {
+      "id": "hallows-basket-default-crimson-catseye",
+      "name": "crimson catseye",
+      "displayName": "Crimson Catseye",
+      "weaponType": "Default",
+      "rarity": "rare",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444747474-Crimson_Catseye-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 150
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 150
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 150
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-default-dance-dance",
+      "name": "dance dance",
+      "displayName": "Dance Dance",
+      "weaponType": "DEFAULT",
+      "rarity": "rare",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444711306-Dance_Dance-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 20
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 20
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": "v-day-default-fleur-de-amour",
+      "name": "fleur de amour",
+      "displayName": "Fleur De Amour",
+      "weaponType": "Default",
+      "rarity": "rare",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770535421396-Fleur_De_Amour.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 20
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 30
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 40
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-default-fleur-de-noel",
+      "name": "fleur de noel",
+      "displayName": "Fleur De Noel",
+      "weaponType": "Default",
+      "rarity": "rare",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444764846-Fleur_De_Noel_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 75
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 75
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 75
+        }
+      ]
+    },
+    {
+      "id": "release-case-default-lightning",
+      "name": "lightning",
+      "displayName": "Lightning",
+      "weaponType": "DEFAULT",
+      "rarity": "rare",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444697435-Lightning-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 50
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 50
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 50
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-default-naughty-present",
+      "name": "naughty present",
+      "displayName": "Naughty Present",
+      "weaponType": "Default",
+      "rarity": "rare",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444767604-Naughty_Present_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 75
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 75
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 75
+        }
+      ]
+    },
+    {
+      "id": "classic-case-default-ring-of-fire",
+      "name": "ring of fire",
+      "displayName": "Ring of Fire",
+      "weaponType": "Default",
+      "rarity": "rare",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369309050-Ring_of_Fire.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 30
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 40
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 50
+        }
+      ]
+    },
+    {
+      "id": "v-day-default-rose",
+      "name": "rose",
+      "displayName": "Rose",
+      "weaponType": "Default",
+      "rarity": "rare",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770535250985-Rose.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 20
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 30
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 40
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-default-tidal",
+      "name": "tidal",
+      "displayName": "Tidal",
+      "weaponType": "DEFAULT",
+      "rarity": "rare",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444710052-Tidal-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 20
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 20
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 20
+        }
+      ]
+    },
+    {
+      "id": "april-fools-case-shotgun-transparent",
+      "name": "transparent",
+      "displayName": "Transparent",
+      "weaponType": "Shotgun",
+      "rarity": "rare",
+      "crate": "april-fools-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1775172806528-Transparent.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "hallows-basket-default-vampire-hunter",
+      "name": "vampire hunter",
+      "displayName": "Vampire Hunter",
+      "weaponType": "Default",
+      "rarity": "rare",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444748675-Vampire_Hunter-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 150
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 150
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 150
+        }
+      ]
+    },
+    {
+      "id": "v-day-default-velvet",
+      "name": "velvet",
+      "displayName": "Velvet",
+      "weaponType": "Default",
+      "rarity": "rare",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770535457284-Velvet.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 20
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 30
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 40
+        }
+      ]
+    },
+    {
+      "id": "classic-case-default-viridian",
+      "name": "viridian",
+      "displayName": "Viridian",
+      "weaponType": "Default",
+      "rarity": "rare",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369366142-Viridian.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 30
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 40
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 50
+        }
+      ]
+    },
+    {
+      "id": "classic-case-default-adurite",
+      "name": "adurite",
+      "displayName": "Adurite",
+      "weaponType": "Default",
+      "rarity": "uncommon",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368561139-Auderite.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 20
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 30
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 40
+        }
+      ]
+    },
+    {
+      "id": "classic-case-default-black-iron",
+      "name": "black iron",
+      "displayName": "Black iron",
+      "weaponType": "Default",
+      "rarity": "uncommon",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368589500-Black_Iron.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 20
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 30
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 40
+        }
+      ]
+    },
+    {
+      "id": "v-day-default-cherry-wood",
+      "name": "cherry wood",
+      "displayName": "Cherry Wood",
+      "weaponType": "Default",
+      "rarity": "uncommon",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770535671534-Cherry_Wood.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 10
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 20
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": "release-case-default-flames",
+      "name": "flames",
+      "displayName": "Flames",
+      "weaponType": "DEFAULT",
+      "rarity": "uncommon",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444695037-Flames-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 30
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 30
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-default-glacial",
+      "name": "glacial",
+      "displayName": "Glacial",
+      "weaponType": "Default",
+      "rarity": "uncommon",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444766693-Glacial-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 30
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 30
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": "release-case-default-green-stream",
+      "name": "green stream",
+      "displayName": "Green Stream",
+      "weaponType": "DEFAULT",
+      "rarity": "uncommon",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444694477-Green_Stream-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 30
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 30
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": "v-day-default-hearts",
+      "name": "hearts",
+      "displayName": "Hearts",
+      "weaponType": "Default",
+      "rarity": "uncommon",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770535567534-Hearts.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 10
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 20
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-default-industrial",
+      "name": "industrial",
+      "displayName": "Industrial",
+      "weaponType": "DEFAULT",
+      "rarity": "uncommon",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444708368-Industrial-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 10
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 10
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 10
+        }
+      ]
+    },
+    {
+      "id": "hallows-basket-default-mummy",
+      "name": "mummy",
+      "displayName": "Mummy",
+      "weaponType": "Default",
+      "rarity": "uncommon",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444745629-Mummy-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 100
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 100
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 100
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-default-nice-present",
+      "name": "nice present",
+      "displayName": "Nice Present",
+      "weaponType": "Default",
+      "rarity": "uncommon",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444768432-Nice_Present_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 30
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 30
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": "classic-case-default-og-bluesteel",
+      "name": "og bluesteel",
+      "displayName": "OG Bluesteel",
+      "weaponType": "Default",
+      "rarity": "uncommon",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368970537-Bluesteel.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 20
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 30
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 40
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-default-peppermint",
+      "name": "peppermint",
+      "displayName": "Peppermint",
+      "weaponType": "Default",
+      "rarity": "uncommon",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444770420-Peppermint_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 30
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 30
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": "v-day-default-pink-camo",
+      "name": "pink camo",
+      "displayName": "Pink Camo",
+      "weaponType": "Default",
+      "rarity": "uncommon",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770535391743-Pink_Camo.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 10
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 20
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-default-reindeer",
+      "name": "reindeer",
+      "displayName": "Reindeer",
+      "weaponType": "Default",
+      "rarity": "uncommon",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444775853-Reindeer-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 30
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 30
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": "release-case-default-snake-skin",
+      "name": "snake skin",
+      "displayName": "Snake Skin",
+      "weaponType": "Default",
+      "rarity": "uncommon",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444696679-Snake_Skin-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 30
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 30
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 30
+        }
+      ]
+    },
+    {
+      "id": "hallows-basket-default-stalker",
+      "name": "stalker",
+      "displayName": "Stalker",
+      "weaponType": "Default",
+      "rarity": "uncommon",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444746667-Stalker-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 150
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 150
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 150
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-default-tribal",
+      "name": "tribal",
+      "displayName": "Tribal",
+      "weaponType": "DEFAULT",
+      "rarity": "uncommon",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444707525-Tribal-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 10
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 10
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 10
+        }
+      ]
+    },
+    {
+      "id": "hallows-basket-default-zombie",
+      "name": "zombie",
+      "displayName": "Zombie",
+      "weaponType": "Default",
+      "rarity": "uncommon",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444760532-Zombie-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 100
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 100
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 100
+        }
+      ]
+    },
+    {
+      "id": "april-fools-case-shotgun-shotgun-of-destiny",
+      "name": "shotgun of destiny",
+      "displayName": "Shotgun of Destiny",
+      "weaponType": "Shotgun",
+      "rarity": "common",
+      "crate": "april-fools-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1775172776512-Shotgun_of_Destiny.webp",
+      "demand": "None",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-intervention-angelic",
+      "name": "angelic",
+      "displayName": "Angelic",
+      "weaponType": "Intervention",
+      "rarity": "secret",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444739072-Angelic-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 25000
+        }
+      ]
+    },
+    {
+      "id": "na-executioner-ascii-white",
+      "name": "ascii white",
+      "displayName": "Ascii White",
+      "weaponType": "Executioner",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444755313-Ascii_White-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 400
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-deagle-case-hardened",
+      "name": "case hardened",
+      "displayName": "Case Hardened",
+      "weaponType": "Deagle",
+      "rarity": "secret",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444740064-Case_Hardened_-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 20000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-executioner-case-hardened-keep-private-untill-unboxed",
+      "name": "case hardened keep private untill unboxed",
+      "displayName": "Case Hardened (keep private untill unboxed)",
+      "weaponType": "Executioner",
+      "rarity": "secret",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444740653-Case_Hardened__keep_private_untill_unboxed_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "na-deagle-celtic",
+      "name": "celtic",
+      "displayName": "Celtic",
+      "weaponType": "Deagle",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369153600-Celtic_Deagle_Effect.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 350
+        }
+      ]
+    },
+    {
+      "id": "na-awp-celtic",
+      "name": "celtic",
+      "displayName": "Celtic",
+      "weaponType": "AWP",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369135339-Celtic_AWP_Effect.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 350
+        }
+      ]
+    },
+    {
+      "id": "hallows-basket-awp-elementalist",
+      "name": "elementalist",
+      "displayName": "Elementalist",
+      "weaponType": "AWP",
+      "rarity": "secret",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444751252-Elementalist-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 230000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-awp-empyreus",
+      "name": "empyreus",
+      "displayName": "Empyreus",
+      "weaponType": "AWP",
+      "rarity": "secret",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368164341-Emp.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 110000
+        }
+      ]
+    },
+    {
+      "id": "na-awp-for-her",
+      "name": "for her",
+      "displayName": "For Her",
+      "weaponType": "AWP",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1770535075069-ForHer_Render.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 350
+        }
+      ]
+    },
+    {
+      "id": "na-awp-for-him",
+      "name": "for him",
+      "displayName": "For Him",
+      "weaponType": "AWP",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1770535011122-ForHim.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 350
+        }
+      ]
+    },
+    {
+      "id": "na-awp-frankenawpgray",
+      "name": "frankenawp-gray",
+      "displayName": "Frankenawp (Gray)",
+      "weaponType": "AWP",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444754463-Frankenawp__Gray_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 1450
+        }
+      ]
+    },
+    {
+      "id": "na-awp-frankenawpgreen",
+      "name": "frankenawp-green",
+      "displayName": "Frankenawp (Green)",
+      "weaponType": "AWP",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444752052-Frankenawp__Green_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 1450
+        }
+      ]
+    },
+    {
+      "id": "classic-case-awp-frigidus",
+      "name": "frigidus",
+      "displayName": "Frigidus",
+      "weaponType": "AWP",
+      "rarity": "secret",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368244783-Frigidus.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 90000
+        }
+      ]
+    },
+    {
+      "id": "na-executioner-frostbite",
+      "name": "frostbite",
+      "displayName": "Frostbite",
+      "weaponType": "Executioner",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444756155-Frostbite-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 500
+        }
+      ]
+    },
+    {
+      "id": "na-intervention-hallowspunisherorange",
+      "name": "hallows-punisher-orange",
+      "displayName": "Hallows Punisher (Orange)",
+      "weaponType": "Intervention",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444752941-Hallows_Punisher__Orange_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 1500
+        }
+      ]
+    },
+    {
+      "id": "na-intervention-hallowspunisherpurple",
+      "name": "hallows-punisher-purple",
+      "displayName": "Hallows Punisher (Purple)",
+      "weaponType": "Intervention",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444753595-Hallows_Punisher__Purple_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 1500
+        }
+      ]
+    },
+    {
+      "id": "classic-case-awp-infernus",
+      "name": "infernus",
+      "displayName": "Infernus",
+      "weaponType": "AWP",
+      "rarity": "secret",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368231881-Infernus.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 100000
+        }
+      ]
+    },
+    {
+      "id": "release-case-awp-inverted",
+      "name": "inverted",
+      "displayName": "Inverted",
+      "weaponType": "AWP",
+      "rarity": "secret",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444701375-Inverted-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 93000
+        }
+      ]
+    },
+    {
+      "id": "release-case-default-inverted",
+      "name": "inverted",
+      "displayName": "Inverted",
+      "weaponType": "DEFAULT",
+      "rarity": "secret",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444701990-Inverted-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 68000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-deagle-inverted",
+      "name": "inverted",
+      "displayName": "Inverted",
+      "weaponType": "Deagle",
+      "rarity": "secret",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444741250-Inverted_-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 45000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-intervention-inverted",
+      "name": "inverted",
+      "displayName": "Inverted",
+      "weaponType": "Intervention",
+      "rarity": "secret",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444741889-Inverted_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 40000
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-intervention-lonely-star",
+      "name": "lonely star",
+      "displayName": "Lonely Star",
+      "weaponType": "Intervention",
+      "rarity": "secret",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444790907-Lonely_Star-watermarked.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 112000
+        }
+      ]
+    },
+    {
+      "id": "v-day-executioner-loves-crest",
+      "name": "loves crest",
+      "displayName": "Loves Crest",
+      "weaponType": "Executioner",
+      "rarity": "secret",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770534907208-loves_crest_icon.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 60000
+        }
+      ]
+    },
+    {
+      "id": "april-fools-case-shotgun-mlg",
+      "name": "mlg",
+      "displayName": "MLG",
+      "weaponType": "Shotgun",
+      "rarity": "secret",
+      "crate": "april-fools-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1775172732396-MLG.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 260000
+        }
+      ]
+    },
+    {
+      "id": "na-awp-netanyahu",
+      "name": "netanyahu",
+      "displayName": "netanyahu",
+      "weaponType": "AWP",
+      "rarity": "secret",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444785063-netanyahu-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "na-intervention-new-years-2026",
+      "name": "new years 2026",
+      "displayName": "New Years 2026",
+      "weaponType": "Intervention",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444778683-New_Years_2026-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 900
+        }
+      ]
+    },
+    {
+      "id": "na-awp-new-years-2026",
+      "name": "new years 2026",
+      "displayName": "New Years 2026",
+      "weaponType": "AWP",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444779386-New_Years_2026-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 900
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-intervention-north-star",
+      "name": "north star",
+      "displayName": "North Star",
+      "weaponType": "Intervention",
+      "rarity": "secret",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444769421-North_Star-watermarked.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 120000
+        }
+      ]
+    },
+    {
+      "id": "present-awp-peppermint",
+      "name": "peppermint",
+      "displayName": "Peppermint",
+      "weaponType": "AWP",
+      "rarity": "collectable",
+      "crate": "present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444765806-Peppermint-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 450
+        }
+      ]
+    },
+    {
+      "id": "na-intervention-peppermint",
+      "name": "peppermint",
+      "displayName": "Peppermint",
+      "weaponType": "Intervention",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444772413-Peppermint_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 450
+        }
+      ]
+    },
+    {
+      "id": "classic-case-classic-rainbowretroslop",
+      "name": "rainbow-retroslop",
+      "displayName": "Rainbow Retroslop",
+      "weaponType": "Classic",
+      "rarity": "secret",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369278081-Rainbow_Retroslop_Fix.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": "Currently only one unboxed price is owners choice ",
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": null
+        }
+      ]
+    },
+    {
+      "id": "classic-case-classic-rainbow-retroslop-idk-if-its-in-the-case",
+      "name": "rainbow retroslop idk if its in the case",
+      "displayName": "Rainbow Retroslop (idk if its in the case)",
+      "weaponType": "Classic",
+      "rarity": "secret",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774217850186-phrog.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "na-awp-rainbow-runner",
+      "name": "rainbow runner",
+      "displayName": "Rainbow Runner",
+      "weaponType": "AWP",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444744237-Rainbow_Runner-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": null
+        }
+      ]
+    },
+    {
+      "id": "na-classic-retroslopblue",
+      "name": "retroslop-blue",
+      "displayName": "Retroslop (Blue)",
+      "weaponType": "Classic",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444721665-Retroslop__Blue_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 40500
+        }
+      ]
+    },
+    {
+      "id": "na-classic-retroslop-gray",
+      "name": "retroslop gray",
+      "displayName": "Retroslop (Gray)",
+      "weaponType": "Classic",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444758606-Retroslop__Gray_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 38000
+        }
+      ]
+    },
+    {
+      "id": "na-classic-retroslop-green",
+      "name": "retroslop green",
+      "displayName": "Retroslop (Green)",
+      "weaponType": "Classic",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444722217-Retroslop__Green_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 45000
+        }
+      ]
+    },
+    {
+      "id": "na-classic-retroslop-pink",
+      "name": "retroslop pink",
+      "displayName": "Retroslop (Pink)",
+      "weaponType": "Classic",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444759209-Retroslop__Pink_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 35000
+        }
+      ]
+    },
+    {
+      "id": "na-classic-retroslop-red",
+      "name": "retroslop red",
+      "displayName": "Retroslop (Red)",
+      "weaponType": "Classic",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444723401-Retroslop__Red_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 37000
+        }
+      ]
+    },
+    {
+      "id": "na-classic-retroslop-yellow",
+      "name": "retroslop yellow",
+      "displayName": "Retroslop (Yellow)",
+      "weaponType": "Classic",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444722770-Retroslop__Yellow_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 48000
+        }
+      ]
+    },
+    {
+      "id": "na-shotgun-shamrock",
+      "name": "shamrock",
+      "displayName": "Shamrock",
+      "weaponType": "Shotgun",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369189455-phrog.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "na-awp-the-vt-weapon",
+      "name": "the vt weapon",
+      "displayName": "the vt weapon",
+      "weaponType": "AWP",
+      "rarity": "secret",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444784488-the_vt_weapon-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "na-deagle-tiger-stripe",
+      "name": "tiger stripe",
+      "displayName": "Tiger Stripe",
+      "weaponType": "Deagle",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444783801-Tiger_Stripe_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 650
+        }
+      ]
+    },
+    {
+      "id": "release-case-default-true-black",
+      "name": "true black",
+      "displayName": "True Black",
+      "weaponType": "DEFAULT",
+      "rarity": "secret",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444703170-True_Black-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 75000
+        }
+      ]
+    },
+    {
+      "id": "release-case-default-true-inverted",
+      "name": "true inverted",
+      "displayName": "True Inverted",
+      "weaponType": "DEFAULT",
+      "rarity": "secret",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444703885-True_Inverted-watermarked.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 360000
+        }
+      ]
+    },
+    {
+      "id": "release-case-awp-true-inverted",
+      "name": "true inverted",
+      "displayName": "True Inverted",
+      "weaponType": "AWP",
+      "rarity": "secret",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444704566-True_Inverted-watermarked.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 400000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-deagle-true-inverted",
+      "name": "true inverted",
+      "displayName": "True Inverted",
+      "weaponType": "Deagle",
+      "rarity": "secret",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444742414-True_Inverted-watermarked.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 300000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-intervention-true-inverted",
+      "name": "true inverted",
+      "displayName": "True Inverted",
+      "weaponType": "Intervention",
+      "rarity": "secret",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444742975-True_Inverted_-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 270000
+        }
+      ]
+    },
+    {
+      "id": "v-day-awp-true-pink",
+      "name": "true pink",
+      "displayName": "True Pink",
+      "weaponType": "AWP",
+      "rarity": "secret",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770534589252-True_Love_Awp.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 175000
+        }
+      ]
+    },
+    {
+      "id": "v-day-default-true-pink",
+      "name": "true pink",
+      "displayName": "True Pink",
+      "weaponType": "Default",
+      "rarity": "secret",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770534655238-True_love_Default.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 160000
+        }
+      ]
+    },
+    {
+      "id": "v-day-intervention-true-pink",
+      "name": "true pink",
+      "displayName": "True Pink",
+      "weaponType": "Intervention",
+      "rarity": "secret",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770535107044-True_Love_Intervention.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 140000
+        }
+      ]
+    },
+    {
+      "id": "release-case-default-true-white",
+      "name": "true white",
+      "displayName": "True White",
+      "weaponType": "DEFAULT",
+      "rarity": "secret",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444702596-True_White-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 81500
+        }
+      ]
+    },
+    {
+      "id": "hallows-basket-awp-umbr-elementalist",
+      "name": "umbr elementalist",
+      "displayName": "Umbr Elementalist",
+      "weaponType": "AWP",
+      "rarity": "secret",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444705504-Umbr_Elementalist-watermarked.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 250000
+        }
+      ]
+    },
+    {
+      "id": "na-intervention-vaporwave",
+      "name": "vaporwave",
+      "displayName": "Vaporwave",
+      "weaponType": "Intervention",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444781827-Vaporwave_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "na-intervention-vaporwave-green",
+      "name": "vaporwave green",
+      "displayName": "Vaporwave (Green)",
+      "weaponType": "Intervention",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444782875-Vaporwave__Green_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 300
+        }
+      ]
+    },
+    {
+      "id": "na-default-wood",
+      "name": "wood",
+      "displayName": "Wood",
+      "weaponType": "Default",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444743522-Wood-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 110000
+        }
+      ]
+    }
+  ]
+}
