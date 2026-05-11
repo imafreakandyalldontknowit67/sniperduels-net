@@ -1,0 +1,46 @@
+name: Refresh weapon data
+
+# Pulls the latest weapon/knife list from sniperduels.com (SDValues) every 6 hours.
+# If anything changed, commit data/weapons.json and push to main — Coolify
+# auto-redeploys on push, so the live site reflects new items within minutes.
+
+on:
+  schedule:
+    - cron: '17 */6 * * *'  # 00:17, 06:17, 12:17, 18:17 UTC
+  workflow_dispatch:        # manual trigger from the Actions tab
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-weapons
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch latest weapon data
+        run: node scripts/fetch-sdvalues.mjs
+
+      - name: Commit + push if changed
+        run: |
+          if git diff --quiet -- data/weapons.json; then
+            echo "No changes — SDValues catalog is unchanged."
+            exit 0
+          fi
+          NEW_COUNT=$(node -e "console.log(require('./data/weapons.json').count)")
+          git config user.name "sdvalues-refresh-bot"
+          git config user.email "actions@github.com"
+          git add data/weapons.json
+          git commit -m "data: refresh SDValues catalog ($NEW_COUNT items)"
+          git push

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
   alternates: { canonical: 'https://sniperduels.net/values' },
 };
 
-const RARITY_GROUPS = ['godly', 'ancient', 'vintage', 'legendary', 'epic', 'rare', 'uncommon', 'common'];
+const RARITY_GROUPS = ['knife', 'godly', 'ancient', 'vintage', 'legendary', 'epic', 'rare', 'uncommon', 'common'];
 
 export default function ValuesIndexPage() {
   const weapons = allWeapons();

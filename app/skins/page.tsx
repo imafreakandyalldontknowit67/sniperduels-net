@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import BuyCTA from '@/components/BuyCTA';
-import { SKINS, shopLink } from '@/lib/config';
+import { SKINS, DISCORD_INVITE } from '@/lib/config';
 
 export const metadata: Metadata = {
   title: 'Sniper Duels Skins for Sale — Frankenawp & Hallows Punisher | sniperduels.net',
@@ -25,9 +25,18 @@ export default function SkinsPage() {
           Sniper Duels <span className="text-accent">Skins</span>
         </h1>
         <p className="text-lg text-gray-400">
-          The Frankenawp series and Hallows Punisher series — verified, in-stock, instant delivery.
+          Frankenawp series + Hallows Punisher series. Skins move through our verified Discord vendors —
+          open a ticket, get matched with a stocked vendor, brokered by a free middleman.
         </p>
       </header>
+
+      <div className="mb-6 border-[3px] border-pixel-blue/60 bg-pixel-blue/5 p-4">
+        <div className="text-xs font-bold uppercase tracking-wider text-pixel-blue-light">Heads up</div>
+        <p className="mt-1 text-sm text-gray-300">
+          The auto-shop&apos;s skin marketplace is launching soon. Until then, all skin orders go through Discord with a free verified middleman —
+          no payment risk, instant in-game handoff.
+        </p>
+      </div>
 
       <div className="mb-10 grid gap-4 sm:grid-cols-2">
         {SKINS.map(s => {
@@ -54,12 +63,12 @@ export default function SkinsPage() {
               <div className="flex items-center justify-between gap-3">
                 <div className="text-sm font-bold text-white">{s.name}</div>
                 <a
-                  href={shopLink('/shop', `skin-${s.slug}`)}
+                  href={DISCORD_INVITE}
                   target="_blank"
                   rel="noopener"
                   className="btn-primary whitespace-nowrap px-4 py-2 text-sm"
                 >
-                  Buy →
+                  Buy via Discord →
                 </a>
               </div>
             </div>
@@ -67,7 +76,19 @@ export default function SkinsPage() {
         })}
       </div>
 
-      <BuyCTA campaign="skins-mid" shopPath="/shop" shopLabel="Browse all skins on sniperduels.shop →" variant="banner" />
+      {/* Discord-only banner since item shop isn't live */}
+      <div className="my-8 border-[3px] border-accent/60 bg-gradient-to-br from-dark-800 to-dark-900 p-6 md:p-8" style={{ boxShadow: 'inset 0 -3px 0 rgba(0,0,0,0.4), 0 4px 0 rgba(0,0,0,0.5)' }}>
+        <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
+          <div>
+            <div className="mb-1 text-xs font-bold uppercase tracking-wider text-accent">Order a skin</div>
+            <div className="text-2xl font-black uppercase tracking-wider text-white md:text-3xl">Open a Discord ticket</div>
+            <div className="mt-1 text-sm text-gray-400">Free middleman · in-stock vendors · ~5 min handoff</div>
+          </div>
+          <a href={DISCORD_INVITE} target="_blank" rel="noopener" className="btn-discord">
+            Join Discord →
+          </a>
+        </div>
+      </div>
 
       <section className="mt-10 prose prose-invert max-w-none text-gray-300">
         <h2 className="heading-pixel text-2xl text-white">About Sniper Duels skins</h2>
@@ -77,9 +98,10 @@ export default function SkinsPage() {
           drops with limited supply, making them some of the most sought-after cosmetics in the game.
         </p>
         <p>
-          We list four specific colorways at fixed prices ($9 each). For other skins, weapons, or trade-up offers,
-          check our <Link href="/values" className="text-accent hover:underline">community value list</Link> and{' '}
-          post a trade in <Link href="/middleman" className="text-accent hover:underline">our Discord</Link>.
+          We list four specific colorways at fixed prices ($9 each). All orders currently route through Discord with a free
+          verified <Link href="/middleman" className="text-accent hover:underline">middleman</Link> — auto-shop integration is
+          coming soon. For other skins, weapons, or trade-ups, check the{' '}
+          <Link href="/values" className="text-accent hover:underline">community value list</Link>.
         </p>
       </section>
 

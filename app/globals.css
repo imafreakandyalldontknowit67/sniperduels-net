@@ -94,20 +94,35 @@ img { image-rendering: pixelated; }
 }
 
 @layer components {
+  /* Sprite-backed buttons. The PNG fills the box (background-size: 100% 100%)
+     so the button can flex to its label width while retaining the pixel-art look.
+     Use the SpriteButton React component for fixed-aspect sprite buttons; these
+     CSS classes are the "stretchy" variant for inline links across the marketing pages. */
   .btn-primary {
-    @apply pixel-btn-press inline-flex items-center justify-center gap-2 border-[3px] border-accent-dark bg-accent px-5 py-3 font-bold uppercase tracking-wider text-dark-900;
-    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.25), inset 0 3px 0 rgba(255, 255, 255, 0.35);
+    @apply pixel-btn-press relative inline-flex items-center justify-center gap-2 px-6 py-3 font-bold uppercase tracking-wider text-dark-900;
+    background-image: url('/images/pixel/pngs/asset-59.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    min-height: 48px;
   }
-  .btn-primary:hover { @apply bg-accent-light; }
 
   .btn-secondary {
-    @apply pixel-btn-press inline-flex items-center justify-center gap-2 border-[3px] border-dark-400 bg-dark-700 px-5 py-3 font-bold uppercase tracking-wider text-white;
+    @apply pixel-btn-press relative inline-flex items-center justify-center gap-2 px-6 py-3 font-bold uppercase tracking-wider text-white;
+    background-image: url('/images/pixel/pngs/asset-60.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    min-height: 48px;
   }
-  .btn-secondary:hover { @apply border-accent text-accent; }
 
   .btn-discord {
-    @apply pixel-btn-press inline-flex items-center justify-center gap-2 border-[3px] border-[#4752C4] bg-[#5865F2] px-5 py-3 font-bold uppercase tracking-wider text-white;
-    box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.25), inset 0 3px 0 rgba(255, 255, 255, 0.25);
+    @apply pixel-btn-press relative inline-flex items-center justify-center gap-2 px-6 py-3 font-bold uppercase tracking-wider text-white;
+    background-image: url('/images/pixel/pngs/asset-64.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    min-height: 48px;
   }
 
   .card {

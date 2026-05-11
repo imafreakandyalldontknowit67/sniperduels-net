@@ -51,6 +51,7 @@ export function weaponsByRarity(rarity: string): Weapon[] {
 
 export function rarityClasses(rarity: string): string {
   const r = rarity.toLowerCase();
+  if (r === 'knife')      return 'text-cyan-300 border-cyan-400/60 bg-cyan-400/10';
   if (r === 'godly')      return 'text-red-400 border-red-400/60 bg-red-400/10';
   if (r === 'ancient')    return 'text-fuchsia-400 border-fuchsia-400/60 bg-fuchsia-400/10';
   if (r === 'vintage')    return 'text-orange-400 border-orange-400/60 bg-orange-400/10';
@@ -70,16 +71,12 @@ export function demandClasses(demand: string): string {
 }
 
 export const SHOP_INVENTORY = {
-  // Items the .shop sells directly. For these, CTA is "Buy on sniperduels.shop →".
-  // Everything else: CTA is "Find in our Discord marketplace →".
-  // Names matched loosely (case-insensitive contains).
-  skinKeywords: ['frankenawp', 'hallows punisher'],
-  // We always sell gems and supplies, not specific weapons. So the SHOP CTA
-  // for weapons points at /shop on .shop where a vendor might be listing it.
-  // Fallback CTA = Discord trade channels.
+  // The .shop's item marketplace is not live yet — only gems + supplies are
+  // sold there directly. ALL specific-weapon orders currently route to Discord
+  // with a free middleman. When the item-shop ships we can flip this list back on.
+  skinKeywords: [] as string[],
 };
 
-export function shopSellsThis(weapon: Weapon): boolean {
-  const name = weapon.displayName.toLowerCase();
-  return SHOP_INVENTORY.skinKeywords.some(k => name.includes(k));
+export function shopSellsThis(_weapon: Weapon): boolean {
+  return false;
 }

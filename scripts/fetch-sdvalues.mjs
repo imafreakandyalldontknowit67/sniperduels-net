@@ -18,17 +18,22 @@ async function fetchJson(path) {
   return res.json();
 }
 
+const CATEGORIES = ['snipers', 'knives'];
+
 async function main() {
   console.log('[sdvalues] fetching weapons...');
-  let weapons;
-  try {
-    const data = await fetchJson('/weapons/snipers');
-    weapons = data.weapons || [];
-    console.log(`[sdvalues] got ${weapons.length} weapons`);
-  } catch (err) {
-    console.warn(`[sdvalues] fetch failed: ${err.message} — using empty dataset`);
-    weapons = [];
+  const weapons = [];
+  for (const cat of CATEGORIES) {
+    try {
+      const data = await fetchJson(`/weapons/${cat}`);
+      const items = data.weapons || [];
+      console.log(`[sdvalues]   /${cat} → ${items.length} items`);
+      weapons.push(...items);
+    } catch (err) {
+      console.warn(`[sdvalues]   /${cat} failed: ${err.message}`);
+    }
   }
+  console.log(`[sdvalues] total raw items: ${weapons.length}`);
 
   // Slim the payload — keep only fields the site actually uses.
   const slim = weapons.map(w => ({
@@ -58,7 +63,7 @@ async function main() {
   }));
 
   // Sort: rarity (highest first) → name
-  const rarityRank = { godly: 0, ancient: 1, vintage: 2, legendary: 3, epic: 4, rare: 5, uncommon: 6, common: 7 };
+  const rarityRank = { knife: 0, godly: 1, ancient: 2, vintage: 3, legendary: 4, epic: 5, rare: 6, uncommon: 7, common: 8 };
   slim.sort((a, b) => {
     const ra = rarityRank[a.rarity] ?? 99;
     const rb = rarityRank[b.rarity] ?? 99;

@@ -24,7 +24,7 @@ export default function MiddlemanPage() {
           Free <span className="text-accent">Sniper Duels Middleman</span>
         </h1>
         <p className="text-lg text-gray-400">
-          Trading something high-value? Open a middleman ticket — we hold both sides until everyone confirms.
+          Selling an item? Open a middleman ticket — the MM holds your item until the buyer&apos;s payment lands, then releases both.
           <span className="font-bold text-white"> Always free.</span>
         </p>
       </header>
@@ -38,18 +38,18 @@ export default function MiddlemanPage() {
       <section className="mb-10 grid gap-6 md:grid-cols-3">
         <div className="card">
           <div className="mb-2 text-3xl">🔒</div>
-          <h3 className="mb-2 text-lg font-bold">Both sides held</h3>
+          <h3 className="mb-2 text-lg font-bold">Item held first</h3>
           <p className="text-sm text-gray-400">
-            You and the other trader both send your items/gems to a verified middleman in our private server.
-            They release only after both sides confirm receipt.
+            Seller hands their in-game item to a verified middleman. The MM holds it until the buyer&apos;s payment is confirmed.
+            No payment, no item release — buyer-side scam impossible.
           </p>
         </div>
         <div className="card">
           <div className="mb-2 text-3xl">⚡</div>
           <h3 className="mb-2 text-lg font-bold">Fast (~5 min)</h3>
           <p className="text-sm text-gray-400">
-            Middlemen are on standby. Open a ticket, both sides join the private Roblox server,
-            trade is brokered, you&apos;re done in ~5 minutes.
+            Middlemen are on standby. Open a ticket, seller sends item, buyer sends funds, MM releases both.
+            Done in about 5 minutes.
           </p>
         </div>
         <div className="card">
@@ -84,9 +84,9 @@ export default function MiddlemanPage() {
           {[
             'Both traders open a single middleman ticket in the Discord server',
             'A verified middleman claims the ticket and joins the private Roblox server',
-            'Both sides send their items/gems to the middleman',
-            'Middleman confirms receipt of both sides + checks for FX, condition, and quantity match',
-            'Middleman releases each side\'s items to the correct trader',
+            'Seller hands their in-game item to the middleman first — MM confirms FX, condition, and stat match',
+            'Buyer sends payment (gems, crypto, or fiat) to the agreed destination — MM verifies funds landed',
+            'Middleman releases the item to the buyer and forwards the payment to the seller',
             'Trade complete — ticket auto-closed, transcript logged',
           ].map((step, i) => (
             <li key={i} className="flex gap-4 border-[3px] border-dark-500 bg-dark-700 p-4">

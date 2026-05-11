@@ -1,10 +1,10 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { shopLink, DISCORD_INVITE } from '@/lib/config';
+import SpriteButton from './SpriteButton';
 
 const NAV = [
   { href: '/gems', label: 'Gems' },
@@ -22,18 +22,12 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b-[3px] border-dark-700 bg-dark-900/95 backdrop-blur">
       <div className="mx-auto flex h-[56px] max-w-6xl items-center justify-between px-3 sm:h-[64px] md:h-[72px] md:px-4">
-        {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 hover:no-underline">
-          <Image
-            src="/images/logo.png"
-            alt="Sniper Duels"
-            width={36}
-            height={36}
-            priority
-            style={{ imageRendering: 'pixelated' }}
-            className="h-8 w-8 sm:h-9 sm:w-9"
-          />
-          <span className="hidden border border-accent/30 bg-accent/10 px-1.5 py-0.5 text-[10px] font-bold uppercase tracking-wider text-accent sm:inline">
+        {/* Wordmark */}
+        <Link href="/" className="flex items-baseline gap-1 hover:no-underline">
+          <span className="text-base font-black uppercase tracking-wider text-white sm:text-lg">
+            <span className="text-accent">SNIPER</span>DUELS
+          </span>
+          <span className="border-[2px] border-accent/60 bg-accent/10 px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider text-accent">
             .net
           </span>
         </Link>
@@ -58,14 +52,14 @@ export default function Header() {
 
         {/* Right side: CTA + mobile hamburger */}
         <div className="flex items-center gap-2">
-          <a
+          <SpriteButton
             href={shopLink('/gems', 'header')}
-            target="_blank"
-            rel="noopener"
-            className="btn-primary px-3 py-2 text-xs sm:text-sm md:px-4 md:py-2.5"
+            external
+            variant="gold"
+            heightClass="h-[40px] sm:h-[44px]"
           >
-            Buy Gems →
-          </a>
+            Buy Gems
+          </SpriteButton>
           <button
             onClick={() => setOpen(o => !o)}
             aria-label="Open menu"

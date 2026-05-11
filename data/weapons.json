@@ -1,7 +1,2363 @@
 {
-  "generatedAt": "2026-05-11T04:00:20.408Z",
-  "count": 122,
+  "generatedAt": "2026-05-11T04:25:23.740Z",
+  "count": 223,
   "weapons": [
+    {
+      "id": "classic-case-bayonet-adurite",
+      "name": "adurite",
+      "displayName": "Adurite",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368380997-Auderite_Bayo.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 6000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 10000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 24000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-butterfly-adurite",
+      "name": "adurite",
+      "displayName": "Adurite",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368391215-Auderite_Butterfly.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 9000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 15000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 30000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-karambit-adurite",
+      "name": "adurite",
+      "displayName": "Adurite",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368399897-Auderite_Karambit.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 7000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 13000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 24000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-katana-adurite",
+      "name": "adurite",
+      "displayName": "Adurite",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368408379-Auderite_Katana.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 18000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 26000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 40000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-survivor-adurite",
+      "name": "adurite",
+      "displayName": "Adurite",
+      "weaponType": "Survivor",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368419611-Auderite_Survivor.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 2000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 3500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 4500
+        }
+      ]
+    },
+    {
+      "id": "classic-case-dfault-adurite",
+      "name": "adurite",
+      "displayName": "Adurite",
+      "weaponType": "dfault",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1775863975356-Auderite_Default.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 1750
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 3000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 4500
+        }
+      ]
+    },
+    {
+      "id": "release-case-bayonet-amethyst",
+      "name": "amethyst",
+      "displayName": "Amethyst",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444756869-Amethyst_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Standard Issue",
+          "price": 9500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 10500
+        }
+      ]
+    },
+    {
+      "id": "release-case-bayonet-aurora",
+      "name": "aurora",
+      "displayName": "Aurora",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444714488-Aurora-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Standard Issue",
+          "price": 9500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 10500
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-karambit-aurora",
+      "name": "aurora",
+      "displayName": "Aurora",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444731079-Aurora-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 21000
+        }
+      ]
+    },
+    {
+      "id": "april-fools-case-bayonet-bayonet-of-destiny",
+      "name": "bayonet of destiny",
+      "displayName": "Bayonet of Destiny",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "april-fools-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1775172951863-Bayo_of_Destiny.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 2000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 7000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 12000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-bayonet-black-iron",
+      "name": "black iron",
+      "displayName": "Black Iron",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368645001-BlackIron_Bayo.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 4000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 8000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 16000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-butterfly-black-iron",
+      "name": "black iron",
+      "displayName": "Black Iron",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368665168-BlackIron_Butterfly.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 8000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 13000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 24000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-dfault-black-iron",
+      "name": "black iron",
+      "displayName": "Black Iron",
+      "weaponType": "dfault",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368681856-BlackIron_Default.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 1500
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 2500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 4000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-karambit-black-iron",
+      "name": "black iron",
+      "displayName": "Black Iron",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368701509-BlackIron_Karambit.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 5000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 11000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 20000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-katana-black-iron",
+      "name": "black iron",
+      "displayName": "Black Iron",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368718263-BlackIron_Katana.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 15000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 24000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 33000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-survivor-black-iron",
+      "name": "black iron",
+      "displayName": "Black Iron",
+      "weaponType": "Survivor",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368736023-BlackIron_Survivor.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 2000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 3000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 4000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-katana-blacksteel",
+      "name": "blacksteel",
+      "displayName": "Blacksteel",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444734469-Blacksteel-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 18000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 23000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 35000
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-candy-cane-blueberry",
+      "name": "blueberry",
+      "displayName": "Blueberry",
+      "weaponType": "Candy Cane",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444794389-Blueberry-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 150000
+        }
+      ]
+    },
+    {
+      "id": "release-case-dfault-bluesteel",
+      "name": "bluesteel",
+      "displayName": "Bluesteel",
+      "weaponType": "dfault",
+      "rarity": "knife",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444715095-Bluesteel-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 900
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 1000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 1500
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-survivor-bluesteel",
+      "name": "bluesteel",
+      "displayName": "Bluesteel",
+      "weaponType": "Survivor",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444737938-Bluesteel-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 900
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 1500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 2000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-bayonet-bombastic",
+      "name": "bombastic",
+      "displayName": "Bombastic",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369004709-Bombastic_Bayo.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 3000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 5000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 12000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-butterfly-bombastic",
+      "name": "bombastic",
+      "displayName": "Bombastic",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369045656-Bombastic_Butterfly.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 6000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 11000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 19000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-karambit-bombastic",
+      "name": "bombastic",
+      "displayName": "Bombastic",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369060936-Bombastic_Karambit.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 4000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 10000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 21000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-katana-bombastic",
+      "name": "bombastic",
+      "displayName": "Bombastic",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369077139-Bombastic_Katana.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 13000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 20000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 30000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-survivor-bombastic",
+      "name": "bombastic",
+      "displayName": "Bombastic",
+      "weaponType": "Survivor",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369091323-Bombastic_Survivor.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 1200
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 2500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 3500
+        }
+      ]
+    },
+    {
+      "id": "classic-case-dfault-bombastic",
+      "name": "bombastic",
+      "displayName": "Bombastic",
+      "weaponType": "dfault",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369106249-Bombastic_Default.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 1000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 2500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 4000
+        }
+      ]
+    },
+    {
+      "id": "april-fools-case-butterfly-butterfly-of-destiny",
+      "name": "butterfly of destiny",
+      "displayName": "Butterfly of Destiny",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "april-fools-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1775172700628-Butterfly_of_Destiny.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 6000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 12000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 19000
+        }
+      ]
+    },
+    {
+      "id": "hallows-basket-bayonet-candy-corn",
+      "name": "candy corn",
+      "displayName": "Candy Corn",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444715857-Candy_Corn-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 4000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 6000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 8000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-karambit-case-hardened",
+      "name": "case hardened",
+      "displayName": "Case Hardened",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444778118-Case_Hardened_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 60000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-butterfly-cherry",
+      "name": "cherry",
+      "displayName": "Cherry",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444728134-Cherry-watermarked.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 12000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 17000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 35000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-katana-cherry",
+      "name": "cherry",
+      "displayName": "Cherry",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444744807-Cherry-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 14000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 23000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 33000
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-katana-cookie",
+      "name": "cookie",
+      "displayName": "Cookie",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444785880-Cookie-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 25000
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-bayonet-cookie",
+      "name": "cookie",
+      "displayName": "Cookie",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444786613-Cookie-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 7300
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-karambit-cookie",
+      "name": "cookie",
+      "displayName": "Cookie",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444788280-Cookie-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 11800
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-butterfly-cookie",
+      "name": "cookie",
+      "displayName": "Cookie",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444781277-Cookie-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 13000
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-survivor-cookie",
+      "name": "cookie",
+      "displayName": "Cookie",
+      "weaponType": "Survivor",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444792010-Cookie_-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 4650
+        }
+      ]
+    },
+    {
+      "id": "hallows-basket-bayonet-cultist",
+      "name": "cultist",
+      "displayName": "Cultist",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444716415-Cultist-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Standard Issue",
+          "price": 10000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 14000
+        }
+      ]
+    },
+    {
+      "id": "v-day-bayonet-cupid",
+      "name": "cupid",
+      "displayName": "Cupid",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770535533249-Cupid_Bayonet.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 5500
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 9000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 14000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-butterfly-damascus",
+      "name": "damascus",
+      "displayName": "Damascus",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444728837-Damascus-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 17000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-butterfly-darksteel",
+      "name": "darksteel",
+      "displayName": "Darksteel",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444729409-Darksteel-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 17000
+        }
+      ]
+    },
+    {
+      "id": "april-fools-case-dfault-default-of-destiny",
+      "name": "default of destiny",
+      "displayName": "Default of Destiny",
+      "weaponType": "dfault",
+      "rarity": "knife",
+      "crate": "april-fools-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1775172927417-Default_of_Destiny.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 1200
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 1700
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 5000
+        }
+      ]
+    },
+    {
+      "id": "release-case-bayonet-emerald",
+      "name": "emerald",
+      "displayName": "Emerald",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444717049-Emerald-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Standard Issue",
+          "price": 13000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 15000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-butterfly-frostbite",
+      "name": "frostbite",
+      "displayName": "Frostbite",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444729994-Frostbite-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 11000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 15000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 25000
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-katana-frostborn",
+      "name": "frostborn",
+      "displayName": "Frostborn",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444789058-Frostborn-watermarked.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 85000
+        }
+      ]
+    },
+    {
+      "id": "april-fools-case-pan-golden-pan",
+      "name": "golden pan",
+      "displayName": "Golden Pan",
+      "weaponType": "Pan",
+      "rarity": "knife",
+      "crate": "april-fools-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1775172634321-GoldenPan.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "v-day-survivor-heartbreak",
+      "name": "heartbreak",
+      "displayName": "Heartbreak",
+      "weaponType": "Survivor",
+      "rarity": "knife",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770535338864-Heartbreak_Survivor.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 1800
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 2200
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 3000
+        }
+      ]
+    },
+    {
+      "id": "release-case-bayonet-hypno",
+      "name": "hypno",
+      "displayName": "Hypno",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444717695-Hypno-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 4500
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 6000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 9000
+        }
+      ]
+    },
+    {
+      "id": "april-fools-case-karambit-karambit-of-destiny",
+      "name": "karambit of destiny",
+      "displayName": "Karambit of Destiny",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "april-fools-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1775172663578-Karambit_of_Destiny.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 4000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 10000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 15000
+        }
+      ]
+    },
+    {
+      "id": "april-fools-case-katana-katana-of-destiny",
+      "name": "katana of destiny",
+      "displayName": "Katana of Destiny",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "april-fools-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1775172976238-Katana_of_Destiny.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 20000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 35000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "na-bombline-kitchen",
+      "name": "kitchen",
+      "displayName": "Kitchen",
+      "weaponType": "Bombline",
+      "rarity": "knife",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444758044-Kitchen-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 105000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-karambit-koi",
+      "name": "koi",
+      "displayName": "Koi",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444731666-Koi-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 9000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 11000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 22000
+        }
+      ]
+    },
+    {
+      "id": "na-cash-money-top-1",
+      "name": "money top 1",
+      "displayName": "Money Top 1",
+      "weaponType": "Cash",
+      "rarity": "knife",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1775173186366-MoneyTop1.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": "This item is awarded to the #1 players on the monthly and lifetime donation leaderboards",
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "na-cash-money-top-2",
+      "name": "money top 2",
+      "displayName": "Money Top 2",
+      "weaponType": "Cash",
+      "rarity": "knife",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1775173155585-MoneyTop2.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": "This item is awarded to the #2 players on the monthly and lifetime donation leaderboards",
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "na-cash-money-top-3",
+      "name": "money top 3",
+      "displayName": "Money Top 3",
+      "weaponType": "Cash",
+      "rarity": "knife",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1775173118296-MoneyTop3.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": "This item is awarded to the #3 players on the monthly and lifetime donation leaderboards",
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "na-cash-money-top-4-10",
+      "name": "money top 4 10",
+      "displayName": "Money Top 4 - 10",
+      "weaponType": "Cash",
+      "rarity": "knife",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1775173065312-MoneyTop4-10.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": "This item is awarded to the top 4 - 10 players on the lifetime and monthly donation leader boards",
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-katana-nebuleum",
+      "name": "nebuleum",
+      "displayName": "Nebuleum",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444789973-Nebuleum_-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 95000
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-karambit-nebuleum",
+      "name": "nebuleum",
+      "displayName": "Nebuleum",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444792863-Nebuleum_-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 20000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 40000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 150000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-bayonet-og-bluesteel",
+      "name": "og bluesteel",
+      "displayName": "OG Bluesteel",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368848890-Bluesteel_Bayo.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 5000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 10000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 18000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-butterfly-og-bluesteel",
+      "name": "og bluesteel",
+      "displayName": "OG Bluesteel",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368867779-Bluesteel_Butterfly.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 7000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 13000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 19000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-dfault-og-bluesteel",
+      "name": "og bluesteel",
+      "displayName": "OG Bluesteel",
+      "weaponType": "dfault",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368884496-Bluesteel_Default.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 1500
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 2500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 4000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-karambit-og-bluesteel",
+      "name": "og bluesteel",
+      "displayName": "OG Bluesteel",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368904991-Bluesteel_Karambit.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 6000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 14000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 22000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-katana-og-bluesteel",
+      "name": "og bluesteel",
+      "displayName": "OG Bluesteel",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368919819-Bluesteel_Katana.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 13000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 22000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 35000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-survivor-og-bluesteel",
+      "name": "og bluesteel",
+      "displayName": "OG Bluesteel",
+      "weaponType": "Survivor",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774368938359-Bluesteel_Survivor.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 2500
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 3500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 4500
+        }
+      ]
+    },
+    {
+      "id": "release-case-bayonet-onyx",
+      "name": "onyx",
+      "displayName": "Onyx",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444762120-Onyx-watermarked.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 40000
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-butterfly-peppermint",
+      "name": "peppermint",
+      "displayName": "Peppermint",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444787405-Peppermint-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 5000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 6300
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 7800
+        }
+      ]
+    },
+    {
+      "id": "present-karambit-peppermint",
+      "name": "peppermint",
+      "displayName": "Peppermint",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444773508-Peppermint-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 4500
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 6500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 8500
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-candy-cane-peppermint",
+      "name": "peppermint",
+      "displayName": "Peppermint",
+      "weaponType": "Candy Cane",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444795583-Peppermint-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 115000
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-katana-peppermint",
+      "name": "peppermint",
+      "displayName": "Peppermint",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444780001-Peppermint-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 25000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 50000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 120000
+        }
+      ]
+    },
+    {
+      "id": "present-survivor-peppermint",
+      "name": "peppermint",
+      "displayName": "Peppermint",
+      "weaponType": "Survivor",
+      "rarity": "knife",
+      "crate": "present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444774651-Peppermint_-watermarked.webp",
+      "demand": "None",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 2000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 2500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 3500
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-bayonet-peppermint",
+      "name": "peppermint",
+      "displayName": "Peppermint",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444780613-Peppermint_-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 2900
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 3800
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 5300
+        }
+      ]
+    },
+    {
+      "id": "na-bombline-pixel",
+      "name": "pixel",
+      "displayName": "Pixel",
+      "weaponType": "Bombline",
+      "rarity": "knife",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444757493-Pixel-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 78000
+        }
+      ]
+    },
+    {
+      "id": "v-day-karambit-rose-fade",
+      "name": "rose fade",
+      "displayName": "Rose Fade",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770534962535-Karambit_icon_template.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 4000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 5500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 8000
+        }
+      ]
+    },
+    {
+      "id": "v-day-dfault-rose-gold",
+      "name": "rose gold",
+      "displayName": "Rose Gold",
+      "weaponType": "dfault",
+      "rarity": "knife",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770535644122-Rose_Gold.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 1000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 1500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 2000
+        }
+      ]
+    },
+    {
+      "id": "release-case-bayonet-ruby",
+      "name": "ruby",
+      "displayName": "Ruby",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444718435-Ruby-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Standard Issue",
+          "price": 12500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 14000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-karambit-sakura",
+      "name": "sakura",
+      "displayName": "Sakura",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444732221-Sakura-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 10000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 15000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 23000
+        }
+      ]
+    },
+    {
+      "id": "release-case-bayonet-sapphire",
+      "name": "sapphire",
+      "displayName": "Sapphire",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444719167-Sapphire-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Standard Issue",
+          "price": 14000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 15000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-katana-shogun",
+      "name": "shogun",
+      "displayName": "Shogun",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444735022-Shogun-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 20000
+        }
+      ]
+    },
+    {
+      "id": "release-case-bayonet-sunset",
+      "name": "sunset",
+      "displayName": "Sunset",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444719862-Sunset-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Standard Issue",
+          "price": 9000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 10000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-karambit-sunset",
+      "name": "sunset",
+      "displayName": "Sunset",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444732814-Sunset-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 19000
+        }
+      ]
+    },
+    {
+      "id": "april-fools-case-survivor-survivor-of-destiny",
+      "name": "survivor of destiny",
+      "displayName": "Survivor of Destiny",
+      "weaponType": "Survivor",
+      "rarity": "knife",
+      "crate": "april-fools-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1775172904035-Survivor_of_Destiny.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 1000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 3000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 7000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-katana-true-black",
+      "name": "true black",
+      "displayName": "True Black",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444735666-True_Black-watermarked.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": " ",
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 97000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-katana-true-white",
+      "name": "true white",
+      "displayName": "True White",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444736226-True_White-watermarked.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 100000
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-candy-cane-tutti-frutti",
+      "name": "tutti frutti",
+      "displayName": "Tutti Frutti",
+      "weaponType": "Candy Cane",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444793660-Tutti_Frutti-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 180000
+        }
+      ]
+    },
+    {
+      "id": "hallows-basket-bayonet-vampiric",
+      "name": "vampiric",
+      "displayName": "Vampiric",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444720477-Vampiric-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 14500
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 26000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 30000
+        }
+      ]
+    },
+    {
+      "id": "release-case-bayonet-vanilla",
+      "name": "vanilla",
+      "displayName": "Vanilla",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "release-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444721106-Vanilla-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 4500
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-butterfly-vanilla",
+      "name": "vanilla",
+      "displayName": "Vanilla",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444727264-Vanilla-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 3000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-karambit-vanilla",
+      "name": "vanilla",
+      "displayName": "Vanilla",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444733387-Vanilla-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 2500
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-katana-vanilla",
+      "name": "vanilla",
+      "displayName": "Vanilla",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444736782-Vanilla-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 18000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-survivor-vanilla",
+      "name": "vanilla",
+      "displayName": "Vanilla",
+      "weaponType": "Survivor",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444737318-Vanilla-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 1500
+        }
+      ]
+    },
+    {
+      "id": "v-day-butterfly-velvet",
+      "name": "velvet",
+      "displayName": "Velvet",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "v-day",
+      "imagePath": "https://images.sniperduels.com/weapons/1770535304239-velvet_butterfly.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 7000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 11000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 15000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-butterfly-venom",
+      "name": "venom",
+      "displayName": "Venom",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444730552-Venom_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 10000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 16000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 23000
+        }
+      ]
+    },
+    {
+      "id": "skin-case-1-karambit-viper",
+      "name": "viper",
+      "displayName": "Viper",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "skin-case-1",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444733966-Viper-watermarked.webp",
+      "demand": "Hype",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 11000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 17000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 25000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-bayonet-wanwood",
+      "name": "wanwood",
+      "displayName": "Wanwood",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369391751-Wanwood_Bayo.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 3000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 5000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 9000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-butterfly-wanwood",
+      "name": "wanwood",
+      "displayName": "Wanwood",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369405168-Wanwood_Butterfly.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 6000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 11000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 17000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-karambit-wanwood",
+      "name": "wanwood",
+      "displayName": "Wanwood",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369422042-Wanwood_Karambit.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 4000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 9000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 17000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-katana-wanwood",
+      "name": "wanwood",
+      "displayName": "Wanwood",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369436902-Wanwood_Katana.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 13000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 20000
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 27000
+        }
+      ]
+    },
+    {
+      "id": "classic-case-survivor-wanwood",
+      "name": "wanwood",
+      "displayName": "Wanwood",
+      "weaponType": "Survivor",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369451531-Wanwood_Survivor.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 1200
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 2500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 3500
+        }
+      ]
+    },
+    {
+      "id": "classic-case-dfault-wanwood",
+      "name": "wanwood",
+      "displayName": "Wanwood",
+      "weaponType": "dfault",
+      "rarity": "knife",
+      "crate": "classic-case",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369466579-Wanwood_Default.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 1000
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 2500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 3000
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-candy-cane-wintergreen",
+      "name": "wintergreen",
+      "displayName": "Wintergreen",
+      "weaponType": "Candy Cane",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444795001-Wintergreen-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 135000
+        }
+      ]
+    },
+    {
+      "id": "hallows-basket-bayonet-zombie-slayer",
+      "name": "zombie slayer",
+      "displayName": "Zombie Slayer",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "hallows-basket",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444713902-Zombie_Slayer-watermarked.webp",
+      "demand": "Low",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 5500
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 7500
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 10000
+        }
+      ]
+    },
     {
       "id": "hallows-basket-awp-bewitched",
       "name": "bewitched",
@@ -2257,6 +4613,24 @@
         {
           "condition": "Mint Condition",
           "price": 450
+        }
+      ]
+    },
+    {
+      "id": "na-bayonet-prototype",
+      "name": "prototype",
+      "displayName": "Prototype",
+      "weaponType": "Bayonet",
+      "rarity": "unobtainable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444761261-Prototype_-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": null
         }
       ]
     },
