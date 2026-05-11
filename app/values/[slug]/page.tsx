@@ -12,16 +12,22 @@ export function generateStaticParams() {
   return allWeaponsIncludingUnpriced().map(w => ({ slug: w.id }));
 }
 
+// "Adurite" → "an Adurite Bayonet"; "Crimson" → "a Crimson Karambit"
+function nounPhrase(displayName: string, weaponType: string): string {
+  const startsWithVowel = /^[aeiouAEIOU]/.test(displayName);
+  return `${startsWithVowel ? 'an' : 'a'} ${displayName} ${weaponType}`;
+}
+
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
   const w = weaponBySlug(params.slug);
   if (!w) return { title: 'Weapon not found' };
   const top = Math.max(0, ...w.variants.map(v => v.price));
   return {
-    title: `${w.displayName} Value — ${w.rarity.toUpperCase()} ${w.weaponType} | Sniper Duels`,
-    description: `Current value of the ${w.displayName} (${w.rarity} ${w.weaponType}) in Sniper Duels: from ${top.toLocaleString()} gems. Live prices across all conditions.`,
+    title: `${w.displayName} ${w.weaponType} Value — Sniper Duels`,
+    description: `Current value of the ${w.displayName} ${w.weaponType} (${w.rarity}) in Sniper Duels: from ${top.toLocaleString()} gems. All conditions tracked, updated every 6h.`,
     alternates: { canonical: `https://sniperduels.net/values/${w.id}` },
     openGraph: {
-      title: `${w.displayName} — Sniper Duels Value`,
+      title: `${w.displayName} ${w.weaponType} — Sniper Duels Value`,
       images: w.imagePath ? [{ url: w.imagePath }] : [],
     },
   };
@@ -75,7 +81,7 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
             )}
           </div>
           <h1 className="mb-2 text-2xl font-bold uppercase tracking-wider sm:text-3xl md:text-4xl">
-            {w.displayName} <span className="text-accent">Value</span>
+            {w.displayName} {w.weaponType} <span className="text-accent">Value</span>
           </h1>
           {top > 0 ? (
             <p className="text-lg text-gray-400">
@@ -119,7 +125,7 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
         {ourShopHasIt ? (
           <>
             <div className="mb-2 text-sm font-bold uppercase tracking-wider text-accent">In stock at sniperduels.shop</div>
-            <h2 className="mb-3 text-2xl font-black text-white">Buy {w.displayName} now</h2>
+            <h2 className="mb-3 text-2xl font-black text-white">Buy {nounPhrase(w.displayName, w.weaponType)} now</h2>
             <p className="mb-4 text-gray-400">
               We carry this skin in our auto-shop. Fixed price, instant delivery, full refund if anything goes wrong.
             </p>
@@ -130,7 +136,7 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
         ) : (
           <>
             <div className="mb-2 text-sm font-bold uppercase tracking-wider text-pixel-blue-light">Find in our community</div>
-            <h2 className="mb-3 text-2xl font-black text-white">Looking for {w.displayName}?</h2>
+            <h2 className="mb-3 text-2xl font-black text-white">Looking for {nounPhrase(w.displayName, w.weaponType)}?</h2>
             <p className="mb-4 text-gray-400">
               Post in our Discord trading channels — verified vendors and traders are active 24/7.
               Use our <Link href="/middleman" className="text-accent hover:underline">free middleman service</Link>{' '}
@@ -148,9 +154,9 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
 
       {/* Trading tips */}
       <section className="mb-10 prose prose-invert max-w-none text-gray-300">
-        <h2 className="heading-pixel">Trading the {w.displayName}</h2>
+        <h2 className="heading-pixel">Trading the {w.displayName} {w.weaponType}</h2>
         <p>
-          {w.displayName} is a <strong className="text-white">{w.rarity}-rarity {w.weaponType}</strong> in Sniper Duels.
+          The {w.displayName} {w.weaponType} is a <strong className="text-white">{w.rarity}-rarity {w.weaponType}</strong> in Sniper Duels.
           {w.crate && <> It originally drops from the <strong className="text-white">{w.crate}</strong>.</>}
           {top > 0 && <> Current top value is <span className="font-bold text-accent">{top.toLocaleString()} gems</span>.</>}
         </p>
@@ -219,8 +225,8 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
             {
               '@context': 'https://schema.org',
               '@type': 'Product',
-              name: `${w.displayName} (Sniper Duels)`,
-              description: `${w.rarity} ${w.weaponType} weapon in Sniper Duels${top > 0 ? `. Top value: ${top.toLocaleString()} gems.` : '.'}`,
+              name: `${w.displayName} ${w.weaponType} (Sniper Duels)`,
+              description: `${w.rarity} ${w.weaponType} skin in Sniper Duels${top > 0 ? `. Top value: ${top.toLocaleString()} gems.` : '.'}`,
               image: w.imagePath || undefined,
               brand: { '@type': 'Brand', name: 'Sniper Duels' },
               category: w.weaponType,
