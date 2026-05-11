@@ -1,0 +1,58 @@
+name: Sync gem prices
+
+# Pulls live gem listings from sniperduels.shop every hour. If the cheapest
+# price changed, commits data/prices.json — Coolify auto-redeploys on push so
+# the live site updates within ~minute.
+
+on:
+  schedule:
+    - cron: '7 * * * *'   # hourly at :07
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-prices
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch latest prices
+        run: node scripts/fetch-prices.mjs
+
+      - name: Commit + push if cheapest price changed
+        run: |
+          # Skip noisy diffs by only acting when the cheapestPerK / cheapestBulkPerK / platformInStock fields move
+          if git diff --quiet -- data/prices.json; then
+            echo "No changes."
+            exit 0
+          fi
+          # Re-check by ignoring the fetchedAt timestamp (would otherwise commit every hour)
+          OLD=$(git show HEAD:data/prices.json 2>/dev/null | node -e "
+            try { const d = JSON.parse(require('fs').readFileSync(0,'utf8')); console.log(JSON.stringify({c:d.cheapestPerK,b:d.cheapestBulkPerK,p:d.platformInStock,v:d.vendorCount})); } catch { console.log('{}'); }
+          ")
+          NEW=$(node -e "
+            const d = require('./data/prices.json'); console.log(JSON.stringify({c:d.cheapestPerK,b:d.cheapestBulkPerK,p:d.platformInStock,v:d.vendorCount}));
+          ")
+          if [ "$OLD" = "$NEW" ]; then
+            echo "Only timestamp changed — skipping commit."
+            exit 0
+          fi
+          NEW_PRICE=$(node -e "console.log(require('./data/prices.json').cheapestPerK)")
+          git config user.name 'price-sync-bot'
+          git config user.email 'actions@github.com'
+          git add data/prices.json
+          git commit -m "data: gem prices (cheapest \$$NEW_PRICE/k)"
+          git push

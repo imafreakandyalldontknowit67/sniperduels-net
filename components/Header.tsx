@@ -42,7 +42,7 @@ export default function Header() {
               <Link
                 key={n.href}
                 href={n.href}
-                className={`pixel-underline text-sm font-bold uppercase tracking-wider transition-colors hover:text-white ${
+                className={`pixel-underline text-sm font-bold uppercase tracking-wider hover:text-white ${
                   active ? 'pixel-underline-active text-white' : 'text-pixel-blue-light'
                 }`}
               >

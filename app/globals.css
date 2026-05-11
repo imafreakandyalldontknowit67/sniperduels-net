@@ -51,7 +51,7 @@ img { image-rendering: pixelated; }
   transition: width 0.15s steps(3);
 }
 .pixel-underline:hover::after { width: 100%; }
-.pixel-underline-active::after { width: 100% !important; }
+.pixel-underline-active::after { width: 100% !important; transition: none; }
 
 .pixel-card-hover {
   transition: border-color 0.2s steps(3), box-shadow 0.2s steps(3);

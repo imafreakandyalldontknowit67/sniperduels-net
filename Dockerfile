@@ -23,6 +23,11 @@ COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
 COPY --from=builder /app/data ./data
+# Critical: next.config.js MUST be present at runtime — `next start` reads it
+# on boot. Without it, `images.remotePatterns` is empty and /_next/image
+# returns HTTP 400 for every external image (this is what was breaking the
+# weapon thumbnails on /snipers /knives — they hotlink images.sniperduels.com).
+COPY --from=builder /app/next.config.js ./next.config.js
 
 USER nextjs
 EXPOSE 3000
