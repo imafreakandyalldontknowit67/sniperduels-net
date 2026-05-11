@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { allWeapons } from '@/lib/weapons';
+import { allWeaponsIncludingUnpriced } from '@/lib/weapons';
 import { SITE_URL } from '@/lib/config';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -16,7 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/values', priority: 0.9, changeFrequency: 'daily' as const },
   ];
 
-  const weaponRoutes = allWeapons().map(w => ({
+  const weaponRoutes = allWeaponsIncludingUnpriced().map(w => ({
     url: `${SITE_URL}/values/${w.id}`,
     lastModified: now,
     changeFrequency: 'weekly' as const,

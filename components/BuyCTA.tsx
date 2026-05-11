@@ -17,11 +17,11 @@ export default function BuyCTA({
 }: Props) {
   if (variant === 'banner') {
     return (
-      <div className="my-8 rounded-xl border-2 border-accent/30 bg-gradient-to-br from-dark-800 to-dark-900 p-6 md:p-8">
+      <div className="my-8 border-[3px] border-accent/60 bg-gradient-to-br from-dark-800 to-dark-900 p-6 md:p-8" style={{ boxShadow: 'inset 0 -3px 0 rgba(0,0,0,0.4), 0 4px 0 rgba(0,0,0,0.5)' }}>
         <div className="flex flex-col items-center justify-between gap-4 md:flex-row">
           <div>
-            <div className="mb-1 text-sm font-bold uppercase tracking-wider text-accent">Ready to buy?</div>
-            <div className="text-2xl font-black text-white md:text-3xl">Get gems delivered in minutes</div>
+            <div className="mb-1 text-xs font-bold uppercase tracking-wider text-accent">Ready to buy?</div>
+            <div className="text-2xl font-black uppercase tracking-wider text-white md:text-3xl">Get gems in minutes</div>
             <div className="mt-1 text-sm text-gray-400">From $2.65/k bulk · Auto-delivery 24/7 · 1,200+ orders fulfilled</div>
           </div>
           <div className="flex flex-col gap-2 md:flex-row">

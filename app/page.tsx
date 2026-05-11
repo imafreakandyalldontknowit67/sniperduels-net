@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Image from 'next/image';
 import type { Metadata } from 'next';
 import BuyCTA from '@/components/BuyCTA';
 import PriceLadder from '@/components/PriceLadder';
@@ -20,13 +19,13 @@ export default function Home() {
     <>
       {/* Hero */}
       <section className="mb-12 text-center">
-        <div className="mb-4 inline-block rounded-full border border-accent/30 bg-accent/10 px-3 py-1 text-xs font-bold uppercase tracking-wider text-accent">
+        <div className="mb-4 inline-block border-[2px] border-accent/60 bg-accent/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-accent">
           Auto-delivery · 24/7 · Discord-verified vendors
         </div>
-        <h1 className="mb-4 text-4xl font-black leading-tight md:text-6xl">
+        <h1 className="mb-4 text-4xl font-black uppercase leading-tight tracking-wider md:text-6xl">
           Cheapest <span className="text-accent">Sniper Duels Gems</span>
           <br />
-          <span className="text-2xl font-bold text-gray-300 md:text-3xl">+ Skins, Sharkmats &amp; Free Middleman</span>
+          <span className="text-2xl font-bold normal-case tracking-wide text-gray-300 md:text-3xl">+ Skins, Sharkmats &amp; Free Middleman</span>
         </h1>
         <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-400">
           Buy gems from <span className="font-bold text-accent">$2.65/k</span> with same-day automated delivery.

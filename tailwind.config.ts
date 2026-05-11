@@ -8,11 +8,7 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        accent: {
-          DEFAULT: '#e1ad2d',  // matches sniperduels.shop gold
-          light: '#f0c040',
-          dark: '#c2a10e',
-        },
+        accent: { DEFAULT: '#e1ad2d', light: '#f0c040', dark: '#c4961f' },
         'pixel-blue': { DEFAULT: '#3084b1', dark: '#205ad7', light: '#4a9fd4' },
         'pixel-red': '#b43824',
         dark: {
@@ -26,8 +22,33 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ['ui-sans-serif', 'system-ui', '-apple-system', 'sans-serif'],
-        mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'],
+        sans: ['var(--font-pixel)', 'monospace'],
+      },
+      animation: {
+        'pixel-fade-up': 'pixel-fade-up 0.4s steps(4) forwards',
+        'pixel-fade-in': 'pixel-fade-in 0.5s steps(4) forwards',
+        'pixel-bob': 'pixel-bob 2.5s steps(3) infinite',
+        'glow-pulse': 'glow-pulse 2s ease-in-out infinite',
+      },
+      keyframes: {
+        'pixel-fade-up': {
+          '0%': { opacity: '0', transform: 'translateY(16px)' },
+          '50%': { opacity: '0.5', transform: 'translateY(8px)' },
+          '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        'pixel-fade-in': {
+          '0%': { opacity: '0' },
+          '50%': { opacity: '0.5' },
+          '100%': { opacity: '1' },
+        },
+        'pixel-bob': {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-6px)' },
+        },
+        'glow-pulse': {
+          '0%, 100%': { filter: 'drop-shadow(0 0 8px rgba(225,173,45,0.3))' },
+          '50%': { filter: 'drop-shadow(0 0 20px rgba(225,173,45,0.6)) drop-shadow(0 0 40px rgba(225,173,45,0.2))' },
+        },
       },
     },
   },

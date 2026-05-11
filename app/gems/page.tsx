@@ -92,11 +92,11 @@ export default function GemsPage() {
             'Join the private server, hit "I\'m Ready", trade with the bot',
             'Gems delivered. Done.',
           ].map((step, i) => (
-            <li key={i} className="flex gap-4 rounded-lg border border-dark-600 bg-dark-800/40 p-4">
-              <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-accent text-sm font-black text-dark-900">
+            <li key={i} className="flex gap-4 border-[3px] border-dark-500 bg-dark-700 p-4">
+              <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center border-[2px] border-accent-dark bg-accent text-sm font-black text-dark-900">
                 {i + 1}
               </div>
-              <div className="pt-1 text-gray-300">{step}</div>
+              <div className="pt-1 text-gray-200">{step}</div>
             </li>
           ))}
         </ol>
@@ -109,9 +109,9 @@ export default function GemsPage() {
         <h2 className="heading-pixel mb-4 text-2xl text-white">Frequently Asked</h2>
         <div className="space-y-3">
           {FAQS.map((f, i) => (
-            <details key={i} className="group rounded-lg border border-dark-600 bg-dark-800/40 p-4">
-              <summary className="cursor-pointer font-semibold text-white">{f.q}</summary>
-              <p className="mt-3 text-sm text-gray-400">{f.a}</p>
+            <details key={i} className="group border-[3px] border-dark-500 bg-dark-700 p-4">
+              <summary className="cursor-pointer font-bold uppercase tracking-wider text-white">{f.q}</summary>
+              <p className="mt-3 text-sm text-gray-300">{f.a}</p>
             </details>
           ))}
         </div>

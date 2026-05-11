@@ -2,8 +2,8 @@ import { GEM_PRICING } from '@/lib/config';
 
 export default function PriceLadder() {
   return (
-    <div className="overflow-hidden rounded-lg border border-dark-500 bg-dark-800">
-      <div className="border-b border-dark-600 bg-dark-700/50 px-5 py-3 text-xs font-bold uppercase tracking-wider text-gray-400">
+    <div className="overflow-hidden border-[3px] border-dark-500 bg-dark-700">
+      <div className="border-b-[3px] border-dark-600 bg-dark-800/60 px-5 py-3 text-xs font-bold uppercase tracking-wider text-gray-400">
         Live gem prices
       </div>
       <table className="w-full">
@@ -18,13 +18,13 @@ export default function PriceLadder() {
           {GEM_PRICING.map((p, i) => (
             <tr
               key={p.tier}
-              className={`border-b border-dark-700 last:border-0 ${p.highlight ? 'bg-accent/5' : ''}`}
+              className={`border-b border-dark-600 last:border-0 ${p.highlight ? 'bg-accent/10' : ''}`}
             >
-              <td className="px-5 py-3 font-medium">
+              <td className="px-5 py-3 font-bold">
                 {p.tier}
                 {p.highlight && <span className="ml-2 price-badge">BEST PRICE</span>}
               </td>
-              <td className="px-5 py-3 text-right text-lg font-bold text-accent">${p.rate.toFixed(2)}/k</td>
+              <td className={`px-5 py-3 text-right font-bold ${p.highlight ? 'text-accent text-lg' : 'text-accent'}`}>${p.rate.toFixed(2)}/k</td>
               <td className="hidden px-5 py-3 text-right text-sm text-gray-400 md:table-cell">
                 {i === 0 ? 'baseline' : `${(((GEM_PRICING[0].rate - p.rate) / GEM_PRICING[0].rate) * 100).toFixed(0)}% off`}
               </td>
@@ -32,8 +32,8 @@ export default function PriceLadder() {
           ))}
         </tbody>
       </table>
-      <div className="px-5 py-3 text-xs text-gray-500">
-        Rates updated live from <span className="font-semibold text-gray-400">sniperduels.shop</span>. Min order: 1k gems.
+      <div className="border-t-[3px] border-dark-600 bg-dark-800/40 px-5 py-3 text-xs text-gray-500">
+        Rates updated live from <span className="font-bold text-gray-300">sniperduels.shop</span>. Min order: 1k gems.
       </div>
     </div>
   );

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import BuyCTA from '@/components/BuyCTA';
 import { allWeapons, rarityClasses } from '@/lib/weapons';
+import { SITE_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
   title: 'Sniper Duels Item Values & Trade Calculator | sniperduels.net',
@@ -81,6 +82,41 @@ export default function ValuesIndexPage() {
       </div>
 
       <BuyCTA campaign="values-bottom" shopPath="/gems" variant="banner" />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            name: 'Sniper Duels Item Values',
+            description: `Live community-tracked values for ${weapons.length} Sniper Duels weapons across rarity tiers.`,
+            numberOfItems: weapons.length,
+            itemListElement: weapons.slice(0, 50).map((w, i) => {
+              const top = Math.max(0, ...w.variants.map(v => v.price));
+              return {
+                '@type': 'ListItem',
+                position: i + 1,
+                url: `${SITE_URL}/values/${w.id}`,
+                item: {
+                  '@type': 'Product',
+                  name: w.displayName,
+                  category: `${w.rarity} ${w.weaponType}`,
+                  url: `${SITE_URL}/values/${w.id}`,
+                  ...(top > 0 && {
+                    offers: {
+                      '@type': 'Offer',
+                      price: top,
+                      priceCurrency: 'GEM',
+                      availability: 'https://schema.org/InStock',
+                    },
+                  }),
+                },
+              };
+            }),
+          }),
+        }}
+      />
     </>
   );
 }

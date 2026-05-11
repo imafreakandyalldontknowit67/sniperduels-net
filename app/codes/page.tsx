@@ -25,10 +25,10 @@ export default function CodesPage() {
         </p>
       </header>
 
-      <section className="mb-10 rounded-xl border-2 border-pixel-red/40 bg-pixel-red/5 p-6">
-        <div className="mb-2 text-sm font-bold uppercase tracking-wider text-pixel-red">Status as of {SHORT}</div>
+      <section className="mb-10 border-[3px] border-amber-500/60 bg-amber-500/5 p-6">
+        <div className="mb-2 text-sm font-bold uppercase tracking-wider text-amber-300">Status as of {SHORT}</div>
         <h2 className="mb-2 text-2xl font-black text-white">No active codes right now.</h2>
-        <p className="text-gray-300">
+        <p className="text-gray-200">
           The Sniper Duels developers have not added a code-redemption system to the game yet. There are{' '}
           <strong>no working codes</strong> in {MONTH_YEAR}, despite what some YouTube videos and roundup blogs claim.
           We update this page weekly — bookmark it and you&apos;ll see new codes here the moment they drop.

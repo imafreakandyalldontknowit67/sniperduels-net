@@ -2,11 +2,12 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import BuyCTA from '@/components/BuyCTA';
-import { allWeapons, weaponBySlug, rarityClasses, shopSellsThis } from '@/lib/weapons';
+import { allWeaponsIncludingUnpriced, weaponBySlug, rarityClasses, demandClasses, shopSellsThis } from '@/lib/weapons';
 import { shopLink, DISCORD_INVITE } from '@/lib/config';
 
 export function generateStaticParams() {
-  return allWeapons().map(w => ({ slug: w.id }));
+  // Generate detail pages for ALL weapons even unpriced ones — direct links shouldn't 404.
+  return allWeaponsIncludingUnpriced().map(w => ({ slug: w.id }));
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -38,37 +39,46 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
         <span className="text-gray-300">{w.displayName}</span>
       </nav>
 
-      <header className="mb-8 grid gap-8 md:grid-cols-[200px_1fr] md:items-start">
-        {w.imagePath && (
-          <div className="flex h-48 items-center justify-center rounded-lg border border-dark-600 bg-dark-800 p-4">
+      <header className="mb-8 grid gap-6 md:grid-cols-[320px_1fr] md:items-start">
+        {w.imagePath ? (
+          <div className="flex aspect-square items-center justify-center border-[3px] border-dark-500 bg-dark-800 p-6">
             {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={w.imagePath} alt={w.displayName} className="max-h-full max-w-full object-contain" />
+            <img
+              src={w.imagePath}
+              alt={w.displayName}
+              className="max-h-full max-w-full object-contain"
+              style={{ imageRendering: 'pixelated' }}
+            />
           </div>
+        ) : (
+          <div className="flex aspect-square items-center justify-center border-[3px] border-dark-500 bg-dark-800 text-6xl text-dark-500">?</div>
         )}
         <div>
-          <div className="mb-2 flex flex-wrap gap-2">
-            <span className={`inline-block rounded border px-2 py-0.5 text-xs font-bold uppercase ${rarityClasses(w.rarity)}`}>
+          <div className="mb-3 flex flex-wrap gap-2">
+            <span className={`inline-block border-[2px] px-2 py-0.5 text-xs font-bold uppercase tracking-wider ${rarityClasses(w.rarity)}`}>
               {w.rarity}
             </span>
-            <span className="inline-block rounded border border-dark-500 bg-dark-800 px-2 py-0.5 text-xs font-semibold text-gray-300">
+            <span className="inline-block border-[2px] border-dark-400 bg-dark-800 px-2 py-0.5 text-xs font-bold uppercase tracking-wider text-gray-300">
               {w.weaponType}
             </span>
             {w.crate && (
-              <span className="inline-block rounded border border-dark-500 bg-dark-800 px-2 py-0.5 text-xs font-semibold text-gray-300">
+              <span className="inline-block border-[2px] border-dark-400 bg-dark-800 px-2 py-0.5 text-xs font-bold uppercase tracking-wider text-gray-300">
                 {w.crate}
               </span>
             )}
             {w.demand && w.demand !== 'Unknown' && (
-              <span className="inline-block rounded border border-pixel-blue/40 bg-pixel-blue/10 px-2 py-0.5 text-xs font-bold text-pixel-blue-light">
+              <span className={`inline-block border-[2px] px-2 py-0.5 text-xs font-bold uppercase tracking-wider ${demandClasses(w.demand)}`}>
                 Demand: {w.demand}
               </span>
             )}
           </div>
-          <h1 className="mb-2 text-4xl font-black md:text-5xl">{w.displayName}</h1>
-          {top > 0 && (
+          <h1 className="mb-2 text-3xl font-black uppercase tracking-wider md:text-5xl">{w.displayName}</h1>
+          {top > 0 ? (
             <p className="text-lg text-gray-400">
               Top value: <span className="font-bold text-accent">{top.toLocaleString()} gems</span>
             </p>
+          ) : (
+            <p className="text-sm text-gray-500">No market value tracked yet for this weapon.</p>
           )}
         </div>
       </header>

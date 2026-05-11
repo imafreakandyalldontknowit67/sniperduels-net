@@ -10,10 +10,10 @@ export const metadata: Metadata = {
 };
 
 const TIERS = [
-  { name: 'Trial MM', max: '$50',   color: 'border-gray-500' },
-  { name: 'MM',       max: '$250',  color: 'border-pixel-blue' },
-  { name: 'Senior MM',max: '$500',  color: 'border-purple-500' },
-  { name: 'Head MM',  max: '∞',     color: 'border-accent' },
+  { name: 'Trial MM',  max: '$50',  ringClass: 'border-gray-500/60 bg-gray-500/5',     valueClass: 'text-gray-200',   labelClass: 'text-gray-400' },
+  { name: 'MM',        max: '$250', ringClass: 'border-blue-500/60 bg-blue-500/5',     valueClass: 'text-blue-200',   labelClass: 'text-blue-300' },
+  { name: 'Senior MM', max: '$500', ringClass: 'border-purple-500/60 bg-purple-500/5', valueClass: 'text-purple-200', labelClass: 'text-purple-300' },
+  { name: 'Head MM',   max: '∞',    ringClass: 'border-accent/70 bg-accent/10',        valueClass: 'text-accent',     labelClass: 'text-accent/80' },
 ];
 
 export default function MiddlemanPage() {
@@ -67,14 +67,15 @@ export default function MiddlemanPage() {
           Higher-value trades go to more experienced middlemen. Every middleman is verified by the head moderator team.
         </p>
         <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-4">
-          {TIERS.map(t => (
-            <div key={t.name} className={`rounded-lg border-2 ${t.color} bg-dark-800/40 p-4 text-center`}>
-              <div className="text-sm font-bold uppercase tracking-wider text-gray-400">Max trade</div>
-              <div className="mt-1 text-3xl font-black text-white">{t.max}</div>
-              <div className="mt-2 text-sm font-semibold">{t.name}</div>
+          {TIERS.map((t, i) => (
+            <div key={t.name} className={`relative border-[3px] ${t.ringClass} p-4 text-center`}>
+              <div className={`text-[10px] font-bold uppercase tracking-wider ${t.labelClass}`}>Tier {i + 1} · Max trade</div>
+              <div className={`mt-1 text-3xl font-black ${t.valueClass}`}>{t.max}</div>
+              <div className="mt-2 text-sm font-bold uppercase tracking-wider text-white">{t.name}</div>
             </div>
           ))}
         </div>
+        <p className="mt-3 text-xs text-gray-500">Tiers progress gray → blue → purple → gold as max-trade authority increases.</p>
       </section>
 
       <section className="mb-10">
@@ -88,11 +89,11 @@ export default function MiddlemanPage() {
             'Middleman releases each side\'s items to the correct trader',
             'Trade complete — ticket auto-closed, transcript logged',
           ].map((step, i) => (
-            <li key={i} className="flex gap-4 rounded-lg border border-dark-600 bg-dark-800/40 p-4">
-              <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-accent text-sm font-black text-dark-900">
+            <li key={i} className="flex gap-4 border-[3px] border-dark-500 bg-dark-700 p-4">
+              <div className="flex h-8 w-8 flex-shrink-0 items-center justify-center border-[2px] border-accent-dark bg-accent text-sm font-black text-dark-900">
                 {i + 1}
               </div>
-              <div className="pt-1 text-gray-300">{step}</div>
+              <div className="pt-1 text-gray-200">{step}</div>
             </li>
           ))}
         </ol>
@@ -109,8 +110,8 @@ export default function MiddlemanPage() {
         </ul>
       </section>
 
-      <div className="rounded-xl border-2 border-accent/30 bg-gradient-to-br from-dark-800 to-dark-900 p-6 md:p-8 text-center">
-        <h2 className="mb-2 text-2xl font-black text-white">Ready to trade safely?</h2>
+      <div className="border-[3px] border-accent/60 bg-gradient-to-br from-dark-800 to-dark-900 p-6 md:p-8 text-center" style={{ boxShadow: 'inset 0 -3px 0 rgba(0,0,0,0.4), 0 4px 0 rgba(0,0,0,0.5)' }}>
+        <h2 className="mb-2 text-2xl font-black uppercase tracking-wider text-white">Ready to trade safely?</h2>
         <p className="mb-4 text-gray-400">Open a middleman ticket in our Discord — average response under 60 seconds.</p>
         <a href={DISCORD_INVITE} target="_blank" rel="noopener" className="btn-discord px-8 py-4 text-lg">
           Join Discord & Open Ticket →

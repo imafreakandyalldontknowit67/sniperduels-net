@@ -24,10 +24,10 @@ export default function SafeTradingPage() {
       </header>
 
       <section className="mb-10 grid gap-4 md:grid-cols-2">
-        <div className="rounded-xl border-2 border-emerald-500/30 bg-emerald-500/5 p-6">
-          <div className="mb-2 text-sm font-bold uppercase tracking-wider text-emerald-400">Safe</div>
-          <h2 className="mb-2 text-xl font-black text-white">sniperduels.shop</h2>
-          <ul className="space-y-1 text-sm text-gray-300">
+        <div className="border-[3px] border-emerald-500/60 bg-emerald-500/5 p-6">
+          <div className="mb-2 text-xs font-bold uppercase tracking-wider text-emerald-300">Safe</div>
+          <h2 className="mb-2 text-xl font-black uppercase tracking-wider text-white">sniperduels.shop</h2>
+          <ul className="space-y-1 text-sm text-gray-200">
             <li>✓ Automated trade bot in private Roblox server</li>
             <li>✓ Wallet held until delivery confirmed</li>
             <li>✓ Auto-refund if bot can&apos;t reach you in 30 min</li>
@@ -35,10 +35,10 @@ export default function SafeTradingPage() {
             <li>✓ Full transcript of every order</li>
           </ul>
         </div>
-        <div className="rounded-xl border-2 border-pixel-red/40 bg-pixel-red/5 p-6">
-          <div className="mb-2 text-sm font-bold uppercase tracking-wider text-pixel-red">Risky</div>
-          <h2 className="mb-2 text-xl font-black text-white">Random sellers</h2>
-          <ul className="space-y-1 text-sm text-gray-300">
+        <div className="border-[3px] border-red-500/60 bg-red-500/5 p-6">
+          <div className="mb-2 text-xs font-bold uppercase tracking-wider text-red-300">Risky</div>
+          <h2 className="mb-2 text-xl font-black uppercase tracking-wider text-white">Random sellers</h2>
+          <ul className="space-y-1 text-sm text-gray-200">
             <li>✗ Pay first, hope they deliver</li>
             <li>✗ No middleman — common scam vector</li>
             <li>✗ No refund if they ghost you</li>
@@ -78,14 +78,50 @@ export default function SafeTradingPage() {
         </ul>
       </section>
 
-      <div className="mt-10 rounded-xl border-2 border-accent/30 bg-gradient-to-br from-dark-800 to-dark-900 p-6 text-center">
-        <h2 className="mb-2 text-2xl font-black text-white">Buy with full protection</h2>
+      <div className="mt-10 border-[3px] border-accent/60 bg-gradient-to-br from-dark-800 to-dark-900 p-6 text-center" style={{ boxShadow: 'inset 0 -3px 0 rgba(0,0,0,0.4), 0 4px 0 rgba(0,0,0,0.5)' }}>
+        <h2 className="mb-2 text-2xl font-black uppercase tracking-wider text-white">Buy with full protection</h2>
         <p className="mb-4 text-gray-400">Auto-trade bot + 30-min refund guarantee + free middleman.</p>
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link href="/gems" className="btn-primary">View gem prices →</Link>
           <a href={DISCORD_INVITE} target="_blank" rel="noopener" className="btn-discord">Join Discord</a>
         </div>
       </div>
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'FAQPage',
+            mainEntity: [
+              {
+                '@type': 'Question',
+                name: 'Is buying Sniper Duels gems safe?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'Yes — buying Sniper Duels gems via sniperduels.shop is safe. Orders are brokered by an automated trade bot in a private Roblox server. Your money is held in escrow until delivery is confirmed, and orders are auto-refunded if the bot cannot reach you within 30 minutes.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'Can I get banned for buying Sniper Duels gems?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'No. The trade bot exchanges gems with your account in-game — no account credentials are ever shared. Roblox prohibits account sharing, not in-game item trading. As long as you never share your password, you cannot be banned for this.',
+                },
+              },
+              {
+                '@type': 'Question',
+                name: 'What if the seller scams me?',
+                acceptedAnswer: {
+                  '@type': 'Answer',
+                  text: 'On sniperduels.shop the trade bot delivers, not the vendor — so a vendor cannot scam you directly. If anything goes wrong (bot offline, no inventory, etc.) you are auto-refunded to your wallet within 30 minutes.',
+                },
+              },
+            ],
+          }),
+        }}
+      />
     </>
   );
 }

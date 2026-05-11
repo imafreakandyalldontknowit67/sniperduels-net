@@ -17,7 +17,18 @@ export type Weapon = {
 
 const dataset = data as { generatedAt: string; count: number; weapons: Weapon[] };
 
+// Hide weapons where SDValues hasn't priced any variant — those render as "—"
+// and look like broken data. Keep their detail pages reachable so direct links
+// don't 404, but skip them from listings.
+function hasAnyPrice(w: Weapon): boolean {
+  return w.variants.some(v => v.price > 0);
+}
+
 export function allWeapons(): Weapon[] {
+  return dataset.weapons.filter(hasAnyPrice);
+}
+
+export function allWeaponsIncludingUnpriced(): Weapon[] {
   return dataset.weapons;
 }
 
@@ -27,7 +38,7 @@ export function weaponBySlug(slug: string): Weapon | null {
 
 export function topWeapons(n = 12): Weapon[] {
   // Top by max variant price (most expensive items make best landing-page content)
-  return [...dataset.weapons]
+  return [...allWeapons()]
     .map(w => ({ w, top: Math.max(0, ...w.variants.map(v => v.price)) }))
     .sort((a, b) => b.top - a.top)
     .slice(0, n)
@@ -40,14 +51,22 @@ export function weaponsByRarity(rarity: string): Weapon[] {
 
 export function rarityClasses(rarity: string): string {
   const r = rarity.toLowerCase();
-  if (r === 'godly')      return 'text-red-400 border-red-400/40 bg-red-400/5';
-  if (r === 'ancient')    return 'text-fuchsia-400 border-fuchsia-400/40 bg-fuchsia-400/5';
-  if (r === 'vintage')    return 'text-orange-400 border-orange-400/40 bg-orange-400/5';
-  if (r === 'legendary')  return 'text-amber-400 border-amber-400/40 bg-amber-400/5';
-  if (r === 'epic')       return 'text-purple-400 border-purple-400/40 bg-purple-400/5';
-  if (r === 'rare')       return 'text-blue-400 border-blue-400/40 bg-blue-400/5';
-  if (r === 'uncommon')   return 'text-green-400 border-green-400/40 bg-green-400/5';
-  return 'text-gray-400 border-gray-400/40 bg-gray-400/5';
+  if (r === 'godly')      return 'text-red-400 border-red-400/60 bg-red-400/10';
+  if (r === 'ancient')    return 'text-fuchsia-400 border-fuchsia-400/60 bg-fuchsia-400/10';
+  if (r === 'vintage')    return 'text-orange-400 border-orange-400/60 bg-orange-400/10';
+  if (r === 'legendary')  return 'text-amber-400 border-amber-400/60 bg-amber-400/10';
+  if (r === 'epic')       return 'text-purple-400 border-purple-400/60 bg-purple-400/10';
+  if (r === 'rare')       return 'text-blue-400 border-blue-400/60 bg-blue-400/10';
+  if (r === 'uncommon')   return 'text-green-400 border-green-400/60 bg-green-400/10';
+  return 'text-gray-400 border-gray-400/60 bg-gray-400/10';
+}
+
+export function demandClasses(demand: string): string {
+  const d = (demand || '').toLowerCase();
+  if (d === 'overpaid' || d === 'high')      return 'text-red-300 border-red-500/60 bg-red-500/10';
+  if (d === 'medium' || d === 'mid')         return 'text-amber-300 border-amber-500/60 bg-amber-500/10';
+  if (d === 'low')                           return 'text-blue-300 border-blue-500/60 bg-blue-500/10';
+  return 'text-gray-300 border-gray-500/60 bg-gray-500/10';
 }
 
 export const SHOP_INVENTORY = {
