@@ -22,12 +22,11 @@ export default function SkinsPage() {
   return (
     <>
       <header className="mb-8">
-        <h1 className="mb-3 text-4xl font-black uppercase tracking-wider md:text-5xl">
+        <h1 className="mb-3 text-3xl font-bold uppercase tracking-wider sm:text-4xl md:text-5xl lg:text-[52px]">
           Sniper Duels <span className="text-accent">Skins</span>
         </h1>
-        <p className="text-lg text-gray-400">
-          Frankenawp series + Hallows Punisher series. Skins move through our verified Discord vendors —
-          open a ticket, get matched with a stocked vendor, brokered by a free middleman.
+        <p className="text-[10px] font-bold uppercase tracking-wider leading-relaxed text-gray-400 sm:text-xs md:text-sm">
+          Frankenawp + Hallows Punisher · Verified Discord vendors · Free middleman
         </p>
       </header>
 

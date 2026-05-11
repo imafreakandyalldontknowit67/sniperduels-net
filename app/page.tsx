@@ -5,6 +5,9 @@ import BuyCTA from '@/components/BuyCTA';
 import PriceLadder from '@/components/PriceLadder';
 import TrustRow from '@/components/TrustRow';
 import DiscordButton from '@/components/DiscordButton';
+import SpriteButton from '@/components/SpriteButton';
+import SectionBanner from '@/components/SectionBanner';
+import SpritePanel from '@/components/SpritePanel';
 import { topWeapons, rarityClasses } from '@/lib/weapons';
 import { shopLink, SHOP_URL, DISCORD_INVITE } from '@/lib/config';
 
@@ -20,133 +23,139 @@ export default function Home() {
   return (
     <>
       {/* Hero */}
-      <section className="mb-12 text-center">
+      <section className="relative mb-12 overflow-hidden text-center">
         <div className="mb-4 inline-block border-[2px] border-accent/60 bg-accent/10 px-3 py-1 text-[10px] font-bold uppercase tracking-wider text-accent">
           Auto-delivery · 24/7 · Discord-verified vendors
         </div>
-        <h1 className="mb-4 text-4xl font-black uppercase leading-tight tracking-wider md:text-6xl">
-          Cheapest <span className="text-accent">Sniper Duels Gems</span>
-          <br />
-          <span className="text-2xl font-bold normal-case tracking-wide text-gray-300 md:text-3xl">+ Skins, Sharkmats &amp; Free Middleman</span>
+        <h1 className="mb-4 text-3xl font-bold uppercase leading-tight tracking-wider sm:text-4xl md:text-5xl lg:text-[52px]">
+          <span className="block text-pixel-blue-light">Cheapest Sniper Duels</span>
+          <span className="block text-accent">Gems &amp; Skins</span>
         </h1>
-        <p className="mx-auto mb-8 max-w-2xl text-lg text-gray-400">
-          Buy gems from <span className="font-bold text-accent">$2.65/k</span> with same-day automated delivery.
-          Backed by 13+ verified vendors and a free middleman service for high-value trades.
+        <p className="mx-auto mb-6 max-w-2xl text-[10px] font-bold uppercase tracking-wider leading-relaxed text-gray-400 sm:text-xs md:text-sm">
+          From <span className="text-accent">$2.65/k</span> · Same-day auto-delivery · Free middleman
         </p>
+
+        {/* Character anchor — desktop only, keeps mobile lean */}
+        <div className="relative mx-auto mt-6 mb-8 hidden h-[180px] w-full max-w-3xl sm:block md:h-[220px]">
+          <div className="absolute left-[6%] bottom-0 flex flex-col items-center gap-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/pixel/badge-fully-automated.svg" alt="" className="h-12 w-auto md:h-14" style={{ imageRendering: 'pixelated' }} />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/pixel/character-red.svg" alt="" className="h-[90px] w-auto md:h-[120px]" style={{ transform: 'scaleX(-1)' }} />
+          </div>
+          <div className="absolute left-1/2 top-0 flex -translate-x-1/2 flex-col items-center gap-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/pixel/badge-delivery-2min.svg" alt="" className="h-12 w-auto md:h-14" style={{ imageRendering: 'pixelated' }} />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/pixel/character-green.svg" alt="" className="h-20 w-auto md:h-[100px]" />
+          </div>
+          <div className="absolute right-[6%] bottom-0 flex flex-col items-center gap-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/pixel/badge-available-247.svg" alt="" className="h-12 w-auto md:h-14" style={{ imageRendering: 'pixelated' }} />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/images/pixel/character-blue.svg" alt="" className="h-20 w-auto md:h-[100px]" />
+          </div>
+        </div>
+
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
-          <a href={shopLink('/gems', 'home-hero')} target="_blank" rel="noopener" className="btn-primary px-8 py-4 text-lg">
-            Buy Gems Now →
-          </a>
+          <SpriteButton variant="gold" href={shopLink('/gems', 'home-hero')} external>
+            Buy Gems
+          </SpriteButton>
           <DiscordButton href={DISCORD_INVITE} size="lg">Join Discord</DiscordButton>
         </div>
       </section>
 
       {/* Trust */}
-      <section className="mb-12">
+      <section className="mb-14">
         <TrustRow />
       </section>
 
       {/* Pricing */}
-      <section className="mb-12">
-        <h2 className="heading-pixel">Live Gem Prices</h2>
+      <section className="mb-14">
+        <SectionBanner color="gold" eyebrow="Live rates pulled from sniperduels.shop">
+          Live Gem Prices
+        </SectionBanner>
         <PriceLadder />
       </section>
 
-      {/* Why us */}
-      <section className="mb-12 grid gap-6 md:grid-cols-3">
-        <div className="card">
-          <Zap className="mb-3 h-8 w-8 text-accent" strokeWidth={2.5} />
-          <h3 className="mb-2 text-lg font-bold uppercase tracking-wider">Instant Auto-Delivery</h3>
-          <p className="text-sm text-gray-400">
-            Trade bot online 24/7. Most orders deliver in under 5 minutes.
-          </p>
-        </div>
-        <div className="card">
-          <ShieldCheck className="mb-3 h-8 w-8 text-accent" strokeWidth={2.5} />
-          <h3 className="mb-2 text-lg font-bold uppercase tracking-wider">Free Middleman</h3>
-          <p className="text-sm text-gray-400">
-            Trading high-value items? MM holds the item until payment lands.{' '}
-            <Link href="/middleman" className="text-accent hover:underline">Learn more →</Link>
-          </p>
-        </div>
-        <div className="card">
-          <Coins className="mb-3 h-8 w-8 text-accent" strokeWidth={2.5} />
-          <h3 className="mb-2 text-lg font-bold uppercase tracking-wider">Cheaper Than Roblox</h3>
-          <p className="text-sm text-gray-400">
-            Up to 30% less than the in-game Robux rate. Vendors compete on price.
-          </p>
+      {/* Why us — sprite-backed trust trio */}
+      <section className="mb-14">
+        <SectionBanner color="blue" eyebrow="Built for the Sniper Duels community">
+          Why sniperduels.net
+        </SectionBanner>
+        <div className="grid gap-6 md:grid-cols-3">
+          <SpritePanel className="min-h-[180px]">
+            <Zap className="mb-2 h-7 w-7 text-accent" strokeWidth={2.5} />
+            <h3 className="mb-2 text-base font-bold uppercase tracking-wider text-white sm:text-lg">Instant Auto-Delivery</h3>
+            <p className="text-xs leading-relaxed text-gray-400 sm:text-sm">
+              Trade bot online 24/7. Most orders deliver in under 5 minutes.
+            </p>
+          </SpritePanel>
+          <SpritePanel className="min-h-[180px]">
+            <ShieldCheck className="mb-2 h-7 w-7 text-accent" strokeWidth={2.5} />
+            <h3 className="mb-2 text-base font-bold uppercase tracking-wider text-white sm:text-lg">Free Middleman</h3>
+            <p className="text-xs leading-relaxed text-gray-400 sm:text-sm">
+              MM holds the item until payment lands.{' '}
+              <Link href="/middleman" className="text-accent hover:underline">Learn more</Link>
+            </p>
+          </SpritePanel>
+          <SpritePanel className="min-h-[180px]">
+            <Coins className="mb-2 h-7 w-7 text-accent" strokeWidth={2.5} />
+            <h3 className="mb-2 text-base font-bold uppercase tracking-wider text-white sm:text-lg">Cheaper Than Roblox</h3>
+            <p className="text-xs leading-relaxed text-gray-400 sm:text-sm">
+              Up to 30% less than the in-game Robux rate. Vendors compete on price.
+            </p>
+          </SpritePanel>
         </div>
       </section>
 
       {/* Featured items */}
-      <section className="mb-12">
-        <div className="mb-4 flex items-end justify-between">
-          <h2 className="heading-pixel">Top Sniper Duels Items</h2>
-          <Link href="/values" className="text-sm font-semibold text-accent hover:underline">
-            See all values →
-          </Link>
-        </div>
+      <section className="mb-14">
+        <SectionBanner color="gold" eyebrow="The most-traded weapons right now">
+          Top Sniper Duels Items
+        </SectionBanner>
         {featured.length === 0 ? (
           <div className="card text-center text-gray-500">Item data is being refreshed — check back soon.</div>
         ) : (
-          <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-4">
-            {featured.map(w => {
-              const topPrice = Math.max(0, ...w.variants.map(v => v.price));
-              return (
-                <Link
-                  key={w.id}
-                  href={`/values/${w.id}`}
-                  className="card-link"
-                >
-                  {w.imagePath && (
-                    <div className="mb-3 flex h-24 items-center justify-center rounded bg-dark-900">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={w.imagePath}
-                        alt={w.displayName}
-                        loading="lazy"
-                        className="max-h-full max-w-full object-contain"
-                      />
+          <>
+            <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+              {featured.map(w => {
+                const topPrice = Math.max(0, ...w.variants.map(v => v.price));
+                return (
+                  <Link key={w.id} href={`/values/${w.id}`} className="card-link">
+                    {w.imagePath && (
+                      <div className="mb-3 flex aspect-square items-center justify-center bg-dark-900">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src={w.imagePath}
+                          alt={w.displayName}
+                          loading="lazy"
+                          className="max-h-full max-w-full object-contain"
+                        />
+                      </div>
+                    )}
+                    <div className={`mb-1 inline-block border-[2px] px-1.5 py-0.5 text-[10px] font-bold uppercase ${rarityClasses(w.rarity)}`}>
+                      {w.rarity}
                     </div>
-                  )}
-                  <div className={`mb-1 inline-block rounded-sm border px-1.5 py-0.5 text-[10px] font-bold uppercase ${rarityClasses(w.rarity)}`}>
-                    {w.rarity}
-                  </div>
-                  <div className="truncate font-bold text-white">{w.displayName}</div>
-                  <div className="text-xs text-gray-500">{w.weaponType}</div>
-                  {topPrice > 0 && (
-                    <div className="mt-2 text-sm font-bold text-accent">{topPrice.toLocaleString()} gems</div>
-                  )}
-                </Link>
-              );
-            })}
-          </div>
+                    <div className="truncate text-sm font-bold text-white">{w.displayName}</div>
+                    <div className="text-[10px] uppercase text-gray-500">{w.weaponType}</div>
+                    {topPrice > 0 && (
+                      <div className="mt-2 text-sm font-bold text-accent">{topPrice.toLocaleString()} gems</div>
+                    )}
+                  </Link>
+                );
+              })}
+            </div>
+            <div className="mt-6 text-center">
+              <Link href="/values" className="text-xs font-bold uppercase tracking-wider text-accent hover:underline sm:text-sm">
+                See all values →
+              </Link>
+            </div>
+          </>
         )}
       </section>
 
       <BuyCTA campaign="home-banner" variant="banner" />
-
-      {/* What is this */}
-      <section className="mb-12">
-        <h2 className="heading-pixel">What is sniperduels.net?</h2>
-        <div className="prose prose-invert max-w-none text-gray-400">
-          <p>
-            <strong className="text-white">sniperduels.net</strong> is the community marketplace and price guide for{' '}
-            <a href="https://www.roblox.com/games/109397169461300" target="_blank" rel="noopener" className="text-accent hover:underline">
-              Sniper Duels
-            </a>
-            , the popular Roblox FPS. We aggregate live gem and supply prices from{' '}
-            <a href={SHOP_URL} target="_blank" rel="noopener" className="text-accent hover:underline">sniperduels.shop</a>{' '}
-            (the official Discord-backed auto-shop), and connect traders directly through our verified middleman service.
-          </p>
-          <p>
-            Whether you&apos;re buying <Link href="/gems" className="text-accent hover:underline">cheap gems</Link>,{' '}
-            looking for a specific <Link href="/skins" className="text-accent hover:underline">Frankenawp or Hallows Punisher skin</Link>,
-            or trading high-value items safely with our <Link href="/middleman" className="text-accent hover:underline">free middleman</Link>,
-            you&apos;re in the right place.
-          </p>
-        </div>
-      </section>
 
       {/* JSON-LD */}
       <script

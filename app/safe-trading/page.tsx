@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import BuyCTA from '@/components/BuyCTA';
 import DiscordButton from '@/components/DiscordButton';
+import SectionBanner from '@/components/SectionBanner';
 import { DISCORD_INVITE } from '@/lib/config';
 
 export const metadata: Metadata = {
@@ -15,12 +16,11 @@ export default function SafeTradingPage() {
   return (
     <>
       <header className="mb-8">
-        <h1 className="mb-3 text-4xl font-black md:text-5xl">
+        <h1 className="mb-3 text-3xl font-bold uppercase tracking-wider sm:text-4xl md:text-5xl lg:text-[52px]">
           Is buying Sniper Duels gems <span className="text-accent">safe?</span>
         </h1>
-        <p className="text-lg text-gray-400">
-          Short answer: yes — when you buy through a verified marketplace with auto-trade and refund guarantees.
-          Here&apos;s how to spot the safe ones.
+        <p className="text-[10px] font-bold uppercase tracking-wider leading-relaxed text-gray-400 sm:text-xs md:text-sm">
+          Yes — through a verified marketplace with auto-trade + refund guarantee.
         </p>
       </header>
 
@@ -50,7 +50,9 @@ export default function SafeTradingPage() {
       </section>
 
       <section className="mb-10 prose prose-invert max-w-none text-gray-300">
-        <h2 className="heading-pixel">How the safe flow works</h2>
+        <SectionBanner color="gold" align="left" eyebrow="Money in escrow → bot delivery → auto-refund if anything fails">
+          How The Safe Flow Works
+        </SectionBanner>
         <ol>
           <li>You pick a gem amount and pay on sniperduels.shop. Money goes to escrow.</li>
           <li>The trade bot pulls your order off the queue and finds an available vendor.</li>
@@ -68,7 +70,9 @@ export default function SafeTradingPage() {
       <BuyCTA campaign="safe-trading-mid" shopPath="/gems" variant="banner" />
 
       <section className="mt-10 prose prose-invert max-w-none text-gray-300">
-        <h2 className="heading-pixel">Red flags to avoid</h2>
+        <SectionBanner color="blue" align="left" eyebrow="If you see any of these — walk away.">
+          Red Flags To Avoid
+        </SectionBanner>
         <ul>
           <li><strong className="text-white">Anyone asking for your Roblox password</strong> — never share it. Trades happen in-game, not by sharing accounts.</li>
           <li><strong className="text-white">Sellers wanting payment via gift cards or untraceable methods</strong> — usually scams.</li>

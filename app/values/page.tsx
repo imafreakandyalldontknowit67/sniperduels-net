@@ -23,12 +23,11 @@ export default function ValuesIndexPage() {
   return (
     <>
       <header className="mb-8">
-        <h1 className="mb-3 text-4xl font-black md:text-5xl">
+        <h1 className="mb-3 text-3xl font-bold uppercase tracking-wider sm:text-4xl md:text-5xl lg:text-[52px]">
           Sniper Duels <span className="text-accent">Item Values</span>
         </h1>
-        <p className="text-lg text-gray-400">
-          Live value list for {weapons.length} Sniper Duels weapons across every condition and rarity.
-          Use this to price-check trades and find fair deals.
+        <p className="text-[10px] font-bold uppercase tracking-wider leading-relaxed text-gray-400 sm:text-xs md:text-sm">
+          Live values for {weapons.length} weapons · Updated every 6h from SDValues
         </p>
       </header>
 

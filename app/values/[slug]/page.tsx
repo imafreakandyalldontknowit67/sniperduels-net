@@ -73,7 +73,7 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
               </span>
             )}
           </div>
-          <h1 className="mb-2 text-3xl font-black uppercase tracking-wider md:text-5xl">{w.displayName}</h1>
+          <h1 className="mb-2 text-2xl font-bold uppercase tracking-wider sm:text-3xl md:text-4xl">{w.displayName}</h1>
           {top > 0 ? (
             <p className="text-lg text-gray-400">
               Top value: <span className="font-bold text-accent">{top.toLocaleString()} gems</span>

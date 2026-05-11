@@ -3,6 +3,7 @@ import Link from 'next/link';
 import BuyCTA from '@/components/BuyCTA';
 import PriceLadder from '@/components/PriceLadder';
 import TrustRow from '@/components/TrustRow';
+import SectionBanner from '@/components/SectionBanner';
 import { shopLink, SHOP_URL } from '@/lib/config';
 
 export const metadata: Metadata = {
@@ -39,12 +40,11 @@ export default function GemsPage() {
   return (
     <>
       <header className="mb-8">
-        <h1 className="mb-3 text-4xl font-black md:text-5xl">
+        <h1 className="mb-3 text-3xl font-bold uppercase tracking-wider sm:text-4xl md:text-5xl lg:text-[52px]">
           Buy <span className="text-accent">Sniper Duels Gems</span>
         </h1>
-        <p className="text-lg text-gray-400">
-          The cheapest way to get gems in Sniper Duels — from <span className="font-bold text-accent">$2.65/k</span> with
-          automated same-day delivery from sniperduels.shop.
+        <p className="text-[10px] font-bold uppercase tracking-wider leading-relaxed text-gray-400 sm:text-xs md:text-sm">
+          From <span className="text-accent">$2.65/k</span> · Same-day auto-delivery · Sniper Duels trade bot
         </p>
       </header>
 
@@ -61,29 +61,22 @@ export default function GemsPage() {
       </section>
 
       {/* Why cheaper */}
-      <section className="mb-10">
-        <h2 className="heading-pixel">Why are these gems cheaper?</h2>
-        <div className="prose prose-invert max-w-none space-y-4 text-gray-300">
-          <p>
-            When you buy gems through Roblox, you pay Robux — Robux costs roughly $0.0125 each, which translates to about{' '}
-            <span className="font-bold text-white">$3.75 per 1,000 gems</span> at the in-game exchange rate.
-          </p>
-          <p>
-            On <a href={SHOP_URL} target="_blank" rel="noopener" className="text-accent hover:underline">sniperduels.shop</a>,
-            you buy directly from verified players who have stockpiled gems. Their costs are lower (they earned the gems through gameplay,
-            cases, or trading), so they can pass the savings to you. Bulk orders unlock additional vendor discounts down to{' '}
-            <span className="font-bold text-accent">$2.65/k</span> — a 30% saving over Roblox prices.
-          </p>
-          <p>
-            Every transaction is brokered by an automated trade bot in a private Roblox server, so there&apos;s no waiting around for a
-            vendor to be online and no scam risk.
-          </p>
-        </div>
+      <section className="mb-12">
+        <SectionBanner color="blue" align="left" eyebrow="Roblox: $3.75/k. sniperduels.shop: $2.65/k bulk.">
+          Why These Gems Are Cheaper
+        </SectionBanner>
+        <ul className="grid gap-2 text-sm text-gray-300 sm:grid-cols-3">
+          <li className="border-l-[3px] border-accent/60 pl-3">Buy direct from verified players, not Roblox</li>
+          <li className="border-l-[3px] border-accent/60 pl-3">Bulk pricing kicks in at 100k gems</li>
+          <li className="border-l-[3px] border-accent/60 pl-3">Auto-trade bot — no waiting for a vendor</li>
+        </ul>
       </section>
 
       {/* How it works */}
-      <section className="mb-10">
-        <h2 className="heading-pixel">How it works</h2>
+      <section className="mb-12">
+        <SectionBanner color="gold" eyebrow="Five steps from checkout to gems delivered">
+          How It Works
+        </SectionBanner>
         <ol className="space-y-3">
           {[
             'Pick the gem amount you want on sniperduels.shop',
@@ -105,8 +98,10 @@ export default function GemsPage() {
       <BuyCTA campaign="gems-mid" shopPath="/gems" variant="banner" />
 
       {/* FAQ */}
-      <section className="mb-10">
-        <h2 className="heading-pixel">Frequently Asked</h2>
+      <section className="mb-12">
+        <SectionBanner color="blue" eyebrow="Click to expand">
+          Frequently Asked
+        </SectionBanner>
         <div className="space-y-3">
           {FAQS.map((f, i) => (
             <details key={i} className="group border-[3px] border-dark-500 bg-dark-700 p-4">

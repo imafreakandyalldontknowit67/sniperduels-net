@@ -17,11 +17,11 @@ export default function CodesPage() {
   return (
     <>
       <header className="mb-8">
-        <h1 className="mb-3 text-4xl font-black md:text-5xl">
+        <h1 className="mb-3 text-3xl font-bold uppercase tracking-wider sm:text-4xl md:text-5xl lg:text-[52px]">
           Sniper Duels Codes <span className="text-accent">({MONTH_YEAR})</span>
         </h1>
-        <p className="text-lg text-gray-400">
-          Updated {NOW.toISOString().slice(0, 10)} — active codes, redemption status, and what to do if there are none.
+        <p className="text-[10px] font-bold uppercase tracking-wider leading-relaxed text-gray-400 sm:text-xs md:text-sm">
+          Updated {NOW.toISOString().slice(0, 10)} · Active codes + redemption status
         </p>
       </header>
 
