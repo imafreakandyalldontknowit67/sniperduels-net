@@ -52,6 +52,8 @@ export function weaponsByRarity(rarity: string): Weapon[] {
 export function rarityClasses(rarity: string): string {
   const r = rarity.toLowerCase();
   if (r === 'knife')      return 'text-cyan-300 border-cyan-400/60 bg-cyan-400/10';
+  if (r === 'secret')     return 'text-pink-300 border-pink-400/60 bg-pink-400/10';
+  if (r === 'collectable')return 'text-teal-300 border-teal-400/60 bg-teal-400/10';
   if (r === 'godly')      return 'text-red-400 border-red-400/60 bg-red-400/10';
   if (r === 'ancient')    return 'text-fuchsia-400 border-fuchsia-400/60 bg-fuchsia-400/10';
   if (r === 'vintage')    return 'text-orange-400 border-orange-400/60 bg-orange-400/10';
