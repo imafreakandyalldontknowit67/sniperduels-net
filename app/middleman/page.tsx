@@ -106,9 +106,9 @@ export default function MiddlemanPage() {
           When You Need One
         </SectionBanner>
         <ul className="grid gap-2 text-sm text-gray-300 sm:grid-cols-2">
-          <li className="border-l-[3px] border-accent/60 pl-3">Godly, Ancient, or Vintage items</li>
-          <li className="border-l-[3px] border-accent/60 pl-3">Cross-condition trades (Mint vs Standard)</li>
-          <li className="border-l-[3px] border-accent/60 pl-3">Rare FX or Addons that affect value</li>
+          <li className="border-l-[3px] border-accent/60 pl-3">Knife, Secret, or Legendary items</li>
+          <li className="border-l-[3px] border-accent/60 pl-3">Cross-condition trades (Worn vs Mint)</li>
+          <li className="border-l-[3px] border-accent/60 pl-3">Stat-track or limited-edition variants</li>
           <li className="border-l-[3px] border-accent/60 pl-3">Anyone you don&apos;t personally know</li>
           <li className="border-l-[3px] border-accent/60 pl-3">First trades over $25 market value</li>
         </ul>

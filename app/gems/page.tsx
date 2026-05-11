@@ -61,7 +61,7 @@ export default function GemsPage() {
       </section>
 
       <section className="mb-8">
-        <BuyCTA campaign="gems-top" shopPath="/gems" shopLabel="Buy Sniper Duels Gems →" />
+        <BuyCTA campaign="gems-top" shopPath="/gems" shopLabel="Buy Gems" />
       </section>
 
       <section className="mb-10">
@@ -82,15 +82,15 @@ export default function GemsPage() {
 
       {/* How it works */}
       <section className="mb-12">
-        <SectionBanner color="gold" eyebrow="Five steps from checkout to gems delivered">
+        <SectionBanner color="gold" eyebrow="Order on sniperduels.shop OR through the Discord bot — same flow">
           How It Works
         </SectionBanner>
         <ol className="space-y-3">
           {[
-            'Pick the gem amount you want on sniperduels.shop',
+            'Pick gem amount — on sniperduels.shop checkout, or by opening a Discord bot ticket',
             'Pay with your preferred method — fiat or crypto',
-            'Get a Discord ping when the bot is ready to trade you',
-            'Join the private server, hit "I\'m Ready", trade with the bot',
+            'Bot pings you in Discord (or auto-DMs) when it\'s ready to trade',
+            'Join the private Roblox server, hit "I\'m Ready", trade with the bot',
             'Gems delivered. Done.',
           ].map((step, i) => (
             <li key={i} className="flex gap-4 border-[3px] border-dark-500 bg-dark-700 p-4">

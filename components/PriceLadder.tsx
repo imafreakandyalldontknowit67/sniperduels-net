@@ -4,7 +4,7 @@ export default function PriceLadder() {
   return (
     <div className="overflow-hidden border-[3px] border-dark-500 bg-dark-700">
       <div className="border-b-[3px] border-dark-600 bg-dark-800/60 px-5 py-3 text-xs font-bold uppercase tracking-wider text-gray-400">
-        Live gem prices
+        Gem pricing tiers
       </div>
       <table className="w-full">
         <thead>
@@ -33,7 +33,7 @@ export default function PriceLadder() {
         </tbody>
       </table>
       <div className="border-t-[3px] border-dark-600 bg-dark-800/40 px-5 py-3 text-xs text-gray-500">
-        Rates updated live from <span className="font-bold text-gray-300">sniperduels.shop</span>. Min order: 1k gems.
+        Listed pricing tiers on <span className="font-bold text-gray-300">sniperduels.shop</span>. Real vendor rates may vary depending on stock. Min order: 1k gems.
       </div>
     </div>
   );

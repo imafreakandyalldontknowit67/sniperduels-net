@@ -27,7 +27,7 @@ export default function CheapGemsPage() {
           The Cheapest <span className="text-accent">Sniper Duels Gems</span>
         </h1>
         <p className="text-[10px] font-bold uppercase tracking-wider leading-relaxed text-gray-400 sm:text-xs md:text-sm">
-          Live rate <span className="text-accent">$2.65/k bulk</span> · Cheaper than Robux, Eldorado, eBay, Gameflip
+          Bulk tier from <span className="text-accent">$2.65/k</span> · Cheaper than Robux, Eldorado, eBay, Gameflip
         </p>
       </header>
 
@@ -39,7 +39,7 @@ export default function CheapGemsPage() {
       <section className="my-10">
         <h2 className="heading-pixel">Where else can you buy?</h2>
         <p className="mb-4 text-sm text-gray-400">
-          We track gem prices across the 5 main marketplaces every week. Live rate as of today:
+          We track gem pricing tiers across the 5 main marketplaces every week. Tier minimums:
         </p>
         <div className="overflow-hidden border-[3px] border-dark-500 bg-dark-700">
           <table className="w-full">

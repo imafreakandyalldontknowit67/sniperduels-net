@@ -124,7 +124,7 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
               We carry this skin in our auto-shop. Fixed price, instant delivery, full refund if anything goes wrong.
             </p>
             <a href={shopLink('/shop', `weapon-${w.id}`)} target="_blank" rel="noopener" className="btn-primary">
-              Buy on sniperduels.shop →
+              Buy on sniperduels.shop
             </a>
           </>
         ) : (

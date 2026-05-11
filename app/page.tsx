@@ -72,8 +72,8 @@ export default function Home() {
 
       {/* Pricing */}
       <section className="mb-14">
-        <SectionBanner color="gold" eyebrow="Live rates pulled from sniperduels.shop">
-          Live Gem Prices
+        <SectionBanner color="gold" eyebrow="Pricing tiers on sniperduels.shop — bulk unlocks at 100k">
+          Gem Pricing Tiers
         </SectionBanner>
         <PriceLadder />
       </section>
