@@ -1,7 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { Lock, Zap, Coins } from 'lucide-react';
+import { ShieldCheck, Zap, Coins } from 'lucide-react';
 import { DISCORD_INVITE, SHOP_URL } from '@/lib/config';
+import DiscordButton from '@/components/DiscordButton';
 
 export const metadata: Metadata = {
   title: 'Free Sniper Duels Middleman — Trade Safely | sniperduels.net',
@@ -31,29 +32,35 @@ export default function MiddlemanPage() {
       </header>
 
       <section className="mb-8">
-        <a href={DISCORD_INVITE} target="_blank" rel="noopener" className="btn-discord px-8 py-4 text-lg">
-          Open Middleman Ticket on Discord →
-        </a>
+        <DiscordButton href={DISCORD_INVITE} size="lg">
+          Open Discord Ticket
+        </DiscordButton>
       </section>
 
       <section className="mb-10 grid gap-6 md:grid-cols-3">
         <div className="card">
-          <Lock className="mb-3 h-8 w-8 text-accent" strokeWidth={2.5} />
-          <h3 className="mb-2 text-lg font-bold uppercase tracking-wider">Item held first</h3>
+          <div className="mb-2 flex items-center gap-2.5">
+            <ShieldCheck className="h-5 w-5 flex-shrink-0 text-accent" strokeWidth={2.5} />
+            <h3 className="text-base font-bold uppercase tracking-wider text-white">Item held first</h3>
+          </div>
           <p className="text-sm text-gray-400">
-            Seller hands the item to a verified MM. Held until buyer&apos;s payment lands — buyer-side scam impossible.
+            Seller hands the item to a verified MM. Held until the buyer&apos;s payment lands — buyer-side scam impossible.
           </p>
         </div>
         <div className="card">
-          <Zap className="mb-3 h-8 w-8 text-accent" strokeWidth={2.5} />
-          <h3 className="mb-2 text-lg font-bold uppercase tracking-wider">Fast (~5 min)</h3>
+          <div className="mb-2 flex items-center gap-2.5">
+            <Zap className="h-5 w-5 flex-shrink-0 text-accent" strokeWidth={2.5} />
+            <h3 className="text-base font-bold uppercase tracking-wider text-white">Fast (about 5 min)</h3>
+          </div>
           <p className="text-sm text-gray-400">
             Middlemen on standby. Seller sends item, buyer sends funds, MM releases both.
           </p>
         </div>
         <div className="card">
-          <Coins className="mb-3 h-8 w-8 text-accent" strokeWidth={2.5} />
-          <h3 className="mb-2 text-lg font-bold uppercase tracking-wider">Free always</h3>
+          <div className="mb-2 flex items-center gap-2.5">
+            <Coins className="h-5 w-5 flex-shrink-0 text-accent" strokeWidth={2.5} />
+            <h3 className="text-base font-bold uppercase tracking-wider text-white">Free always</h3>
+          </div>
           <p className="text-sm text-gray-400">
             No fees, ever. The shop business covers it — we just want safe community trades.
           </p>
@@ -61,7 +68,7 @@ export default function MiddlemanPage() {
       </section>
 
       <section className="mb-10">
-        <h2 className="heading-pixel mb-4 text-2xl text-white">Middleman tiers</h2>
+        <h2 className="heading-pixel">Middleman tiers</h2>
         <p className="mb-4 text-gray-400">
           Higher-value trades go to more experienced middlemen. Every middleman is verified by the head moderator team.
         </p>
@@ -78,7 +85,7 @@ export default function MiddlemanPage() {
       </section>
 
       <section className="mb-10">
-        <h2 className="heading-pixel mb-4 text-2xl text-white">How a middleman trade works</h2>
+        <h2 className="heading-pixel">How a middleman trade works</h2>
         <ol className="space-y-3">
           {[
             'Both traders open a single middleman ticket in the Discord server',
@@ -99,7 +106,7 @@ export default function MiddlemanPage() {
       </section>
 
       <section className="mb-10">
-        <h2 className="heading-pixel mb-4 text-2xl text-white">When you should use a middleman</h2>
+        <h2 className="heading-pixel">When you should use a middleman</h2>
         <ul className="space-y-2 text-gray-400">
           <li>✓ Any trade involving Godly, Ancient, or Vintage items</li>
           <li>✓ Cross-condition trades (Mint Condition vs Standard Issue value swings)</li>
@@ -112,9 +119,11 @@ export default function MiddlemanPage() {
       <div className="border-[3px] border-accent/60 bg-gradient-to-br from-dark-800 to-dark-900 p-6 md:p-8 text-center" style={{ boxShadow: 'inset 0 -3px 0 rgba(0,0,0,0.4), 0 4px 0 rgba(0,0,0,0.5)' }}>
         <h2 className="mb-2 text-2xl font-black uppercase tracking-wider text-white">Ready to trade safely?</h2>
         <p className="mb-4 text-gray-400">Open a middleman ticket in our Discord — average response under 60 seconds.</p>
-        <a href={DISCORD_INVITE} target="_blank" rel="noopener" className="btn-discord px-8 py-4 text-lg">
-          Join Discord & Open Ticket →
-        </a>
+        <div className="flex justify-center">
+          <DiscordButton href={DISCORD_INVITE} size="lg">
+            Open Ticket
+          </DiscordButton>
+        </div>
       </div>
 
       <p className="mt-8 text-sm text-gray-500">

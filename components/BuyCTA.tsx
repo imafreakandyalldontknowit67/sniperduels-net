@@ -1,4 +1,5 @@
 import { shopLink, DISCORD_INVITE } from '@/lib/config';
+import DiscordButton from './DiscordButton';
 
 type Props = {
   campaign: string;
@@ -29,9 +30,7 @@ export default function BuyCTA({
               {shopLabel}
             </a>
             {showDiscord && (
-              <a href={DISCORD_INVITE} target="_blank" rel="noopener" className="btn-discord">
-                Join Discord
-              </a>
+              <DiscordButton href={DISCORD_INVITE}>Join Discord</DiscordButton>
             )}
           </div>
         </div>
@@ -44,9 +43,7 @@ export default function BuyCTA({
         {shopLabel}
       </a>
       {showDiscord && (
-        <a href={DISCORD_INVITE} target="_blank" rel="noopener" className="btn-secondary">
-          Join Discord →
-        </a>
+        <DiscordButton href={DISCORD_INVITE}>Join Discord</DiscordButton>
       )}
     </div>
   );

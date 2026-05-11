@@ -53,7 +53,7 @@ export default function ValuesIndexPage() {
                   <Link
                     key={w.id}
                     href={`/values/${w.id}`}
-                    className="card hover:border-accent/50 hover:no-underline"
+                    className="card-link"
                   >
                     {w.imagePath && (
                       <div className="mb-3 flex h-20 items-center justify-center rounded bg-dark-900">

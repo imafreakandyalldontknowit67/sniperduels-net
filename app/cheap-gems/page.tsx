@@ -38,7 +38,7 @@ export default function CheapGemsPage() {
 
       {/* Competitor comparison */}
       <section className="my-10">
-        <h2 className="heading-pixel mb-4 text-2xl text-white">Where else can you buy?</h2>
+        <h2 className="heading-pixel">Where else can you buy?</h2>
         <p className="mb-4 text-sm text-gray-400">
           We track gem prices across the 5 main marketplaces every week. Live rate as of today:
         </p>
@@ -79,7 +79,7 @@ export default function CheapGemsPage() {
 
       {/* Why cheaper */}
       <section className="my-10 prose prose-invert max-w-none text-gray-300">
-        <h2 className="heading-pixel text-2xl text-white">How we keep prices this low</h2>
+        <h2 className="heading-pixel">How we keep prices this low</h2>
         <p>
           We&apos;re a marketplace, not a reseller. <strong>13+ verified vendors</strong> compete on price for every order on{' '}
           <a href={SHOP_URL} target="_blank" rel="noopener" className="text-accent hover:underline">sniperduels.shop</a>,

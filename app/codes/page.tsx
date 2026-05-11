@@ -36,7 +36,7 @@ export default function CodesPage() {
       </section>
 
       <section className="mb-10">
-        <h2 className="heading-pixel mb-4 text-2xl text-white">Get gems without codes</h2>
+        <h2 className="heading-pixel">Get gems without codes</h2>
         <p className="mb-4 text-gray-400">
           Since codes aren&apos;t available, the cheapest way to top up gems is through{' '}
           <a href={SHOP_URL} target="_blank" rel="noopener" className="text-accent hover:underline">
@@ -49,7 +49,7 @@ export default function CodesPage() {
       </section>
 
       <section className="mb-10">
-        <h2 className="heading-pixel mb-4 text-2xl text-white">How to redeem (when codes do exist)</h2>
+        <h2 className="heading-pixel">How to redeem (when codes do exist)</h2>
         <ol className="space-y-2 text-gray-400">
           <li>1. Open Sniper Duels in Roblox.</li>
           <li>2. Look for the &quot;Codes&quot; or &quot;Settings&quot; menu — currently neither exists in-game.</li>

@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import BuyCTA from '@/components/BuyCTA';
 import { SKINS, DISCORD_INVITE } from '@/lib/config';
+import DiscordButton from '@/components/DiscordButton';
 
 export const metadata: Metadata = {
   title: 'Sniper Duels Skins for Sale — Frankenawp & Hallows Punisher | sniperduels.net',
@@ -62,14 +63,7 @@ export default function SkinsPage() {
               </div>
               <div className="flex items-center justify-between gap-3">
                 <div className="text-sm font-bold text-white">{s.name}</div>
-                <a
-                  href={DISCORD_INVITE}
-                  target="_blank"
-                  rel="noopener"
-                  className="btn-primary whitespace-nowrap px-4 py-2 text-sm"
-                >
-                  Buy via Discord →
-                </a>
+                <DiscordButton href={DISCORD_INVITE} size="sm">Buy via Discord</DiscordButton>
               </div>
             </div>
           );
@@ -84,14 +78,12 @@ export default function SkinsPage() {
             <div className="text-2xl font-black uppercase tracking-wider text-white md:text-3xl">Open a Discord ticket</div>
             <div className="mt-1 text-sm text-gray-400">Free middleman · in-stock vendors · ~5 min handoff</div>
           </div>
-          <a href={DISCORD_INVITE} target="_blank" rel="noopener" className="btn-discord">
-            Join Discord →
-          </a>
+          <DiscordButton href={DISCORD_INVITE} size="lg">Open Ticket</DiscordButton>
         </div>
       </div>
 
       <section className="mt-10 prose prose-invert max-w-none text-gray-300">
-        <h2 className="heading-pixel text-2xl text-white">About Sniper Duels skins</h2>
+        <h2 className="heading-pixel">About Sniper Duels skins</h2>
         <p>
           Skins in Sniper Duels are cosmetic upgrades for your weapons obtained from{' '}
           <strong className="text-white">Skin Cases</strong> in-game. The Frankenawp and Hallows Punisher series are seasonal

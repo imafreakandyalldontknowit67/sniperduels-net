@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import BuyCTA from '@/components/BuyCTA';
+import DiscordButton from '@/components/DiscordButton';
 import { DISCORD_INVITE } from '@/lib/config';
 
 export const metadata: Metadata = {
@@ -49,7 +50,7 @@ export default function SafeTradingPage() {
       </section>
 
       <section className="mb-10 prose prose-invert max-w-none text-gray-300">
-        <h2 className="heading-pixel text-2xl text-white">How the safe flow works</h2>
+        <h2 className="heading-pixel">How the safe flow works</h2>
         <ol>
           <li>You pick a gem amount and pay on sniperduels.shop. Money goes to escrow.</li>
           <li>The trade bot pulls your order off the queue and finds an available vendor.</li>
@@ -67,7 +68,7 @@ export default function SafeTradingPage() {
       <BuyCTA campaign="safe-trading-mid" shopPath="/gems" variant="banner" />
 
       <section className="mt-10 prose prose-invert max-w-none text-gray-300">
-        <h2 className="heading-pixel text-2xl text-white">Red flags to avoid</h2>
+        <h2 className="heading-pixel">Red flags to avoid</h2>
         <ul>
           <li><strong className="text-white">Anyone asking for your Roblox password</strong> — never share it. Trades happen in-game, not by sharing accounts.</li>
           <li><strong className="text-white">Sellers wanting payment via gift cards or untraceable methods</strong> — usually scams.</li>
@@ -83,7 +84,7 @@ export default function SafeTradingPage() {
         <p className="mb-4 text-gray-400">Auto-trade bot + 30-min refund guarantee + free middleman.</p>
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
           <Link href="/gems" className="btn-primary">View gem prices →</Link>
-          <a href={DISCORD_INVITE} target="_blank" rel="noopener" className="btn-discord">Join Discord</a>
+          <DiscordButton href={DISCORD_INVITE}>Join Discord</DiscordButton>
         </div>
       </div>
 

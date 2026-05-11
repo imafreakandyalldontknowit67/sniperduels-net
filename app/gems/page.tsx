@@ -62,7 +62,7 @@ export default function GemsPage() {
 
       {/* Why cheaper */}
       <section className="mb-10">
-        <h2 className="heading-pixel mb-4 text-2xl text-white">Why are these gems cheaper?</h2>
+        <h2 className="heading-pixel">Why are these gems cheaper?</h2>
         <div className="prose prose-invert max-w-none space-y-4 text-gray-300">
           <p>
             When you buy gems through Roblox, you pay Robux — Robux costs roughly $0.0125 each, which translates to about{' '}
@@ -83,7 +83,7 @@ export default function GemsPage() {
 
       {/* How it works */}
       <section className="mb-10">
-        <h2 className="heading-pixel mb-4 text-2xl text-white">How it works</h2>
+        <h2 className="heading-pixel">How it works</h2>
         <ol className="space-y-3">
           {[
             'Pick the gem amount you want on sniperduels.shop',
@@ -106,7 +106,7 @@ export default function GemsPage() {
 
       {/* FAQ */}
       <section className="mb-10">
-        <h2 className="heading-pixel mb-4 text-2xl text-white">Frequently Asked</h2>
+        <h2 className="heading-pixel">Frequently Asked</h2>
         <div className="space-y-3">
           {FAQS.map((f, i) => (
             <details key={i} className="group border-[3px] border-dark-500 bg-dark-700 p-4">

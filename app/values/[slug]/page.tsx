@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation';
 import BuyCTA from '@/components/BuyCTA';
 import { allWeaponsIncludingUnpriced, weaponBySlug, rarityClasses, demandClasses, shopSellsThis } from '@/lib/weapons';
 import { shopLink, DISCORD_INVITE } from '@/lib/config';
+import DiscordButton from '@/components/DiscordButton';
 
 export function generateStaticParams() {
   // Generate detail pages for ALL weapons even unpriced ones — direct links shouldn't 404.
@@ -85,8 +86,8 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
 
       {/* Conditions table */}
       {w.variants.length > 0 && (
-        <section className="mb-8 overflow-hidden rounded-lg border border-dark-500 bg-dark-800">
-          <div className="border-b border-dark-600 bg-dark-700/50 px-5 py-3 text-xs font-bold uppercase tracking-wider text-gray-400">
+        <section className="mb-8 overflow-hidden border-[3px] border-dark-500 bg-dark-700">
+          <div className="border-b-[3px] border-dark-600 bg-dark-800/60 px-5 py-3 text-xs font-bold uppercase tracking-wider text-gray-400">
             Values by condition
           </div>
           <table className="w-full">
@@ -133,9 +134,7 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
               for any high-value trade.
             </p>
             <div className="flex flex-col gap-2 sm:flex-row">
-              <a href={DISCORD_INVITE} target="_blank" rel="noopener" className="btn-discord">
-                Join Discord →
-              </a>
+              <DiscordButton href={DISCORD_INVITE}>Join Discord</DiscordButton>
               <a href={shopLink('/gems', `weapon-${w.id}-gems`)} target="_blank" rel="noopener" className="btn-secondary">
                 Buy gems for trades
               </a>
@@ -146,7 +145,7 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
 
       {/* Trading tips */}
       <section className="mb-10 prose prose-invert max-w-none text-gray-300">
-        <h2 className="heading-pixel text-xl text-white">Trading the {w.displayName}</h2>
+        <h2 className="heading-pixel">Trading the {w.displayName}</h2>
         <p>
           {w.displayName} is a <strong className="text-white">{w.rarity}-rarity {w.weaponType}</strong> in Sniper Duels.
           {w.crate && <> It originally drops from the <strong className="text-white">{w.crate}</strong>.</>}

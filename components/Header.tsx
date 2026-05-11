@@ -5,6 +5,7 @@ import { useState } from 'react';
 import { usePathname } from 'next/navigation';
 import { shopLink, DISCORD_INVITE } from '@/lib/config';
 import SpriteButton from './SpriteButton';
+import DiscordButton from './DiscordButton';
 
 const NAV = [
   { href: '/gems', label: 'Gems' },
@@ -21,7 +22,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b-[3px] border-dark-700 bg-dark-900/95 backdrop-blur">
-      <div className="mx-auto flex h-[56px] max-w-6xl items-center justify-between px-3 sm:h-[64px] md:h-[72px] md:px-4">
+      <div className="mx-auto flex h-[56px] max-w-[1100px] items-center justify-between px-3 sm:h-[64px] md:h-[72px] md:px-4">
         {/* Wordmark */}
         <Link href="/" className="flex items-baseline gap-1 hover:no-underline">
           <span className="text-base font-black uppercase tracking-wider text-white sm:text-lg">
@@ -62,8 +63,8 @@ export default function Header() {
           </SpriteButton>
           <button
             onClick={() => setOpen(o => !o)}
-            aria-label="Open menu"
-            className="ml-1 inline-flex h-9 w-9 items-center justify-center border-[2px] border-dark-500 bg-dark-800 text-pixel-blue-light hover:border-accent hover:text-accent md:hidden"
+            aria-label={open ? 'Close menu' : 'Open menu'}
+            className="btn-icon ml-1 md:hidden"
           >
             {open ? '✕' : '☰'}
           </button>
@@ -73,7 +74,7 @@ export default function Header() {
       {/* Mobile menu drawer */}
       {open && (
         <nav className="border-t-[3px] border-dark-700 bg-dark-900 md:hidden">
-          <div className="mx-auto max-w-6xl px-3 py-2">
+          <div className="mx-auto max-w-[1100px] px-3 py-2">
             {NAV.map(n => {
               const active = pathname === n.href;
               return (
@@ -81,22 +82,17 @@ export default function Header() {
                   key={n.href}
                   href={n.href}
                   onClick={() => setOpen(false)}
-                  className={`block border-b border-dark-700 px-2 py-3 text-sm font-bold uppercase tracking-wider transition-colors ${
-                    active ? 'text-accent' : 'text-pixel-blue-light hover:text-white'
+                  className={`block border-b border-dark-700 px-3 py-3 text-sm font-bold uppercase tracking-wider transition-colors ${
+                    active ? 'nav-drawer-active' : 'text-pixel-blue-light hover:text-white'
                   }`}
                 >
                   {n.label}
                 </Link>
               );
             })}
-            <a
-              href={DISCORD_INVITE}
-              target="_blank"
-              rel="noopener"
-              className="block px-2 py-3 text-sm font-bold uppercase tracking-wider text-[#5865F2] hover:text-white"
-            >
-              Join Discord →
-            </a>
+            <div className="mt-3 px-1">
+              <DiscordButton href={DISCORD_INVITE} fullWidth>Join Discord</DiscordButton>
+            </div>
           </div>
         </nav>
       )}

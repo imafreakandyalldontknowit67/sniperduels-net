@@ -60,7 +60,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en" className={pixelEmulator.variable}>
       <body className="min-h-screen bg-dark-900 text-white">
         <Header />
-        <main className="mx-auto max-w-6xl px-4 pt-[64px] sm:pt-[72px] md:pt-[80px] pb-12">{children}</main>
+        <main className="mx-auto max-w-[1100px] px-4 pt-[64px] sm:pt-[72px] md:pt-[80px] pb-12">{children}</main>
         <Footer />
       </body>
     </html>

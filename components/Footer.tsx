@@ -4,7 +4,7 @@ import { SHOP_URL, DISCORD_INVITE } from '@/lib/config';
 export default function Footer() {
   return (
     <footer className="border-t border-dark-700 bg-dark-900">
-      <div className="mx-auto max-w-6xl px-4 py-10">
+      <div className="mx-auto max-w-[1100px] px-4 py-10">
         <div className="grid gap-8 md:grid-cols-4">
           <div>
             <div className="mb-3 text-lg font-black">

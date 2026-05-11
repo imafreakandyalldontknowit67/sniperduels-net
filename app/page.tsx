@@ -4,6 +4,7 @@ import { Zap, ShieldCheck, Coins } from 'lucide-react';
 import BuyCTA from '@/components/BuyCTA';
 import PriceLadder from '@/components/PriceLadder';
 import TrustRow from '@/components/TrustRow';
+import DiscordButton from '@/components/DiscordButton';
 import { topWeapons, rarityClasses } from '@/lib/weapons';
 import { shopLink, SHOP_URL, DISCORD_INVITE } from '@/lib/config';
 
@@ -36,9 +37,7 @@ export default function Home() {
           <a href={shopLink('/gems', 'home-hero')} target="_blank" rel="noopener" className="btn-primary px-8 py-4 text-lg">
             Buy Gems Now →
           </a>
-          <a href={DISCORD_INVITE} target="_blank" rel="noopener" className="btn-discord px-8 py-4 text-lg">
-            Join Discord
-          </a>
+          <DiscordButton href={DISCORD_INVITE} size="lg">Join Discord</DiscordButton>
         </div>
       </section>
 
@@ -49,7 +48,7 @@ export default function Home() {
 
       {/* Pricing */}
       <section className="mb-12">
-        <h2 className="heading-pixel mb-4 text-2xl text-white">Live Gem Prices</h2>
+        <h2 className="heading-pixel">Live Gem Prices</h2>
         <PriceLadder />
       </section>
 
@@ -82,7 +81,7 @@ export default function Home() {
       {/* Featured items */}
       <section className="mb-12">
         <div className="mb-4 flex items-end justify-between">
-          <h2 className="heading-pixel text-2xl text-white">Top Sniper Duels Items</h2>
+          <h2 className="heading-pixel">Top Sniper Duels Items</h2>
           <Link href="/values" className="text-sm font-semibold text-accent hover:underline">
             See all values →
           </Link>
@@ -97,7 +96,7 @@ export default function Home() {
                 <Link
                   key={w.id}
                   href={`/values/${w.id}`}
-                  className="card hover:border-accent/50 hover:no-underline"
+                  className="card-link"
                 >
                   {w.imagePath && (
                     <div className="mb-3 flex h-24 items-center justify-center rounded bg-dark-900">
@@ -129,7 +128,7 @@ export default function Home() {
 
       {/* What is this */}
       <section className="mb-12">
-        <h2 className="heading-pixel mb-4 text-2xl text-white">What is sniperduels.net?</h2>
+        <h2 className="heading-pixel">What is sniperduels.net?</h2>
         <div className="prose prose-invert max-w-none text-gray-400">
           <p>
             <strong className="text-white">sniperduels.net</strong> is the community marketplace and price guide for{' '}

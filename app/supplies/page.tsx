@@ -96,7 +96,7 @@ export default function SuppliesPage() {
       <BuyCTA campaign="supplies-bottom" shopPath="/shop" shopLabel="Browse all supplies →" variant="banner" />
 
       <section className="mt-10 prose prose-invert max-w-none text-gray-300">
-        <h2 className="heading-pixel text-2xl text-white">What are Sniper Duels supplies?</h2>
+        <h2 className="heading-pixel">What are Sniper Duels supplies?</h2>
         <p>
           Supplies are stackable in-game items used for crafting, trading, and unlocking content in Sniper Duels.
           The most-traded supplies are <strong className="text-white">Bluesteels</strong> (used in defaults and survivor crafts),{' '}
