@@ -12,10 +12,27 @@ export function generateStaticParams() {
   return allWeaponsIncludingUnpriced().map(w => ({ slug: w.id }));
 }
 
+// Combine the skin name + weapon type, but skip the type when the display
+// name already contains it (so "Karambit of Destiny" + "Karambit" stays as
+// "Karambit of Destiny", not "Karambit of Destiny Karambit").
+function weaponFullName(displayName: string, weaponType: string): string {
+  if (!weaponType) return displayName;
+  if (displayName.toLowerCase().includes(weaponType.toLowerCase())) return displayName;
+  return `${displayName} ${weaponType}`;
+}
+
 // "Adurite" → "an Adurite Bayonet"; "Crimson" → "a Crimson Karambit"
 function nounPhrase(displayName: string, weaponType: string): string {
-  const startsWithVowel = /^[aeiouAEIOU]/.test(displayName);
-  return `${startsWithVowel ? 'an' : 'a'} ${displayName} ${weaponType}`;
+  const article = /^[aeiouAEIOU]/.test(displayName) ? 'an' : 'a';
+  return `${article} ${weaponFullName(displayName, weaponType)}`;
+}
+
+// "april-fools-case" → "April Fools Case"
+function formatCrate(crate: string): string {
+  return crate
+    .split(/[-_\s]+/)
+    .map(w => (w ? w[0].toUpperCase() + w.slice(1).toLowerCase() : ''))
+    .join(' ');
 }
 
 export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
@@ -81,7 +98,7 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
             )}
           </div>
           <h1 className="mb-2 text-2xl font-bold uppercase tracking-wider sm:text-3xl md:text-4xl">
-            {w.displayName} {w.weaponType} <span className="text-accent">Value</span>
+            {weaponFullName(w.displayName, w.weaponType)} <span className="text-accent">Value</span>
           </h1>
           {top > 0 ? (
             <p className="text-lg text-gray-400">
@@ -139,8 +156,10 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
             <h2 className="mb-3 text-2xl font-black text-white">Looking for {nounPhrase(w.displayName, w.weaponType)}?</h2>
             <p className="mb-4 text-gray-400">
               Post in our Discord trading channels — verified vendors and traders are active 24/7.
-              Use our <Link href="/middleman" className="text-accent hover:underline">free middleman service</Link>{' '}
-              for any high-value trade.
+              For in-game gem trades you don&apos;t need a middleman (Sniper Duels lets you swap atomically).
+              Buying for <span className="text-white">cash (USD/crypto)</span>?{' '}
+              <Link href="/middleman" className="text-accent hover:underline">Use a free middleman</Link> so the
+              seller can&apos;t scam you.
             </p>
             <div className="flex flex-col gap-2 sm:flex-row">
               <DiscordButton href={DISCORD_INVITE}>Join Discord</DiscordButton>
@@ -154,15 +173,19 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
 
       {/* Trading tips */}
       <section className="mb-10 prose prose-invert max-w-none text-gray-300">
-        <h2 className="heading-pixel">Trading the {w.displayName} {w.weaponType}</h2>
+        <h2 className="heading-pixel">Trading the {weaponFullName(w.displayName, w.weaponType)}</h2>
         <p>
-          The {w.displayName} {w.weaponType} is a <strong className="text-white">{w.rarity}-rarity {w.weaponType}</strong> in Sniper Duels.
-          {w.crate && <> It originally drops from the <strong className="text-white">{w.crate}</strong>.</>}
+          The {weaponFullName(w.displayName, w.weaponType)} is a <strong className="text-white">{w.rarity}-rarity {w.weaponType}</strong> in Sniper Duels.
+          {w.crate && <> It originally drops from the <strong className="text-white">{formatCrate(w.crate)}</strong>.</>}
           {top > 0 && <> Current top value is <span className="font-bold text-accent">{top.toLocaleString()} gems</span>.</>}
         </p>
         <p>
-          When trading any {w.rarity} item, always use a <Link href="/middleman" className="text-accent hover:underline">verified middleman</Link>{' '}
-          to avoid scams. Check the condition (Mint, Standard, Worn) carefully — Mint Condition typically commands 20-40% more than Standard.
+          <strong className="text-white">In-game gem trades are direct</strong> — Sniper Duels lets two players atomically
+          swap items + gems in one trade window, so no middleman is needed for gem-priced trades. If you&apos;re buying or
+          selling for <strong className="text-white">USD or crypto</strong>, that&apos;s when a verified{' '}
+          <Link href="/middleman" className="text-accent hover:underline">middleman</Link> matters — they hold the item
+          until cash payment lands. Check the condition (Mint, Standard, Worn) carefully — Mint Condition typically commands
+          20-40% more than Standard.
         </p>
       </section>
 
@@ -181,7 +204,7 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
           <section className="mt-12">
             {sameCrate.length > 0 && (
               <>
-                <h2 className="heading-pixel mb-4 text-accent">More from {w.crate}</h2>
+                <h2 className="heading-pixel mb-4 text-accent">More from {formatCrate(w.crate!)}</h2>
                 <div className="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
                   {sameCrate.map(x => <WeaponCard key={x.id} weapon={x} />)}
                 </div>

@@ -28,7 +28,8 @@ export default function MiddlemanPage() {
           Free <span className="text-accent">Sniper Duels Middleman</span>
         </h1>
         <p className="text-[10px] font-bold uppercase tracking-wider leading-relaxed text-gray-400 sm:text-xs md:text-sm">
-          Selling an item? MM holds it until the buyer&apos;s payment lands.{' '}
+          For <span className="text-white">cash sales</span> (USD/crypto-for-item). MM holds the item until payment lands.
+          In-game gem-for-item trades are atomic — no middleman needed.{' '}
           <span className="text-white">Always free.</span>
         </p>
       </header>
@@ -102,16 +103,28 @@ export default function MiddlemanPage() {
       </section>
 
       <section className="mb-12">
-        <SectionBanner color="blue" eyebrow="Use a middleman whenever any of these apply">
-          When You Need One
+        <SectionBanner color="blue" eyebrow="Middleman = for real-money trades only. In-game gem trades are atomic.">
+          When You Actually Need One
         </SectionBanner>
-        <ul className="grid gap-2 text-sm text-gray-300 sm:grid-cols-2">
-          <li className="border-l-[3px] border-accent/60 pl-3">Knife, Secret, or Legendary items</li>
-          <li className="border-l-[3px] border-accent/60 pl-3">Cross-condition trades (Worn vs Mint)</li>
-          <li className="border-l-[3px] border-accent/60 pl-3">Stat-track or limited-edition variants</li>
-          <li className="border-l-[3px] border-accent/60 pl-3">Anyone you don&apos;t personally know</li>
-          <li className="border-l-[3px] border-accent/60 pl-3">First trades over $25 market value</li>
-        </ul>
+        <div className="grid gap-4 md:grid-cols-2">
+          <div className="border-[3px] border-emerald-500/60 bg-emerald-500/5 p-5">
+            <div className="mb-2 text-xs font-bold uppercase tracking-wider text-emerald-300">Use a middleman</div>
+            <ul className="space-y-1.5 text-sm text-gray-200">
+              <li>Selling an item for <span className="text-white">USD or crypto</span></li>
+              <li>Buying an item with <span className="text-white">cash</span> from someone you don&apos;t know</li>
+              <li>Cross-platform trades (e.g. Roblox item ↔ PayPal)</li>
+              <li>First cash trade with any new vendor</li>
+            </ul>
+          </div>
+          <div className="border-[3px] border-dark-500 bg-dark-700 p-5">
+            <div className="mb-2 text-xs font-bold uppercase tracking-wider text-gray-400">No middleman needed</div>
+            <ul className="space-y-1.5 text-sm text-gray-300">
+              <li>In-game <span className="text-white">gem-for-item</span> trades — Sniper Duels swaps both sides atomically</li>
+              <li>In-game <span className="text-white">item-for-item</span> trades — same atomic trade window</li>
+              <li>Buying gems on sniperduels.shop — the trade bot already auto-delivers</li>
+            </ul>
+          </div>
+        </div>
       </section>
 
       <div className="border-[3px] border-accent/60 bg-gradient-to-br from-dark-800 to-dark-900 p-6 md:p-8 text-center" style={{ boxShadow: 'inset 0 -3px 0 rgba(0,0,0,0.4), 0 4px 0 rgba(0,0,0,0.5)' }}>
