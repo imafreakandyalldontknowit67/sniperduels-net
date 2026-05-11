@@ -28,12 +28,14 @@ export default function Footer() {
             </ul>
           </div>
           <div>
-            <div className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-300">Trade</div>
+            <div className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-300">Values</div>
             <ul className="space-y-2 text-sm text-gray-400">
-              <li><Link href="/values" className="hover:text-accent">Item Values</Link></li>
+              <li><Link href="/values" className="hover:text-accent">All Items</Link></li>
+              <li><Link href="/snipers" className="hover:text-accent">Snipers</Link></li>
+              <li><Link href="/knives" className="hover:text-accent">Knives</Link></li>
               <li><Link href="/middleman" className="hover:text-accent">Free Middleman</Link></li>
               <li><Link href="/safe-trading" className="hover:text-accent">Safe Trading</Link></li>
-              <li><Link href="/codes" className="hover:text-accent">Codes (May 2026)</Link></li>
+              <li><Link href="/codes" className="hover:text-accent">Codes</Link></li>
             </ul>
           </div>
           <div>

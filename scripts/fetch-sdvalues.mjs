@@ -18,49 +18,64 @@ async function fetchJson(path) {
   return res.json();
 }
 
-const CATEGORIES = ['snipers', 'knives'];
+// Use the richer /api/weapons?type=X endpoint — returns marketStatus,
+// defaultVariantIndex, and per-variant trend (the legacy /api/weapons/snipers
+// returns the same items but a slimmer shape).
+const TYPES = [
+  { type: 'sniper', label: 'snipers' },
+  { type: 'knife',  label: 'knives'  },
+];
 
 async function main() {
   console.log('[sdvalues] fetching weapons...');
   const weapons = [];
-  for (const cat of CATEGORIES) {
+  for (const { type, label } of TYPES) {
     try {
-      const data = await fetchJson(`/weapons/${cat}`);
+      const data = await fetchJson(`/weapons?type=${type}&limit=1000`);
       const items = data.weapons || [];
-      console.log(`[sdvalues]   /${cat} → ${items.length} items`);
+      console.log(`[sdvalues]   ${label} → ${items.length} items`);
+      // Tag each weapon with its category bucket so we can route /snipers vs /knives
+      // without re-deriving from rarity.
+      for (const w of items) w._category = label;
       weapons.push(...items);
     } catch (err) {
-      console.warn(`[sdvalues]   /${cat} failed: ${err.message}`);
+      console.warn(`[sdvalues]   ${label} failed: ${err.message}`);
     }
   }
   console.log(`[sdvalues] total raw items: ${weapons.length}`);
 
   // Slim the payload — keep only fields the site actually uses.
-  const slim = weapons.map(w => ({
-    id: w.id,
-    name: w.name,
-    displayName: (w.displayName || w.name || '').trim(),
-    weaponType: w.weaponType || 'Unknown',
-    rarity: w.rarity || 'common',
-    crate: w.crate || null,
-    imagePath: w.imagePath || null,
-    demand: w.demand || 'Unknown',
-    tradeable: w.tradeable !== false,
-    description: w.description || null,
-    variants: (w.variants || [])
-      // Dedup by condition (some entries split statTrak rows; we average them).
-      .reduce((acc, v) => {
-        const cond = v.condition || 'Unknown';
-        const price = Number(v.avgPrice ?? v.value ?? 0);
-        const existing = acc.find(x => x.condition === cond);
-        if (existing) {
-          existing.price = Math.max(existing.price, price);
-        } else {
-          acc.push({ condition: cond, price });
-        }
-        return acc;
-      }, []),
-  }));
+  const slim = weapons.map(w => {
+    const variants = (w.variants || []).reduce((acc, v) => {
+      const cond = v.condition || 'Unknown';
+      const price = Number(v.avgPrice ?? v.value ?? 0);
+      const trend = Number(v.trend ?? 0);
+      const existing = acc.find(x => x.condition === cond);
+      if (existing) {
+        existing.price = Math.max(existing.price, price);
+        if (Math.abs(trend) > Math.abs(existing.trend)) existing.trend = trend;
+      } else {
+        acc.push({ condition: cond, price, trend });
+      }
+      return acc;
+    }, []);
+    return {
+      id: w.id,
+      category: w._category,                 // 'snipers' | 'knives'
+      name: w.name,
+      displayName: (w.displayName || w.name || '').trim(),
+      weaponType: w.weaponType || 'Unknown',
+      rarity: w.rarity || 'common',
+      crate: w.crate || null,
+      imagePath: w.imagePath || null,
+      demand: w.demand || 'Unknown',
+      tradeable: w.tradeable !== false,
+      marketStatus: w.marketStatus || 'Active',
+      defaultVariantIndex: Number.isInteger(w.defaultVariantIndex) ? w.defaultVariantIndex : 0,
+      description: w.description || null,
+      variants,
+    };
+  });
 
   // Sort: rarity (highest first) → name
   const rarityRank = { knife: 0, godly: 1, ancient: 2, vintage: 3, legendary: 4, epic: 5, rare: 6, uncommon: 7, common: 8 };

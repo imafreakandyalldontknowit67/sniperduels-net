@@ -9,11 +9,10 @@ import DiscordButton from './DiscordButton';
 
 const NAV = [
   { href: '/gems', label: 'Gems' },
+  { href: '/snipers', label: 'Snipers' },
+  { href: '/knives', label: 'Knives' },
   { href: '/skins', label: 'Skins' },
-  { href: '/supplies', label: 'Supplies' },
-  { href: '/values', label: 'Values' },
   { href: '/middleman', label: 'Middleman' },
-  { href: '/codes', label: 'Codes' },
 ];
 
 export default function Header() {

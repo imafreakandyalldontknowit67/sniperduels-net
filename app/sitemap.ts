@@ -14,6 +14,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/safe-trading', priority: 0.8, changeFrequency: 'monthly' as const },
     { path: '/codes', priority: 0.85, changeFrequency: 'weekly' as const },
     { path: '/values', priority: 0.9, changeFrequency: 'daily' as const },
+    { path: '/snipers', priority: 0.95, changeFrequency: 'daily' as const },
+    { path: '/knives', priority: 0.95, changeFrequency: 'daily' as const },
   ];
 
   const weaponRoutes = allWeaponsIncludingUnpriced().map(w => ({

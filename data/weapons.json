@@ -1,9 +1,10 @@
 {
-  "generatedAt": "2026-05-11T05:26:57.477Z",
-  "count": 223,
+  "generatedAt": "2026-05-11T05:34:09.105Z",
+  "count": 218,
   "weapons": [
     {
       "id": "classic-case-bayonet-adurite",
+      "category": "knives",
       "name": "adurite",
       "displayName": "Adurite",
       "weaponType": "Bayonet",
@@ -12,24 +13,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368380997-Auderite_Bayo.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 6000
+          "price": 6000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 10000
+          "price": 10000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 24000
+          "price": 24000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-butterfly-adurite",
+      "category": "knives",
       "name": "adurite",
       "displayName": "Adurite",
       "weaponType": "Butterfly",
@@ -38,24 +45,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368391215-Auderite_Butterfly.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 9000
+          "price": 9000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 15000
+          "price": 15000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 30000
+          "price": 30000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-karambit-adurite",
+      "category": "knives",
       "name": "adurite",
       "displayName": "Adurite",
       "weaponType": "Karambit",
@@ -64,24 +77,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368399897-Auderite_Karambit.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 7000
+          "price": 7000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 13000
+          "price": 13000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 24000
+          "price": 24000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-katana-adurite",
+      "category": "knives",
       "name": "adurite",
       "displayName": "Adurite",
       "weaponType": "Katana",
@@ -90,24 +109,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368408379-Auderite_Katana.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 18000
+          "price": 18000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 26000
+          "price": 26000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 40000
+          "price": 40000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-survivor-adurite",
+      "category": "knives",
       "name": "adurite",
       "displayName": "Adurite",
       "weaponType": "Survivor",
@@ -116,24 +141,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368419611-Auderite_Survivor.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 2000
+          "price": 2000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 3500
+          "price": 3500,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 4500
+          "price": 4500,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-dfault-adurite",
+      "category": "knives",
       "name": "adurite",
       "displayName": "Adurite",
       "weaponType": "dfault",
@@ -142,24 +173,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775863975356-Auderite_Default.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 1750
+          "price": 1750,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 3000
+          "price": 3000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 4500
+          "price": 4500,
+          "trend": 0
         }
       ]
     },
     {
       "id": "release-case-bayonet-amethyst",
+      "category": "knives",
       "name": "amethyst",
       "displayName": "Amethyst",
       "weaponType": "Bayonet",
@@ -168,20 +205,25 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444756869-Amethyst_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Standard Issue",
-          "price": 9500
+          "price": 9500,
+          "trend": 11.8
         },
         {
           "condition": "Mint Condition",
-          "price": 10500
+          "price": 10500,
+          "trend": 10.5
         }
       ]
     },
     {
       "id": "release-case-bayonet-aurora",
+      "category": "knives",
       "name": "aurora",
       "displayName": "Aurora",
       "weaponType": "Bayonet",
@@ -190,20 +232,25 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444714488-Aurora-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Standard Issue",
-          "price": 9500
+          "price": 9500,
+          "trend": 11.8
         },
         {
           "condition": "Mint Condition",
-          "price": 10500
+          "price": 10500,
+          "trend": 10.5
         }
       ]
     },
     {
       "id": "skin-case-1-karambit-aurora",
+      "category": "knives",
       "name": "aurora",
       "displayName": "Aurora",
       "weaponType": "Karambit",
@@ -212,16 +259,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444731079-Aurora-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 21000
+          "price": 21000,
+          "trend": -16
         }
       ]
     },
     {
       "id": "april-fools-case-bayonet-bayonet-of-destiny",
+      "category": "knives",
       "name": "bayonet of destiny",
       "displayName": "Bayonet of Destiny",
       "weaponType": "Bayonet",
@@ -230,24 +281,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775172951863-Bayo_of_Destiny.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 2000
+          "price": 2000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 7000
+          "price": 7000,
+          "trend": 100
         },
         {
           "condition": "Mint Condition",
-          "price": 12000
+          "price": 12000,
+          "trend": 100
         }
       ]
     },
     {
       "id": "classic-case-bayonet-black-iron",
+      "category": "knives",
       "name": "black iron",
       "displayName": "Black Iron",
       "weaponType": "Bayonet",
@@ -256,24 +313,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368645001-BlackIron_Bayo.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 4000
+          "price": 4000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 8000
+          "price": 8000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 16000
+          "price": 16000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-butterfly-black-iron",
+      "category": "knives",
       "name": "black iron",
       "displayName": "Black Iron",
       "weaponType": "Butterfly",
@@ -282,24 +345,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368665168-BlackIron_Butterfly.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 8000
+          "price": 8000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 13000
+          "price": 13000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 24000
+          "price": 24000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-dfault-black-iron",
+      "category": "knives",
       "name": "black iron",
       "displayName": "Black Iron",
       "weaponType": "dfault",
@@ -308,24 +377,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368681856-BlackIron_Default.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 1500
+          "price": 1500,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 2500
+          "price": 2500,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 4000
+          "price": 4000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-karambit-black-iron",
+      "category": "knives",
       "name": "black iron",
       "displayName": "Black Iron",
       "weaponType": "Karambit",
@@ -334,24 +409,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368701509-BlackIron_Karambit.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 5000
+          "price": 5000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 11000
+          "price": 11000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 20000
+          "price": 20000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-katana-black-iron",
+      "category": "knives",
       "name": "black iron",
       "displayName": "Black Iron",
       "weaponType": "Katana",
@@ -360,24 +441,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368718263-BlackIron_Katana.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 15000
+          "price": 15000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 24000
+          "price": 24000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 33000
+          "price": 33000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-survivor-black-iron",
+      "category": "knives",
       "name": "black iron",
       "displayName": "Black Iron",
       "weaponType": "Survivor",
@@ -386,24 +473,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368736023-BlackIron_Survivor.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 2000
+          "price": 2000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 3000
+          "price": 3000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 4000
+          "price": 4000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "skin-case-1-katana-blacksteel",
+      "category": "knives",
       "name": "blacksteel",
       "displayName": "Blacksteel",
       "weaponType": "Katana",
@@ -412,24 +505,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444734469-Blacksteel-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 18000
+          "price": 18000,
+          "trend": -10
         },
         {
           "condition": "Standard Issue",
-          "price": 23000
+          "price": 23000,
+          "trend": -15.8
         },
         {
           "condition": "Mint Condition",
-          "price": 35000
+          "price": 35000,
+          "trend": 16.7
         }
       ]
     },
     {
       "id": "christmas-present-candy-cane-blueberry",
+      "category": "knives",
       "name": "blueberry",
       "displayName": "Blueberry",
       "weaponType": "Candy Cane",
@@ -438,16 +537,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444794389-Blueberry-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 150000
+          "price": 150000,
+          "trend": 20
         }
       ]
     },
     {
       "id": "release-case-dfault-bluesteel",
+      "category": "knives",
       "name": "bluesteel",
       "displayName": "Bluesteel",
       "weaponType": "dfault",
@@ -456,24 +559,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444715095-Bluesteel-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 900
+          "price": 900,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 1000
+          "price": 1000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 1500
+          "price": 1500,
+          "trend": 0
         }
       ]
     },
     {
       "id": "skin-case-1-survivor-bluesteel",
+      "category": "knives",
       "name": "bluesteel",
       "displayName": "Bluesteel",
       "weaponType": "Survivor",
@@ -482,24 +591,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444737938-Bluesteel-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 900
+          "price": 900,
+          "trend": -40
         },
         {
           "condition": "Standard Issue",
-          "price": 1500
+          "price": 1500,
+          "trend": -33.3
         },
         {
           "condition": "Mint Condition",
-          "price": 2000
+          "price": 2000,
+          "trend": -50
         }
       ]
     },
     {
       "id": "classic-case-bayonet-bombastic",
+      "category": "knives",
       "name": "bombastic",
       "displayName": "Bombastic",
       "weaponType": "Bayonet",
@@ -508,24 +623,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369004709-Bombastic_Bayo.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 3000
+          "price": 3000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 5000
+          "price": 5000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 12000
+          "price": 12000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-butterfly-bombastic",
+      "category": "knives",
       "name": "bombastic",
       "displayName": "Bombastic",
       "weaponType": "Butterfly",
@@ -534,24 +655,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369045656-Bombastic_Butterfly.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 6000
+          "price": 6000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 11000
+          "price": 11000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 19000
+          "price": 19000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-karambit-bombastic",
+      "category": "knives",
       "name": "bombastic",
       "displayName": "Bombastic",
       "weaponType": "Karambit",
@@ -560,24 +687,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369060936-Bombastic_Karambit.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 4000
+          "price": 4000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 10000
+          "price": 10000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 21000
+          "price": 21000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-katana-bombastic",
+      "category": "knives",
       "name": "bombastic",
       "displayName": "Bombastic",
       "weaponType": "Katana",
@@ -586,24 +719,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369077139-Bombastic_Katana.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 13000
+          "price": 13000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 20000
+          "price": 20000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 30000
+          "price": 30000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-survivor-bombastic",
+      "category": "knives",
       "name": "bombastic",
       "displayName": "Bombastic",
       "weaponType": "Survivor",
@@ -612,24 +751,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369091323-Bombastic_Survivor.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 1200
+          "price": 1200,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 2500
+          "price": 2500,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 3500
+          "price": 3500,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-dfault-bombastic",
+      "category": "knives",
       "name": "bombastic",
       "displayName": "Bombastic",
       "weaponType": "dfault",
@@ -638,24 +783,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369106249-Bombastic_Default.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 1000
+          "price": 1000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 2500
+          "price": 2500,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 4000
+          "price": 4000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "april-fools-case-butterfly-butterfly-of-destiny",
+      "category": "knives",
       "name": "butterfly of destiny",
       "displayName": "Butterfly of Destiny",
       "weaponType": "Butterfly",
@@ -664,24 +815,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775172700628-Butterfly_of_Destiny.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 6000
+          "price": 6000,
+          "trend": 33.3
         },
         {
           "condition": "Standard Issue",
-          "price": 12000
+          "price": 12000,
+          "trend": 84.6
         },
         {
           "condition": "Mint Condition",
-          "price": 19000
+          "price": 19000,
+          "trend": 90
         }
       ]
     },
     {
       "id": "hallows-basket-bayonet-candy-corn",
+      "category": "knives",
       "name": "candy corn",
       "displayName": "Candy Corn",
       "weaponType": "Bayonet",
@@ -690,24 +847,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444715857-Candy_Corn-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 4000
+          "price": 4000,
+          "trend": -11.1
         },
         {
           "condition": "Standard Issue",
-          "price": 6000
+          "price": 6000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 8000
+          "price": 8000,
+          "trend": -5.9
         }
       ]
     },
     {
       "id": "skin-case-1-karambit-case-hardened",
+      "category": "knives",
       "name": "case hardened",
       "displayName": "Case Hardened",
       "weaponType": "Karambit",
@@ -716,16 +879,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444778118-Case_Hardened_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 60000
+          "price": 60000,
+          "trend": -70
         }
       ]
     },
     {
       "id": "skin-case-1-butterfly-cherry",
+      "category": "knives",
       "name": "cherry",
       "displayName": "Cherry",
       "weaponType": "Butterfly",
@@ -734,24 +901,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444728134-Cherry-watermarked.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 12000
+          "price": 12000,
+          "trend": -14.3
         },
         {
           "condition": "Standard Issue",
-          "price": 17000
+          "price": 17000,
+          "trend": -5.6
         },
         {
           "condition": "Mint Condition",
-          "price": 35000
+          "price": 35000,
+          "trend": 41.4
         }
       ]
     },
     {
       "id": "skin-case-1-katana-cherry",
+      "category": "knives",
       "name": "cherry",
       "displayName": "Cherry",
       "weaponType": "Katana",
@@ -760,24 +933,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444744807-Cherry-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 14000
+          "price": 14000,
+          "trend": -12.5
         },
         {
           "condition": "Standard Issue",
-          "price": 23000
+          "price": 23000,
+          "trend": -8
         },
         {
           "condition": "Mint Condition",
-          "price": 33000
+          "price": 33000,
+          "trend": 3.8
         }
       ]
     },
     {
       "id": "christmas-present-katana-cookie",
+      "category": "knives",
       "name": "cookie",
       "displayName": "Cookie",
       "weaponType": "Katana",
@@ -786,16 +965,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444785880-Cookie-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 25000
+          "price": 25000,
+          "trend": 13.6
         }
       ]
     },
     {
       "id": "christmas-present-bayonet-cookie",
+      "category": "knives",
       "name": "cookie",
       "displayName": "Cookie",
       "weaponType": "Bayonet",
@@ -804,16 +987,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444786613-Cookie-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 7300
+          "price": 7300,
+          "trend": -8.7
         }
       ]
     },
     {
       "id": "christmas-present-karambit-cookie",
+      "category": "knives",
       "name": "cookie",
       "displayName": "Cookie",
       "weaponType": "Karambit",
@@ -822,34 +1009,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444788280-Cookie-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 11800
-        }
-      ]
-    },
-    {
-      "id": "christmas-present-butterfly-cookie",
-      "name": "cookie",
-      "displayName": "Cookie",
-      "weaponType": "Butterfly",
-      "rarity": "knife",
-      "crate": "christmas-present",
-      "imagePath": "https://images.sniperduels.com/weapons/1768444781277-Cookie-watermarked.webp",
-      "demand": "Medium",
-      "tradeable": true,
-      "description": null,
-      "variants": [
-        {
-          "condition": "Mint Condition",
-          "price": 13000
+          "price": 11800,
+          "trend": -1.7
         }
       ]
     },
     {
       "id": "christmas-present-survivor-cookie",
+      "category": "knives",
       "name": "cookie",
       "displayName": "Cookie",
       "weaponType": "Survivor",
@@ -858,16 +1031,42 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444792010-Cookie_-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 4650
+          "price": 4650,
+          "trend": -55.7
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-butterfly-cookie",
+      "category": "knives",
+      "name": "cookie",
+      "displayName": "Cookie",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444781277-Cookie-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 13000,
+          "trend": -18.7
         }
       ]
     },
     {
       "id": "hallows-basket-bayonet-cultist",
+      "category": "knives",
       "name": "cultist",
       "displayName": "Cultist",
       "weaponType": "Bayonet",
@@ -876,20 +1075,25 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444716415-Cultist-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Standard Issue",
-          "price": 10000
+          "price": 10000,
+          "trend": -37.5
         },
         {
           "condition": "Mint Condition",
-          "price": 14000
+          "price": 14000,
+          "trend": -36.4
         }
       ]
     },
     {
       "id": "v-day-bayonet-cupid",
+      "category": "knives",
       "name": "cupid",
       "displayName": "Cupid",
       "weaponType": "Bayonet",
@@ -898,24 +1102,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770535533249-Cupid_Bayonet.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 5500
+          "price": 5500,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 9000
+          "price": 9000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 14000
+          "price": 14000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "skin-case-1-butterfly-damascus",
+      "category": "knives",
       "name": "damascus",
       "displayName": "Damascus",
       "weaponType": "Butterfly",
@@ -924,16 +1134,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444728837-Damascus-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 17000
+          "price": 17000,
+          "trend": -19
         }
       ]
     },
     {
       "id": "skin-case-1-butterfly-darksteel",
+      "category": "knives",
       "name": "darksteel",
       "displayName": "Darksteel",
       "weaponType": "Butterfly",
@@ -942,16 +1156,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444729409-Darksteel-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 17000
+          "price": 17000,
+          "trend": -26.1
         }
       ]
     },
     {
       "id": "april-fools-case-dfault-default-of-destiny",
+      "category": "knives",
       "name": "default of destiny",
       "displayName": "Default of Destiny",
       "weaponType": "dfault",
@@ -960,24 +1178,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775172927417-Default_of_Destiny.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 1200
+          "price": 1200,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 1700
+          "price": 1700,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 5000
+          "price": 5000,
+          "trend": 150
         }
       ]
     },
     {
       "id": "release-case-bayonet-emerald",
+      "category": "knives",
       "name": "emerald",
       "displayName": "Emerald",
       "weaponType": "Bayonet",
@@ -986,20 +1210,25 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444717049-Emerald-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Standard Issue",
-          "price": 13000
+          "price": 13000,
+          "trend": 52.9
         },
         {
           "condition": "Mint Condition",
-          "price": 15000
+          "price": 15000,
+          "trend": 57.9
         }
       ]
     },
     {
       "id": "skin-case-1-butterfly-frostbite",
+      "category": "knives",
       "name": "frostbite",
       "displayName": "Frostbite",
       "weaponType": "Butterfly",
@@ -1008,24 +1237,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444729994-Frostbite-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 11000
+          "price": 11000,
+          "trend": -8.3
         },
         {
           "condition": "Standard Issue",
-          "price": 15000
+          "price": 15000,
+          "trend": -6.2
         },
         {
           "condition": "Mint Condition",
-          "price": 25000
+          "price": 25000,
+          "trend": 8.7
         }
       ]
     },
     {
       "id": "christmas-present-katana-frostborn",
+      "category": "knives",
       "name": "frostborn",
       "displayName": "Frostborn",
       "weaponType": "Katana",
@@ -1034,16 +1269,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444789058-Frostborn-watermarked.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 85000
+          "price": 85000,
+          "trend": 54.5
         }
       ]
     },
     {
       "id": "april-fools-case-pan-golden-pan",
+      "category": "knives",
       "name": "golden pan",
       "displayName": "Golden Pan",
       "weaponType": "Pan",
@@ -1052,24 +1291,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775172634321-GoldenPan.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 0
+          "price": 0,
+          "trend": 0
         }
       ]
     },
     {
       "id": "v-day-survivor-heartbreak",
+      "category": "knives",
       "name": "heartbreak",
       "displayName": "Heartbreak",
       "weaponType": "Survivor",
@@ -1078,24 +1323,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770535338864-Heartbreak_Survivor.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 1800
+          "price": 1800,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 2200
+          "price": 2200,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 3000
+          "price": 3000,
+          "trend": 15.4
         }
       ]
     },
     {
       "id": "release-case-bayonet-hypno",
+      "category": "knives",
       "name": "hypno",
       "displayName": "Hypno",
       "weaponType": "Bayonet",
@@ -1104,24 +1355,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444717695-Hypno-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 4500
+          "price": 4500,
+          "trend": 25
         },
         {
           "condition": "Standard Issue",
-          "price": 6000
+          "price": 6000,
+          "trend": 39.5
         },
         {
           "condition": "Mint Condition",
-          "price": 9000
+          "price": 9000,
+          "trend": 38.5
         }
       ]
     },
     {
       "id": "april-fools-case-karambit-karambit-of-destiny",
+      "category": "knives",
       "name": "karambit of destiny",
       "displayName": "Karambit of Destiny",
       "weaponType": "Karambit",
@@ -1130,24 +1387,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775172663578-Karambit_of_Destiny.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 4000
+          "price": 4000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 10000
+          "price": 10000,
+          "trend": 66.7
         },
         {
           "condition": "Mint Condition",
-          "price": 15000
+          "price": 15000,
+          "trend": 66.7
         }
       ]
     },
     {
       "id": "april-fools-case-katana-katana-of-destiny",
+      "category": "knives",
       "name": "katana of destiny",
       "displayName": "Katana of Destiny",
       "weaponType": "Katana",
@@ -1156,24 +1419,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775172976238-Katana_of_Destiny.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 20000
+          "price": 20000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 35000
+          "price": 35000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 0
+          "price": 0,
+          "trend": 0
         }
       ]
     },
     {
       "id": "na-bombline-kitchen",
+      "category": "knives",
       "name": "kitchen",
       "displayName": "Kitchen",
       "weaponType": "Bombline",
@@ -1182,16 +1451,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444758044-Kitchen-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 105000
+          "price": 105000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "skin-case-1-karambit-koi",
+      "category": "knives",
       "name": "koi",
       "displayName": "Koi",
       "weaponType": "Karambit",
@@ -1200,24 +1473,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444731666-Koi-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 9000
+          "price": 9000,
+          "trend": -10
         },
         {
           "condition": "Standard Issue",
-          "price": 11000
+          "price": 11000,
+          "trend": -8.3
         },
         {
           "condition": "Mint Condition",
-          "price": 22000
+          "price": 22000,
+          "trend": 66.7
         }
       ]
     },
     {
       "id": "na-cash-money-top-1",
+      "category": "knives",
       "name": "money top 1",
       "displayName": "Money Top 1",
       "weaponType": "Cash",
@@ -1226,24 +1505,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775173186366-MoneyTop1.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": "This item is awarded to the #1 players on the monthly and lifetime donation leaderboards",
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 0
+          "price": 0,
+          "trend": 0
         }
       ]
     },
     {
       "id": "na-cash-money-top-2",
+      "category": "knives",
       "name": "money top 2",
       "displayName": "Money Top 2",
       "weaponType": "Cash",
@@ -1252,24 +1537,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775173155585-MoneyTop2.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": "This item is awarded to the #2 players on the monthly and lifetime donation leaderboards",
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 0
+          "price": 0,
+          "trend": 0
         }
       ]
     },
     {
       "id": "na-cash-money-top-3",
+      "category": "knives",
       "name": "money top 3",
       "displayName": "Money Top 3",
       "weaponType": "Cash",
@@ -1278,24 +1569,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775173118296-MoneyTop3.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": "This item is awarded to the #3 players on the monthly and lifetime donation leaderboards",
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 0
+          "price": 0,
+          "trend": 0
         }
       ]
     },
     {
       "id": "na-cash-money-top-4-10",
+      "category": "knives",
       "name": "money top 4 10",
       "displayName": "Money Top 4 - 10",
       "weaponType": "Cash",
@@ -1304,24 +1601,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775173065312-MoneyTop4-10.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": "This item is awarded to the top 4 - 10 players on the lifetime and monthly donation leader boards",
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 0
+          "price": 0,
+          "trend": 0
         }
       ]
     },
     {
       "id": "christmas-present-katana-nebuleum",
+      "category": "knives",
       "name": "nebuleum",
       "displayName": "Nebuleum",
       "weaponType": "Katana",
@@ -1330,16 +1633,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444789973-Nebuleum_-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 95000
+          "price": 95000,
+          "trend": 35.7
         }
       ]
     },
     {
       "id": "christmas-present-karambit-nebuleum",
+      "category": "knives",
       "name": "nebuleum",
       "displayName": "Nebuleum",
       "weaponType": "Karambit",
@@ -1348,24 +1655,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444792863-Nebuleum_-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 20000
+          "price": 20000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 40000
+          "price": 40000,
+          "trend": 37.9
         },
         {
           "condition": "Mint Condition",
-          "price": 150000
+          "price": 150000,
+          "trend": 233.3
         }
       ]
     },
     {
       "id": "classic-case-bayonet-og-bluesteel",
+      "category": "knives",
       "name": "og bluesteel",
       "displayName": "OG Bluesteel",
       "weaponType": "Bayonet",
@@ -1374,24 +1687,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368848890-Bluesteel_Bayo.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 5000
+          "price": 5000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 10000
+          "price": 10000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 18000
+          "price": 18000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-butterfly-og-bluesteel",
+      "category": "knives",
       "name": "og bluesteel",
       "displayName": "OG Bluesteel",
       "weaponType": "Butterfly",
@@ -1400,24 +1719,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368867779-Bluesteel_Butterfly.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 7000
+          "price": 7000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 13000
+          "price": 13000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 19000
+          "price": 19000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-dfault-og-bluesteel",
+      "category": "knives",
       "name": "og bluesteel",
       "displayName": "OG Bluesteel",
       "weaponType": "dfault",
@@ -1426,24 +1751,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368884496-Bluesteel_Default.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 1500
+          "price": 1500,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 2500
+          "price": 2500,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 4000
+          "price": 4000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-karambit-og-bluesteel",
+      "category": "knives",
       "name": "og bluesteel",
       "displayName": "OG Bluesteel",
       "weaponType": "Karambit",
@@ -1452,24 +1783,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368904991-Bluesteel_Karambit.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 6000
+          "price": 6000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 14000
+          "price": 14000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 22000
+          "price": 22000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-katana-og-bluesteel",
+      "category": "knives",
       "name": "og bluesteel",
       "displayName": "OG Bluesteel",
       "weaponType": "Katana",
@@ -1478,24 +1815,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368919819-Bluesteel_Katana.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 13000
+          "price": 13000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 22000
+          "price": 22000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 35000
+          "price": 35000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-survivor-og-bluesteel",
+      "category": "knives",
       "name": "og bluesteel",
       "displayName": "OG Bluesteel",
       "weaponType": "Survivor",
@@ -1504,24 +1847,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368938359-Bluesteel_Survivor.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 2500
+          "price": 2500,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 3500
+          "price": 3500,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 4500
+          "price": 4500,
+          "trend": 0
         }
       ]
     },
     {
       "id": "release-case-bayonet-onyx",
+      "category": "knives",
       "name": "onyx",
       "displayName": "Onyx",
       "weaponType": "Bayonet",
@@ -1530,16 +1879,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444762120-Onyx-watermarked.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 40000
+          "price": 40000,
+          "trend": 100
         }
       ]
     },
     {
       "id": "christmas-present-butterfly-peppermint",
+      "category": "knives",
       "name": "peppermint",
       "displayName": "Peppermint",
       "weaponType": "Butterfly",
@@ -1548,24 +1901,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444787405-Peppermint-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 5000
+          "price": 5000,
+          "trend": -16.7
         },
         {
           "condition": "Standard Issue",
-          "price": 6300
+          "price": 6300,
+          "trend": -16
         },
         {
           "condition": "Mint Condition",
-          "price": 7800
+          "price": 7800,
+          "trend": -17.9
         }
       ]
     },
     {
       "id": "present-karambit-peppermint",
+      "category": "knives",
       "name": "peppermint",
       "displayName": "Peppermint",
       "weaponType": "Karambit",
@@ -1574,68 +1933,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444773508-Peppermint-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 4500
+          "price": 4500,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 6500
+          "price": 6500,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 8500
-        }
-      ]
-    },
-    {
-      "id": "christmas-present-candy-cane-peppermint",
-      "name": "peppermint",
-      "displayName": "Peppermint",
-      "weaponType": "Candy Cane",
-      "rarity": "knife",
-      "crate": "christmas-present",
-      "imagePath": "https://images.sniperduels.com/weapons/1768444795583-Peppermint-watermarked.webp",
-      "demand": "High",
-      "tradeable": true,
-      "description": null,
-      "variants": [
-        {
-          "condition": "Mint Condition",
-          "price": 115000
-        }
-      ]
-    },
-    {
-      "id": "christmas-present-katana-peppermint",
-      "name": "peppermint",
-      "displayName": "Peppermint",
-      "weaponType": "Katana",
-      "rarity": "knife",
-      "crate": "christmas-present",
-      "imagePath": "https://images.sniperduels.com/weapons/1768444780001-Peppermint-watermarked.webp",
-      "demand": "Medium",
-      "tradeable": true,
-      "description": null,
-      "variants": [
-        {
-          "condition": "Well Worn",
-          "price": 25000
-        },
-        {
-          "condition": "Standard Issue",
-          "price": 50000
-        },
-        {
-          "condition": "Mint Condition",
-          "price": 120000
+          "price": 8500,
+          "trend": -48.9
         }
       ]
     },
     {
       "id": "present-survivor-peppermint",
+      "category": "knives",
       "name": "peppermint",
       "displayName": "Peppermint",
       "weaponType": "Survivor",
@@ -1644,24 +1965,84 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444774651-Peppermint_-watermarked.webp",
       "demand": "None",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 2000
+          "price": 2000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 2500
+          "price": 2500,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 3500
+          "price": 3500,
+          "trend": 0
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-candy-cane-peppermint",
+      "category": "knives",
+      "name": "peppermint",
+      "displayName": "Peppermint",
+      "weaponType": "Candy Cane",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444795583-Peppermint-watermarked.webp",
+      "demand": "High",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 115000,
+          "trend": 15
+        }
+      ]
+    },
+    {
+      "id": "christmas-present-katana-peppermint",
+      "category": "knives",
+      "name": "peppermint",
+      "displayName": "Peppermint",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "christmas-present",
+      "imagePath": "https://images.sniperduels.com/weapons/1768444780001-Peppermint-watermarked.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 25000,
+          "trend": -16.7
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 50000,
+          "trend": 11.1
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 120000,
+          "trend": 92
         }
       ]
     },
     {
       "id": "christmas-present-bayonet-peppermint",
+      "category": "knives",
       "name": "peppermint",
       "displayName": "Peppermint",
       "weaponType": "Bayonet",
@@ -1670,24 +2051,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444780613-Peppermint_-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 2900
+          "price": 2900,
+          "trend": -17.1
         },
         {
           "condition": "Standard Issue",
-          "price": 3800
+          "price": 3800,
+          "trend": -15.6
         },
         {
           "condition": "Mint Condition",
-          "price": 5300
+          "price": 5300,
+          "trend": -18.5
         }
       ]
     },
     {
       "id": "na-bombline-pixel",
+      "category": "knives",
       "name": "pixel",
       "displayName": "Pixel",
       "weaponType": "Bombline",
@@ -1696,16 +2083,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444757493-Pixel-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 78000
+          "price": 78000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "v-day-karambit-rose-fade",
+      "category": "knives",
       "name": "rose fade",
       "displayName": "Rose Fade",
       "weaponType": "Karambit",
@@ -1714,24 +2105,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770534962535-Karambit_icon_template.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 4000
+          "price": 4000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 5500
+          "price": 5500,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 8000
+          "price": 8000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "v-day-dfault-rose-gold",
+      "category": "knives",
       "name": "rose gold",
       "displayName": "Rose Gold",
       "weaponType": "dfault",
@@ -1740,24 +2137,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770535644122-Rose_Gold.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 1000
+          "price": 1000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 1500
+          "price": 1500,
+          "trend": 25
         },
         {
           "condition": "Mint Condition",
-          "price": 2000
+          "price": 2000,
+          "trend": 33.3
         }
       ]
     },
     {
       "id": "release-case-bayonet-ruby",
+      "category": "knives",
       "name": "ruby",
       "displayName": "Ruby",
       "weaponType": "Bayonet",
@@ -1766,20 +2169,25 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444718435-Ruby-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Standard Issue",
-          "price": 12500
+          "price": 12500,
+          "trend": 25
         },
         {
           "condition": "Mint Condition",
-          "price": 14000
+          "price": 14000,
+          "trend": 21.7
         }
       ]
     },
     {
       "id": "skin-case-1-karambit-sakura",
+      "category": "knives",
       "name": "sakura",
       "displayName": "Sakura",
       "weaponType": "Karambit",
@@ -1788,24 +2196,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444732221-Sakura-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 10000
+          "price": 10000,
+          "trend": -9.1
         },
         {
           "condition": "Standard Issue",
-          "price": 15000
+          "price": 15000,
+          "trend": 7.1
         },
         {
           "condition": "Mint Condition",
-          "price": 23000
+          "price": 23000,
+          "trend": 24.3
         }
       ]
     },
     {
       "id": "release-case-bayonet-sapphire",
+      "category": "knives",
       "name": "sapphire",
       "displayName": "Sapphire",
       "weaponType": "Bayonet",
@@ -1814,20 +2228,25 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444719167-Sapphire-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Standard Issue",
-          "price": 14000
+          "price": 14000,
+          "trend": 40
         },
         {
           "condition": "Mint Condition",
-          "price": 15000
+          "price": 15000,
+          "trend": 33.3
         }
       ]
     },
     {
       "id": "skin-case-1-katana-shogun",
+      "category": "knives",
       "name": "shogun",
       "displayName": "Shogun",
       "weaponType": "Katana",
@@ -1836,16 +2255,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444735022-Shogun-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 20000
+          "price": 20000,
+          "trend": -43.2
         }
       ]
     },
     {
       "id": "release-case-bayonet-sunset",
+      "category": "knives",
       "name": "sunset",
       "displayName": "Sunset",
       "weaponType": "Bayonet",
@@ -1854,20 +2277,25 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444719862-Sunset-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Standard Issue",
-          "price": 9000
+          "price": 9000,
+          "trend": 28.6
         },
         {
           "condition": "Mint Condition",
-          "price": 10000
+          "price": 10000,
+          "trend": 25
         }
       ]
     },
     {
       "id": "skin-case-1-karambit-sunset",
+      "category": "knives",
       "name": "sunset",
       "displayName": "Sunset",
       "weaponType": "Karambit",
@@ -1876,16 +2304,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444732814-Sunset-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 19000
+          "price": 19000,
+          "trend": -9.5
         }
       ]
     },
     {
       "id": "april-fools-case-survivor-survivor-of-destiny",
+      "category": "knives",
       "name": "survivor of destiny",
       "displayName": "Survivor of Destiny",
       "weaponType": "Survivor",
@@ -1894,24 +2326,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775172904035-Survivor_of_Destiny.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 1000
+          "price": 1000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 3000
+          "price": 3000,
+          "trend": 50
         },
         {
           "condition": "Mint Condition",
-          "price": 7000
+          "price": 7000,
+          "trend": 133.3
         }
       ]
     },
     {
       "id": "skin-case-1-katana-true-black",
+      "category": "knives",
       "name": "true black",
       "displayName": "True Black",
       "weaponType": "Katana",
@@ -1920,16 +2358,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444735666-True_Black-watermarked.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": " ",
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 97000
+          "price": 97000,
+          "trend": -15.7
         }
       ]
     },
     {
       "id": "skin-case-1-katana-true-white",
+      "category": "knives",
       "name": "true white",
       "displayName": "True White",
       "weaponType": "Katana",
@@ -1938,16 +2380,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444736226-True_White-watermarked.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 100000
+          "price": 100000,
+          "trend": -16.7
         }
       ]
     },
     {
       "id": "christmas-present-candy-cane-tutti-frutti",
+      "category": "knives",
       "name": "tutti frutti",
       "displayName": "Tutti Frutti",
       "weaponType": "Candy Cane",
@@ -1956,16 +2402,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444793660-Tutti_Frutti-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 180000
+          "price": 180000,
+          "trend": 20
         }
       ]
     },
     {
       "id": "hallows-basket-bayonet-vampiric",
+      "category": "knives",
       "name": "vampiric",
       "displayName": "Vampiric",
       "weaponType": "Bayonet",
@@ -1974,24 +2424,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444720477-Vampiric-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 14500
+          "price": 14500,
+          "trend": 45
         },
         {
           "condition": "Standard Issue",
-          "price": 26000
+          "price": 26000,
+          "trend": 48.6
         },
         {
           "condition": "Mint Condition",
-          "price": 30000
+          "price": 30000,
+          "trend": 42.9
         }
       ]
     },
     {
       "id": "release-case-bayonet-vanilla",
+      "category": "knives",
       "name": "vanilla",
       "displayName": "Vanilla",
       "weaponType": "Bayonet",
@@ -2000,16 +2456,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444721106-Vanilla-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 4500
+          "price": 4500,
+          "trend": 25
         }
       ]
     },
     {
       "id": "skin-case-1-butterfly-vanilla",
+      "category": "knives",
       "name": "vanilla",
       "displayName": "Vanilla",
       "weaponType": "Butterfly",
@@ -2018,16 +2478,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444727264-Vanilla-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 3000
+          "price": 3000,
+          "trend": -50
         }
       ]
     },
     {
       "id": "skin-case-1-karambit-vanilla",
+      "category": "knives",
       "name": "vanilla",
       "displayName": "Vanilla",
       "weaponType": "Karambit",
@@ -2036,16 +2500,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444733387-Vanilla-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 2500
+          "price": 2500,
+          "trend": -50
         }
       ]
     },
     {
       "id": "skin-case-1-katana-vanilla",
+      "category": "knives",
       "name": "vanilla",
       "displayName": "Vanilla",
       "weaponType": "Katana",
@@ -2054,16 +2522,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444736782-Vanilla-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 18000
+          "price": 18000,
+          "trend": -10
         }
       ]
     },
     {
       "id": "skin-case-1-survivor-vanilla",
+      "category": "knives",
       "name": "vanilla",
       "displayName": "Vanilla",
       "weaponType": "Survivor",
@@ -2072,16 +2544,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444737318-Vanilla-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 1500
+          "price": 1500,
+          "trend": -50
         }
       ]
     },
     {
       "id": "v-day-butterfly-velvet",
+      "category": "knives",
       "name": "velvet",
       "displayName": "Velvet",
       "weaponType": "Butterfly",
@@ -2090,24 +2566,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770535304239-velvet_butterfly.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 7000
+          "price": 7000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 11000
+          "price": 11000,
+          "trend": 46.7
         },
         {
           "condition": "Mint Condition",
-          "price": 15000
+          "price": 15000,
+          "trend": 87.5
         }
       ]
     },
     {
       "id": "skin-case-1-butterfly-venom",
+      "category": "knives",
       "name": "venom",
       "displayName": "Venom",
       "weaponType": "Butterfly",
@@ -2116,24 +2598,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444730552-Venom_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 10000
+          "price": 10000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 16000
+          "price": 16000,
+          "trend": -5.9
         },
         {
           "condition": "Mint Condition",
-          "price": 23000
+          "price": 23000,
+          "trend": 1.3
         }
       ]
     },
     {
       "id": "skin-case-1-karambit-viper",
+      "category": "knives",
       "name": "viper",
       "displayName": "Viper",
       "weaponType": "Karambit",
@@ -2142,24 +2630,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444733966-Viper-watermarked.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 11000
+          "price": 11000,
+          "trend": -35.3
         },
         {
           "condition": "Standard Issue",
-          "price": 17000
+          "price": 17000,
+          "trend": -29.2
         },
         {
           "condition": "Mint Condition",
-          "price": 25000
+          "price": 25000,
+          "trend": -16.7
         }
       ]
     },
     {
       "id": "classic-case-bayonet-wanwood",
+      "category": "knives",
       "name": "wanwood",
       "displayName": "Wanwood",
       "weaponType": "Bayonet",
@@ -2168,24 +2662,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369391751-Wanwood_Bayo.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 3000
+          "price": 3000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 5000
+          "price": 5000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 9000
+          "price": 9000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-butterfly-wanwood",
+      "category": "knives",
       "name": "wanwood",
       "displayName": "Wanwood",
       "weaponType": "Butterfly",
@@ -2194,24 +2694,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369405168-Wanwood_Butterfly.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 6000
+          "price": 6000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 11000
+          "price": 11000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 17000
+          "price": 17000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-karambit-wanwood",
+      "category": "knives",
       "name": "wanwood",
       "displayName": "Wanwood",
       "weaponType": "Karambit",
@@ -2220,24 +2726,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369422042-Wanwood_Karambit.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 4000
+          "price": 4000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 9000
+          "price": 9000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 17000
+          "price": 17000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-katana-wanwood",
+      "category": "knives",
       "name": "wanwood",
       "displayName": "Wanwood",
       "weaponType": "Katana",
@@ -2246,24 +2758,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369436902-Wanwood_Katana.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 13000
+          "price": 13000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 20000
+          "price": 20000,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 27000
+          "price": 27000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-survivor-wanwood",
+      "category": "knives",
       "name": "wanwood",
       "displayName": "Wanwood",
       "weaponType": "Survivor",
@@ -2272,24 +2790,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369451531-Wanwood_Survivor.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 1200
+          "price": 1200,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 2500
+          "price": 2500,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 3500
+          "price": 3500,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-dfault-wanwood",
+      "category": "knives",
       "name": "wanwood",
       "displayName": "Wanwood",
       "weaponType": "dfault",
@@ -2298,24 +2822,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369466579-Wanwood_Default.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 1000
+          "price": 1000,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 2500
+          "price": 2500,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 3000
+          "price": 3000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "christmas-present-candy-cane-wintergreen",
+      "category": "knives",
       "name": "wintergreen",
       "displayName": "Wintergreen",
       "weaponType": "Candy Cane",
@@ -2324,16 +2854,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444795001-Wintergreen-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 135000
+          "price": 135000,
+          "trend": 17.4
         }
       ]
     },
     {
       "id": "hallows-basket-bayonet-zombie-slayer",
+      "category": "knives",
       "name": "zombie slayer",
       "displayName": "Zombie Slayer",
       "weaponType": "Bayonet",
@@ -2342,24 +2876,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444713902-Zombie_Slayer-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 5500
+          "price": 5500,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 7500
+          "price": 7500,
+          "trend": -60.5
         },
         {
           "condition": "Mint Condition",
-          "price": 10000
+          "price": 10000,
+          "trend": -61.5
         }
       ]
     },
     {
       "id": "hallows-basket-awp-bewitched",
+      "category": "snipers",
       "name": "bewitched",
       "displayName": "Bewitched",
       "weaponType": "AWP",
@@ -2368,24 +2908,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444709170-Bewitched-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 300
+          "price": 300,
+          "trend": 300
         },
         {
           "condition": "Standard Issue",
-          "price": 500
+          "price": 500,
+          "trend": 177.8
         },
         {
           "condition": "Mint Condition",
-          "price": 850
+          "price": 850,
+          "trend": 183.3
         }
       ]
     },
     {
       "id": "christmas-present-awp-borealis",
+      "category": "snipers",
       "name": "borealis",
       "displayName": "Borealis",
       "weaponType": "AWP",
@@ -2394,24 +2940,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444763855-Borealis_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 110
+          "price": 110,
+          "trend": 69.2
         },
         {
           "condition": "Standard Issue",
-          "price": 180
+          "price": 180,
+          "trend": 38.5
         },
         {
           "condition": "Mint Condition",
-          "price": 250
+          "price": 250,
+          "trend": 38.9
         }
       ]
     },
     {
       "id": "release-case-awp-bubble-gum",
+      "category": "snipers",
       "name": "bubble gum",
       "displayName": "Bubble Gum",
       "weaponType": "AWP",
@@ -2420,24 +2972,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444699334-Bubble_Gum-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 150
+          "price": 150,
+          "trend": 100
         },
         {
           "condition": "Standard Issue",
-          "price": 250
+          "price": 250,
+          "trend": 92.3
         },
         {
           "condition": "Mint Condition",
-          "price": 400
+          "price": 400,
+          "trend": 100
         }
       ]
     },
     {
       "id": "classic-case-awp-cerulean-ozymandias",
+      "category": "snipers",
       "name": "cerulean ozymandias",
       "displayName": "Cerulean Ozymandias",
       "weaponType": "AWP",
@@ -2446,24 +3004,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369221510-Cerulean_Ozymandias.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 120
+          "price": 120,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 250
+          "price": 250,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 350
+          "price": 350,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-awp-crimson-ozymandias",
+      "category": "snipers",
       "name": "crimson ozymandias",
       "displayName": "Crimson Ozymandias",
       "weaponType": "AWP",
@@ -2472,24 +3036,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369246880-Crimson_Ozymandias.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 120
+          "price": 120,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 250
+          "price": 250,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 350
+          "price": 350,
+          "trend": 0
         }
       ]
     },
     {
       "id": "skin-case-1-awp-drifter",
+      "category": "snipers",
       "name": "drifter",
       "displayName": "Drifter",
       "weaponType": "AWP",
@@ -2498,24 +3068,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444723968-Drifter-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 75
+          "price": 75,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 180
+          "price": 180,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 250
+          "price": 250,
+          "trend": 0
         }
       ]
     },
     {
       "id": "christmas-present-intervention-evergreen-winter",
+      "category": "snipers",
       "name": "evergreen winter",
       "displayName": "Evergreen Winter",
       "weaponType": "Intervention",
@@ -2524,24 +3100,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444777502-Evergreen_Winter-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 110
+          "price": 110,
+          "trend": 69.2
         },
         {
           "condition": "Standard Issue",
-          "price": 180
+          "price": 180,
+          "trend": 38.5
         },
         {
           "condition": "Mint Condition",
-          "price": 250
+          "price": 250,
+          "trend": 28.2
         }
       ]
     },
     {
       "id": "v-day-awp-fantasy",
+      "category": "snipers",
       "name": "fantasy",
       "displayName": "Fantasy",
       "weaponType": "AWP",
@@ -2550,24 +3132,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770535364742-Fantasy.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 50
+          "price": 50,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 75
+          "price": 75,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 100
+          "price": 100,
+          "trend": 0
         }
       ]
     },
     {
       "id": "april-fools-case-shotgun-gems-are-infinite",
+      "category": "snipers",
       "name": "gems are infinite",
       "displayName": "Gems Are Infinite",
       "weaponType": "Shotgun",
@@ -2576,24 +3164,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775172869863-Gems_Are_Infinite.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 0
+          "price": 0,
+          "trend": 0
         }
       ]
     },
     {
       "id": "v-day-intervention-heartbreak",
+      "category": "snipers",
       "name": "heartbreak",
       "displayName": "Heartbreak",
       "weaponType": "Intervention",
@@ -2602,24 +3196,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770535143698-Heartbreak.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 75
+          "price": 75,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 125
+          "price": 125,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 175
+          "price": 175,
+          "trend": 0
         }
       ]
     },
     {
       "id": "hallows-basket-intervention-reaper",
+      "category": "snipers",
       "name": "reaper",
       "displayName": "Reaper",
       "weaponType": "Intervention",
@@ -2628,24 +3228,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444706535-Reaper-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 300
+          "price": 300,
+          "trend": 300
         },
         {
           "condition": "Standard Issue",
-          "price": 500
+          "price": 500,
+          "trend": 177.8
         },
         {
           "condition": "Mint Condition",
-          "price": 800
+          "price": 800,
+          "trend": 166.7
         }
       ]
     },
     {
       "id": "release-case-awp-vanilla",
+      "category": "snipers",
       "name": "vanilla",
       "displayName": "Vanilla",
       "weaponType": "AWP",
@@ -2654,16 +3260,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444698626-Vanilla-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 150
+          "price": 150,
+          "trend": 200
         }
       ]
     },
     {
       "id": "release-case-intervention-vanilla",
+      "category": "snipers",
       "name": "vanilla",
       "displayName": "Vanilla",
       "weaponType": "Intervention",
@@ -2672,16 +3282,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444699949-Vanilla-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 150
+          "price": 150,
+          "trend": 200
         }
       ]
     },
     {
       "id": "skin-case-1-deagle-vanilla",
+      "category": "snipers",
       "name": "vanilla",
       "displayName": "Vanilla",
       "weaponType": "Deagle",
@@ -2690,16 +3304,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444713377-Vanilla-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 50
+          "price": 50,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-shotgun-wanwood",
+      "category": "snipers",
       "name": "wanwood",
       "displayName": "Wanwood",
       "weaponType": "Shotgun",
@@ -2708,24 +3326,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369485594-WW_Shotgun.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 120
+          "price": 120,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 250
+          "price": 250,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 350
+          "price": 350,
+          "trend": 0
         }
       ]
     },
     {
       "id": "hallows-basket-awp-white-spiral",
+      "category": "snipers",
       "name": "white spiral",
       "displayName": "White Spiral",
       "weaponType": "AWP",
@@ -2734,24 +3358,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444750317-White_Spiral-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 300
+          "price": 300,
+          "trend": 300
         },
         {
           "condition": "Standard Issue",
-          "price": 500
+          "price": 500,
+          "trend": 177.8
         },
         {
           "condition": "Mint Condition",
-          "price": 800
+          "price": 800,
+          "trend": 166.7
         }
       ]
     },
     {
       "id": "release-case-intervention-apex",
+      "category": "snipers",
       "name": "apex",
       "displayName": "Apex",
       "weaponType": "Intervention",
@@ -2760,20 +3390,25 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444695622-Apex-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Standard Issue",
-          "price": 550
+          "price": 550,
+          "trend": 57.1
         },
         {
           "condition": "Mint Condition",
-          "price": 700
+          "price": 700,
+          "trend": 40
         }
       ]
     },
     {
       "id": "christmas-present-awp-arctic-recon",
+      "category": "snipers",
       "name": "arctic recon",
       "displayName": "Arctic Recon",
       "weaponType": "AWP",
@@ -2782,24 +3417,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444762930-Arctic_Recon_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 400
+          "price": 400,
+          "trend": 60
         },
         {
           "condition": "Standard Issue",
-          "price": 500
+          "price": 500,
+          "trend": 66.7
         },
         {
           "condition": "Mint Condition",
-          "price": 670
+          "price": 670,
+          "trend": 34
         }
       ]
     },
     {
       "id": "hallows-basket-intervention-blackknight",
+      "category": "snipers",
       "name": "black-knight",
       "displayName": "Black Knight",
       "weaponType": "Intervention",
@@ -2808,24 +3449,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444712677-Black_Knight-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 350
+          "price": 350,
+          "trend": -53.3
         },
         {
           "condition": "Standard Issue",
-          "price": 500
+          "price": 500,
+          "trend": -54.5
         },
         {
           "condition": "Mint Condition",
-          "price": 1000
+          "price": 1000,
+          "trend": -37.5
         }
       ]
     },
     {
       "id": "classic-case-intervention-black-valk",
+      "category": "snipers",
       "name": "black valk",
       "displayName": "Black Valk",
       "weaponType": "Intervention",
@@ -2834,24 +3481,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368612585-Black_Valk.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 250
+          "price": 250,
+          "trend": 66.7
         },
         {
           "condition": "Standard Issue",
-          "price": 500
+          "price": 500,
+          "trend": 42.9
         },
         {
           "condition": "Mint Condition",
-          "price": 750
+          "price": 750,
+          "trend": 36.4
         }
       ]
     },
     {
       "id": "skin-case-1-intervention-blossom",
+      "category": "snipers",
       "name": "blossom",
       "displayName": "Blossom",
       "weaponType": "Intervention",
@@ -2860,24 +3513,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444726547-Blossom-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 150
+          "price": 150,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 350
+          "price": 350,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 500
+          "price": 500,
+          "trend": 0
         }
       ]
     },
     {
       "id": "v-day-deagle-cupid",
+      "category": "snipers",
       "name": "cupid",
       "displayName": "Cupid",
       "weaponType": "Deagle",
@@ -2886,24 +3545,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770534876593-Cupid.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 150
+          "price": 150,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 250
+          "price": 250,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 350
+          "price": 350,
+          "trend": 0
         }
       ]
     },
     {
       "id": "skin-case-1-awp-dynasty",
+      "category": "snipers",
       "name": "dynasty",
       "displayName": "Dynasty",
       "weaponType": "AWP",
@@ -2912,24 +3577,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444724705-Dynasty-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 150
+          "price": 150,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 350
+          "price": 350,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 500
+          "price": 500,
+          "trend": 0
         }
       ]
     },
     {
       "id": "april-fools-case-shotgun-epic-face",
+      "category": "snipers",
       "name": "epic face",
       "displayName": "Epic Face",
       "weaponType": "Shotgun",
@@ -2938,24 +3609,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775172841720-Epic_Face.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 0
+          "price": 0,
+          "trend": 0
         }
       ]
     },
     {
       "id": "christmas-present-intervention-gingerbread",
+      "category": "snipers",
       "name": "gingerbread",
       "displayName": "Gingerbread",
       "weaponType": "Intervention",
@@ -2964,24 +3641,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444776737-Gingerbread-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 400
+          "price": 400,
+          "trend": 100
         },
         {
           "condition": "Standard Issue",
-          "price": 500
+          "price": 500,
+          "trend": 66.7
         },
         {
           "condition": "Mint Condition",
-          "price": 670
+          "price": 670,
+          "trend": 34
         }
       ]
     },
     {
       "id": "v-day-awp-jewel",
+      "category": "snipers",
       "name": "jewel",
       "displayName": "Jewel",
       "weaponType": "AWP",
@@ -2990,24 +3673,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770535043444-Jewel.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 150
+          "price": 150,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 250
+          "price": 250,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 350
+          "price": 350,
+          "trend": 0
         }
       ]
     },
     {
       "id": "hallows-basket-awp-red-spiral",
+      "category": "snipers",
       "name": "red spiral",
       "displayName": "Red Spiral",
       "weaponType": "AWP",
@@ -3016,24 +3705,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444693588-Red_Spiral-watermarked.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 1200
+          "price": 1200,
+          "trend": 60
         },
         {
           "condition": "Standard Issue",
-          "price": 1600
+          "price": 1600,
+          "trend": 60
         },
         {
           "condition": "Mint Condition",
-          "price": 2000
+          "price": 2000,
+          "trend": 33.3
         }
       ]
     },
     {
       "id": "v-day-shotgun-royal",
+      "category": "snipers",
       "name": "royal",
       "displayName": "Royal",
       "weaponType": "Shotgun",
@@ -3042,24 +3737,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770534843653-Royal.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 200
+          "price": 200,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 350
+          "price": 350,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 500
+          "price": 500,
+          "trend": 0
         }
       ]
     },
     {
       "id": "skin-case-1-awp-shogun",
+      "category": "snipers",
       "name": "shogun",
       "displayName": "Shogun",
       "weaponType": "AWP",
@@ -3068,24 +3769,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444725600-Shogun-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 150
+          "price": 150,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 350
+          "price": 350,
+          "trend": -36.4
         },
         {
           "condition": "Mint Condition",
-          "price": 500
+          "price": 500,
+          "trend": -37.5
         }
       ]
     },
     {
       "id": "present-deagle-snowflake",
+      "category": "snipers",
       "name": "snowflake",
       "displayName": "Snowflake",
       "weaponType": "Deagle",
@@ -3094,24 +3801,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444771379-Snowflake-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 250
+          "price": 250,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 300
+          "price": 300,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 450
+          "price": 450,
+          "trend": 0
         }
       ]
     },
     {
       "id": "release-case-awp-sunset-runner",
+      "category": "snipers",
       "name": "sunset runner",
       "displayName": "Sunset Runner",
       "weaponType": "AWP",
@@ -3120,20 +3833,25 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444700730-Sunset_Runner-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Standard Issue",
-          "price": 550
+          "price": 550,
+          "trend": 57.1
         },
         {
           "condition": "Mint Condition",
-          "price": 750
+          "price": 750,
+          "trend": 50
         }
       ]
     },
     {
       "id": "classic-case-intervention-valk",
+      "category": "snipers",
       "name": "valk",
       "displayName": "Valk",
       "weaponType": "Intervention",
@@ -3142,24 +3860,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369344236-Valk.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 250
+          "price": 250,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 500
+          "price": 500,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 750
+          "price": 750,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-default-abyss",
+      "category": "snipers",
       "name": "abyss",
       "displayName": "Abyss",
       "weaponType": "Default",
@@ -3168,24 +3892,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368535474-Abyss.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 30
+          "price": 30,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 50
+          "price": 50,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 70
+          "price": 70,
+          "trend": 0
         }
       ]
     },
     {
       "id": "hallows-basket-default-cauldron",
+      "category": "snipers",
       "name": "cauldron",
       "displayName": "Cauldron",
       "weaponType": "Default",
@@ -3194,24 +3924,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444749478-Cauldron-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 150
+          "price": 150,
+          "trend": 200
         },
         {
           "condition": "Standard Issue",
-          "price": 150
+          "price": 150,
+          "trend": 200
         },
         {
           "condition": "Mint Condition",
-          "price": 150
+          "price": 150,
+          "trend": 200
         }
       ]
     },
     {
       "id": "release-case-default-crime-scene",
+      "category": "snipers",
       "name": "crime scene",
       "displayName": "Crime Scene",
       "weaponType": "DEFAULT",
@@ -3220,24 +3956,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444698049-Crime_Scene-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 50
+          "price": 50,
+          "trend": 150
         },
         {
           "condition": "Standard Issue",
-          "price": 50
+          "price": 50,
+          "trend": 150
         },
         {
           "condition": "Mint Condition",
-          "price": 50
+          "price": 50,
+          "trend": 150
         }
       ]
     },
     {
       "id": "hallows-basket-default-crimson-catseye",
+      "category": "snipers",
       "name": "crimson catseye",
       "displayName": "Crimson Catseye",
       "weaponType": "Default",
@@ -3246,24 +3988,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444747474-Crimson_Catseye-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 150
+          "price": 150,
+          "trend": 200
         },
         {
           "condition": "Standard Issue",
-          "price": 150
+          "price": 150,
+          "trend": 200
         },
         {
           "condition": "Mint Condition",
-          "price": 150
+          "price": 150,
+          "trend": 200
         }
       ]
     },
     {
       "id": "skin-case-1-default-dance-dance",
+      "category": "snipers",
       "name": "dance dance",
       "displayName": "Dance Dance",
       "weaponType": "DEFAULT",
@@ -3272,24 +4020,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444711306-Dance_Dance-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 20
+          "price": 20,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 20
+          "price": 20,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 20
+          "price": 20,
+          "trend": 0
         }
       ]
     },
     {
       "id": "v-day-default-fleur-de-amour",
+      "category": "snipers",
       "name": "fleur de amour",
       "displayName": "Fleur De Amour",
       "weaponType": "Default",
@@ -3298,24 +4052,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770535421396-Fleur_De_Amour.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 20
+          "price": 20,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 30
+          "price": 30,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 40
+          "price": 40,
+          "trend": 0
         }
       ]
     },
     {
       "id": "christmas-present-default-fleur-de-noel",
+      "category": "snipers",
       "name": "fleur de noel",
       "displayName": "Fleur De Noel",
       "weaponType": "Default",
@@ -3324,24 +4084,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444764846-Fleur_De_Noel_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 75
+          "price": 75,
+          "trend": 50
         },
         {
           "condition": "Standard Issue",
-          "price": 75
+          "price": 75,
+          "trend": 50
         },
         {
           "condition": "Mint Condition",
-          "price": 75
+          "price": 75,
+          "trend": 50
         }
       ]
     },
     {
       "id": "release-case-default-lightning",
+      "category": "snipers",
       "name": "lightning",
       "displayName": "Lightning",
       "weaponType": "DEFAULT",
@@ -3350,24 +4116,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444697435-Lightning-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 50
+          "price": 50,
+          "trend": 150
         },
         {
           "condition": "Standard Issue",
-          "price": 50
+          "price": 50,
+          "trend": 150
         },
         {
           "condition": "Mint Condition",
-          "price": 50
+          "price": 50,
+          "trend": 150
         }
       ]
     },
     {
       "id": "christmas-present-default-naughty-present",
+      "category": "snipers",
       "name": "naughty present",
       "displayName": "Naughty Present",
       "weaponType": "Default",
@@ -3376,24 +4148,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444767604-Naughty_Present_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 75
+          "price": 75,
+          "trend": 50
         },
         {
           "condition": "Standard Issue",
-          "price": 75
+          "price": 75,
+          "trend": 50
         },
         {
           "condition": "Mint Condition",
-          "price": 75
+          "price": 75,
+          "trend": 50
         }
       ]
     },
     {
       "id": "classic-case-default-ring-of-fire",
+      "category": "snipers",
       "name": "ring of fire",
       "displayName": "Ring of Fire",
       "weaponType": "Default",
@@ -3402,24 +4180,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369309050-Ring_of_Fire.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 30
+          "price": 30,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 40
+          "price": 40,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 50
+          "price": 50,
+          "trend": 0
         }
       ]
     },
     {
       "id": "v-day-default-rose",
+      "category": "snipers",
       "name": "rose",
       "displayName": "Rose",
       "weaponType": "Default",
@@ -3428,24 +4212,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770535250985-Rose.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 20
+          "price": 20,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 30
+          "price": 30,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 40
+          "price": 40,
+          "trend": 0
         }
       ]
     },
     {
       "id": "skin-case-1-default-tidal",
+      "category": "snipers",
       "name": "tidal",
       "displayName": "Tidal",
       "weaponType": "DEFAULT",
@@ -3454,24 +4244,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444710052-Tidal-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 20
+          "price": 20,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 20
+          "price": 20,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 20
+          "price": 20,
+          "trend": 0
         }
       ]
     },
     {
       "id": "april-fools-case-shotgun-transparent",
+      "category": "snipers",
       "name": "transparent",
       "displayName": "Transparent",
       "weaponType": "Shotgun",
@@ -3480,24 +4276,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775172806528-Transparent.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 0
+          "price": 0,
+          "trend": 0
         }
       ]
     },
     {
       "id": "hallows-basket-default-vampire-hunter",
+      "category": "snipers",
       "name": "vampire hunter",
       "displayName": "Vampire Hunter",
       "weaponType": "Default",
@@ -3506,24 +4308,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444748675-Vampire_Hunter-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 150
+          "price": 150,
+          "trend": 200
         },
         {
           "condition": "Standard Issue",
-          "price": 150
+          "price": 150,
+          "trend": 200
         },
         {
           "condition": "Mint Condition",
-          "price": 150
+          "price": 150,
+          "trend": 200
         }
       ]
     },
     {
       "id": "v-day-default-velvet",
+      "category": "snipers",
       "name": "velvet",
       "displayName": "Velvet",
       "weaponType": "Default",
@@ -3532,24 +4340,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770535457284-Velvet.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 20
+          "price": 20,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 30
+          "price": 30,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 40
+          "price": 40,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-default-viridian",
+      "category": "snipers",
       "name": "viridian",
       "displayName": "Viridian",
       "weaponType": "Default",
@@ -3558,24 +4372,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369366142-Viridian.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 30
+          "price": 30,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 40
+          "price": 40,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 50
+          "price": 50,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-default-adurite",
+      "category": "snipers",
       "name": "adurite",
       "displayName": "Adurite",
       "weaponType": "Default",
@@ -3584,24 +4404,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368561139-Auderite.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 20
+          "price": 20,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 30
+          "price": 30,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 40
+          "price": 40,
+          "trend": 0
         }
       ]
     },
     {
       "id": "classic-case-default-black-iron",
+      "category": "snipers",
       "name": "black iron",
       "displayName": "Black iron",
       "weaponType": "Default",
@@ -3610,24 +4436,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368589500-Black_Iron.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 20
+          "price": 20,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 30
+          "price": 30,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 40
+          "price": 40,
+          "trend": 0
         }
       ]
     },
     {
       "id": "v-day-default-cherry-wood",
+      "category": "snipers",
       "name": "cherry wood",
       "displayName": "Cherry Wood",
       "weaponType": "Default",
@@ -3636,24 +4468,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770535671534-Cherry_Wood.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 10
+          "price": 10,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 20
+          "price": 20,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 30
+          "price": 30,
+          "trend": 0
         }
       ]
     },
     {
       "id": "release-case-default-flames",
+      "category": "snipers",
       "name": "flames",
       "displayName": "Flames",
       "weaponType": "DEFAULT",
@@ -3662,24 +4500,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444695037-Flames-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 30
+          "price": 30,
+          "trend": 200
         },
         {
           "condition": "Standard Issue",
-          "price": 30
+          "price": 30,
+          "trend": 200
         },
         {
           "condition": "Mint Condition",
-          "price": 30
+          "price": 30,
+          "trend": 200
         }
       ]
     },
     {
       "id": "christmas-present-default-glacial",
+      "category": "snipers",
       "name": "glacial",
       "displayName": "Glacial",
       "weaponType": "Default",
@@ -3688,24 +4532,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444766693-Glacial-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 30
+          "price": 30,
+          "trend": 50
         },
         {
           "condition": "Standard Issue",
-          "price": 30
+          "price": 30,
+          "trend": 50
         },
         {
           "condition": "Mint Condition",
-          "price": 30
+          "price": 30,
+          "trend": 50
         }
       ]
     },
     {
       "id": "release-case-default-green-stream",
+      "category": "snipers",
       "name": "green stream",
       "displayName": "Green Stream",
       "weaponType": "DEFAULT",
@@ -3714,24 +4564,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444694477-Green_Stream-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 30
+          "price": 30,
+          "trend": 200
         },
         {
           "condition": "Standard Issue",
-          "price": 30
+          "price": 30,
+          "trend": 200
         },
         {
           "condition": "Mint Condition",
-          "price": 30
+          "price": 30,
+          "trend": 200
         }
       ]
     },
     {
       "id": "v-day-default-hearts",
+      "category": "snipers",
       "name": "hearts",
       "displayName": "Hearts",
       "weaponType": "Default",
@@ -3740,24 +4596,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770535567534-Hearts.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 10
+          "price": 10,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 20
+          "price": 20,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 30
+          "price": 30,
+          "trend": 0
         }
       ]
     },
     {
       "id": "skin-case-1-default-industrial",
+      "category": "snipers",
       "name": "industrial",
       "displayName": "Industrial",
       "weaponType": "DEFAULT",
@@ -3766,24 +4628,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444708368-Industrial-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 10
+          "price": 10,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 10
+          "price": 10,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 10
+          "price": 10,
+          "trend": 0
         }
       ]
     },
     {
       "id": "hallows-basket-default-mummy",
+      "category": "snipers",
       "name": "mummy",
       "displayName": "Mummy",
       "weaponType": "Default",
@@ -3792,24 +4660,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444745629-Mummy-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 100
+          "price": 100,
+          "trend": 233.3
         },
         {
           "condition": "Standard Issue",
-          "price": 100
+          "price": 100,
+          "trend": 233.3
         },
         {
           "condition": "Mint Condition",
-          "price": 100
+          "price": 100,
+          "trend": 233.3
         }
       ]
     },
     {
       "id": "christmas-present-default-nice-present",
+      "category": "snipers",
       "name": "nice present",
       "displayName": "Nice Present",
       "weaponType": "Default",
@@ -3818,24 +4692,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444768432-Nice_Present_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 30
+          "price": 30,
+          "trend": 50
         },
         {
           "condition": "Standard Issue",
-          "price": 30
+          "price": 30,
+          "trend": 50
         },
         {
           "condition": "Mint Condition",
-          "price": 30
+          "price": 30,
+          "trend": 50
         }
       ]
     },
     {
       "id": "classic-case-default-og-bluesteel",
+      "category": "snipers",
       "name": "og bluesteel",
       "displayName": "OG Bluesteel",
       "weaponType": "Default",
@@ -3844,24 +4724,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368970537-Bluesteel.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 20
+          "price": 20,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 30
+          "price": 30,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 40
+          "price": 40,
+          "trend": 0
         }
       ]
     },
     {
       "id": "christmas-present-default-peppermint",
+      "category": "snipers",
       "name": "peppermint",
       "displayName": "Peppermint",
       "weaponType": "Default",
@@ -3870,24 +4756,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444770420-Peppermint_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 30
+          "price": 30,
+          "trend": 50
         },
         {
           "condition": "Standard Issue",
-          "price": 30
+          "price": 30,
+          "trend": 50
         },
         {
           "condition": "Mint Condition",
-          "price": 30
+          "price": 30,
+          "trend": 50
         }
       ]
     },
     {
       "id": "v-day-default-pink-camo",
+      "category": "snipers",
       "name": "pink camo",
       "displayName": "Pink Camo",
       "weaponType": "Default",
@@ -3896,24 +4788,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770535391743-Pink_Camo.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 10
+          "price": 10,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 20
+          "price": 20,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 30
+          "price": 30,
+          "trend": 0
         }
       ]
     },
     {
       "id": "christmas-present-default-reindeer",
+      "category": "snipers",
       "name": "reindeer",
       "displayName": "Reindeer",
       "weaponType": "Default",
@@ -3922,24 +4820,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444775853-Reindeer-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 30
+          "price": 30,
+          "trend": 50
         },
         {
           "condition": "Standard Issue",
-          "price": 30
+          "price": 30,
+          "trend": 50
         },
         {
           "condition": "Mint Condition",
-          "price": 30
+          "price": 30,
+          "trend": 50
         }
       ]
     },
     {
       "id": "release-case-default-snake-skin",
+      "category": "snipers",
       "name": "snake skin",
       "displayName": "Snake Skin",
       "weaponType": "Default",
@@ -3948,24 +4852,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444696679-Snake_Skin-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 30
+          "price": 30,
+          "trend": 200
         },
         {
           "condition": "Standard Issue",
-          "price": 30
+          "price": 30,
+          "trend": 200
         },
         {
           "condition": "Mint Condition",
-          "price": 30
+          "price": 30,
+          "trend": 200
         }
       ]
     },
     {
       "id": "hallows-basket-default-stalker",
+      "category": "snipers",
       "name": "stalker",
       "displayName": "Stalker",
       "weaponType": "Default",
@@ -3974,24 +4884,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444746667-Stalker-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 150
+          "price": 150,
+          "trend": 400
         },
         {
           "condition": "Standard Issue",
-          "price": 150
+          "price": 150,
+          "trend": 400
         },
         {
           "condition": "Mint Condition",
-          "price": 150
+          "price": 150,
+          "trend": 400
         }
       ]
     },
     {
       "id": "skin-case-1-default-tribal",
+      "category": "snipers",
       "name": "tribal",
       "displayName": "Tribal",
       "weaponType": "DEFAULT",
@@ -4000,24 +4916,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444707525-Tribal-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 10
+          "price": 10,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 10
+          "price": 10,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 10
+          "price": 10,
+          "trend": 0
         }
       ]
     },
     {
       "id": "hallows-basket-default-zombie",
+      "category": "snipers",
       "name": "zombie",
       "displayName": "Zombie",
       "weaponType": "Default",
@@ -4026,24 +4948,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444760532-Zombie-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 100
+          "price": 100,
+          "trend": 233.3
         },
         {
           "condition": "Standard Issue",
-          "price": 100
+          "price": 100,
+          "trend": 233.3
         },
         {
           "condition": "Mint Condition",
-          "price": 100
+          "price": 100,
+          "trend": 233.3
         }
       ]
     },
     {
       "id": "april-fools-case-shotgun-shotgun-of-destiny",
+      "category": "snipers",
       "name": "shotgun of destiny",
       "displayName": "Shotgun of Destiny",
       "weaponType": "Shotgun",
@@ -4052,24 +4980,30 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775172776512-Shotgun_of_Destiny.webp",
       "demand": "None",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Well Worn",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Standard Issue",
-          "price": 0
+          "price": 0,
+          "trend": 0
         },
         {
           "condition": "Mint Condition",
-          "price": 0
+          "price": 0,
+          "trend": 0
         }
       ]
     },
     {
       "id": "skin-case-1-intervention-angelic",
+      "category": "snipers",
       "name": "angelic",
       "displayName": "Angelic",
       "weaponType": "Intervention",
@@ -4078,16 +5012,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444739072-Angelic-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 25000
+          "price": 25000,
+          "trend": -50
         }
       ]
     },
     {
       "id": "na-executioner-ascii-white",
+      "category": "snipers",
       "name": "ascii white",
       "displayName": "Ascii White",
       "weaponType": "Executioner",
@@ -4096,16 +5034,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444755313-Ascii_White-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 400
+          "price": 400,
+          "trend": 33.3
         }
       ]
     },
     {
       "id": "skin-case-1-deagle-case-hardened",
+      "category": "snipers",
       "name": "case hardened",
       "displayName": "Case Hardened",
       "weaponType": "Deagle",
@@ -4114,60 +5056,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444740064-Case_Hardened_-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 20000
-        }
-      ]
-    },
-    {
-      "id": "skin-case-1-executioner-case-hardened-keep-private-untill-unboxed",
-      "name": "case hardened keep private untill unboxed",
-      "displayName": "Case Hardened (keep private untill unboxed)",
-      "weaponType": "Executioner",
-      "rarity": "secret",
-      "crate": "skin-case-1",
-      "imagePath": "https://images.sniperduels.com/weapons/1768444740653-Case_Hardened__keep_private_untill_unboxed_-watermarked.webp",
-      "demand": "Medium",
-      "tradeable": true,
-      "description": null,
-      "variants": [
-        {
-          "condition": "Well Worn",
-          "price": 0
-        },
-        {
-          "condition": "Standard Issue",
-          "price": 0
-        },
-        {
-          "condition": "Mint Condition",
-          "price": 0
-        }
-      ]
-    },
-    {
-      "id": "na-deagle-celtic",
-      "name": "celtic",
-      "displayName": "Celtic",
-      "weaponType": "Deagle",
-      "rarity": "collectable",
-      "crate": "N/A",
-      "imagePath": "https://images.sniperduels.com/weapons/1774369153600-Celtic_Deagle_Effect.webp",
-      "demand": "Medium",
-      "tradeable": true,
-      "description": null,
-      "variants": [
-        {
-          "condition": "Mint Condition",
-          "price": 350
+          "price": 20000,
+          "trend": -45.7
         }
       ]
     },
     {
       "id": "na-awp-celtic",
+      "category": "snipers",
       "name": "celtic",
       "displayName": "Celtic",
       "weaponType": "AWP",
@@ -4176,16 +5078,42 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369135339-Celtic_AWP_Effect.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 350
+          "price": 350,
+          "trend": 0
+        }
+      ]
+    },
+    {
+      "id": "na-deagle-celtic",
+      "category": "snipers",
+      "name": "celtic",
+      "displayName": "Celtic",
+      "weaponType": "Deagle",
+      "rarity": "collectable",
+      "crate": "N/A",
+      "imagePath": "https://images.sniperduels.com/weapons/1774369153600-Celtic_Deagle_Effect.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Mint Condition",
+          "price": 350,
+          "trend": 0
         }
       ]
     },
     {
       "id": "hallows-basket-awp-elementalist",
+      "category": "snipers",
       "name": "elementalist",
       "displayName": "Elementalist",
       "weaponType": "AWP",
@@ -4194,16 +5122,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444751252-Elementalist-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 230000
+          "price": 230000,
+          "trend": 64.3
         }
       ]
     },
     {
       "id": "classic-case-awp-empyreus",
+      "category": "snipers",
       "name": "empyreus",
       "displayName": "Empyreus",
       "weaponType": "AWP",
@@ -4212,16 +5144,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368164341-Emp.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 110000
+          "price": 110000,
+          "trend": -18.5
         }
       ]
     },
     {
       "id": "na-awp-for-her",
+      "category": "snipers",
       "name": "for her",
       "displayName": "For Her",
       "weaponType": "AWP",
@@ -4230,16 +5166,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770535075069-ForHer_Render.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 350
+          "price": 350,
+          "trend": 0
         }
       ]
     },
     {
       "id": "na-awp-for-him",
+      "category": "snipers",
       "name": "for him",
       "displayName": "For Him",
       "weaponType": "AWP",
@@ -4248,16 +5188,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770535011122-ForHim.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 350
+          "price": 350,
+          "trend": 0
         }
       ]
     },
     {
       "id": "na-awp-frankenawpgray",
+      "category": "snipers",
       "name": "frankenawp-gray",
       "displayName": "Frankenawp (Gray)",
       "weaponType": "AWP",
@@ -4266,16 +5210,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444754463-Frankenawp__Gray_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 1450
+          "price": 1450,
+          "trend": 20.8
         }
       ]
     },
     {
       "id": "na-awp-frankenawpgreen",
+      "category": "snipers",
       "name": "frankenawp-green",
       "displayName": "Frankenawp (Green)",
       "weaponType": "AWP",
@@ -4284,16 +5232,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444752052-Frankenawp__Green_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 1450
+          "price": 1450,
+          "trend": 20.8
         }
       ]
     },
     {
       "id": "classic-case-awp-frigidus",
+      "category": "snipers",
       "name": "frigidus",
       "displayName": "Frigidus",
       "weaponType": "AWP",
@@ -4302,16 +5254,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368244783-Frigidus.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 90000
+          "price": 90000,
+          "trend": -28
         }
       ]
     },
     {
       "id": "na-executioner-frostbite",
+      "category": "snipers",
       "name": "frostbite",
       "displayName": "Frostbite",
       "weaponType": "Executioner",
@@ -4320,16 +5276,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444756155-Frostbite-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 500
+          "price": 500,
+          "trend": 25
         }
       ]
     },
     {
       "id": "na-intervention-hallowspunisherorange",
+      "category": "snipers",
       "name": "hallows-punisher-orange",
       "displayName": "Hallows Punisher (Orange)",
       "weaponType": "Intervention",
@@ -4338,16 +5298,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444752941-Hallows_Punisher__Orange_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 1500
+          "price": 1500,
+          "trend": 50
         }
       ]
     },
     {
       "id": "na-intervention-hallowspunisherpurple",
+      "category": "snipers",
       "name": "hallows-punisher-purple",
       "displayName": "Hallows Punisher (Purple)",
       "weaponType": "Intervention",
@@ -4356,16 +5320,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444753595-Hallows_Punisher__Purple_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 1500
+          "price": 1500,
+          "trend": 50
         }
       ]
     },
     {
       "id": "classic-case-awp-infernus",
+      "category": "snipers",
       "name": "infernus",
       "displayName": "Infernus",
       "weaponType": "AWP",
@@ -4374,16 +5342,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774368231881-Infernus.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 100000
+          "price": 100000,
+          "trend": -16.7
         }
       ]
     },
     {
       "id": "release-case-awp-inverted",
+      "category": "snipers",
       "name": "inverted",
       "displayName": "Inverted",
       "weaponType": "AWP",
@@ -4392,16 +5364,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444701375-Inverted-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 93000
+          "price": 93000,
+          "trend": 69.1
         }
       ]
     },
     {
       "id": "release-case-default-inverted",
+      "category": "snipers",
       "name": "inverted",
       "displayName": "Inverted",
       "weaponType": "DEFAULT",
@@ -4410,16 +5386,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444701990-Inverted-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 68000
+          "price": 68000,
+          "trend": 112.5
         }
       ]
     },
     {
       "id": "skin-case-1-deagle-inverted",
+      "category": "snipers",
       "name": "inverted",
       "displayName": "Inverted",
       "weaponType": "Deagle",
@@ -4428,16 +5408,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444741250-Inverted_-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 45000
+          "price": 45000,
+          "trend": -6.2
         }
       ]
     },
     {
       "id": "skin-case-1-intervention-inverted",
+      "category": "snipers",
       "name": "inverted",
       "displayName": "Inverted",
       "weaponType": "Intervention",
@@ -4446,16 +5430,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444741889-Inverted_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 40000
+          "price": 40000,
+          "trend": -26.1
         }
       ]
     },
     {
       "id": "christmas-present-intervention-lonely-star",
+      "category": "snipers",
       "name": "lonely star",
       "displayName": "Lonely Star",
       "weaponType": "Intervention",
@@ -4464,16 +5452,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444790907-Lonely_Star-watermarked.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 112000
+          "price": 112000,
+          "trend": 49.3
         }
       ]
     },
     {
       "id": "v-day-executioner-loves-crest",
+      "category": "snipers",
       "name": "loves crest",
       "displayName": "Loves Crest",
       "weaponType": "Executioner",
@@ -4482,16 +5474,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770534907208-loves_crest_icon.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 60000
+          "price": 60000,
+          "trend": -36.8
         }
       ]
     },
     {
       "id": "april-fools-case-shotgun-mlg",
+      "category": "snipers",
       "name": "mlg",
       "displayName": "MLG",
       "weaponType": "Shotgun",
@@ -4500,34 +5496,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1775172732396-MLG.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 260000
-        }
-      ]
-    },
-    {
-      "id": "na-awp-netanyahu",
-      "name": "netanyahu",
-      "displayName": "netanyahu",
-      "weaponType": "AWP",
-      "rarity": "secret",
-      "crate": "N/A",
-      "imagePath": "https://images.sniperduels.com/weapons/1768444785063-netanyahu-watermarked.webp",
-      "demand": "Medium",
-      "tradeable": true,
-      "description": null,
-      "variants": [
-        {
-          "condition": "Mint Condition",
-          "price": 0
+          "price": 260000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "na-intervention-new-years-2026",
+      "category": "snipers",
       "name": "new years 2026",
       "displayName": "New Years 2026",
       "weaponType": "Intervention",
@@ -4536,16 +5518,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444778683-New_Years_2026-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 900
+          "price": 900,
+          "trend": 0
         }
       ]
     },
     {
       "id": "na-awp-new-years-2026",
+      "category": "snipers",
       "name": "new years 2026",
       "displayName": "New Years 2026",
       "weaponType": "AWP",
@@ -4554,16 +5540,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444779386-New_Years_2026-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 900
+          "price": 900,
+          "trend": 0
         }
       ]
     },
     {
       "id": "christmas-present-intervention-north-star",
+      "category": "snipers",
       "name": "north star",
       "displayName": "North Star",
       "weaponType": "Intervention",
@@ -4572,16 +5562,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444769421-North_Star-watermarked.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 120000
+          "price": 120000,
+          "trend": 41.2
         }
       ]
     },
     {
       "id": "present-awp-peppermint",
+      "category": "snipers",
       "name": "peppermint",
       "displayName": "Peppermint",
       "weaponType": "AWP",
@@ -4590,16 +5584,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444765806-Peppermint-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 450
+          "price": 450,
+          "trend": 50
         }
       ]
     },
     {
       "id": "na-intervention-peppermint",
+      "category": "snipers",
       "name": "peppermint",
       "displayName": "Peppermint",
       "weaponType": "Intervention",
@@ -4608,16 +5606,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444772413-Peppermint_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 450
+          "price": 450,
+          "trend": 50
         }
       ]
     },
     {
       "id": "na-bayonet-prototype",
+      "category": "knives",
       "name": "prototype",
       "displayName": "Prototype",
       "weaponType": "Bayonet",
@@ -4626,16 +5628,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444761261-Prototype_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": null
+          "price": null,
+          "trend": -90
         }
       ]
     },
     {
       "id": "classic-case-classic-rainbowretroslop",
+      "category": "snipers",
       "name": "rainbow-retroslop",
       "displayName": "Rainbow Retroslop",
       "weaponType": "Classic",
@@ -4644,42 +5650,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1774369278081-Rainbow_Retroslop_Fix.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": "Currently only one unboxed price is owners choice ",
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": null
-        }
-      ]
-    },
-    {
-      "id": "classic-case-classic-rainbow-retroslop-idk-if-its-in-the-case",
-      "name": "rainbow retroslop idk if its in the case",
-      "displayName": "Rainbow Retroslop (idk if its in the case)",
-      "weaponType": "Classic",
-      "rarity": "secret",
-      "crate": "classic-case",
-      "imagePath": "https://images.sniperduels.com/weapons/1774217850186-phrog.webp",
-      "demand": "Medium",
-      "tradeable": true,
-      "description": null,
-      "variants": [
-        {
-          "condition": "Well Worn",
-          "price": 0
-        },
-        {
-          "condition": "Standard Issue",
-          "price": 0
-        },
-        {
-          "condition": "Mint Condition",
-          "price": 0
+          "price": null,
+          "trend": 0
         }
       ]
     },
     {
       "id": "na-awp-rainbow-runner",
+      "category": "snipers",
       "name": "rainbow runner",
       "displayName": "Rainbow Runner",
       "weaponType": "AWP",
@@ -4688,16 +5672,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444744237-Rainbow_Runner-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": null
+          "price": null,
+          "trend": 0
         }
       ]
     },
     {
       "id": "na-classic-retroslopblue",
+      "category": "snipers",
       "name": "retroslop-blue",
       "displayName": "Retroslop (Blue)",
       "weaponType": "Classic",
@@ -4706,16 +5694,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444721665-Retroslop__Blue_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "No Longer In Circulation",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 40500
+          "price": 40500,
+          "trend": 0
         }
       ]
     },
     {
       "id": "na-classic-retroslop-gray",
+      "category": "snipers",
       "name": "retroslop gray",
       "displayName": "Retroslop (Gray)",
       "weaponType": "Classic",
@@ -4724,16 +5716,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444758606-Retroslop__Gray_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 38000
+          "price": 38000,
+          "trend": 11.8
         }
       ]
     },
     {
       "id": "na-classic-retroslop-green",
+      "category": "snipers",
       "name": "retroslop green",
       "displayName": "Retroslop (Green)",
       "weaponType": "Classic",
@@ -4742,16 +5738,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444722217-Retroslop__Green_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 45000
+          "price": 45000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "na-classic-retroslop-pink",
+      "category": "snipers",
       "name": "retroslop pink",
       "displayName": "Retroslop (Pink)",
       "weaponType": "Classic",
@@ -4760,16 +5760,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444759209-Retroslop__Pink_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 35000
+          "price": 35000,
+          "trend": 16.7
         }
       ]
     },
     {
       "id": "na-classic-retroslop-red",
+      "category": "snipers",
       "name": "retroslop red",
       "displayName": "Retroslop (Red)",
       "weaponType": "Classic",
@@ -4778,16 +5782,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444723401-Retroslop__Red_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 37000
+          "price": 37000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "na-classic-retroslop-yellow",
+      "category": "snipers",
       "name": "retroslop yellow",
       "displayName": "Retroslop (Yellow)",
       "weaponType": "Classic",
@@ -4796,68 +5804,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444722770-Retroslop__Yellow_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 48000
-        }
-      ]
-    },
-    {
-      "id": "na-shotgun-shamrock",
-      "name": "shamrock",
-      "displayName": "Shamrock",
-      "weaponType": "Shotgun",
-      "rarity": "collectable",
-      "crate": "N/A",
-      "imagePath": "https://images.sniperduels.com/weapons/1774369189455-phrog.webp",
-      "demand": "Medium",
-      "tradeable": true,
-      "description": null,
-      "variants": [
-        {
-          "condition": "Well Worn",
-          "price": 0
-        },
-        {
-          "condition": "Standard Issue",
-          "price": 0
-        },
-        {
-          "condition": "Mint Condition",
-          "price": 0
-        }
-      ]
-    },
-    {
-      "id": "na-awp-the-vt-weapon",
-      "name": "the vt weapon",
-      "displayName": "the vt weapon",
-      "weaponType": "AWP",
-      "rarity": "secret",
-      "crate": "N/A",
-      "imagePath": "https://images.sniperduels.com/weapons/1768444784488-the_vt_weapon-watermarked.webp",
-      "demand": "Medium",
-      "tradeable": true,
-      "description": null,
-      "variants": [
-        {
-          "condition": "Well Worn",
-          "price": 0
-        },
-        {
-          "condition": "Standard Issue",
-          "price": 0
-        },
-        {
-          "condition": "Mint Condition",
-          "price": 0
+          "price": 48000,
+          "trend": 0
         }
       ]
     },
     {
       "id": "na-deagle-tiger-stripe",
+      "category": "snipers",
       "name": "tiger stripe",
       "displayName": "Tiger Stripe",
       "weaponType": "Deagle",
@@ -4866,16 +5826,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444783801-Tiger_Stripe_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 650
+          "price": 650,
+          "trend": 0
         }
       ]
     },
     {
       "id": "release-case-default-true-black",
+      "category": "snipers",
       "name": "true black",
       "displayName": "True Black",
       "weaponType": "DEFAULT",
@@ -4884,16 +5848,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444703170-True_Black-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 75000
+          "price": 75000,
+          "trend": 50.6
         }
       ]
     },
     {
       "id": "release-case-default-true-inverted",
+      "category": "snipers",
       "name": "true inverted",
       "displayName": "True Inverted",
       "weaponType": "DEFAULT",
@@ -4902,16 +5870,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444703885-True_Inverted-watermarked.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 360000
+          "price": 360000,
+          "trend": 71.4
         }
       ]
     },
     {
       "id": "release-case-awp-true-inverted",
+      "category": "snipers",
       "name": "true inverted",
       "displayName": "True Inverted",
       "weaponType": "AWP",
@@ -4920,16 +5892,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444704566-True_Inverted-watermarked.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 400000
+          "price": 400000,
+          "trend": 58.1
         }
       ]
     },
     {
       "id": "skin-case-1-deagle-true-inverted",
+      "category": "snipers",
       "name": "true inverted",
       "displayName": "True Inverted",
       "weaponType": "Deagle",
@@ -4938,16 +5914,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444742414-True_Inverted-watermarked.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 300000
+          "price": 300000,
+          "trend": 7.1
         }
       ]
     },
     {
       "id": "skin-case-1-intervention-true-inverted",
+      "category": "snipers",
       "name": "true inverted",
       "displayName": "True Inverted",
       "weaponType": "Intervention",
@@ -4956,16 +5936,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444742975-True_Inverted_-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 270000
+          "price": 270000,
+          "trend": 20
         }
       ]
     },
     {
       "id": "v-day-awp-true-pink",
+      "category": "snipers",
       "name": "true pink",
       "displayName": "True Pink",
       "weaponType": "AWP",
@@ -4974,16 +5958,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770534589252-True_Love_Awp.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 175000
+          "price": 175000,
+          "trend": -20.5
         }
       ]
     },
     {
       "id": "v-day-default-true-pink",
+      "category": "snipers",
       "name": "true pink",
       "displayName": "True Pink",
       "weaponType": "Default",
@@ -4992,16 +5980,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770534655238-True_love_Default.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 160000
+          "price": 160000,
+          "trend": -23.8
         }
       ]
     },
     {
       "id": "v-day-intervention-true-pink",
+      "category": "snipers",
       "name": "true pink",
       "displayName": "True Pink",
       "weaponType": "Intervention",
@@ -5010,16 +6002,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1770535107044-True_Love_Intervention.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 140000
+          "price": 140000,
+          "trend": -33.3
         }
       ]
     },
     {
       "id": "release-case-default-true-white",
+      "category": "snipers",
       "name": "true white",
       "displayName": "True White",
       "weaponType": "DEFAULT",
@@ -5028,16 +6024,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444702596-True_White-watermarked.webp",
       "demand": "High",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 81500
+          "price": 81500,
+          "trend": 85.2
         }
       ]
     },
     {
       "id": "hallows-basket-awp-umbr-elementalist",
+      "category": "snipers",
       "name": "umbr elementalist",
       "displayName": "Umbr Elementalist",
       "weaponType": "AWP",
@@ -5046,16 +6046,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444705504-Umbr_Elementalist-watermarked.webp",
       "demand": "Hype",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 250000
+          "price": 250000,
+          "trend": 63.4
         }
       ]
     },
     {
       "id": "na-intervention-vaporwave",
+      "category": "snipers",
       "name": "vaporwave",
       "displayName": "Vaporwave",
       "weaponType": "Intervention",
@@ -5064,16 +6068,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444781827-Vaporwave_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 300
+          "price": 300,
+          "trend": 0
         }
       ]
     },
     {
       "id": "na-intervention-vaporwave-green",
+      "category": "snipers",
       "name": "vaporwave green",
       "displayName": "Vaporwave (Green)",
       "weaponType": "Intervention",
@@ -5082,16 +6090,20 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444782875-Vaporwave__Green_-watermarked.webp",
       "demand": "Medium",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 300
+          "price": 300,
+          "trend": 0
         }
       ]
     },
     {
       "id": "na-default-wood",
+      "category": "snipers",
       "name": "wood",
       "displayName": "Wood",
       "weaponType": "Default",
@@ -5100,11 +6112,14 @@
       "imagePath": "https://images.sniperduels.com/weapons/1768444743522-Wood-watermarked.webp",
       "demand": "Low",
       "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
       "description": null,
       "variants": [
         {
           "condition": "Mint Condition",
-          "price": 110000
+          "price": 110000,
+          "trend": -29
         }
       ]
     }

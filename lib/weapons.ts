@@ -1,8 +1,10 @@
 import data from '@/data/weapons.json';
 
-export type Variant = { condition: string; price: number };
+export type Variant = { condition: string; price: number; trend?: number };
 export type Weapon = {
   id: string;
+  /** 'snipers' | 'knives' — populated by the fetch script */
+  category?: string;
   name: string;
   displayName: string;
   weaponType: string;
@@ -11,6 +13,8 @@ export type Weapon = {
   imagePath: string | null;
   demand: string;
   tradeable: boolean;
+  marketStatus?: string;
+  defaultVariantIndex?: number;
   description: string | null;
   variants: Variant[];
 };
@@ -47,6 +51,25 @@ export function topWeapons(n = 12): Weapon[] {
 
 export function weaponsByRarity(rarity: string): Weapon[] {
   return dataset.weapons.filter(w => w.rarity.toLowerCase() === rarity.toLowerCase());
+}
+
+export function weaponsByCategory(category: 'snipers' | 'knives'): Weapon[] {
+  return dataset.weapons.filter(w => w.category === category && hasAnyPrice(w));
+}
+
+/** The "default" gem value for a weapon — picks variants[defaultVariantIndex] if priced,
+ *  otherwise the first priced variant. Returns 0 if nothing's priced. */
+export function defaultPrice(w: Weapon): number {
+  const idx = w.defaultVariantIndex ?? 0;
+  const def = w.variants[idx];
+  if (def && def.price > 0) return def.price;
+  const firstPriced = w.variants.find(v => v.price > 0);
+  return firstPriced?.price ?? 0;
+}
+
+/** Top (max) variant price — used on detail pages and rarity-sort. */
+export function topPrice(w: Weapon): number {
+  return Math.max(0, ...w.variants.map(v => v.price));
 }
 
 export function rarityClasses(rarity: string): string {
