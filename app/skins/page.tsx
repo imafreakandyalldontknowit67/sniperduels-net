@@ -1,14 +1,19 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import BuyCTA from '@/components/BuyCTA';
-import { SKINS, DISCORD_INVITE } from '@/lib/config';
+import { SKINS, DISCORD_INVITE, SITE_URL } from '@/lib/config';
 import DiscordButton from '@/components/DiscordButton';
 
+const SK_TITLE = 'Sniper Duels Skins for Sale — Frankenawp + Hallows Punisher';
+const SK_DESC =
+  'Buy verified Sniper Duels skins — Frankenawp (Green/Gray) + Hallows Punisher (Purple/Orange). Fixed $9 each, instant delivery, free middleman.';
+
 export const metadata: Metadata = {
-  title: 'Sniper Duels Skins for Sale — Frankenawp & Hallows Punisher',
-  description:
-    'Buy verified Sniper Duels skins — Green & Gray Frankenawp, Purple & Orange Hallows Punisher. Fixed prices from $9 each, instant delivery via sniperduels.shop.',
-  alternates: { canonical: 'https://sniperduels.net/skins' },
+  title: SK_TITLE,
+  description: SK_DESC,
+  alternates: { canonical: `${SITE_URL}/skins` },
+  openGraph: { title: SK_TITLE, description: SK_DESC, url: `${SITE_URL}/skins` },
+  twitter: { title: SK_TITLE, description: SK_DESC },
 };
 
 const SKIN_META: Record<string, { variant: string; family: string; color: string; ringClass: string }> = {
@@ -99,26 +104,40 @@ export default function SkinsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'ItemList',
-            name: 'Sniper Duels Skins',
-            itemListElement: SKINS.map((s, i) => ({
-              '@type': 'ListItem',
-              position: i + 1,
-              item: {
-                '@type': 'Product',
-                name: s.name,
-                category: 'Sniper Duels Skin',
-                offers: {
-                  '@type': 'Offer',
-                  price: s.price,
-                  priceCurrency: 'USD',
-                  availability: 'https://schema.org/InStock',
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+                { '@type': 'ListItem', position: 2, name: 'Skins', item: `${SITE_URL}/skins` },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'ItemList',
+              name: 'Sniper Duels Skins',
+              numberOfItems: SKINS.length,
+              itemListElement: SKINS.map((s, i) => ({
+                '@type': 'ListItem',
+                position: i + 1,
+                item: {
+                  '@type': 'Product',
+                  name: s.name,
+                  sku: s.slug,
+                  brand: { '@type': 'Brand', name: 'Sniper Duels' },
+                  category: 'Sniper Duels Skin',
+                  image: [`${SITE_URL}/og-banner.webp`],
+                  offers: {
+                    '@type': 'Offer',
+                    price: s.price,
+                    priceCurrency: 'USD',
+                    availability: 'https://schema.org/InStock',
+                  },
                 },
-              },
-            })),
-          }),
+              })),
+            },
+          ]),
         }}
       />
     </>

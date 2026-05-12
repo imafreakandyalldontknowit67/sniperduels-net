@@ -4,13 +4,18 @@ import BuyCTA from '@/components/BuyCTA';
 import PriceLadder from '@/components/PriceLadder';
 import TrustRow from '@/components/TrustRow';
 import SectionBanner from '@/components/SectionBanner';
-import { shopLink, SHOP_URL } from '@/lib/config';
+import { shopLink, SHOP_URL, SITE_URL } from '@/lib/config';
+
+const GEMS_TITLE = 'Buy Sniper Duels Gems — Cheapest Prices, Auto-Delivery';
+const GEMS_DESC =
+  'Buy Sniper Duels gems from $2.65/k bulk or $2.90/k retail. Same-day automated delivery from 13+ verified vendors. Cheaper than Robux, no risk, full refund guarantee.';
 
 export const metadata: Metadata = {
-  title: 'Buy Sniper Duels Gems — Cheapest Prices, Auto-Delivery',
-  description:
-    'Buy Sniper Duels gems from $2.65/k bulk or $2.90/k retail. Same-day automated delivery from 13+ verified vendors. Cheaper than Robux, no risk, full refund guarantee.',
-  alternates: { canonical: 'https://sniperduels.net/gems' },
+  title: GEMS_TITLE,
+  description: GEMS_DESC,
+  alternates: { canonical: `${SITE_URL}/gems` },
+  openGraph: { title: GEMS_TITLE, description: GEMS_DESC, url: `${SITE_URL}/gems` },
+  twitter: { title: GEMS_TITLE, description: GEMS_DESC },
 };
 
 const FAQS = [
@@ -131,55 +136,43 @@ export default function GemsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Product',
-            name: 'Sniper Duels Gems',
-            description: 'In-game premium currency for Sniper Duels (Roblox). Sold per 1,000 gems with bulk discounts.',
-            brand: { '@type': 'Brand', name: 'Sniper Duels' },
-            offers: {
-              '@type': 'AggregateOffer',
-              priceCurrency: 'USD',
-              lowPrice: '2.65',
-              highPrice: '2.90',
-              offerCount: 2,
-              availability: 'https://schema.org/InStock',
-              url: SHOP_URL + '/gems',
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+                { '@type': 'ListItem', position: 2, name: 'Gems', item: `${SITE_URL}/gems` },
+              ],
             },
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'FAQPage',
-            mainEntity: FAQS.map(f => ({
-              '@type': 'Question',
-              name: f.q,
-              acceptedAnswer: { '@type': 'Answer', text: f.a },
-            })),
-          }),
-        }}
-      />
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'HowTo',
-            name: 'How to buy Sniper Duels gems',
-            description: '5-step process to buy Sniper Duels gems via the sniperduels.shop auto-trade bot.',
-            totalTime: 'PT5M',
-            step: [
-              { '@type': 'HowToStep', position: 1, name: 'Pick gem amount', text: 'Pick the gem amount you want on sniperduels.shop' },
-              { '@type': 'HowToStep', position: 2, name: 'Pay', text: 'Pay with your preferred method — fiat or crypto' },
-              { '@type': 'HowToStep', position: 3, name: 'Receive Discord ping', text: 'Get a Discord ping when the bot is ready to trade you' },
-              { '@type': 'HowToStep', position: 4, name: 'Trade with bot', text: "Join the private server, hit \"I'm Ready\", trade with the bot" },
-              { '@type': 'HowToStep', position: 5, name: 'Done', text: 'Gems delivered.' },
-            ],
-          }),
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Product',
+              name: 'Sniper Duels Gems',
+              description: 'In-game premium currency for Sniper Duels (Roblox). Sold per 1,000 gems with bulk discounts.',
+              brand: { '@type': 'Brand', name: 'Sniper Duels' },
+              sku: 'sd-gems-bulk',
+              image: [`${SITE_URL}/og-banner.webp`, `${SITE_URL}/gem_icon.png`],
+              offers: {
+                '@type': 'AggregateOffer',
+                priceCurrency: 'USD',
+                lowPrice: '2.65',
+                highPrice: '2.90',
+                offerCount: 2,
+                availability: 'https://schema.org/InStock',
+                url: SHOP_URL + '/gems',
+              },
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: FAQS.map(f => ({
+                '@type': 'Question',
+                name: f.q,
+                acceptedAnswer: { '@type': 'Answer', text: f.a },
+              })),
+            },
+          ]),
         }}
       />
     </>

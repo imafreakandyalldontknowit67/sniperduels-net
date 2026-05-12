@@ -1,16 +1,21 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { ShieldCheck, Zap, Coins } from 'lucide-react';
-import { DISCORD_INVITE } from '@/lib/config';
+import { DISCORD_INVITE, SITE_URL } from '@/lib/config';
 import DiscordButton from '@/components/DiscordButton';
 import SectionBanner from '@/components/SectionBanner';
 import SpritePanel from '@/components/SpritePanel';
 
+const MM_TITLE = 'Free Sniper Duels Middleman — Trade Safely';
+const MM_DESC =
+  'Free verified middleman service for Sniper Duels cash trades. MM holds the item until payment lands, then releases both. No fees, no scams.';
+
 export const metadata: Metadata = {
-  title: 'Free Sniper Duels Middleman — Trade Safely',
-  description:
-    'Free verified middleman service for Sniper Duels trades. MM holds the seller\'s item until the buyer\'s payment lands, then releases both. No fees, no scams.',
-  alternates: { canonical: 'https://sniperduels.net/middleman' },
+  title: MM_TITLE,
+  description: MM_DESC,
+  alternates: { canonical: `${SITE_URL}/middleman` },
+  openGraph: { title: MM_TITLE, description: MM_DESC, url: `${SITE_URL}/middleman` },
+  twitter: { title: MM_TITLE, description: MM_DESC },
 };
 
 const TIERS = [
@@ -160,21 +165,6 @@ export default function MiddlemanPage() {
               itemListElement: [
                 { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sniperduels.net' },
                 { '@type': 'ListItem', position: 2, name: 'Middleman', item: 'https://sniperduels.net/middleman' },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'HowTo',
-              name: 'How a Sniper Duels middleman trade works',
-              description: '6-step verified middleman process: seller deposits item first, buyer pays second, MM releases both.',
-              totalTime: 'PT5M',
-              step: [
-                { '@type': 'HowToStep', position: 1, name: 'Open ticket', text: 'Both traders open a single middleman ticket on Discord' },
-                { '@type': 'HowToStep', position: 2, name: 'MM joins', text: 'A verified middleman claims the ticket and joins the private Roblox server' },
-                { '@type': 'HowToStep', position: 3, name: 'Seller deposits', text: 'Seller hands the item to the middleman first — MM confirms FX, condition, and stat match' },
-                { '@type': 'HowToStep', position: 4, name: 'Buyer pays', text: 'Buyer sends payment (gems, crypto, or fiat) — MM verifies funds landed' },
-                { '@type': 'HowToStep', position: 5, name: 'MM releases', text: 'Middleman releases the item to the buyer and forwards the payment to the seller' },
-                { '@type': 'HowToStep', position: 6, name: 'Done', text: 'Trade complete — ticket auto-closed, transcript logged' },
               ],
             },
             {

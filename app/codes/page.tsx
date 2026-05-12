@@ -1,16 +1,22 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import BuyCTA from '@/components/BuyCTA';
-import { SHOP_URL } from '@/lib/config';
+import { SHOP_URL, SITE_URL, DISCORD_INVITE } from '@/lib/config';
 
 const NOW = new Date();
 const MONTH_YEAR = NOW.toLocaleString('en-US', { month: 'long', year: 'numeric' });
 const SHORT = NOW.toLocaleString('en-US', { month: 'short', year: 'numeric' });
+const ISO_DATE = NOW.toISOString().slice(0, 10);
+
+const CODES_TITLE = `Sniper Duels Codes (${MONTH_YEAR}) — None Currently Active`;
+const CODES_DESC = `Looking for active Sniper Duels codes in ${MONTH_YEAR}? The game doesn't have a code-redemption system yet. Here's the cheapest way to get gems instead.`;
 
 export const metadata: Metadata = {
-  title: `Sniper Duels Codes (${MONTH_YEAR}) — Active List`,
-  description: `Looking for active Sniper Duels codes in ${MONTH_YEAR}? Currently the game has no public code-redemption system. Here's the easiest way to get gems instead.`,
-  alternates: { canonical: 'https://sniperduels.net/codes' },
+  title: CODES_TITLE,
+  description: CODES_DESC,
+  alternates: { canonical: `${SITE_URL}/codes` },
+  openGraph: { title: CODES_TITLE, description: CODES_DESC, url: `${SITE_URL}/codes` },
+  twitter: { title: CODES_TITLE, description: CODES_DESC },
 };
 
 export default function CodesPage() {
@@ -57,7 +63,8 @@ export default function CodesPage() {
         </ol>
         <p className="mt-4 text-sm text-gray-500">
           We&apos;ll update this page within 24 hours of any new code being added by the developers. If you spot a code
-          before us, post it in our <Link href="/middleman" className="text-accent hover:underline">community Discord</Link>{' '}
+          before us, post it in our{' '}
+          <a href={DISCORD_INVITE} target="_blank" rel="noopener" className="text-accent hover:underline">community Discord</a>{' '}
           and we&apos;ll verify and list it.
         </p>
       </section>
@@ -86,9 +93,11 @@ export default function CodesPage() {
               headline: `Sniper Duels Codes (${MONTH_YEAR})`,
               datePublished: NOW.toISOString(),
               dateModified: NOW.toISOString(),
-              author: { '@type': 'Organization', name: 'sniperduels.net' },
-              publisher: { '@type': 'Organization', name: 'sniperduels.net', logo: { '@type': 'ImageObject', url: 'https://sniperduels.net/gem_icon.png' } },
+              author: { '@type': 'Organization', name: 'sniperduels.net', url: SITE_URL },
+              publisher: { '@type': 'Organization', name: 'sniperduels.net', logo: { '@type': 'ImageObject', url: `${SITE_URL}/gem_icon.png` } },
               description: `Active Sniper Duels code list for ${MONTH_YEAR}. Updated weekly.`,
+              image: [`${SITE_URL}/og-banner.webp`],
+              mainEntityOfPage: { '@type': 'WebPage', '@id': `${SITE_URL}/codes` },
             },
             {
               '@context': 'https://schema.org',
@@ -131,7 +140,7 @@ export default function CodesPage() {
                   name: 'Are YouTube Sniper Duels code videos real?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'No. Code-list YouTube videos for Sniper Duels are AI-generated content farming clicks. There is no working code redemption system. Skip the videos.',
+                    text: 'No working codes have been verified. Most code-list videos for Sniper Duels appear to be auto-generated roundups recycling fake codes from other Roblox games for clicks — none of them redeem successfully because Sniper Duels has no code-redemption interface in-game.',
                   },
                 },
               ],

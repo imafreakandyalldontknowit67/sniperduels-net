@@ -4,13 +4,18 @@ import { Check, X } from 'lucide-react';
 import BuyCTA from '@/components/BuyCTA';
 import DiscordButton from '@/components/DiscordButton';
 import SectionBanner from '@/components/SectionBanner';
-import { DISCORD_INVITE } from '@/lib/config';
+import { DISCORD_INVITE, SITE_URL } from '@/lib/config';
+
+const ST_TITLE = 'Is Buying Sniper Duels Gems Safe?';
+const ST_DESC =
+  'Yes — buying Sniper Duels gems via sniperduels.shop is safe. See how the auto-trade bot works, what protections you get, and what to avoid.';
 
 export const metadata: Metadata = {
-  title: 'Is Buying Sniper Duels Gems Safe?',
-  description:
-    'Yes — buying Sniper Duels gems through sniperduels.shop is fully safe. Here\'s exactly how the auto-trade bot works, what protections you get, and what to watch out for elsewhere.',
-  alternates: { canonical: 'https://sniperduels.net/safe-trading' },
+  title: ST_TITLE,
+  description: ST_DESC,
+  alternates: { canonical: `${SITE_URL}/safe-trading` },
+  openGraph: { title: ST_TITLE, description: ST_DESC, url: `${SITE_URL}/safe-trading` },
+  twitter: { title: ST_TITLE, description: ST_DESC },
 };
 
 export default function SafeTradingPage() {
@@ -133,20 +138,6 @@ export default function SafeTradingPage() {
                     text: 'On sniperduels.shop the trade bot delivers, not the vendor — so a vendor cannot scam you directly. If anything goes wrong (bot offline, no inventory, etc.) you are auto-refunded to your wallet within 30 minutes.',
                   },
                 },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'HowTo',
-              name: 'How safe Sniper Duels gem buying works',
-              description: '6-step safe-flow: escrow → bot pulls order → Discord ping → trade in private server → confirm → auto-refund if anything fails.',
-              step: [
-                { '@type': 'HowToStep', position: 1, text: 'Pick a gem amount and pay on sniperduels.shop. Money goes to escrow.' },
-                { '@type': 'HowToStep', position: 2, text: 'Trade bot pulls your order off the queue and finds an available vendor.' },
-                { '@type': 'HowToStep', position: 3, text: 'You get a Discord ping when the bot is ready to trade. Join the private Roblox server.' },
-                { '@type': 'HowToStep', position: 4, text: "Hit \"I'm Ready\". The bot trades you the exact gem amount." },
-                { '@type': 'HowToStep', position: 5, text: 'Delivery confirmed → escrow releases to vendor. Done.' },
-                { '@type': 'HowToStep', position: 6, text: 'If the bot can\'t reach you within 30 minutes, you\'re auto-refunded to wallet.' },
               ],
             },
           ]),

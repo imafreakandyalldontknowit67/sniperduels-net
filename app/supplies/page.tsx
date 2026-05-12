@@ -1,13 +1,18 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import BuyCTA from '@/components/BuyCTA';
-import { SUPPLY_PRICING, shopLink } from '@/lib/config';
+import { SUPPLY_PRICING, shopLink, SITE_URL } from '@/lib/config';
+
+const SP_TITLE = 'Sniper Duels Supplies — Bluesteels, Vanillas, Collectibles';
+const SP_DESC =
+  'Buy Sniper Duels supplies — Bluesteels from $3.85/k, Survivor Vanillas, Collectibles, Epics and Legendaries. Bulk pricing, instant delivery.';
 
 export const metadata: Metadata = {
-  title: 'Sniper Duels Supplies — Bluesteels, Vanillas, Collectibles',
-  description:
-    'Buy Sniper Duels supplies — Bluesteels from $3.85/k, Survivor Vanillas, Collectibles, Epics and Legendaries. Bulk pricing, instant delivery.',
-  alternates: { canonical: 'https://sniperduels.net/supplies' },
+  title: SP_TITLE,
+  description: SP_DESC,
+  alternates: { canonical: `${SITE_URL}/supplies` },
+  openGraph: { title: SP_TITLE, description: SP_DESC, url: `${SITE_URL}/supplies` },
+  twitter: { title: SP_TITLE, description: SP_DESC },
 };
 
 function slug(name: string) {
@@ -113,25 +118,38 @@ export default function SuppliesPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'ItemList',
-            name: 'Sniper Duels Supplies',
-            itemListElement: SUPPLY_PRICING.map((s, i) => ({
-              '@type': 'ListItem',
-              position: i + 1,
-              item: {
-                '@type': 'Product',
-                name: s.name,
-                offers: {
-                  '@type': 'Offer',
-                  price: s.basePrice,
-                  priceCurrency: 'USD',
-                  availability: 'https://schema.org/InStock',
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+                { '@type': 'ListItem', position: 2, name: 'Supplies', item: `${SITE_URL}/supplies` },
+              ],
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'ItemList',
+              name: 'Sniper Duels Supplies',
+              numberOfItems: SUPPLY_PRICING.length,
+              itemListElement: SUPPLY_PRICING.map((s, i) => ({
+                '@type': 'ListItem',
+                position: i + 1,
+                item: {
+                  '@type': 'Product',
+                  name: s.name,
+                  sku: `sd-supply-${slug(s.name)}`,
+                  brand: { '@type': 'Brand', name: 'Sniper Duels' },
+                  offers: {
+                    '@type': 'Offer',
+                    price: s.basePrice,
+                    priceCurrency: 'USD',
+                    availability: 'https://schema.org/InStock',
+                  },
                 },
-              },
-            })),
-          }),
+              })),
+            },
+          ]),
         }}
       />
     </>

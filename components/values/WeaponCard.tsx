@@ -48,6 +48,11 @@ export default function WeaponCard({ weapon, priority = false }: Props) {
           <img
             src={weapon.imagePath}
             alt={weapon.displayName}
+            // Explicit dimensions match the source 1024×1024 — CSS still
+            // downscales to the card width, but the browser pre-allocates
+            // layout space so cards don't reflow on image load (kills CLS).
+            width={1024}
+            height={1024}
             loading={priority ? 'eager' : 'lazy'}
             decoding="async"
             fetchPriority={priority ? 'high' : 'low'}

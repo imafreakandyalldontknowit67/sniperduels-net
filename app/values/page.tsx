@@ -8,11 +8,16 @@ import SsrWeaponGrid from '@/components/values/SsrWeaponGrid';
 import { allWeapons, weaponsByCategory, slimForBrowser } from '@/lib/weapons';
 import { SITE_URL } from '@/lib/config';
 
+const VAL_TITLE = 'Sniper Duels Item Values — All Snipers & Knives';
+const VAL_DESC =
+  'Live value list for every Sniper Duels weapon — snipers + knives, all conditions and rarities. Search, filter, sort. Updated every 6h.';
+
 export const metadata: Metadata = {
-  title: 'Sniper Duels Item Values — All Snipers & Knives',
-  description:
-    'Live value list for every Sniper Duels weapon — snipers + knives, all conditions and rarities. Search, filter, sort. Updated every 6 hours.',
-  alternates: { canonical: 'https://sniperduels.net/values' },
+  title: VAL_TITLE,
+  description: VAL_DESC,
+  alternates: { canonical: `${SITE_URL}/values` },
+  openGraph: { title: VAL_TITLE, description: VAL_DESC, url: `${SITE_URL}/values` },
+  twitter: { title: VAL_TITLE, description: VAL_DESC },
 };
 
 export default function ValuesIndexPage() {
@@ -95,6 +100,22 @@ export default function ValuesIndexPage() {
                 url: `${SITE_URL}/values/${w.id}`,
                 name: w.displayName,
               })),
+            },
+            // Dataset schema unlocks Google Dataset Search + improves Perplexity
+            // citation odds for "value of X" queries — the values page IS a
+            // dataset (218 weapons × N conditions × price, refreshed every 6h).
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Dataset',
+              name: 'Sniper Duels Item Values',
+              description: `Live community-tracked gem values for ${weapons.length} Sniper Duels weapons across rarity tiers and condition variants. Refreshed every 6 hours from SDValues.`,
+              url: `${SITE_URL}/values`,
+              creator: { '@id': `${SITE_URL}#org` },
+              license: 'https://creativecommons.org/licenses/by/4.0/',
+              isAccessibleForFree: true,
+              keywords: ['Sniper Duels', 'Roblox', 'item values', 'weapon values', 'skin prices'],
+              variableMeasured: ['gem price', 'rarity', 'demand', 'condition', 'crate'],
+              measurementTechnique: 'Community-submitted price observations aggregated by SDValues, verified against live trade-bot order data on sniperduels.shop.',
             },
           ]),
         }}

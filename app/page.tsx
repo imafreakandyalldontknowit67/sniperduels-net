@@ -9,12 +9,25 @@ import SpriteButton from '@/components/SpriteButton';
 import SectionBanner from '@/components/SectionBanner';
 import SpritePanel from '@/components/SpritePanel';
 import { topWeapons, rarityClasses } from '@/lib/weapons';
-import { shopLink, SHOP_URL, DISCORD_INVITE } from '@/lib/config';
+import { shopLink, SHOP_URL, DISCORD_INVITE, SITE_URL } from '@/lib/config';
+
+const HOME_TITLE = 'Cheapest Sniper Duels Gems & Items — From $2.65/k';
+const HOME_DESC =
+  'Buy Sniper Duels gems from $2.65/k — 65% cheaper than Robux. 13+ verified vendors, auto-delivery in under 5 min, free middleman, full refund guarantee.';
 
 export const metadata: Metadata = {
-  title: 'Cheapest Sniper Duels Gems & Items — From $2.65/k',
-  description:
-    'The cheapest place to buy Sniper Duels gems, skins, sharkmats and supplies. Same-day automated delivery via sniperduels.shop. Free middleman service for trades.',
+  title: HOME_TITLE,
+  description: HOME_DESC,
+  alternates: { canonical: SITE_URL },
+  openGraph: {
+    title: HOME_TITLE,
+    description: HOME_DESC,
+    url: SITE_URL,
+  },
+  twitter: {
+    title: HOME_TITLE,
+    description: HOME_DESC,
+  },
 };
 
 export default function Home() {
@@ -28,7 +41,10 @@ export default function Home() {
           Auto-delivery · 24/7 · Discord-verified vendors
         </div>
         <h1 className="mb-4 text-3xl font-bold uppercase leading-tight tracking-wider sm:text-4xl md:text-5xl lg:text-[52px]">
-          <span className="block text-pixel-blue-light">Cheapest Sniper Duels</span>
+          {/* Trailing space inside the first span: visually unchanged because
+              `block` line-breaks anyway, but text extractors see "Duels Gems"
+              with a space (was rendering as "DuelsGems" to crawlers). */}
+          <span className="block text-pixel-blue-light">Cheapest Sniper Duels </span>
           <span className="block text-accent">Gems &amp; Skins</span>
         </h1>
         <p className="mx-auto mb-6 max-w-2xl text-[10px] font-bold uppercase tracking-wider leading-relaxed text-gray-400 sm:text-xs md:text-sm">
@@ -156,6 +172,19 @@ export default function Home() {
       </section>
 
       <BuyCTA campaign="home-banner" variant="banner" />
+
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'BreadcrumbList',
+            itemListElement: [
+              { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+            ],
+          }),
+        }}
+      />
     </>
   );
 }

@@ -39,13 +39,23 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   const w = weaponBySlug(params.slug);
   if (!w) return { title: 'Weapon not found' };
   const top = Math.max(0, ...w.variants.map(v => v.price));
+  const detailTitle = `${w.displayName} ${w.weaponType} Value — Sniper Duels`;
+  const detailDesc = `Current value of the ${w.displayName} ${w.weaponType} (${w.rarity}) in Sniper Duels: from ${top.toLocaleString()} gems. All conditions tracked, updated every 6h.`;
+  const detailUrl = `${SITE_URL}/values/${w.id}`;
   return {
-    title: `${w.displayName} ${w.weaponType} Value — Sniper Duels`,
-    description: `Current value of the ${w.displayName} ${w.weaponType} (${w.rarity}) in Sniper Duels: from ${top.toLocaleString()} gems. All conditions tracked, updated every 6h.`,
-    alternates: { canonical: `https://sniperduels.net/values/${w.id}` },
+    title: detailTitle,
+    description: detailDesc,
+    alternates: { canonical: detailUrl },
     openGraph: {
       title: `${w.displayName} ${w.weaponType} — Sniper Duels Value`,
+      description: detailDesc,
+      url: detailUrl,
       images: w.imagePath ? [{ url: w.imagePath }] : [],
+    },
+    twitter: {
+      title: `${w.displayName} ${w.weaponType} — Sniper Duels Value`,
+      description: detailDesc,
+      images: w.imagePath ? [w.imagePath] : undefined,
     },
   };
 }
@@ -250,10 +260,13 @@ export default function WeaponPage({ params }: { params: { slug: string } }) {
               '@type': 'Product',
               name: `${w.displayName} ${w.weaponType} (Sniper Duels)`,
               description: `${w.rarity} ${w.weaponType} skin in Sniper Duels${top > 0 ? `. Top value: ${top.toLocaleString()} gems.` : '.'}`,
+              // sku required for Product rich-result eligibility post-March 2024
+              sku: w.id,
               image: w.imagePath || undefined,
               brand: { '@type': 'Brand', name: 'Sniper Duels' },
               category: w.weaponType,
               url: `${SITE_URL}/values/${w.id}`,
+              ...(w.crate ? { isRelatedTo: { '@type': 'Thing', name: formatCrate(w.crate) } } : {}),
             },
           ]),
         }}

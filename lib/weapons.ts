@@ -22,6 +22,13 @@ export type Weapon = {
 
 const dataset = data as { generatedAt: string; count: number; weapons: Weapon[] };
 
+/** When the weapons.json file was last refreshed by the SDValues cron.
+ *  Use this for sitemap lastmod so hub pages signal freshness when the
+ *  underlying data actually changed (not whenever Coolify rebuilds). */
+export function weaponsGeneratedAt(): Date {
+  return new Date(dataset.generatedAt);
+}
+
 // Hide weapons where SDValues hasn't priced any variant — those render as "—"
 // and look like broken data. Keep their detail pages reachable so direct links
 // don't 404, but skip them from listings.

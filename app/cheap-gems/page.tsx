@@ -2,13 +2,18 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import BuyCTA from '@/components/BuyCTA';
 import PriceLadder from '@/components/PriceLadder';
-import { shopLink, SHOP_URL } from '@/lib/config';
+import { shopLink, SHOP_URL, SITE_URL } from '@/lib/config';
+
+const CG_TITLE = 'Cheap Sniper Duels Gems — Cheapest Live Rate $2.65/k';
+const CG_DESC =
+  'Cheapest Sniper Duels gems anywhere — $2.65/k bulk. Compared head-to-head with Robux, Eldorado, eBay, Gameflip. Updated weekly.';
 
 export const metadata: Metadata = {
-  title: 'Cheap Sniper Duels Gems — Cheapest Live Rate $2.65/k',
-  description:
-    'The cheapest Sniper Duels gems on the market — $2.65 per 1k bulk. Compared to Robux ($3.75/k), Eldorado ($3.20/k), and eBay ($3.00/k). Live competitor table updated daily.',
-  alternates: { canonical: 'https://sniperduels.net/cheap-gems' },
+  title: CG_TITLE,
+  description: CG_DESC,
+  alternates: { canonical: `${SITE_URL}/cheap-gems` },
+  openGraph: { title: CG_TITLE, description: CG_DESC, url: `${SITE_URL}/cheap-gems` },
+  twitter: { title: CG_TITLE, description: CG_DESC },
 };
 
 const COMPETITORS = [
@@ -103,19 +108,32 @@ export default function CheapGemsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify({
-            '@context': 'https://schema.org',
-            '@type': 'Product',
-            name: 'Cheap Sniper Duels Gems (Bulk)',
-            description: 'Bulk Sniper Duels gems at $2.65 per 1,000 — cheapest live rate vs Robux, Eldorado, eBay and Gameflip.',
-            offers: {
-              '@type': 'Offer',
-              priceCurrency: 'USD',
-              price: '2.65',
-              availability: 'https://schema.org/InStock',
-              url: SHOP_URL + '/gems',
+          __html: JSON.stringify([
+            {
+              '@context': 'https://schema.org',
+              '@type': 'BreadcrumbList',
+              itemListElement: [
+                { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+                { '@type': 'ListItem', position: 2, name: 'Cheap Gems', item: `${SITE_URL}/cheap-gems` },
+              ],
             },
-          }),
+            {
+              '@context': 'https://schema.org',
+              '@type': 'Product',
+              name: 'Cheap Sniper Duels Gems (Bulk)',
+              description: 'Bulk Sniper Duels gems at $2.65 per 1,000 — cheapest live rate vs Robux, Eldorado, eBay and Gameflip.',
+              brand: { '@type': 'Brand', name: 'Sniper Duels' },
+              sku: 'sd-gems-bulk-100k',
+              image: [`${SITE_URL}/og-banner.webp`],
+              offers: {
+                '@type': 'Offer',
+                priceCurrency: 'USD',
+                price: '2.65',
+                availability: 'https://schema.org/InStock',
+                url: SHOP_URL + '/gems',
+              },
+            },
+          ]),
         }}
       />
     </>

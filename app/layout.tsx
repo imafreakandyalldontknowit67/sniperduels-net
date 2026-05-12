@@ -32,19 +32,17 @@ export const metadata: Metadata = {
     'roblox sniper duels',
   ],
   icons: { icon: '/gem_icon.png', shortcut: '/gem_icon.png' },
+  // Defaults — every page should override `openGraph.title/description` and
+  // `twitter.title/description` in its own metadata export so each social
+  // preview is unique. The image fallback applies sitewide.
   openGraph: {
     type: 'website',
     siteName: 'sniperduels.net',
-    title: 'Sniper Duels — Cheapest Gems, Skins & Supplies',
-    description:
-      'Buy Sniper Duels gems from $2.65/k. Plus skins, sharkmats and free middleman trades. Auto-delivery in minutes.',
     url: SITE_URL,
     images: ['/og-banner.webp'],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Sniper Duels — Cheapest Gems, Skins & Supplies',
-    description: 'Buy Sniper Duels gems, skins and supplies. Same-day auto-delivery.',
     images: ['/og-banner.webp'],
   },
   alternates: { canonical: SITE_URL },
@@ -83,6 +81,21 @@ const SITE_JSON_LD = [
       },
       'query-input': 'required name=search_term_string',
     },
+  },
+  // The canonical entity this whole site is about. Pulls sniperduels.net into
+  // the Sniper Duels Knowledge-Graph cluster so AI Overviews + Perplexity
+  // associate us with the game.
+  {
+    '@context': 'https://schema.org',
+    '@type': 'VideoGame',
+    '@id': `${SITE_URL}#game`,
+    name: 'Sniper Duels',
+    alternateName: ['SniperDuels', 'Roblox Sniper Duels'],
+    gamePlatform: 'Roblox',
+    applicationCategory: 'Game',
+    playMode: 'MultiPlayer',
+    inLanguage: 'en',
+    genre: ['Shooter', 'First-person shooter', 'PvP'],
   },
 ];
 
