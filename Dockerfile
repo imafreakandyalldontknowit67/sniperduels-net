@@ -2,8 +2,10 @@
 
 FROM node:20-alpine AS deps
 WORKDIR /app
-COPY package.json package-lock.json* ./
-RUN npm install --no-audit --no-fund
+# `npm ci` enforces lockfile match (no silent dep drift) and fails on missing
+# integrity hashes — a basic supply-chain guard. Lockfile must exist.
+COPY package.json package-lock.json ./
+RUN npm ci --no-audit --no-fund
 
 FROM node:20-alpine AS builder
 WORKDIR /app

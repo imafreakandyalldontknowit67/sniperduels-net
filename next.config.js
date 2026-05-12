@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 module.exports = {
   reactStrictMode: true,
+  // Don't advertise the framework/version to attackers scanning for n-day Next.js CVEs.
+  poweredByHeader: false,
   experimental: {
     // Tree-shake lucide-react barrel imports — saves ~25KB raw / ~5KB br on First Load JS.
     optimizePackageImports: ['lucide-react'],
@@ -20,7 +22,40 @@ module.exports = {
     return [];
   },
   async headers() {
+    // CSP: 'unsafe-inline' on script/style is required because Next.js App Router
+    // hydration + JSON-LD via dangerouslySetInnerHTML both emit inline tags.
+    // Nonce-based CSP would force per-request rendering and break full SSG.
+    // The other directives (frame-ancestors, img-src allowlist, object-src none,
+    // base-uri, form-action) still close real attack vectors even with inline allowed.
+    const csp = [
+      "default-src 'self'",
+      "script-src 'self' 'unsafe-inline'",
+      "style-src 'self' 'unsafe-inline'",
+      "img-src 'self' data: blob: https://images.sniperduels.com https://sniperduels.shop",
+      "font-src 'self' data:",
+      "connect-src 'self'",
+      "frame-ancestors 'none'",
+      "base-uri 'self'",
+      "form-action 'self'",
+      "object-src 'none'",
+      "upgrade-insecure-requests",
+    ].join('; ');
+
+    const securityHeaders = [
+      { key: 'Strict-Transport-Security', value: 'max-age=63072000; includeSubDomains; preload' },
+      { key: 'X-Content-Type-Options', value: 'nosniff' },
+      { key: 'X-Frame-Options', value: 'DENY' },
+      { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+      { key: 'Permissions-Policy', value: 'camera=(), microphone=(), geolocation=(), interest-cohort=(), browsing-topics=(), payment=(), usb=(), magnetometer=(), accelerometer=(), gyroscope=()' },
+      { key: 'Cross-Origin-Opener-Policy', value: 'same-origin' },
+      { key: 'Cross-Origin-Resource-Policy', value: 'same-origin' },
+      { key: 'X-DNS-Prefetch-Control', value: 'on' },
+      { key: 'Content-Security-Policy', value: csp },
+    ];
+
     return [
+      // Apply security headers to every response.
+      { source: '/:path*', headers: securityHeaders },
       // Long-cache public assets (PNG/WEBP/SVG/JPG/AVIF/ICO/font files).
       // Next.js automatically immutable-caches /_next/static/* but NOT /public/* —
       // this fills that gap so repeat visitors don't re-download the 580KB of
