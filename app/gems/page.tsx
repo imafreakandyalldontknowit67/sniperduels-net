@@ -16,7 +16,7 @@ export const metadata: Metadata = {
 const FAQS = [
   {
     q: 'How much do Sniper Duels gems cost?',
-    a: 'Gem prices start at $2.65 per 1,000 gems for bulk orders (100k+) and $2.90 per 1,000 gems for smaller quantities. That works out to roughly 30% less than buying gems through the in-game Robux store.',
+    a: 'Gem prices start at $2.65 per 1,000 gems for bulk orders (100k+) and $2.90 per 1,000 gems for smaller quantities. That works out to roughly 65% less than buying gems through the in-game Robux store.',
   },
   {
     q: 'Is buying Sniper Duels gems safe?',

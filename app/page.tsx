@@ -103,7 +103,7 @@ export default function Home() {
             <Coins className="mb-2 h-7 w-7 text-accent" strokeWidth={2.5} />
             <h3 className="mb-2 text-base font-bold uppercase tracking-wider text-white sm:text-lg">Cheaper Than Roblox</h3>
             <p className="text-xs leading-relaxed text-gray-400 sm:text-sm">
-              Up to 30% less than the in-game Robux rate. Vendors compete on price.
+              Up to 65% less than the in-game Robux rate. Vendors compete on price.
             </p>
           </SpritePanel>
         </div>

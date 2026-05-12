@@ -43,7 +43,7 @@ export default function CodesPage() {
             sniperduels.shop
           </a>
           &apos;s vendor marketplace — bulk pricing as low as <span className="font-bold text-accent">$2.65 per 1,000 gems</span>{' '}
-          (about 30% cheaper than buying with Robux).
+          (about 65% cheaper than buying with Robux).
         </p>
         <BuyCTA campaign="codes" shopPath="/gems" shopLabel="Buy Cheap Gems →" />
       </section>
