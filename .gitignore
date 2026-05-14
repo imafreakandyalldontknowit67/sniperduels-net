@@ -7,3 +7,6 @@ out
 next-env.d.ts
 *.tsbuildinfo
 .snapshots/
+
+# Test artifacts from CVE-2026-44578 upgrade verification
+upgrade-snapshots/

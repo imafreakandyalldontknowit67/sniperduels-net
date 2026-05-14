@@ -35,8 +35,9 @@ function formatCrate(crate: string): string {
     .join(' ');
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const w = weaponBySlug(params.slug);
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const w = weaponBySlug(slug);
   if (!w) return { title: 'Weapon not found' };
   const top = Math.max(0, ...w.variants.map(v => v.price));
   const detailTitle = `${w.displayName} ${w.weaponType} Value — Sniper Duels`;
@@ -60,8 +61,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function WeaponPage({ params }: { params: { slug: string } }) {
-  const w = weaponBySlug(params.slug);
+export default async function WeaponPage({ params }: { params: Promise<{ slug: string }> }) {
+  const { slug } = await params;
+  const w = weaponBySlug(slug);
   if (!w) notFound();
 
   const top = Math.max(0, ...w.variants.map(v => v.price));
