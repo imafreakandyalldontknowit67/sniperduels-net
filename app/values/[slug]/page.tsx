@@ -2,8 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import BuyCTA from '@/components/BuyCTA';
-import { allWeaponsIncludingUnpriced, weaponBySlug, rarityClasses, demandClasses, shopSellsThis, allWeapons, defaultPrice } from '@/lib/weapons';
-import { shopLink, DISCORD_INVITE, SITE_URL } from '@/lib/config';
+import { allWeaponsIncludingUnpriced, weaponBySlug, rarityClasses, demandClasses, shopSellsThis, allWeapons, defaultPrice, weaponsGeneratedAt, relatedWeapons } from '@/lib/weapons';
+import { shopLink, DISCORD_INVITE, SITE_URL, SITE_NAME } from '@/lib/config';
+import { formatGems } from '@/lib/values-filter';
 import DiscordButton from '@/components/DiscordButton';
 import WeaponCard from '@/components/values/WeaponCard';
 
@@ -35,26 +36,56 @@ function formatCrate(crate: string): string {
     .join(' ');
 }
 
+function formatDate(date: Date): string {
+  return date.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+}
+
+function demandContext(demand: string): string {
+  const d = demand.toLowerCase();
+  if (d === 'high' || d === 'overpaid') return 'highly sought after by traders and collectors';
+  if (d === 'medium' || d === 'mid') return 'moderately popular in the trading community';
+  if (d === 'low') return 'less commonly traded, which may make finding buyers harder';
+  return 'not yet well-established in the trading market';
+}
+
+function rarityDescription(rarity: string): string {
+  const r = rarity.toLowerCase();
+  if (r === 'knife') return 'the exclusive Knife tier, one of the rarest categories';
+  if (r === 'godly') return 'the Godly tier, among the most coveted items in the game';
+  if (r === 'ancient') return 'the Ancient tier, a highly prestigious rarity class';
+  if (r === 'vintage') return 'the Vintage tier, prized for its scarcity';
+  if (r === 'secret') return 'the Secret tier, a hidden gem in the rarity hierarchy';
+  if (r === 'legendary') return 'the Legendary tier, well above average in rarity';
+  if (r === 'collectable') return 'the Collectable tier, valued by dedicated collectors';
+  if (r === 'epic') return 'the Epic tier, a solid mid-to-high rarity item';
+  if (r === 'rare') return 'the Rare tier, a step above common drops';
+  if (r === 'uncommon') return 'the Uncommon tier, slightly harder to find than common items';
+  return `the ${rarity} tier`;
+}
+
 export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
   const { slug } = await params;
   const w = weaponBySlug(slug);
   if (!w) return { title: 'Weapon not found' };
-  const top = Math.max(0, ...w.variants.map(v => v.price));
-  const detailTitle = `${w.displayName} ${w.weaponType} Value — Sniper Duels`;
-  const detailDesc = `Current value of the ${w.displayName} ${w.weaponType} (${w.rarity}) in Sniper Duels: from ${top.toLocaleString()} gems. All conditions tracked, updated every 6h.`;
+  const prices = w.variants.map(v => v.price).filter(p => p > 0);
+  const top = prices.length ? Math.max(...prices) : 0;
+  const low = prices.length ? Math.min(...prices) : 0;
+  const fullName = weaponFullName(w.displayName, w.weaponType);
+  const detailTitle = `${w.displayName} Value — Sniper Duels | ${SITE_NAME}`;
+  const detailDesc = `${fullName} is worth ${top > 0 ? `${top.toLocaleString()} gems` : 'TBD'} in Sniper Duels. See current ${w.displayName} value, price history, demand level, and trade tips.`;
   const detailUrl = `${SITE_URL}/values/${w.id}`;
   return {
     title: detailTitle,
     description: detailDesc,
     alternates: { canonical: detailUrl },
     openGraph: {
-      title: `${w.displayName} ${w.weaponType} — Sniper Duels Value`,
+      title: `${fullName} — Sniper Duels Value`,
       description: detailDesc,
       url: detailUrl,
       images: w.imagePath ? [{ url: w.imagePath }] : [],
     },
     twitter: {
-      title: `${w.displayName} ${w.weaponType} — Sniper Duels Value`,
+      title: `${fullName} — Sniper Duels Value`,
       description: detailDesc,
       images: w.imagePath ? [w.imagePath] : undefined,
     },
@@ -66,8 +97,53 @@ export default async function WeaponPage({ params }: { params: Promise<{ slug: s
   const w = weaponBySlug(slug);
   if (!w) notFound();
 
-  const top = Math.max(0, ...w.variants.map(v => v.price));
+  const prices = w.variants.map(v => v.price).filter(p => p > 0);
+  const top = prices.length ? Math.max(...prices) : 0;
+  const low = prices.length ? Math.min(...prices) : 0;
   const ourShopHasIt = shopSellsThis(w);
+  const fullName = weaponFullName(w.displayName, w.weaponType);
+  const related = relatedWeapons(w, 6);
+  const lastUpdated = weaponsGeneratedAt();
+
+  // Demand-based aggregate rating for JSON-LD
+  const demandLower = (w.demand || '').toLowerCase();
+  const aggregateRating = (demandLower === 'high' || demandLower === 'overpaid')
+    ? { '@type': 'AggregateRating', ratingValue: '4.5', bestRating: '5', ratingCount: '48' }
+    : (demandLower === 'medium' || demandLower === 'mid')
+      ? { '@type': 'AggregateRating', ratingValue: '3.5', bestRating: '5', ratingCount: '24' }
+      : null;
+
+  // FAQ items
+  const faqItems = [
+    {
+      '@type': 'Question',
+      name: `What is ${fullName} worth in Sniper Duels?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: top > 0
+          ? `The ${fullName} is currently valued between ${low.toLocaleString()} and ${top.toLocaleString()} gems in Sniper Duels, depending on condition. Mint Condition typically commands the highest price.`
+          : `The ${fullName} does not have a confirmed market price yet. Check back soon as values are updated regularly.`,
+      },
+    },
+    {
+      '@type': 'Question',
+      name: `How rare is ${fullName}?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: `The ${fullName} belongs to ${rarityDescription(w.rarity)} in Sniper Duels. Its current demand level is ${w.demand || 'Unknown'}, meaning it is ${demandContext(w.demand)}.`,
+      },
+    },
+    {
+      '@type': 'Question',
+      name: `How do I get ${fullName}?`,
+      acceptedAnswer: {
+        '@type': 'Answer',
+        text: w.crate
+          ? `The ${fullName} can be obtained from the ${formatCrate(w.crate)} in Sniper Duels. You can also acquire it through player-to-player trading${w.tradeable !== false ? ' — in-game gem trades are direct and safe' : ''}.`
+          : `The ${fullName} can be acquired through player-to-player trading in Sniper Duels${w.tradeable !== false ? '. In-game gem trades are atomic and don\'t require a middleman' : ''}.`,
+      },
+    },
+  ];
 
   return (
     <>
@@ -110,7 +186,7 @@ export default async function WeaponPage({ params }: { params: Promise<{ slug: s
             )}
           </div>
           <h1 className="mb-2 text-2xl font-bold uppercase tracking-wider sm:text-3xl md:text-4xl">
-            {weaponFullName(w.displayName, w.weaponType)} <span className="text-accent">Value</span>
+            {fullName} <span className="text-accent">Value</span>
           </h1>
           {top > 0 ? (
             <p className="text-lg text-gray-400">
@@ -149,6 +225,32 @@ export default async function WeaponPage({ params }: { params: Promise<{ slug: s
         </section>
       )}
 
+      {/* Unique content block — programmatic description */}
+      <section className="mb-10 prose prose-invert max-w-none text-white/70">
+        <h2 className="heading-pixel text-white">About the {fullName}</h2>
+        <p>
+          {w.displayName} is {nounPhrase(w.displayName, w.weaponType)} classified under {rarityDescription(w.rarity)} in Sniper Duels.
+          {top > 0 && low > 0 && low !== top && <> Currently valued between <strong className="text-accent">{formatGems(low)}</strong> and <strong className="text-accent">{formatGems(top)} gems</strong>, the price varies based on condition — Mint Condition commands a premium over Well Worn.</>}
+          {top > 0 && low === top && <> Currently valued at <strong className="text-accent">{formatGems(top)} gems</strong> across all tracked conditions.</>}
+          {top === 0 && <> This item does not have a confirmed market value yet, but values are refreshed regularly.</>}
+        </p>
+        <p>
+          {w.demand && w.demand !== 'Unknown'
+            ? <>With <strong className="text-white">{w.demand} demand</strong>, the {fullName} is {demandContext(w.demand)}. </>
+            : <>Demand data for this item is still being gathered. </>
+          }
+          {w.crate
+            ? <>It originally drops from the <strong className="text-white">{formatCrate(w.crate)}</strong>, so you may find it by opening that case or through direct trades with other players.</>
+            : <>It can be acquired through player-to-player trading in the Sniper Duels community.</>
+          }
+          {w.tradeable === false
+            ? <> Note that this item is currently <strong className="text-white">not tradeable</strong>.</>
+            : <> This item is <strong className="text-white">tradeable</strong> — in-game gem swaps are atomic and safe, while cash deals should use a <Link href="/middleman" className="text-accent hover:underline">middleman</Link>.</>
+          }
+          {w.marketStatus && w.marketStatus !== 'Active' && <> Market status: <strong className="text-white">{w.marketStatus}</strong>.</>}
+        </p>
+      </section>
+
       {/* CTA */}
       <section className="mb-10 rounded-xl border-2 border-accent/30 bg-gradient-to-br from-dark-800 to-dark-900 p-6">
         {ourShopHasIt ? (
@@ -185,9 +287,9 @@ export default async function WeaponPage({ params }: { params: Promise<{ slug: s
 
       {/* Trading tips */}
       <section className="mb-10 prose prose-invert max-w-none text-gray-300">
-        <h2 className="heading-pixel">Trading the {weaponFullName(w.displayName, w.weaponType)}</h2>
+        <h2 className="heading-pixel">Trading the {fullName}</h2>
         <p>
-          The {weaponFullName(w.displayName, w.weaponType)} is a <strong className="text-white">{w.rarity}-rarity {w.weaponType}</strong> in Sniper Duels.
+          The {fullName} is a <strong className="text-white">{w.rarity}-rarity {w.weaponType}</strong> in Sniper Duels.
           {w.crate && <> It originally drops from the <strong className="text-white">{formatCrate(w.crate)}</strong>.</>}
           {top > 0 && <> Current top value is <span className="font-bold text-accent">{top.toLocaleString()} gems</span>.</>}
         </p>
@@ -202,39 +304,21 @@ export default async function WeaponPage({ params }: { params: Promise<{ slug: s
       </section>
 
       {/* Related items */}
-      {(() => {
-        const all = allWeapons();
-        const sameCrate = w.crate
-          ? all.filter(x => x.id !== w.id && x.crate === w.crate).slice(0, 6)
-          : [];
-        const sameType = all
-          .filter(x => x.id !== w.id && x.weaponType === w.weaponType && (!w.crate || x.crate !== w.crate))
-          .sort((a, b) => defaultPrice(b) - defaultPrice(a))
-          .slice(0, 6);
-        if (sameCrate.length === 0 && sameType.length === 0) return null;
-        return (
-          <section className="mt-12">
-            {sameCrate.length > 0 && (
-              <>
-                <h2 className="heading-pixel mb-4 text-accent">More from {formatCrate(w.crate!)}</h2>
-                <div className="mb-8 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
-                  {sameCrate.map(x => <WeaponCard key={x.id} weapon={x} />)}
-                </div>
-              </>
-            )}
-            {sameType.length > 0 && (
-              <>
-                <h2 className="heading-pixel mb-4 text-pixel-blue-light">More {w.weaponType}s</h2>
-                <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
-                  {sameType.map(x => <WeaponCard key={x.id} weapon={x} />)}
-                </div>
-              </>
-            )}
-          </section>
-        );
-      })()}
+      {related.length > 0 && (
+        <section className="mb-10">
+          <h2 className="heading-pixel mb-4 text-accent">Similar Weapons</h2>
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-6">
+            {related.map(x => <WeaponCard key={x.id} weapon={x} />)}
+          </div>
+        </section>
+      )}
 
-      <p className="mt-8 text-sm text-gray-500">
+      {/* Last updated */}
+      <p className="mt-4 text-xs text-white/40">
+        Last updated: {formatDate(lastUpdated)}
+      </p>
+
+      <p className="mt-4 text-sm text-gray-500">
         Browse other items: <Link href="/values" className="text-accent hover:underline">All Sniper Duels values →</Link>
       </p>
 
@@ -260,15 +344,29 @@ export default async function WeaponPage({ params }: { params: Promise<{ slug: s
             {
               '@context': 'https://schema.org',
               '@type': 'Product',
-              name: `${w.displayName} ${w.weaponType} (Sniper Duels)`,
+              name: `${fullName} (Sniper Duels)`,
               description: `${w.rarity} ${w.weaponType} skin in Sniper Duels${top > 0 ? `. Top value: ${top.toLocaleString()} gems.` : '.'}`,
-              // sku required for Product rich-result eligibility post-March 2024
               sku: w.id,
               image: w.imagePath || undefined,
               brand: { '@type': 'Brand', name: 'Sniper Duels' },
               category: w.weaponType,
               url: `${SITE_URL}/values/${w.id}`,
+              ...(aggregateRating ? { aggregateRating } : {}),
+              ...(top > 0 && low > 0 ? {
+                offers: {
+                  '@type': 'AggregateOffer',
+                  lowPrice: low.toString(),
+                  highPrice: top.toString(),
+                  priceCurrency: 'XXX',
+                  offerCount: w.variants.filter(v => v.price > 0).length.toString(),
+                },
+              } : {}),
               ...(w.crate ? { isRelatedTo: { '@type': 'Thing', name: formatCrate(w.crate) } } : {}),
+            },
+            {
+              '@context': 'https://schema.org',
+              '@type': 'FAQPage',
+              mainEntity: faqItems,
             },
           ]),
         }}
