@@ -119,6 +119,20 @@ export default function ValuesIndexPage() {
         </Link>
       </div>
 
+      {/* Browse-by-case callout — captures players who search by case name
+          ("classic case items", "april fools case") rather than weapon name. */}
+      <Link
+        href="/cases"
+        className="group mb-6 flex items-center justify-between border-[3px] border-dark-500 bg-dark-700 p-4 transition-colors hover:border-accent/60 hover:no-underline"
+      >
+        <div>
+          <div className="text-[10px] font-bold uppercase tracking-wider text-pixel-blue-light">Browse by case</div>
+          <div className="text-lg font-bold uppercase tracking-wider text-white sm:text-xl">All Sniper Duels Cases</div>
+          <div className="text-xs text-gray-500">Classic, Skin Case 1, Christmas, Hallows, April Fools &amp; more</div>
+        </div>
+        <span className="text-2xl font-black text-accent group-hover:translate-x-1">→</span>
+      </Link>
+
       {/* Combined browser — search/filter/sort across everything */}
       <SectionBanner color="gold" align="left" eyebrow="Search every weapon at once. Filter by rarity, crate, demand.">
         Combined Browser
