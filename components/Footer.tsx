@@ -22,7 +22,6 @@ export default function Footer() {
             <div className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-300">Buy</div>
             <ul className="space-y-2 text-sm text-gray-400">
               <li><Link href="/gems" className="hover:text-accent">Gems</Link></li>
-              <li><Link href="/cheap-gems" className="hover:text-accent">Cheap Gems</Link></li>
               <li><Link href="/skins" className="hover:text-accent">Skins</Link></li>
               <li><Link href="/supplies" className="hover:text-accent">Supplies</Link></li>
             </ul>
@@ -34,6 +33,7 @@ export default function Footer() {
               <li><Link href="/snipers" className="hover:text-accent">Snipers</Link></li>
               <li><Link href="/knives" className="hover:text-accent">Knives</Link></li>
               <li><Link href="/value-calculator" className="hover:text-accent">Value Calculator</Link></li>
+              <li><Link href="/discord" className="hover:text-accent">Discord Server</Link></li>
               <li><Link href="/middleman" className="hover:text-accent">Free Middleman</Link></li>
               <li><Link href="/safe-trading" className="hover:text-accent">Safe Trading</Link></li>
               <li><Link href="/codes" className="hover:text-accent">Codes</Link></li>

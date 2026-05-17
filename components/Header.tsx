@@ -14,6 +14,7 @@ const NAV = [
   { href: '/knives', label: 'Knives' },
   { href: '/values', label: 'Value List' },
   { href: '/value-calculator', label: 'Calculator' },
+  { href: '/discord', label: 'Discord' },
   { href: '/middleman', label: 'Middleman' },
   { href: '/codes', label: 'Codes' },
 ];

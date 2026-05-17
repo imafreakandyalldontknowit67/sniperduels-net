@@ -14,16 +14,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // - guides/landing pages are evergreen → monthly
   // /cheap-gems intentionally omitted — it 301s to /gems (see next.config.js).
   const staticRoutes = [
-    { path: '',              priority: 0.9,  changeFrequency: 'daily'   as const },
-    { path: '/values',       priority: 0.9,  changeFrequency: 'daily'   as const },
-    { path: '/codes',        priority: 0.8,  changeFrequency: 'weekly'  as const },
-    { path: '/knives',       priority: 0.7,  changeFrequency: 'monthly' as const },
-    { path: '/snipers',      priority: 0.7,  changeFrequency: 'monthly' as const },
-    { path: '/skins',        priority: 0.7,  changeFrequency: 'monthly' as const },
-    { path: '/supplies',     priority: 0.7,  changeFrequency: 'monthly' as const },
-    { path: '/safe-trading', priority: 0.7,  changeFrequency: 'monthly' as const },
-    { path: '/middleman',    priority: 0.7,  changeFrequency: 'monthly' as const },
-    { path: '/gems',         priority: 0.5,  changeFrequency: 'monthly' as const },
+    { path: '',                priority: 0.9,  changeFrequency: 'daily'   as const },
+    { path: '/values',         priority: 0.9,  changeFrequency: 'daily'   as const },
+    { path: '/value-calculator', priority: 0.85, changeFrequency: 'monthly' as const },
+    { path: '/discord',        priority: 0.9,  changeFrequency: 'monthly' as const },
+    { path: '/cases',          priority: 0.85, changeFrequency: 'weekly'  as const },
+    { path: '/codes',          priority: 0.8,  changeFrequency: 'weekly'  as const },
+    { path: '/update',         priority: 0.8,  changeFrequency: 'weekly'  as const },
+    { path: '/tier-list',      priority: 0.8,  changeFrequency: 'monthly' as const },
+    { path: '/best-snipers',   priority: 0.8,  changeFrequency: 'monthly' as const },
+    { path: '/best-knives',    priority: 0.8,  changeFrequency: 'monthly' as const },
+    { path: '/trading-guide',  priority: 0.8,  changeFrequency: 'monthly' as const },
+    { path: '/knives',         priority: 0.7,  changeFrequency: 'monthly' as const },
+    { path: '/snipers',        priority: 0.7,  changeFrequency: 'monthly' as const },
+    { path: '/skins',          priority: 0.7,  changeFrequency: 'monthly' as const },
+    { path: '/supplies',       priority: 0.7,  changeFrequency: 'monthly' as const },
+    { path: '/safe-trading',   priority: 0.7,  changeFrequency: 'monthly' as const },
+    { path: '/middleman',      priority: 0.7,  changeFrequency: 'monthly' as const },
+    { path: '/gems',           priority: 0.5,  changeFrequency: 'monthly' as const },
   ];
 
   // Tier weapon priority by top variant price — the most-traded items are
