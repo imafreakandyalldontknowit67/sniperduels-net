@@ -150,7 +150,7 @@ export default function GemsPage() {
               '@type': 'Product',
               name: 'Sniper Duels Gems',
               description: 'In-game premium currency for Sniper Duels (Roblox). Sold per 1,000 gems with bulk discounts.',
-              brand: { '@type': 'Brand', name: 'Sniper Duels' },
+              brand: { '@type': 'Brand', name: 'sniperduels.net' },
               sku: 'sd-gems-bulk',
               image: [`${SITE_URL}/og-banner.webp`, `${SITE_URL}/gem_icon.png`],
               offers: {
