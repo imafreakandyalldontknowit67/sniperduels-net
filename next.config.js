@@ -19,7 +19,19 @@ module.exports = {
     minimumCacheTTL: 31536000,
   },
   async redirects() {
-    return [];
+    return [
+      // /gems and /cheap-gems were cannibalizing the same intent ("buy SD gems
+      // cheap"). /gems is the canonical gem landing page; /cheap-gems used to
+      // host a competitor-comparison table that's now folded into /gems.
+      // 301 permanent so PageRank from "cheap-gems" backlinks consolidates onto
+      // /gems. utm_source lets us measure how much referral juice was on the
+      // dead URL via GA/PostHog.
+      {
+        source: '/cheap-gems',
+        destination: '/gems?utm_source=cheap-gems-redirect',
+        permanent: true,
+      },
+    ];
   },
   async headers() {
     // CSP: 'unsafe-inline' on script/style is required because Next.js App Router
