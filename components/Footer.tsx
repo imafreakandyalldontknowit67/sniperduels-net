@@ -33,6 +33,7 @@ export default function Footer() {
               <li><Link href="/values" className="hover:text-accent">Value List</Link></li>
               <li><Link href="/snipers" className="hover:text-accent">Snipers</Link></li>
               <li><Link href="/knives" className="hover:text-accent">Knives</Link></li>
+              <li><Link href="/value-calculator" className="hover:text-accent">Value Calculator</Link></li>
               <li><Link href="/middleman" className="hover:text-accent">Free Middleman</Link></li>
               <li><Link href="/safe-trading" className="hover:text-accent">Safe Trading</Link></li>
               <li><Link href="/codes" className="hover:text-accent">Codes</Link></li>
