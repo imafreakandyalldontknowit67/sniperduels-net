@@ -79,6 +79,11 @@ export default function Home() {
           </SpriteButton>
           <DiscordButton href={DISCORD_INVITE} size="lg">Join Discord</DiscordButton>
         </div>
+        <p className="mt-4">
+          <Link href="/values" className="text-xs font-bold uppercase tracking-wider text-accent hover:underline sm:text-sm">
+            Browse the full Sniper Duels value list →
+          </Link>
+        </p>
       </section>
 
       {/* Trust */}

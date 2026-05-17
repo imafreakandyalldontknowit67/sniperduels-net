@@ -7,9 +7,9 @@ import SsrWeaponGrid from '@/components/values/SsrWeaponGrid';
 import { weaponsByCategory, allWeapons, slimForBrowser } from '@/lib/weapons';
 import { SITE_URL } from '@/lib/config';
 
-const SN_TITLE = 'Sniper Duels Sniper Values — AWPs, Interventions & More';
+const SN_TITLE = 'Buy Sniper Duels Snipers — Prices & Stock';
 const SN_DESC =
-  'Live values for every Sniper Duels sniper rifle. Search, filter by rarity / crate / demand, sort by price. Updated every 6h from SDValues.';
+  'Browse sniper rifles available in Sniper Duels — AWPs, Interventions, Deagles & Shotguns with live gem prices. Check stock, compare conditions, and trade via our free middleman service.';
 
 export const metadata: Metadata = {
   title: SN_TITLE,
@@ -29,22 +29,22 @@ export default function SnipersPage() {
     <>
       <header className="mb-6">
         <h1 className="mb-3 text-3xl font-bold uppercase tracking-wider sm:text-4xl md:text-5xl lg:text-[52px]">
-          Sniper Duels <span className="text-accent">Sniper Values</span>
+          Sniper Duels <span className="text-accent">Sniper Prices &amp; Stock</span>
         </h1>
         <p className="text-[10px] font-bold uppercase tracking-wider leading-relaxed text-gray-400 sm:text-xs md:text-sm">
-          {list.length} snipers · AWPs · Interventions · Deagles · Shotguns · Updated every 6h
+          {list.length} snipers available · AWPs · Interventions · Deagles · Shotguns · Prices updated every 6h
         </p>
       </header>
 
       <section className="mb-6 prose prose-invert max-w-none text-sm text-gray-300">
-        <h2 className="heading-pixel">How Sniper Duels sniper values are tracked</h2>
+        <h2 className="heading-pixel">Sniper Prices &amp; Availability</h2>
         <p>
-          Every {list.length} sniper rifle below carries a community-tracked value in gems —
-          pulled hourly from SDValues, the Sniper Duels community price index. Each weapon
-          shows its top variant price; click through to see condition-by-condition pricing
-          (Mint, Standard, Worn) and demand tier. Top-tier <strong>AWPs</strong>,{' '}
-          <strong>Interventions</strong>, <strong>Deagles</strong> and <strong>Shotguns</strong>{' '}
-          all appear in the same grid — use the rarity / crate / demand filters to narrow.
+          Browse all {list.length} sniper rifles currently tracked in Sniper Duels. Each weapon
+          displays its live gem price pulled from SDValues every 6 hours. Click through to view
+          condition-by-condition pricing (Mint, Standard, Worn), demand tier, and stock availability.
+          Ready to buy? Use our <a href="/middleman" className="text-accent hover:underline">free middleman</a> for
+          safe trades on <strong>AWPs</strong>, <strong>Interventions</strong>,{' '}
+          <strong>Deagles</strong> and <strong>Shotguns</strong>.
         </p>
       </section>
 
@@ -56,9 +56,9 @@ export default function SnipersPage() {
         <h2 className="heading-pixel">Looking for knives instead?</h2>
         <p>
           Bayonets, Karambits, Butterflies, Katanas and Pans live on the{' '}
-          <a href="/knives" className="text-accent hover:underline">Sniper Duels knife values</a> page.
-          Or browse all 218 weapons on the{' '}
-          <a href="/values" className="text-accent hover:underline">combined value list</a>.
+          <a href="/knives" className="text-accent hover:underline">knife prices</a> page.
+          Or browse the complete{' '}
+          <a href="/values" className="text-accent hover:underline">Sniper Duels value list</a> covering all weapons.
         </p>
       </section>
 
@@ -75,24 +75,8 @@ export default function SnipersPage() {
               '@type': 'BreadcrumbList',
               itemListElement: [
                 { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
-                { '@type': 'ListItem', position: 2, name: 'Values', item: `${SITE_URL}/values` },
-                { '@type': 'ListItem', position: 3, name: 'Snipers', item: `${SITE_URL}/snipers` },
+                { '@type': 'ListItem', position: 2, name: 'Snipers', item: `${SITE_URL}/snipers` },
               ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'ItemList',
-              name: 'Sniper Duels Sniper Values',
-              description: `Community-tracked values for ${list.length} sniper rifles in Sniper Duels.`,
-              numberOfItems: list.length,
-              // First 10 items only — Google Rich Results doesn't require
-              // an exhaustive list and shipping all 117 added ~12KB per page.
-              itemListElement: list.slice(0, 10).map((w, i) => ({
-                '@type': 'ListItem',
-                position: i + 1,
-                url: `${SITE_URL}/values/${w.id}`,
-                name: w.displayName,
-              })),
             },
           ]),
         }}

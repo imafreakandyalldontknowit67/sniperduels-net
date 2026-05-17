@@ -5,12 +5,12 @@ import BuyCTA from '@/components/BuyCTA';
 import SectionBanner from '@/components/SectionBanner';
 import ValuesBrowser from '@/components/values/ValuesBrowser';
 import SsrWeaponGrid from '@/components/values/SsrWeaponGrid';
-import { allWeapons, weaponsByCategory, slimForBrowser } from '@/lib/weapons';
+import { allWeapons, weaponsByCategory, slimForBrowser, defaultPrice } from '@/lib/weapons';
 import { SITE_URL } from '@/lib/config';
 
-const VAL_TITLE = 'Sniper Duels Item Values — All Snipers & Knives';
+const VAL_TITLE = 'Sniper Duels Value List — All Knife, Sniper & Skin Values 2026';
 const VAL_DESC =
-  'Live value list for every Sniper Duels weapon — snipers + knives, all conditions and rarities. Search, filter, sort. Updated every 6h.';
+  'The complete sniper duels value list for 2026 — live gem values for every knife, sniper, and skin. Updated every 6 hours from SDValues with demand tiers and condition pricing.';
 
 export const metadata: Metadata = {
   title: VAL_TITLE,
@@ -26,16 +26,72 @@ export default function ValuesIndexPage() {
   const sniperCount = weaponsByCategory('snipers').length;
   const knifeCount = weaponsByCategory('knives').length;
 
+  const itemListJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'ItemList',
+    name: 'Sniper Duels Value List',
+    description: `Live community-tracked gem values for ${weapons.length} Sniper Duels weapons across all rarity tiers and condition variants.`,
+    numberOfItems: weapons.length,
+    itemListElement: weapons.map((w, i) => {
+      const price = defaultPrice(w);
+      const item: Record<string, unknown> = {
+        '@type': 'ListItem',
+        position: i + 1,
+        name: w.displayName,
+        url: `${SITE_URL}/values/${w.id}`,
+      };
+      if (w.imagePath) item.image = w.imagePath;
+      if (price > 0) item.description = `${price.toLocaleString()} gems`;
+      return item;
+    }),
+  };
+
+  const breadcrumbJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+      { '@type': 'ListItem', position: 2, name: 'Value List', item: `${SITE_URL}/values` },
+    ],
+  };
+
+  const datasetJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: 'Sniper Duels Item Values',
+    description: `Live community-tracked gem values for ${weapons.length} Sniper Duels weapons across rarity tiers and condition variants. Refreshed every 6 hours from SDValues.`,
+    url: `${SITE_URL}/values`,
+    creator: { '@id': `${SITE_URL}#org` },
+    license: 'https://creativecommons.org/licenses/by/4.0/',
+    isAccessibleForFree: true,
+    keywords: ['Sniper Duels', 'Roblox', 'item values', 'weapon values', 'skin prices'],
+    variableMeasured: ['gem price', 'rarity', 'demand', 'condition', 'crate'],
+    measurementTechnique: 'Community-submitted price observations aggregated by SDValues, verified against live trade-bot order data on sniperduels.shop.',
+  };
+
   return (
     <>
       <header className="mb-6">
         <h1 className="mb-3 text-3xl font-bold uppercase tracking-wider sm:text-4xl md:text-5xl lg:text-[52px]">
-          Sniper Duels <span className="text-accent">Item Values</span>
+          Sniper Duels <span className="text-accent">Value List</span>
         </h1>
         <p className="text-[10px] font-bold uppercase tracking-wider leading-relaxed text-gray-400 sm:text-xs md:text-sm">
           Live values for {weapons.length} weapons · Updated every 6h from SDValues
         </p>
       </header>
+
+      {/* Intro paragraph with keyword variants */}
+      <section className="mb-8 max-w-3xl text-sm leading-relaxed text-gray-300">
+        <p>
+          Welcome to the definitive <strong>sniper duels value list</strong> — the most complete and
+          up-to-date pricing reference for every tradeable weapon in Sniper Duels. Whether you call
+          it the <strong>sniper duels values</strong> page, <strong>sdvalues</strong>, or just need a
+          quick <strong>sniper duels value</strong> check, you&apos;re in the right place. Our catalog
+          covers {weapons.length} snipers, knives, and skins with gem prices refreshed every 6 hours
+          directly from SDValues. Use the search, filter by rarity or demand tier, and sort by price
+          to find the exact weapon you&apos;re looking for.
+        </p>
+      </section>
 
       {/* Category jump links */}
       <div className="mb-6 grid gap-3 sm:grid-cols-2">
@@ -79,45 +135,7 @@ export default function ValuesIndexPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{
-          __html: JSON.stringify([
-            {
-              '@context': 'https://schema.org',
-              '@type': 'BreadcrumbList',
-              itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
-                { '@type': 'ListItem', position: 2, name: 'Values', item: `${SITE_URL}/values` },
-              ],
-            },
-            {
-              '@context': 'https://schema.org',
-              '@type': 'ItemList',
-              name: 'Sniper Duels Item Values',
-              description: `Live community-tracked values for ${weapons.length} Sniper Duels weapons across rarity tiers.`,
-              numberOfItems: weapons.length,
-              itemListElement: weapons.slice(0, 10).map((w, i) => ({
-                '@type': 'ListItem',
-                position: i + 1,
-                url: `${SITE_URL}/values/${w.id}`,
-                name: w.displayName,
-              })),
-            },
-            // Dataset schema unlocks Google Dataset Search + improves Perplexity
-            // citation odds for "value of X" queries — the values page IS a
-            // dataset (218 weapons × N conditions × price, refreshed every 6h).
-            {
-              '@context': 'https://schema.org',
-              '@type': 'Dataset',
-              name: 'Sniper Duels Item Values',
-              description: `Live community-tracked gem values for ${weapons.length} Sniper Duels weapons across rarity tiers and condition variants. Refreshed every 6 hours from SDValues.`,
-              url: `${SITE_URL}/values`,
-              creator: { '@id': `${SITE_URL}#org` },
-              license: 'https://creativecommons.org/licenses/by/4.0/',
-              isAccessibleForFree: true,
-              keywords: ['Sniper Duels', 'Roblox', 'item values', 'weapon values', 'skin prices'],
-              variableMeasured: ['gem price', 'rarity', 'demand', 'condition', 'crate'],
-              measurementTechnique: 'Community-submitted price observations aggregated by SDValues, verified against live trade-bot order data on sniperduels.shop.',
-            },
-          ]),
+          __html: JSON.stringify([breadcrumbJsonLd, itemListJsonLd, datasetJsonLd]),
         }}
       />
     </>
