@@ -7,13 +7,21 @@ The official transactional store sells gems ($2.65/k bulk at 100k+, $2.90/k reta
 ## Docs
 
 - [Live weapon value list](https://sniperduels.net/values): Combined searchable value browser for all 218 Sniper Duels weapons with per-weapon detail pages at /values/{slug}.
+- [Value calculator](https://sniperduels.net/value-calculator): Free trade-value calculator — pick items + quantities, get total gem value, compare two sides of a trade. Shareable URLs.
 - [Sniper rifle values](https://sniperduels.net/snipers): Full sniper rifle value list — 117 weapons including AWPs, Interventions, Deagles, Shotguns, Classics, Defaults, Executioners.
 - [Knife values](https://sniperduels.net/knives): Full knife value list — 101 weapons including Bayonets, Karambits, Butterflies, Katanas, Pans, Bombline, Candy Cane, Cash, Survivor.
+- [Best snipers tier list](https://sniperduels.net/best-snipers): Top sniper recommendations by tier, value, and meta usage.
+- [Best knives tier list](https://sniperduels.net/best-knives): Top knife recommendations by tier, value, and rarity.
+- [Tier list](https://sniperduels.net/tier-list): Overall weapon tier list spanning snipers + knives.
+- [Cases hub](https://sniperduels.net/cases): All Sniper Duels cases — Classic, Skin Case 1, April Fools, Hallows Basket, Christmas Present, Release, V-Day, Present — with per-case item lists and live values at /cases/{slug}.
 - [Skins catalog](https://sniperduels.net/skins): Frankenawp + Hallows Punisher series ($9 fixed price, routed via Discord ticket while item marketplace ships).
 - [Supplies pricing](https://sniperduels.net/supplies): Bluesteels, Survivor Vanillas, Collectibles, Epics, Legendaries with bulk tiers.
-- [Codes status](https://sniperduels.net/codes): Current Sniper Duels code redemption status (no codes system exists in-game).
+- [Codes](https://sniperduels.net/codes): Current Sniper Duels code redemption status (no codes system exists in-game).
+- [Update / patch notes](https://sniperduels.net/update): Latest Sniper Duels game updates and patch notes.
+- [Trading guide](https://sniperduels.net/trading-guide): Trade-up logic, fair-value math, and proven trading patterns.
 - [Safe trading guide](https://sniperduels.net/safe-trading): Trust signals, scam-avoidance patterns, and red flags for player-to-player trades.
 - [Middleman service](https://sniperduels.net/middleman): Free Discord-verified middleman for high-value trades — no fees, ever.
+- [Discord server](https://sniperduels.net/discord): Official Sniper Duels Discord (4,500+ members) — trading channels, free middleman service, value updates, giveaways.
 
 ## Optional
 
