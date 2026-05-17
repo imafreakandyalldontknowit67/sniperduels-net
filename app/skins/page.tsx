@@ -125,7 +125,7 @@ export default function SkinsPage() {
                   '@type': 'Product',
                   name: s.name,
                   sku: s.slug,
-                  brand: { '@type': 'Brand', name: 'Sniper Duels' },
+                  brand: { '@type': 'Brand', name: 'sniperduels.net' },
                   category: 'Sniper Duels Skin',
                   image: [`${SITE_URL}/og-banner.webp`],
                   offers: {

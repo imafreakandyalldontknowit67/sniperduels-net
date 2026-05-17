@@ -139,8 +139,15 @@ export default function SuppliesPage() {
                   '@type': 'Product',
                   name: s.name,
                   sku: `sd-supply-${slug(s.name)}`,
-                  brand: { '@type': 'Brand', name: 'Sniper Duels' },
-                  offers: {
+                  brand: { '@type': 'Brand', name: 'sniperduels.net' },
+                  offers: s.bulk ? {
+                    '@type': 'AggregateOffer',
+                    lowPrice: s.bulk.price,
+                    highPrice: s.basePrice,
+                    priceCurrency: 'USD',
+                    offerCount: 2,
+                    availability: 'https://schema.org/InStock',
+                  } : {
                     '@type': 'Offer',
                     price: s.basePrice,
                     priceCurrency: 'USD',

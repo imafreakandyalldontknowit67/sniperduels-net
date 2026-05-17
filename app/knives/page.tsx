@@ -89,6 +89,7 @@ export default function KnivesPage() {
                 position: i + 1,
                 url: `${SITE_URL}/values/${w.id}`,
                 name: w.displayName,
+                ...(w.imagePath ? { image: w.imagePath } : {}),
               })),
             },
           ]),

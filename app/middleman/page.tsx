@@ -140,6 +140,39 @@ export default function MiddlemanPage() {
         </div>
       </div>
 
+      {/* FAQ — visible HTML mirrors JSON-LD for E-E-A-T and AI Overview eligibility */}
+      <section className="mb-12 mt-10">
+        <SectionBanner color="blue" eyebrow="Common questions about middleman trading">
+          FAQ
+        </SectionBanner>
+        <div className="space-y-6 text-gray-300">
+          <div>
+            <h3 className="mb-2 text-base font-bold uppercase tracking-wider text-white">What is a middleman in Sniper Duels?</h3>
+            <p className="text-sm">A middleman is a verified, trusted third party who brokers cash-for-item trades. The seller gives the item to the MM, the buyer sends payment, and the MM releases both once confirmed. This prevents either side from scamming.</p>
+          </div>
+          <div>
+            <h3 className="mb-2 text-base font-bold uppercase tracking-wider text-white">Is the middleman service free?</h3>
+            <p className="text-sm">Yes, always. The middleman service on sniperduels.net is completely free for both buyers and sellers. sniperduels.shop covers the cost as a community service to keep trading safe for everyone.</p>
+          </div>
+          <div>
+            <h3 className="mb-2 text-base font-bold uppercase tracking-wider text-white">How long does a middleman trade take?</h3>
+            <p className="text-sm">Most middleman trades complete in about five minutes. You open a Discord ticket, a verified MM claims it within 60 seconds on average, and the item-plus-payment exchange happens in a private Roblox server immediately after.</p>
+          </div>
+          <div>
+            <h3 className="mb-2 text-base font-bold uppercase tracking-wider text-white">What happens if the middleman scams?</h3>
+            <p className="text-sm">Every middleman is vetted by the head moderator team and assigned a tier that caps their maximum trade value. All trades are logged with full transcripts. In the rare event of misconduct, the MM is permanently banned and affected traders are compensated.</p>
+          </div>
+          <div>
+            <h3 className="mb-2 text-base font-bold uppercase tracking-wider text-white">How do I request a middleman?</h3>
+            <p className="text-sm">Join the sniperduels.net Discord server and open a middleman ticket. Both the buyer and seller join the same ticket. A verified MM will claim it, join your private Roblox server, and walk you through the exchange step by step.</p>
+          </div>
+          <div>
+            <h3 className="mb-2 text-base font-bold uppercase tracking-wider text-white">Do I need a middleman for gem-for-item trades?</h3>
+            <p className="text-sm">No. In-game gem-for-item and item-for-item trades in Sniper Duels are atomic — both sides swap simultaneously in the trade window. Middlemen are only needed for real-money (USD, crypto) trades where payment happens outside the game.</p>
+          </div>
+        </div>
+      </section>
+
       <p className="mt-8 text-xs text-gray-500">
         Buying or selling instead?{' '}
         <Link href="/gems" className="text-accent hover:underline">Buy gems direct on sniperduels.shop →</Link>
@@ -153,18 +186,18 @@ export default function MiddlemanPage() {
               '@context': 'https://schema.org',
               '@type': 'Service',
               serviceType: 'Sniper Duels Middleman',
-              provider: { '@type': 'Organization', name: 'sniperduels.net', url: 'https://sniperduels.net' },
+              provider: { '@type': 'Organization', name: 'sniperduels.net', url: SITE_URL },
               areaServed: 'Sniper Duels (Roblox)',
               offers: { '@type': 'Offer', price: '0', priceCurrency: 'USD' },
               description: 'Free verified middleman service for Sniper Duels trades. MM holds the seller\'s item until the buyer\'s payment lands.',
-              url: 'https://sniperduels.net/middleman',
+              url: `${SITE_URL}/middleman`,
             },
             {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sniperduels.net' },
-                { '@type': 'ListItem', position: 2, name: 'Middleman', item: 'https://sniperduels.net/middleman' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+                { '@type': 'ListItem', position: 2, name: 'Middleman', item: `${SITE_URL}/middleman` },
               ],
             },
             {
@@ -173,18 +206,33 @@ export default function MiddlemanPage() {
               mainEntity: [
                 {
                   '@type': 'Question',
-                  name: 'How much does a Sniper Duels middleman cost?',
-                  acceptedAnswer: { '@type': 'Answer', text: 'Nothing. The middleman service on sniperduels.net is always free — sniperduels.shop covers the cost as a community service.' },
+                  name: 'What is a middleman in Sniper Duels?',
+                  acceptedAnswer: { '@type': 'Answer', text: 'A middleman is a verified, trusted third party who brokers cash-for-item trades. The seller gives the item to the MM, the buyer sends payment, and the MM releases both once confirmed. This prevents either side from scamming.' },
                 },
                 {
                   '@type': 'Question',
-                  name: 'Are Sniper Duels middlemen verified?',
-                  acceptedAnswer: { '@type': 'Answer', text: 'Yes. Every middleman is vetted by the head moderator team. Tiers (Trial / MM / Senior MM / Head MM) cap each MM at the trade value they\'re authorized to broker.' },
+                  name: 'Is the middleman service free?',
+                  acceptedAnswer: { '@type': 'Answer', text: 'Yes, always. The middleman service on sniperduels.net is completely free for both buyers and sellers. sniperduels.shop covers the cost as a community service to keep trading safe for everyone.' },
                 },
                 {
                   '@type': 'Question',
-                  name: 'Who deposits first in a middleman trade?',
-                  acceptedAnswer: { '@type': 'Answer', text: 'The seller hands the item to the middleman first. Once the MM confirms the item, the buyer sends payment. Then the MM releases both. Buyer-side scams become impossible because the item is already in escrow.' },
+                  name: 'How long does a middleman trade take?',
+                  acceptedAnswer: { '@type': 'Answer', text: 'Most middleman trades complete in about five minutes. You open a Discord ticket, a verified MM claims it within 60 seconds on average, and the item-plus-payment exchange happens in a private Roblox server immediately after.' },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'What happens if the middleman scams?',
+                  acceptedAnswer: { '@type': 'Answer', text: 'Every middleman is vetted by the head moderator team and assigned a tier that caps their maximum trade value. All trades are logged with full transcripts. In the rare event of misconduct, the MM is permanently banned and affected traders are compensated.' },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'How do I request a middleman?',
+                  acceptedAnswer: { '@type': 'Answer', text: 'Join the sniperduels.net Discord server and open a middleman ticket. Both the buyer and seller join the same ticket. A verified MM will claim it, join your private Roblox server, and walk you through the exchange step by step.' },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Do I need a middleman for gem-for-item trades?',
+                  acceptedAnswer: { '@type': 'Answer', text: 'No. In-game gem-for-item and item-for-item trades in Sniper Duels are atomic — both sides swap simultaneously in the trade window. Middlemen are only needed for real-money (USD, crypto) trades where payment happens outside the game.' },
                 },
               ],
             },

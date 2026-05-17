@@ -89,7 +89,40 @@ export default function SafeTradingPage() {
         </ul>
       </section>
 
-      <div className="mt-10 border-[3px] border-accent/60 bg-gradient-to-br from-dark-800 to-dark-900 p-6 text-center" style={{ boxShadow: 'inset 0 -3px 0 rgba(0,0,0,0.4), 0 4px 0 rgba(0,0,0,0.5)' }}>
+      {/* FAQ — visible HTML mirrors JSON-LD for E-E-A-T and AI Overview eligibility */}
+      <section className="mb-12 mt-10">
+        <SectionBanner color="blue" eyebrow="Common questions about safe Sniper Duels trading">
+          FAQ
+        </SectionBanner>
+        <div className="space-y-6 text-gray-300">
+          <div>
+            <h3 className="mb-2 text-base font-bold uppercase tracking-wider text-white">Is sniperduels.net safe?</h3>
+            <p className="text-sm">Yes. sniperduels.net is a community marketplace backed by sniperduels.shop, which uses an automated trade bot and escrow system. Your payment is held until gems are delivered in-game, and you get an automatic refund if delivery fails within 30 minutes.</p>
+          </div>
+          <div>
+            <h3 className="mb-2 text-base font-bold uppercase tracking-wider text-white">How do I avoid getting scammed in Sniper Duels?</h3>
+            <p className="text-sm">Use the official sniperduels.shop auto-trade bot for gem purchases and request a free verified middleman for cash trades. Never share your Roblox password, avoid gift-card payments, and reject sellers who refuse escrow or middleman services.</p>
+          </div>
+          <div>
+            <h3 className="mb-2 text-base font-bold uppercase tracking-wider text-white">What is a middleman trade?</h3>
+            <p className="text-sm">A middleman trade uses a verified third party who holds the seller&apos;s item until the buyer&apos;s payment is confirmed. This eliminates the risk of either side scamming. On sniperduels.net, middleman services are always free and handled by tiered, vetted moderators.</p>
+          </div>
+          <div>
+            <h3 className="mb-2 text-base font-bold uppercase tracking-wider text-white">Can I get banned for trading in Sniper Duels?</h3>
+            <p className="text-sm">No. In-game item and gem trading is a built-in Sniper Duels feature. Roblox only prohibits account sharing. The sniperduels.shop trade bot never asks for your password — it trades with you inside a private Roblox server, which is fully permitted.</p>
+          </div>
+          <div>
+            <h3 className="mb-2 text-base font-bold uppercase tracking-wider text-white">How do I report a scammer?</h3>
+            <p className="text-sm">Open a ticket in the sniperduels.net Discord server with screenshots of the conversation, trade screen, and any payment receipts. The moderation team reviews reports within 24 hours and blacklists confirmed scammers from all community services.</p>
+          </div>
+          <div>
+            <h3 className="mb-2 text-base font-bold uppercase tracking-wider text-white">What payment methods are safe for Sniper Duels trades?</h3>
+            <p className="text-sm">Cash App, Venmo, PayPal, Apple Pay, Google Pay, bank transfers, and major cryptocurrencies are all accepted on sniperduels.shop. Avoid gift cards and untraceable payment methods — these are the most common vectors for scams in Roblox trading.</p>
+          </div>
+        </div>
+      </section>
+
+      <div className="border-[3px] border-accent/60 bg-gradient-to-br from-dark-800 to-dark-900 p-6 text-center" style={{ boxShadow: 'inset 0 -3px 0 rgba(0,0,0,0.4), 0 4px 0 rgba(0,0,0,0.5)' }}>
         <h2 className="mb-2 text-2xl font-black uppercase tracking-wider text-white">Buy with full protection</h2>
         <p className="mb-4 text-gray-400">Auto-trade bot + 30-min refund guarantee + free middleman.</p>
         <div className="flex flex-col items-center justify-center gap-3 sm:flex-row">
@@ -106,8 +139,8 @@ export default function SafeTradingPage() {
               '@context': 'https://schema.org',
               '@type': 'BreadcrumbList',
               itemListElement: [
-                { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://sniperduels.net' },
-                { '@type': 'ListItem', position: 2, name: 'Safe Trading', item: 'https://sniperduels.net/safe-trading' },
+                { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
+                { '@type': 'ListItem', position: 2, name: 'Safe Trading', item: `${SITE_URL}/safe-trading` },
               ],
             },
             {
@@ -116,26 +149,50 @@ export default function SafeTradingPage() {
               mainEntity: [
                 {
                   '@type': 'Question',
-                  name: 'Is buying Sniper Duels gems safe?',
+                  name: 'Is sniperduels.net safe?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'Yes — buying Sniper Duels gems via sniperduels.shop is safe. Orders are brokered by an automated trade bot in a private Roblox server. Your money is held in escrow until delivery is confirmed, and orders are auto-refunded if the bot cannot reach you within 30 minutes.',
+                    text: 'Yes. sniperduels.net is a community marketplace backed by sniperduels.shop, which uses an automated trade bot and escrow system. Your payment is held until gems are delivered in-game, and you get an automatic refund if delivery fails within 30 minutes.',
                   },
                 },
                 {
                   '@type': 'Question',
-                  name: 'Can I get banned for buying Sniper Duels gems?',
+                  name: 'How do I avoid getting scammed in Sniper Duels?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'No. The trade bot exchanges gems with your account in-game — no account credentials are ever shared. Roblox prohibits account sharing, not in-game item trading. As long as you never share your password, you cannot be banned for this.',
+                    text: 'Use the official sniperduels.shop auto-trade bot for gem purchases and request a free verified middleman for cash trades. Never share your Roblox password, avoid gift-card payments, and reject sellers who refuse escrow or middleman services.',
                   },
                 },
                 {
                   '@type': 'Question',
-                  name: 'What if the seller scams me?',
+                  name: 'What is a middleman trade?',
                   acceptedAnswer: {
                     '@type': 'Answer',
-                    text: 'On sniperduels.shop the trade bot delivers, not the vendor — so a vendor cannot scam you directly. If anything goes wrong (bot offline, no inventory, etc.) you are auto-refunded to your wallet within 30 minutes.',
+                    text: 'A middleman trade uses a verified third party who holds the seller\'s item until the buyer\'s payment is confirmed. This eliminates the risk of either side scamming. On sniperduels.net, middleman services are always free and handled by tiered, vetted moderators.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'Can I get banned for trading in Sniper Duels?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'No. In-game item and gem trading is a built-in Sniper Duels feature. Roblox only prohibits account sharing. The sniperduels.shop trade bot never asks for your password — it trades with you inside a private Roblox server, which is fully permitted.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'How do I report a scammer?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Open a ticket in the sniperduels.net Discord server with screenshots of the conversation, trade screen, and any payment receipts. The moderation team reviews reports within 24 hours and blacklists confirmed scammers from all community services.',
+                  },
+                },
+                {
+                  '@type': 'Question',
+                  name: 'What payment methods are safe for Sniper Duels trades?',
+                  acceptedAnswer: {
+                    '@type': 'Answer',
+                    text: 'Cash App, Venmo, PayPal, Apple Pay, Google Pay, bank transfers, and major cryptocurrencies are all accepted on sniperduels.shop. Avoid gift cards and untraceable payment methods — these are the most common vectors for scams in Roblox trading.',
                   },
                 },
               ],
