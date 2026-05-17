@@ -20,6 +20,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/skins',       priority: 0.85, changeFrequency: 'weekly'  as const },
     { path: '/supplies',    priority: 0.9,  changeFrequency: 'weekly'  as const },
     { path: '/middleman',   priority: 0.85, changeFrequency: 'monthly' as const },
+    { path: '/discord',     priority: 0.9,  changeFrequency: 'monthly' as const },
     { path: '/safe-trading',priority: 0.8,  changeFrequency: 'monthly' as const },
     { path: '/codes',       priority: 0.85, changeFrequency: 'weekly'  as const },
   ];
