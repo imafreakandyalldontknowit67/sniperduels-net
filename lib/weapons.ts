@@ -138,3 +138,32 @@ export const SHOP_INVENTORY = {
 export function shopSellsThis(_weapon: Weapon): boolean {
   return false;
 }
+
+/** Find related weapons: same crate first, then same rarity, then same category.
+ *  Excludes the current weapon. Returns up to `count` items. */
+export function relatedWeapons(weapon: Weapon, count = 6): Weapon[] {
+  const all = allWeapons();
+  const result: Weapon[] = [];
+  const seen = new Set<string>([weapon.id]);
+
+  function add(w: Weapon) {
+    if (seen.has(w.id)) return;
+    seen.add(w.id);
+    result.push(w);
+  }
+
+  // Same crate first
+  if (weapon.crate) {
+    for (const w of all) if (w.crate === weapon.crate) add(w);
+  }
+  // Then same rarity
+  if (result.length < count) {
+    for (const w of all) if (w.rarity === weapon.rarity) add(w);
+  }
+  // Then same category
+  if (result.length < count) {
+    for (const w of all) if (w.category === weapon.category) add(w);
+  }
+
+  return result.slice(0, count);
+}

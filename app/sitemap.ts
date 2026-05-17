@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { allWeaponsIncludingUnpriced, topWeapons, weaponsGeneratedAt } from '@/lib/weapons';
+import { getAllCases } from '@/lib/cases';
 import { SITE_URL } from '@/lib/config';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -8,20 +9,30 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // lastmod, so this aligns the signal with when content actually changed.
   const dataLastMod = weaponsGeneratedAt();
 
-  // Hub pages reflect live data — their content changes every time the cron
-  // pushes new weapon prices (every 6h). Mark hourly so crawlers re-poll often.
+  // Priority + changeFrequency tuned to actual content velocity:
+  // - /values + /values/[slug] change every 6h (SDValues cron) → daily/hourly
+  // - /codes, /update revisited weekly when game patches drop
+  // - guides/landing pages are evergreen → monthly
+  // /cheap-gems intentionally omitted — it 301s to /gems (see next.config.js).
   const staticRoutes = [
-    { path: '',             priority: 1.0,  changeFrequency: 'hourly'  as const },
-    { path: '/gems',        priority: 0.95, changeFrequency: 'hourly'  as const },
-    { path: '/cheap-gems',  priority: 0.95, changeFrequency: 'hourly'  as const },
-    { path: '/values',      priority: 0.95, changeFrequency: 'hourly'  as const },
-    { path: '/snipers',     priority: 0.95, changeFrequency: 'hourly'  as const },
-    { path: '/knives',      priority: 0.95, changeFrequency: 'hourly'  as const },
-    { path: '/skins',       priority: 0.85, changeFrequency: 'weekly'  as const },
-    { path: '/supplies',    priority: 0.9,  changeFrequency: 'weekly'  as const },
-    { path: '/middleman',   priority: 0.85, changeFrequency: 'monthly' as const },
-    { path: '/safe-trading',priority: 0.8,  changeFrequency: 'monthly' as const },
-    { path: '/codes',       priority: 0.85, changeFrequency: 'weekly'  as const },
+    { path: '',                priority: 0.9,  changeFrequency: 'daily'   as const },
+    { path: '/values',         priority: 0.9,  changeFrequency: 'daily'   as const },
+    { path: '/value-calculator', priority: 0.85, changeFrequency: 'monthly' as const },
+    { path: '/discord',        priority: 0.9,  changeFrequency: 'monthly' as const },
+    { path: '/cases',          priority: 0.85, changeFrequency: 'weekly'  as const },
+    { path: '/codes',          priority: 0.8,  changeFrequency: 'weekly'  as const },
+    { path: '/update',         priority: 0.8,  changeFrequency: 'weekly'  as const },
+    { path: '/tier-list',      priority: 0.8,  changeFrequency: 'monthly' as const },
+    { path: '/best-snipers',   priority: 0.8,  changeFrequency: 'monthly' as const },
+    { path: '/best-knives',    priority: 0.8,  changeFrequency: 'monthly' as const },
+    { path: '/trading-guide',  priority: 0.8,  changeFrequency: 'monthly' as const },
+    { path: '/knives',         priority: 0.7,  changeFrequency: 'monthly' as const },
+    { path: '/snipers',        priority: 0.7,  changeFrequency: 'monthly' as const },
+    { path: '/skins',          priority: 0.7,  changeFrequency: 'monthly' as const },
+    { path: '/supplies',       priority: 0.7,  changeFrequency: 'monthly' as const },
+    { path: '/safe-trading',   priority: 0.7,  changeFrequency: 'monthly' as const },
+    { path: '/middleman',      priority: 0.7,  changeFrequency: 'monthly' as const },
+    { path: '/gems',           priority: 0.5,  changeFrequency: 'monthly' as const },
   ];
 
   // Tier weapon priority by top variant price — the most-traded items are
@@ -34,10 +45,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     return {
       url: `${SITE_URL}/values/${w.id}`,
       lastModified: dataLastMod,
-      changeFrequency: 'hourly' as const,
+      changeFrequency: 'daily' as const,
       priority,
     };
   });
+
+  // Per-case pages — one URL per known case. Weekly changeFreq because the
+  // case roster only changes when SD ships a new event drop.
+  const caseRoutes = getAllCases().map(c => ({
+    url: `${SITE_URL}/cases/${c.slug}`,
+    lastModified: dataLastMod,
+    changeFrequency: 'weekly' as const,
+    priority: 0.75,
+  }));
 
   return [
     ...staticRoutes.map(r => ({
@@ -46,6 +66,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: r.changeFrequency,
       priority: r.priority,
     })),
+    ...caseRoutes,
     ...weaponRoutes,
   ];
 }
