@@ -10,3 +10,9 @@ next-env.d.ts
 
 # Test artifacts from CVE-2026-44578 upgrade verification
 upgrade-snapshots/
+
+# Orchestrator
+.worktrees/
+tasks.json
+tasks.results.json
+tasks.review.json
