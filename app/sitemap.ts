@@ -1,5 +1,6 @@
 import type { MetadataRoute } from 'next';
 import { allWeaponsIncludingUnpriced, topWeapons, weaponsGeneratedAt } from '@/lib/weapons';
+import { getAllCases } from '@/lib/cases';
 import { SITE_URL } from '@/lib/config';
 
 export default function sitemap(): MetadataRoute.Sitemap {
@@ -17,6 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: '/values',      priority: 0.95, changeFrequency: 'hourly'  as const },
     { path: '/snipers',     priority: 0.95, changeFrequency: 'hourly'  as const },
     { path: '/knives',      priority: 0.95, changeFrequency: 'hourly'  as const },
+    { path: '/cases',       priority: 0.9,  changeFrequency: 'weekly'  as const },
     { path: '/skins',       priority: 0.85, changeFrequency: 'weekly'  as const },
     { path: '/supplies',    priority: 0.9,  changeFrequency: 'weekly'  as const },
     { path: '/middleman',   priority: 0.85, changeFrequency: 'monthly' as const },
@@ -39,6 +41,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
     };
   });
 
+  // Per-case pages — one URL per known case. Weekly changeFreq because the
+  // case roster only changes when SD ships a new event drop.
+  const caseRoutes = getAllCases().map(c => ({
+    url: `${SITE_URL}/cases/${c.slug}`,
+    lastModified: dataLastMod,
+    changeFrequency: 'weekly' as const,
+    priority: 0.75,
+  }));
+
   return [
     ...staticRoutes.map(r => ({
       url: `${SITE_URL}${r.path}`,
@@ -46,6 +57,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: r.changeFrequency,
       priority: r.priority,
     })),
+    ...caseRoutes,
     ...weaponRoutes,
   ];
 }
