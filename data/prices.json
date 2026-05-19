@@ -1,12 +1,12 @@
 {
-  "fetchedAt": "2026-05-17T21:27:43.398Z",
+  "fetchedAt": "2026-05-19T23:33:56.869Z",
   "source": "https://sniperduels.shop/api/gems/listings",
   "fetchedOk": true,
   "cheapestPerK": 2.65,
   "cheapestBulkPerK": 2.65,
   "platformInStock": false,
-  "totalStockK": 1696,
-  "vendorCount": 4,
+  "totalStockK": 1206,
+  "vendorCount": 5,
   "listings": [
     {
       "id": "platform",
@@ -28,12 +28,42 @@
       "type": "platform"
     },
     {
+      "id": "cmndt8j5y000201o5y3ibcsdf",
+      "vendorId": "7311760194",
+      "pricePerK": 2.99,
+      "minOrderK": 1,
+      "maxOrderK": 500,
+      "stockK": 92,
+      "bulkTiers": [
+        {
+          "minK": 100,
+          "pricePerK": 2.89
+        }
+      ],
+      "type": "vendor"
+    },
+    {
+      "id": "cmodtjnun005r01qo8k3bttqs",
+      "vendorId": "6034385983",
+      "pricePerK": 3,
+      "minOrderK": 1,
+      "maxOrderK": 500,
+      "stockK": 845,
+      "bulkTiers": [
+        {
+          "minK": 100,
+          "pricePerK": 2.9
+        }
+      ],
+      "type": "vendor"
+    },
+    {
       "id": "cmot5s6a7006c01l69nuls3tl",
       "vendorId": "7642934503",
       "pricePerK": 3.03,
       "minOrderK": 1,
       "maxOrderK": 500,
-      "stockK": 50,
+      "stockK": 2,
       "bulkTiers": null,
       "type": "vendor"
     },
@@ -43,7 +73,7 @@
       "pricePerK": 3.04,
       "minOrderK": 1,
       "maxOrderK": 500,
-      "stockK": 130,
+      "stockK": 64,
       "bulkTiers": null,
       "type": "vendor"
     },
@@ -53,23 +83,8 @@
       "pricePerK": 3.04,
       "minOrderK": 1,
       "maxOrderK": 100,
-      "stockK": 213,
+      "stockK": 203,
       "bulkTiers": null,
-      "type": "vendor"
-    },
-    {
-      "id": "cmodtjnun005r01qo8k3bttqs",
-      "vendorId": "6034385983",
-      "pricePerK": 3.05,
-      "minOrderK": 1,
-      "maxOrderK": 500,
-      "stockK": 1303,
-      "bulkTiers": [
-        {
-          "minK": 100,
-          "pricePerK": 2.9
-        }
-      ],
       "type": "vendor"
     }
   ]
