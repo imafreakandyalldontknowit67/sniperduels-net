@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import BuyCTA from '@/components/BuyCTA';
-import { allWeaponsIncludingUnpriced, weaponBySlug, rarityClasses, demandClasses, shopSellsThis, allWeapons, defaultPrice, weaponsGeneratedAt, relatedWeapons } from '@/lib/weapons';
+import { allWeaponsIncludingUnpriced, weaponBySlug, rarityClasses, demandClasses, shopSellsThis, allWeapons, defaultPrice, weaponsGeneratedAt, relatedWeapons, isSeoIndexable } from '@/lib/weapons';
 import { shopLink, DISCORD_INVITE, SITE_URL, SITE_NAME } from '@/lib/config';
 import { formatGems } from '@/lib/values-filter';
 import DiscordButton from '@/components/DiscordButton';
@@ -74,10 +74,14 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
   const detailTitle = `${w.displayName} Value — Sniper Duels | ${SITE_NAME}`;
   const detailDesc = `${fullName} is worth ${top > 0 ? `${top.toLocaleString()} gems` : 'TBD'} in Sniper Duels. See current ${w.displayName} value, price history, demand level, and trade tips.`;
   const detailUrl = `${SITE_URL}/values/${w.id}`;
+  const indexable = isSeoIndexable(w);
   return {
     title: detailTitle,
     description: detailDesc,
     alternates: { canonical: detailUrl },
+    // Pages too thin to deserve a sitemap slot also get noindex on the page
+    // itself, so direct links / referrals don't pull them into the index.
+    ...(indexable ? {} : { robots: { index: false, follow: true } }),
     openGraph: {
       title: `${fullName} — Sniper Duels Value`,
       description: detailDesc,
@@ -104,14 +108,6 @@ export default async function WeaponPage({ params }: { params: Promise<{ slug: s
   const fullName = weaponFullName(w.displayName, w.weaponType);
   const related = relatedWeapons(w, 6);
   const lastUpdated = weaponsGeneratedAt();
-
-  // Demand-based aggregate rating for JSON-LD
-  const demandLower = (w.demand || '').toLowerCase();
-  const aggregateRating = (demandLower === 'high' || demandLower === 'overpaid')
-    ? { '@type': 'AggregateRating', ratingValue: '4.5', bestRating: '5', ratingCount: '48' }
-    : (demandLower === 'medium' || demandLower === 'mid')
-      ? { '@type': 'AggregateRating', ratingValue: '3.5', bestRating: '5', ratingCount: '24' }
-      : null;
 
   // FAQ items
   const faqItems = [
@@ -351,7 +347,6 @@ export default async function WeaponPage({ params }: { params: Promise<{ slug: s
               brand: { '@type': 'Brand', name: 'Sniper Duels' },
               category: w.weaponType,
               url: `${SITE_URL}/values/${w.id}`,
-              ...(aggregateRating ? { aggregateRating } : {}),
               ...(top > 0 && low > 0 ? {
                 offers: {
                   '@type': 'AggregateOffer',

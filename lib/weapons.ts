@@ -57,6 +57,21 @@ export function topWeapons(n = 12): Weapon[] {
     .map(x => x.w);
 }
 
+// Weapons too thin for Google to index well: no priced variants, top value
+// under 500 gems, or non-Active market status. Detail pages still render
+// (direct links resolve) but sitemap omits them and the page emits noindex.
+const SEO_MIN_TOP_PRICE = 500;
+export function isSeoIndexable(w: Weapon): boolean {
+  if (w.marketStatus && w.marketStatus !== 'Active') return false;
+  const top = Math.max(0, ...w.variants.map(v => v.price));
+  if (top < SEO_MIN_TOP_PRICE) return false;
+  return true;
+}
+
+export function weaponsForSitemap(): Weapon[] {
+  return dataset.weapons.filter(isSeoIndexable);
+}
+
 export function weaponsByRarity(rarity: string): Weapon[] {
   return dataset.weapons.filter(w => w.rarity.toLowerCase() === rarity.toLowerCase());
 }

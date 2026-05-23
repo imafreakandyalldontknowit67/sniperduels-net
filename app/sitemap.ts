@@ -1,5 +1,5 @@
 import type { MetadataRoute } from 'next';
-import { allWeaponsIncludingUnpriced, topWeapons, weaponsGeneratedAt } from '@/lib/weapons';
+import { weaponsForSitemap, topWeapons, weaponsGeneratedAt } from '@/lib/weapons';
 import { getAllCases } from '@/lib/cases';
 import { SITE_URL } from '@/lib/config';
 
@@ -40,7 +40,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const TOP_12 = new Set(topWeapons(12).map(w => w.id));
   const TOP_62 = new Set(topWeapons(62).map(w => w.id));
 
-  const weaponRoutes = allWeaponsIncludingUnpriced().map(w => {
+  const weaponRoutes = weaponsForSitemap().map(w => {
     const priority = TOP_12.has(w.id) ? 0.7 : TOP_62.has(w.id) ? 0.65 : 0.6;
     return {
       url: `${SITE_URL}/values/${w.id}`,
