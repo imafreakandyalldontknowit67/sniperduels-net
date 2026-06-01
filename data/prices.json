@@ -1,13 +1,48 @@
 {
-  "fetchedAt": "2026-05-30T18:34:37.337Z",
+  "fetchedAt": "2026-06-01T20:35:28.721Z",
   "source": "https://sniperduels.shop/api/gems/listings",
   "fetchedOk": true,
   "cheapestPerK": 2.65,
   "cheapestBulkPerK": 2.65,
   "platformInStock": false,
-  "totalStockK": 865,
-  "vendorCount": 6,
+  "totalStockK": 3238,
+  "vendorCount": 7,
   "listings": [
+    {
+      "id": "cmpvn9qay01ct01pe8usyx6c6",
+      "vendorId": "868981597",
+      "pricePerK": 2.7,
+      "minOrderK": 1,
+      "maxOrderK": 500,
+      "stockK": 596,
+      "bulkTiers": null,
+      "type": "vendor"
+    },
+    {
+      "id": "cmodbgokd003y01qox6uvic0m",
+      "vendorId": "1730920592",
+      "pricePerK": 2.73,
+      "minOrderK": 1,
+      "maxOrderK": 325,
+      "stockK": 287,
+      "bulkTiers": [
+        {
+          "minK": 100,
+          "pricePerK": 2.72
+        }
+      ],
+      "type": "vendor"
+    },
+    {
+      "id": "cmndrxq74000001ml7ezab136",
+      "vendorId": "5074246326",
+      "pricePerK": 2.74,
+      "minOrderK": 1,
+      "maxOrderK": 500,
+      "stockK": 2209,
+      "bulkTiers": null,
+      "type": "vendor"
+    },
     {
       "id": "platform",
       "vendorId": null,
@@ -28,43 +63,18 @@
       "type": "platform"
     },
     {
-      "id": "cmodbgokd003y01qox6uvic0m",
-      "vendorId": "1730920592",
-      "pricePerK": 2.9,
-      "minOrderK": 1,
-      "maxOrderK": 325,
-      "stockK": 90,
-      "bulkTiers": [
-        {
-          "minK": 100,
-          "pricePerK": 2.89
-        }
-      ],
-      "type": "vendor"
-    },
-    {
       "id": "cmot5s6a7006c01l69nuls3tl",
       "vendorId": "7642934503",
-      "pricePerK": 2.91,
+      "pricePerK": 2.97,
       "minOrderK": 1,
       "maxOrderK": 500,
-      "stockK": 85,
+      "stockK": 67,
       "bulkTiers": [
         {
           "minK": 500,
-          "pricePerK": 2.9
+          "pricePerK": 2.65
         }
       ],
-      "type": "vendor"
-    },
-    {
-      "id": "cmndrxq74000001ml7ezab136",
-      "vendorId": "5074246326",
-      "pricePerK": 2.98,
-      "minOrderK": 1,
-      "maxOrderK": 500,
-      "stockK": 606,
-      "bulkTiers": null,
       "type": "vendor"
     },
     {
@@ -73,7 +83,7 @@
       "pricePerK": 2.98,
       "minOrderK": 1,
       "maxOrderK": 500,
-      "stockK": 79,
+      "stockK": 74,
       "bulkTiers": [
         {
           "minK": 100,
