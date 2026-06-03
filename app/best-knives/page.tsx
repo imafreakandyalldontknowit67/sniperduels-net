@@ -16,6 +16,25 @@ export const metadata: Metadata = {
   twitter: { title: TITLE, description: DESC },
 };
 
+const FAQ = [
+  {
+    q: 'What is the best knife in Sniper Duels?',
+    a: 'The best knife in Sniper Duels is the one with the highest community gem value — the top entry on this list. Knife value is driven by rarity and trade demand, so the #1 knife is both the rarest and the most wanted. This page re-ranks every knife by live SDValues data so the top pick stays current.',
+  },
+  {
+    q: 'Which knife is worth the most gems in Sniper Duels?',
+    a: 'The knife worth the most gems is whichever sits at position 1 in the ranking above. Prices come from SDValues community trade data, so the most valuable knife is the one holding the highest verified gem value at the time you read this. Rare knife variants can command massive gem values.',
+  },
+  {
+    q: 'Why are some Sniper Duels knives so expensive?',
+    a: 'Knives are among the most collectible items in the game. Limited-edition and event variants have tiny supply, and strong collector demand pushes their gem value far above common knives — even though every knife performs the same in a duel.',
+  },
+  {
+    q: 'How do I get the best knives in Sniper Duels?',
+    a: 'You can unbox knives from cases, trade items or gems for them, or buy gems cheaply and trade up. Check each knife’s value page for condition pricing, and use the community Discord to find sellers and a free middleman for high-value trades.',
+  },
+];
+
 export default function BestKnivesPage() {
   const knives = [...weaponsByCategory('knives')]
     .sort((a, b) => defaultPrice(b) - defaultPrice(a))
@@ -31,6 +50,28 @@ export default function BestKnivesPage() {
         { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
         { '@type': 'ListItem', position: 2, name: 'Best Knives', item: `${SITE_URL}/best-knives` },
       ],
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: 'Best Knives in Sniper Duels',
+      description: `The top ${knives.length} Sniper Duels knives ranked by community gem value.`,
+      numberOfItems: knives.length,
+      itemListElement: knives.map((w, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: w.displayName,
+        url: `${SITE_URL}/values/${w.id}`,
+      })),
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: FAQ.map(f => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
     },
     ...top5.map(w => ({
       '@context': 'https://schema.org',
@@ -104,6 +145,18 @@ export default function BestKnivesPage() {
           <li><Link href="/gems" className="text-cyan-400 hover:text-cyan-300">Buy Gems</Link> — Get gems at the best rates</li>
           <li><Link href="/knives" className="text-cyan-400 hover:text-cyan-300">All Knives</Link> — Full knife category listing</li>
         </ul>
+      </section>
+
+      <section className="mt-12 mb-10">
+        <h2 className="mb-6 text-2xl font-bold text-white">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {FAQ.map(f => (
+            <div key={f.q} className="rounded-lg border border-white/10 bg-white/5 p-5">
+              <h3 className="mb-2 font-bold text-white">{f.q}</h3>
+              <p className="text-sm text-white/70 leading-relaxed">{f.a}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       <BuyCTA campaign="best-knives" shopPath="/gems" variant="banner" />

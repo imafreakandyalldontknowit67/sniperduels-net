@@ -20,6 +20,15 @@ module.exports = {
   },
   async redirects() {
     return [
+      // Canonical-host enforcement: 301 every www.sniperduels.net request to the
+      // apex (https://sniperduels.net) so PageRank, social shares, and indexing
+      // consolidate on one hostname. Permanent so the redirect is cached.
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'www.sniperduels.net' }],
+        destination: 'https://sniperduels.net/:path*',
+        permanent: true,
+      },
       // /gems and /cheap-gems were cannibalizing the same intent ("buy SD gems
       // cheap"). /gems is the canonical gem landing page; /cheap-gems used to
       // host a competitor-comparison table that's now folded into /gems.

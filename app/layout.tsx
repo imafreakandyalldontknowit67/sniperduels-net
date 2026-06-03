@@ -37,9 +37,9 @@ export const metadata: Metadata = {
   // preview is unique. The image fallback applies sitewide.
   openGraph: {
     type: 'website',
-    siteName: 'sniperduels.net',
+    siteName: 'Sniper Duels',
     url: SITE_URL,
-    images: ['/og-banner.webp'],
+    images: [{ url: '/og-banner.webp', width: 1200, height: 630 }],
   },
   twitter: {
     card: 'summary_large_image',

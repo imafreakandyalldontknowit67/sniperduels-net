@@ -26,6 +26,13 @@ export default function ValuesIndexPage() {
   const sniperCount = weaponsByCategory('snipers').length;
   const knifeCount = weaponsByCategory('knives').length;
 
+  // Server-rendered top-10 so crawlers and AI answer engines see the actual
+  // highest-value weapons (name + gem price) in the initial HTML, above the
+  // client-only interactive browser below.
+  const top10 = [...weapons]
+    .sort((a, b) => defaultPrice(b) - defaultPrice(a))
+    .slice(0, 10);
+
   const itemListJsonLd = {
     '@context': 'https://schema.org',
     '@type': 'ItemList',
@@ -135,6 +142,46 @@ export default function ValuesIndexPage() {
         </div>
         <span className="text-2xl font-black text-accent group-hover:translate-x-1">→</span>
       </Link>
+
+      {/* Server-rendered top-10 value table — crawlable answer block above the
+          client browser. Static HTML, no hydration, links into each value page. */}
+      <section className="mb-8">
+        <SectionBanner color="gold" align="left" eyebrow="The 10 highest-value weapons in Sniper Duels right now.">
+          Top 10 Most Valuable Items
+        </SectionBanner>
+        <p className="mb-4 max-w-3xl text-sm leading-relaxed text-gray-300">
+          These are the most valuable Sniper Duels items by current gem value, sorted highest
+          first. Tap any item to see its full value page with condition pricing.
+        </p>
+        <div className="overflow-hidden border-[3px] border-dark-500">
+          <table className="w-full text-left text-sm">
+            <thead>
+              <tr className="bg-dark-700 text-[10px] font-bold uppercase tracking-wider text-gray-400">
+                <th className="px-3 py-2">#</th>
+                <th className="px-3 py-2">Item</th>
+                <th className="px-3 py-2">Rarity</th>
+                <th className="px-3 py-2 text-right">Value (gems)</th>
+              </tr>
+            </thead>
+            <tbody>
+              {top10.map((w, i) => (
+                <tr key={w.id} className="border-t border-dark-600 bg-dark-800 hover:bg-dark-700">
+                  <td className="px-3 py-2 font-bold text-accent">{i + 1}</td>
+                  <td className="px-3 py-2">
+                    <Link href={`/values/${w.id}`} className="font-bold text-white hover:text-accent">
+                      {w.displayName}
+                    </Link>
+                  </td>
+                  <td className="px-3 py-2 text-gray-400">{w.rarity}</td>
+                  <td className="px-3 py-2 text-right font-bold text-accent">
+                    {defaultPrice(w).toLocaleString()}
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      </section>
 
       {/* Combined browser — search/filter/sort across everything */}
       <SectionBanner color="gold" align="left" eyebrow="Search every weapon at once. Filter by rarity, crate, demand.">
