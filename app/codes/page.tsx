@@ -139,7 +139,11 @@ export default function CodesPage() {
       <section className="mb-10">
         <h2 className="mb-4 text-2xl font-bold text-white">What actually gives free gems in Sniper Duels</h2>
         <p className="mb-4 text-white/70 leading-relaxed">
-          Here are the real sources of free gems, ranked roughly by how much they pay out:
+          Here are the real sources of free gems, ranked roughly by how much they pay out — see our full{' '}
+          <Link href="/free-gems" className="text-accent hover:underline">how to get free gems</Link> guide for more,
+          and check the{' '}
+          <Link href="/case-odds" className="text-accent hover:underline">case odds &amp; crate contents</Link> before
+          you spend them:
         </p>
         <ol className="space-y-4">
           <li className="rounded-lg border border-white/10 bg-white/5 p-5">

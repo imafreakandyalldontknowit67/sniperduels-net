@@ -91,7 +91,9 @@ export default function UpdatePage() {
       <section className="mb-10 rounded-lg border border-accent/40 bg-accent/5 p-6">
         <h2 className="mb-2 text-xl font-bold text-white">Never miss an update</h2>
         <p className="mb-4 text-white/70">
-          Join our Discord community to get notified about new updates, codes, and events the moment they drop.
+          Updates often arrive alongside fresh <Link href="/codes" className="text-accent hover:underline">Sniper Duels codes</Link> —
+          redeem them for free gems, or <Link href="/discord" className="text-accent hover:underline">join the Sniper Duels Discord</Link> to
+          get notified about new updates, codes, and events the moment they drop.
         </p>
         <a
           href={DISCORD_INVITE}

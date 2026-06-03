@@ -16,6 +16,25 @@ export const metadata: Metadata = {
   twitter: { title: TITLE, description: DESC },
 };
 
+const FAQ = [
+  {
+    q: 'What is the best sniper in Sniper Duels?',
+    a: 'The best sniper in Sniper Duels is the one with the highest community gem value — currently the top entry on this list. Value tracks rarity and trade demand, so the #1 sniper is both the rarest and the most sought-after on the market. This page re-ranks every sniper by live SDValues data, so the top pick stays current.',
+  },
+  {
+    q: 'Which sniper is worth the most gems in Sniper Duels?',
+    a: 'The sniper worth the most gems is whichever sits at position 1 in the ranking above. Prices come from SDValues community trade data, so the most valuable sniper is the one holding the highest verified gem value at the time you read this — high-demand snipers tend to hold or gain value over time.',
+  },
+  {
+    q: 'Are expensive snipers better in Sniper Duels?',
+    a: 'Not necessarily for gameplay — every sniper fires the same way, so value is driven by rarity and looks, not stats. A high-value sniper is a better collectible and easier to trade, but it does not give a competitive advantage in a duel.',
+  },
+  {
+    q: 'How do I get the best snipers in Sniper Duels?',
+    a: 'You can pull snipers from cases, trade for them using items or gems, or buy gems cheaply and trade up. Check each sniper’s value page for condition pricing, and join the community Discord to find sellers and a free middleman for high-value trades.',
+  },
+];
+
 export default function BestSnipersPage() {
   const snipers = [...weaponsByCategory('snipers')]
     .sort((a, b) => defaultPrice(b) - defaultPrice(a))
@@ -31,6 +50,28 @@ export default function BestSnipersPage() {
         { '@type': 'ListItem', position: 1, name: 'Home', item: SITE_URL },
         { '@type': 'ListItem', position: 2, name: 'Best Snipers', item: `${SITE_URL}/best-snipers` },
       ],
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'ItemList',
+      name: 'Best Snipers in Sniper Duels',
+      description: `The top ${snipers.length} Sniper Duels snipers ranked by community gem value.`,
+      numberOfItems: snipers.length,
+      itemListElement: snipers.map((w, i) => ({
+        '@type': 'ListItem',
+        position: i + 1,
+        name: w.displayName,
+        url: `${SITE_URL}/values/${w.id}`,
+      })),
+    },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: FAQ.map(f => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
     },
     ...top5.map(w => ({
       '@context': 'https://schema.org',
@@ -105,6 +146,18 @@ export default function BestSnipersPage() {
           <li><Link href="/gems" className="text-cyan-400 hover:text-cyan-300">Buy Gems</Link> — Get gems at the best rates</li>
           <li><Link href="/snipers" className="text-cyan-400 hover:text-cyan-300">All Snipers</Link> — Full sniper category listing</li>
         </ul>
+      </section>
+
+      <section className="mt-12 mb-10">
+        <h2 className="mb-6 text-2xl font-bold text-white">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {FAQ.map(f => (
+            <div key={f.q} className="rounded-lg border border-white/10 bg-white/5 p-5">
+              <h3 className="mb-2 font-bold text-white">{f.q}</h3>
+              <p className="text-sm text-white/70 leading-relaxed">{f.a}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       <BuyCTA campaign="best-snipers" shopPath="/gems" variant="banner" />

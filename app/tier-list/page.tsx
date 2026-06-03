@@ -32,6 +32,25 @@ const TIER_LABELS: Record<string, string> = {
   D: 'D Tier — Below Average',
 };
 
+const FAQ = [
+  {
+    q: 'How is the Sniper Duels tier list ranked?',
+    a: 'Every weapon is ranked purely by its current community gem value from SDValues. The top 5% of items by value land in S tier, the next 15% in A tier, then 30% in B, 30% in C, and the bottom 20% in D. Because it tracks live prices, the tiers shift as the market moves.',
+  },
+  {
+    q: 'What is the best weapon in Sniper Duels?',
+    a: 'The best weapon by value is the #1 item in S tier above — the rarest, highest-demand piece in the game right now. Note that tiers here reflect collectible value and trade demand, not in-duel performance, since all weapons fire the same way.',
+  },
+  {
+    q: 'Does a higher tier mean a weapon is better in a duel?',
+    a: 'No. Tiers rank value and demand, not stats. Every sniper and knife behaves identically in a match, so an S-tier item is more valuable and easier to trade, but it gives no gameplay advantage over a D-tier weapon.',
+  },
+  {
+    q: 'How often is the tier list updated?',
+    a: 'The underlying values refresh every 6 hours from SDValues community data, and the page re-ranks weapons each time it regenerates. Join the Sniper Duels Discord to get pinged the moment a weapon’s value — and therefore its tier — changes.',
+  },
+];
+
 export default function TierListPage() {
   const weapons = [...allWeapons()].sort((a, b) => defaultPrice(b) - defaultPrice(a));
   const total = weapons.length;
@@ -72,6 +91,15 @@ export default function TierListPage() {
         name: w.displayName,
       })),
     },
+    {
+      '@context': 'https://schema.org',
+      '@type': 'FAQPage',
+      mainEntity: FAQ.map(f => ({
+        '@type': 'Question',
+        name: f.q,
+        acceptedAnswer: { '@type': 'Answer', text: f.a },
+      })),
+    },
   ];
 
   return (
@@ -91,6 +119,10 @@ export default function TierListPage() {
           S-tier weapons represent the top 5% most valuable items in the game — these are the rarest, most sought-after
           pieces that hold or gain value over time. A-tier covers the next 15%, followed by B (30%), C (30%), and D (bottom 20%).
           Prices update regularly from SDValues community data, so tiers shift as the market moves.
+          Stretch your gem budget with the latest{' '}
+          <Link href="/codes" className="text-accent hover:underline">Sniper Duels codes</Link>, or{' '}
+          <Link href="/discord" className="text-accent hover:underline">join the Sniper Duels Discord</Link> to
+          track tier movements in real time.
         </p>
       </section>
 
@@ -123,6 +155,18 @@ export default function TierListPage() {
           </div>
         </section>
       ))}
+
+      <section className="mt-12 mb-10">
+        <h2 className="mb-6 text-2xl font-bold text-white">Frequently Asked Questions</h2>
+        <div className="space-y-4">
+          {FAQ.map(f => (
+            <div key={f.q} className="rounded-lg border border-white/10 bg-white/5 p-5">
+              <h3 className="mb-2 font-bold text-white">{f.q}</h3>
+              <p className="text-sm text-white/70 leading-relaxed">{f.a}</p>
+            </div>
+          ))}
+        </div>
+      </section>
 
       <BuyCTA campaign="tier-list" shopPath="/gems" variant="banner" />
 
