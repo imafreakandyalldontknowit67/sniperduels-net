@@ -8,9 +8,10 @@ import { SITE_URL, SHOP_URL, DISCORD_INVITE } from '@/lib/config';
 const pixelEmulator = localFont({
   src: '../public/fonts/PixelEmulator-xq08.ttf',
   variable: '--font-pixel',
-  // 'optional' avoids the FOIT→swap CLS on H1. The 21KB TTF nearly always
-  // loads within 100ms; if not, fallback monospace renders and we don't swap.
-  display: 'optional',
+  // 'swap' so the pixel-emulator brand font always renders once loaded (was
+  // 'optional', which left some first page-loads stuck in the fallback font).
+  // next/font auto-generates a metric-matched fallback, keeping swap CLS minimal.
+  display: 'swap',
 });
 
 export const metadata: Metadata = {

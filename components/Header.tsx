@@ -25,7 +25,7 @@ export default function Header() {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 border-b-[3px] border-dark-700 bg-dark-900/95 backdrop-blur">
-      <div className="mx-auto flex h-[56px] max-w-[1100px] items-center justify-between px-3 sm:h-[64px] md:h-[72px] md:px-4">
+      <div className="mx-auto flex h-[56px] max-w-[1280px] items-center justify-between px-3 sm:h-[64px] md:h-[72px] md:px-4">
         {/* Wordmark */}
         <Link href="/" className="flex items-baseline gap-1 hover:no-underline">
           <span className="text-base font-black uppercase tracking-wider text-white sm:text-lg">
@@ -36,8 +36,8 @@ export default function Header() {
           </span>
         </Link>
 
-        {/* Desktop nav (centered) */}
-        <nav className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-8 md:flex">
+        {/* Desktop nav (centered, in-flow so it can't overlap the wordmark/CTA) */}
+        <nav className="hidden flex-1 items-center justify-center gap-4 px-4 xl:flex">
           {NAV.map(n => {
             const active = pathname === n.href;
             return (
@@ -67,7 +67,7 @@ export default function Header() {
           <button
             onClick={() => setOpen(o => !o)}
             aria-label={open ? 'Close menu' : 'Open menu'}
-            className="btn-icon ml-1 md:hidden"
+            className="btn-icon ml-1 xl:hidden"
           >
             {open ? <X className="h-4 w-4" /> : <Menu className="h-4 w-4" />}
           </button>
