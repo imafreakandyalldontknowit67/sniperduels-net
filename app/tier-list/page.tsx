@@ -91,6 +91,10 @@ export default function TierListPage() {
           S-tier weapons represent the top 5% most valuable items in the game — these are the rarest, most sought-after
           pieces that hold or gain value over time. A-tier covers the next 15%, followed by B (30%), C (30%), and D (bottom 20%).
           Prices update regularly from SDValues community data, so tiers shift as the market moves.
+          Stretch your gem budget with the latest{' '}
+          <Link href="/codes" className="text-accent hover:underline">Sniper Duels codes</Link>, or{' '}
+          <Link href="/discord" className="text-accent hover:underline">join the Sniper Duels Discord</Link> to
+          track tier movements in real time.
         </p>
       </section>
 

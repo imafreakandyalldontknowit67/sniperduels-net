@@ -7,7 +7,7 @@ import SsrWeaponGrid from '@/components/values/SsrWeaponGrid';
 import { weaponsByCategory, allWeapons, slimForBrowser } from '@/lib/weapons';
 import { SITE_URL } from '@/lib/config';
 
-const SN_TITLE = 'Buy Sniper Duels Snipers — Prices & Stock';
+const SN_TITLE = 'Sniper Duels Sniper Values — All Rifle Prices & Stock | sniperduels.net';
 const SN_DESC =
   'Browse sniper rifles available in Sniper Duels — AWPs, Interventions, Deagles & Shotguns with live gem prices. Check stock, compare conditions, and trade via our free middleman service.';
 
@@ -29,7 +29,7 @@ export default function SnipersPage() {
     <>
       <header className="mb-6">
         <h1 className="mb-3 text-3xl font-bold uppercase tracking-wider sm:text-4xl md:text-5xl lg:text-[52px]">
-          Sniper Duels <span className="text-accent">Sniper Prices &amp; Stock</span>
+          Sniper Duels <span className="text-accent">Sniper Values</span>
         </h1>
         <p className="text-[10px] font-bold uppercase tracking-wider leading-relaxed text-gray-400 sm:text-xs md:text-sm">
           {list.length} snipers available · AWPs · Interventions · Deagles · Shotguns · Prices updated every 6h
@@ -39,12 +39,19 @@ export default function SnipersPage() {
       <section className="mb-6 prose prose-invert max-w-none text-sm text-gray-300">
         <h2 className="heading-pixel">Sniper Prices &amp; Availability</h2>
         <p>
+          For knives and the full combined list, see the{' '}
+          <a href="/values" className="text-accent hover:underline"><strong>Sniper Duels value list</strong></a>.
+        </p>
+        <p>
           Browse all {list.length} sniper rifles currently tracked in Sniper Duels. Each weapon
           displays its live gem price pulled from SDValues every 6 hours. Click through to view
           condition-by-condition pricing (Mint, Standard, Worn), demand tier, and stock availability.
           Ready to buy? Use our <a href="/middleman" className="text-accent hover:underline">free middleman</a> for
           safe trades on <strong>AWPs</strong>, <strong>Interventions</strong>,{' '}
-          <strong>Deagles</strong> and <strong>Shotguns</strong>.
+          <strong>Deagles</strong> and <strong>Shotguns</strong>. Grab the latest{' '}
+          <a href="/codes" className="text-accent hover:underline">Sniper Duels codes</a> for free gems,
+          or <a href="/discord" className="text-accent hover:underline">join the Sniper Duels Discord</a> for
+          price alerts and trade deals.
         </p>
       </section>
 

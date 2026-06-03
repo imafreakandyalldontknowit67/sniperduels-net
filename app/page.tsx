@@ -84,6 +84,10 @@ export default function Home() {
             Browse the full Sniper Duels value list →
           </Link>
         </p>
+        <p className="mt-2 text-[10px] font-bold uppercase tracking-wider text-gray-400 sm:text-xs">
+          Looking for <Link href="/codes" className="text-accent hover:underline">Sniper Duels codes</Link>? Or{' '}
+          <Link href="/discord" className="text-accent hover:underline">join the Sniper Duels Discord</Link>.
+        </p>
       </section>
 
       {/* Trust */}

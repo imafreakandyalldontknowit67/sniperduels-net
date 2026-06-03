@@ -43,7 +43,10 @@ export default function KnivesPage() {
           <strong>Butterflies</strong>, <strong>Katanas</strong> and the rare <strong>Pans</strong>{' '}
           all live in the same grid — sort by top variant price or filter by rarity, crate, or demand
           tier to surface what you&apos;re looking for. Click any knife for condition-by-condition
-          pricing (Mint, Standard, Worn).
+          pricing (Mint, Standard, Worn). Want free gems toward your next knife? Check the current{' '}
+          <a href="/codes" className="text-accent hover:underline">Sniper Duels codes</a>, or{' '}
+          <a href="/discord" className="text-accent hover:underline">join the Sniper Duels Discord</a> to
+          trade with the community.
         </p>
       </section>
 

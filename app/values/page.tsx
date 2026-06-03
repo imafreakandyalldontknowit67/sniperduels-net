@@ -89,7 +89,10 @@ export default function ValuesIndexPage() {
           quick <strong>sniper duels value</strong> check, you&apos;re in the right place. Our catalog
           covers {weapons.length} snipers, knives, and skins with gem prices refreshed every 6 hours
           directly from SDValues. Use the search, filter by rarity or demand tier, and sort by price
-          to find the exact weapon you&apos;re looking for.
+          to find the exact weapon you&apos;re looking for. Hunting for freebies? Redeem the latest{' '}
+          <Link href="/codes" className="text-accent hover:underline">Sniper Duels codes</Link>, or{' '}
+          <Link href="/discord" className="text-accent hover:underline">join the Sniper Duels Discord</Link> for
+          live value updates.
         </p>
       </section>
 
