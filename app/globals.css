@@ -10,7 +10,8 @@
   color-scheme: dark;
 }
 
-html { scroll-behavior: smooth; }
+/* scroll-padding-top keeps TOC/anchor jumps from landing under the fixed header */
+html { scroll-behavior: smooth; scroll-padding-top: 88px; }
 
 body {
   @apply text-white;

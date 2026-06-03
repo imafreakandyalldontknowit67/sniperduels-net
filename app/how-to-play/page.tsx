@@ -209,8 +209,10 @@ export default function HowToPlayPage() {
           gems directly. Remember: gems are for cosmetics and progression, not a pay-to-win advantage.
         </p>
         <p className="text-white/70 leading-relaxed">
-          To stock up, see our{' '}
-          <Link href="/gems" className="text-cyan-400 hover:text-cyan-300">how to get gems</Link> guide for the best
+          To stock up, read our{' '}
+          <Link href="/free-gems" className="text-cyan-400 hover:text-cyan-300">how to get free gems</Link> guide for
+          legit free methods, check{' '}
+          <Link href="/gems" className="text-cyan-400 hover:text-cyan-300">gem pricing</Link> for the best
           rates, or buy gems directly from the official{' '}
           <a href="https://sniperduels.shop" target="_blank" rel="noopener" className="text-cyan-400 hover:text-cyan-300">
             sniperduels.shop

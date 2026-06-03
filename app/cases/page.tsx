@@ -42,7 +42,9 @@ export default function CasesHubPage() {
         <p>
           Sniper Duels cases drop in-game from event spawns, daily login rewards and special holiday events.
           Each case contains a fixed pool of <strong className="text-white">knives, AWPs, snipers and other items</strong>,
-          and the rarity tier determines drop odds. This is the full <strong className="text-white">Sniper Duels case list</strong>{' '}
+          and the rarity tier determines drop odds — see the full{' '}
+          <Link href="/case-odds" className="text-accent hover:underline">case odds &amp; crate contents</Link>{' '}
+          breakdown. This is the full <strong className="text-white">Sniper Duels case list</strong>{' '}
           for 2026 — every case currently in the game, every item that drops from it, and live community values.
         </p>
         <p>

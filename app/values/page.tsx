@@ -153,8 +153,8 @@ export default function ValuesIndexPage() {
           These are the most valuable Sniper Duels items by current gem value, sorted highest
           first. Tap any item to see its full value page with condition pricing.
         </p>
-        <div className="overflow-hidden border-[3px] border-dark-500">
-          <table className="w-full text-left text-sm">
+        <div className="overflow-x-auto border-[3px] border-dark-500">
+          <table className="w-full min-w-[420px] text-left text-sm">
             <thead>
               <tr className="bg-dark-700 text-[10px] font-bold uppercase tracking-wider text-gray-400">
                 <th className="px-3 py-2">#</th>
