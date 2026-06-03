@@ -12,6 +12,9 @@
 
 /* scroll-padding-top keeps TOC/anchor jumps from landing under the fixed header */
 html { scroll-behavior: smooth; scroll-padding-top: 88px; }
+/* clip prevents a few-px horizontal scroll from letter-spacing on the narrowest
+   phones (≤320px); 'clip' (not 'hidden') so it doesn't break the fixed/sticky header */
+html, body { overflow-x: clip; }
 
 body {
   @apply text-white;

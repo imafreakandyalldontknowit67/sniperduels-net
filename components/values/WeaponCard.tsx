@@ -63,11 +63,11 @@ export default function WeaponCard({ weapon, priority = false }: Props) {
         )}
       </div>
       <div className="flex flex-1 flex-col gap-1.5 p-2.5 sm:p-3">
-        <div className="flex items-start justify-between gap-1">
-          <span className={`inline-block border-[2px] px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider ${rarityClasses(weapon.rarity)}`}>
+        <div className="flex min-w-0 items-start justify-between gap-1">
+          <span className={`inline-block shrink-0 border-[2px] px-1.5 py-0.5 text-[9px] font-bold uppercase tracking-wider ${rarityClasses(weapon.rarity)}`}>
             {weapon.rarity}
           </span>
-          <span className="text-[9px] font-bold uppercase tracking-wider text-gray-500">
+          <span className="min-w-0 truncate text-right text-[9px] font-bold uppercase tracking-wider text-gray-500">
             {weapon.weaponType}
           </span>
         </div>
