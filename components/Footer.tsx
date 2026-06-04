@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className="border-t border-dark-700 bg-dark-900">
       <div className="mx-auto max-w-[1100px] px-4 py-10">
-        <div className="grid gap-8 md:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-5">
           <div>
             <div className="mb-3 text-lg font-black">
               <span className="text-accent">SNIPER</span>DUELS<span className="text-xs text-accent">.net</span>
@@ -38,6 +38,18 @@ export default function Footer() {
               <li><Link href="/middleman" className="hover:text-accent">Free Middleman</Link></li>
               <li><Link href="/safe-trading" className="hover:text-accent">Safe Trading</Link></li>
               <li><Link href="/codes" className="hover:text-accent">Codes</Link></li>
+            </ul>
+          </div>
+          <div>
+            <div className="mb-3 text-sm font-bold uppercase tracking-wider text-gray-300">Guides</div>
+            <ul className="space-y-2 text-sm text-gray-400">
+              <li><Link href="/how-to-play" className="hover:text-accent">How to Play</Link></li>
+              <li><Link href="/best-snipers" className="hover:text-accent">Best Snipers</Link></li>
+              <li><Link href="/best-knives" className="hover:text-accent">Best Knives</Link></li>
+              <li><Link href="/best-settings" className="hover:text-accent">Best Settings</Link></li>
+              <li><Link href="/tier-list" className="hover:text-accent">Tier List</Link></li>
+              <li><Link href="/case-odds" className="hover:text-accent">Case Odds</Link></li>
+              <li><Link href="/free-gems" className="hover:text-accent">Free Gems</Link></li>
             </ul>
           </div>
           <div>

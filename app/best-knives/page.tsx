@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { weaponsByCategory, defaultPrice } from '@/lib/weapons';
-import { SITE_URL, SITE_NAME } from '@/lib/config';
+import { SITE_URL } from '@/lib/config';
 import BuyCTA from '@/components/BuyCTA';
 
 const TITLE = 'Best Knives in Sniper Duels 2026 — Top Picks & Values';
@@ -79,13 +79,6 @@ export default function BestKnivesPage() {
       name: w.displayName,
       image: w.imagePath || `${SITE_URL}/gem_icon.png`,
       description: `${w.displayName} — ${w.rarity} rarity knife in Sniper Duels`,
-      offers: {
-        '@type': 'Offer',
-        price: defaultPrice(w),
-        priceCurrency: 'GEM',
-        availability: 'https://schema.org/InStock',
-        seller: { '@type': 'Organization', name: SITE_NAME },
-      },
     })),
   ];
 

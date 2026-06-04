@@ -347,15 +347,6 @@ export default async function WeaponPage({ params }: { params: Promise<{ slug: s
               brand: { '@type': 'Brand', name: 'Sniper Duels' },
               category: w.weaponType,
               url: `${SITE_URL}/values/${w.id}`,
-              ...(top > 0 && low > 0 ? {
-                offers: {
-                  '@type': 'AggregateOffer',
-                  lowPrice: low.toString(),
-                  highPrice: top.toString(),
-                  priceCurrency: 'XXX',
-                  offerCount: w.variants.filter(v => v.price > 0).length.toString(),
-                },
-              } : {}),
               ...(w.crate ? { isRelatedTo: { '@type': 'Thing', name: formatCrate(w.crate) } } : {}),
             },
             {
