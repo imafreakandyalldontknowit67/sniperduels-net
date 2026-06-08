@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-06-08T08:07:00.400Z",
-  "count": 218,
+  "generatedAt": "2026-06-08T13:47:21.153Z",
+  "count": 240,
   "weapons": [
     {
       "id": "classic-case-bayonet-adurite",
@@ -523,6 +523,38 @@
           "condition": "Mint Condition",
           "price": 35000,
           "trend": 16.7
+        }
+      ]
+    },
+    {
+      "id": "skin-case-2-butterfly-blue-camo",
+      "category": "knives",
+      "name": "blue camo",
+      "displayName": "Blue camo",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917342471-Blue_Camo.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
         }
       ]
     },
@@ -1065,6 +1097,70 @@
       ]
     },
     {
+      "id": "skin-case-2-katana-crimson",
+      "category": "knives",
+      "name": "crimson",
+      "displayName": "Crimson",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917409197-Crimson.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
+        }
+      ]
+    },
+    {
+      "id": "skin-case-2-bayonet-crimson-web",
+      "category": "knives",
+      "name": "crimson web",
+      "displayName": "Crimson web",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917382742-Crimson_Web.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
+        }
+      ]
+    },
+    {
       "id": "hallows-basket-bayonet-cultist",
       "category": "knives",
       "name": "cultist",
@@ -1200,6 +1296,38 @@
       ]
     },
     {
+      "id": "skin-case-2-katana-dynasty",
+      "category": "knives",
+      "name": "dynasty",
+      "displayName": "Dynasty",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917433584-Dynasty.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
+        }
+      ]
+    },
+    {
       "id": "release-case-bayonet-emerald",
       "category": "knives",
       "name": "emerald",
@@ -1223,6 +1351,38 @@
           "condition": "Mint Condition",
           "price": 15000,
           "trend": 57.9
+        }
+      ]
+    },
+    {
+      "id": "skin-case-2-dfault-ethereal",
+      "category": "knives",
+      "name": "ethereal",
+      "displayName": "Ethereal",
+      "weaponType": "dfault",
+      "rarity": "knife",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917459622-Ethereal.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
         }
       ]
     },
@@ -1290,6 +1450,38 @@
       "crate": "april-fools-case",
       "imagePath": "https://images.sniperduels.com/weapons/1775172634321-GoldenPan.webp",
       "demand": "Hype",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
+        }
+      ]
+    },
+    {
+      "id": "skin-case-2-survivor-hades",
+      "category": "knives",
+      "name": "hades",
+      "displayName": "Hades",
+      "weaponType": "Survivor",
+      "rarity": "knife",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917490814-Hades.webp",
+      "demand": "Medium",
       "tradeable": true,
       "marketStatus": "Active",
       "defaultVariantIndex": 0,
@@ -1495,6 +1687,166 @@
       ]
     },
     {
+      "id": "skin-case-2-bayonet-malachite",
+      "category": "knives",
+      "name": "malachite",
+      "displayName": "Malachite",
+      "weaponType": "Bayonet",
+      "rarity": "knife",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917513878-Malachite_Bayo.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
+        }
+      ]
+    },
+    {
+      "id": "skin-case-2-butterfly-malachite",
+      "category": "knives",
+      "name": "malachite",
+      "displayName": "Malachite",
+      "weaponType": "Butterfly",
+      "rarity": "knife",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917534729-Malachite_Butterfly.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
+        }
+      ]
+    },
+    {
+      "id": "skin-case-2-karambit-malachite",
+      "category": "knives",
+      "name": "malachite",
+      "displayName": "Malachite",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917554409-Malachite_Karambit.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
+        }
+      ]
+    },
+    {
+      "id": "skin-case-2-katana-malachite",
+      "category": "knives",
+      "name": "malachite",
+      "displayName": "Malachite",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917587069-Malachite_Katana.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
+        }
+      ]
+    },
+    {
+      "id": "skin-case-2-survivor-malachite",
+      "category": "knives",
+      "name": "malachite",
+      "displayName": "Malachite",
+      "weaponType": "Survivor",
+      "rarity": "knife",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917609227-Malachite_Survivor.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
+        }
+      ]
+    },
+    {
       "id": "na-cash-money-top-1",
       "category": "knives",
       "name": "money top 1",
@@ -1604,6 +1956,38 @@
       "marketStatus": "Active",
       "defaultVariantIndex": 0,
       "description": "This item is awarded to the top 4 - 10 players on the lifetime and monthly donation leader boards",
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
+        }
+      ]
+    },
+    {
+      "id": "skin-case-2-katana-muramasa",
+      "category": "knives",
+      "name": "muramasa",
+      "displayName": "Muramasa",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917648363-Muramasa.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
       "variants": [
         {
           "condition": "Well Worn",
@@ -1887,6 +2271,38 @@
           "condition": "Mint Condition",
           "price": 40000,
           "trend": 100
+        }
+      ]
+    },
+    {
+      "id": "skin-case-2-katana-orochi",
+      "category": "knives",
+      "name": "orochi",
+      "displayName": "Orochi",
+      "weaponType": "Katana",
+      "rarity": "knife",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917666982-Orochi.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
         }
       ]
     },
@@ -2344,6 +2760,38 @@
           "condition": "Mint Condition",
           "price": 7000,
           "trend": 133.3
+        }
+      ]
+    },
+    {
+      "id": "skin-case-2-karambit-tiger",
+      "category": "knives",
+      "name": "tiger",
+      "displayName": "Tiger",
+      "weaponType": "Karambit",
+      "rarity": "knife",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917695415-Tiger.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
         }
       ]
     },
@@ -3250,6 +3698,38 @@
       ]
     },
     {
+      "id": "skin-case-2-deagle-redzone",
+      "category": "snipers",
+      "name": "redzone",
+      "displayName": "Redzone",
+      "weaponType": "Deagle",
+      "rarity": "legendary",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917897343-REDZONE.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
+        }
+      ]
+    },
+    {
       "id": "release-case-awp-vanilla",
       "category": "snipers",
       "name": "vanilla",
@@ -3311,6 +3791,38 @@
         {
           "condition": "Mint Condition",
           "price": 50,
+          "trend": 0
+        }
+      ]
+    },
+    {
+      "id": "skin-case-2-awp-vhs",
+      "category": "snipers",
+      "name": "vhs",
+      "displayName": "VHS",
+      "weaponType": "AWP",
+      "rarity": "legendary",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917914478-VHS.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
           "trend": 0
         }
       ]
@@ -3535,6 +4047,38 @@
       ]
     },
     {
+      "id": "skin-case-2-intervention-codec",
+      "category": "snipers",
+      "name": "codec",
+      "displayName": "Codec",
+      "weaponType": "Intervention",
+      "rarity": "epic",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917728570-Codec.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
+        }
+      ]
+    },
+    {
       "id": "v-day-deagle-cupid",
       "category": "snipers",
       "name": "cupid",
@@ -3607,6 +4151,38 @@
       "rarity": "epic",
       "crate": "april-fools-case",
       "imagePath": "https://images.sniperduels.com/weapons/1775172841720-Epic_Face.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
+        }
+      ]
+    },
+    {
+      "id": "skin-case-2-awp-frutiger",
+      "category": "snipers",
+      "name": "frutiger",
+      "displayName": "Frutiger",
+      "weaponType": "AWP",
+      "rarity": "epic",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917835883-Frutiger.webp",
       "demand": "Medium",
       "tradeable": true,
       "marketStatus": "Active",
@@ -3882,6 +4458,38 @@
       ]
     },
     {
+      "id": "skin-case-2-intervention-viper",
+      "category": "snipers",
+      "name": "viper",
+      "displayName": "Viper",
+      "weaponType": "Intervention",
+      "rarity": "epic",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917935130-Viper.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
+        }
+      ]
+    },
+    {
       "id": "classic-case-default-abyss",
       "category": "snipers",
       "name": "abyss",
@@ -4042,6 +4650,38 @@
       ]
     },
     {
+      "id": "skin-case-2-default-dark-net",
+      "category": "snipers",
+      "name": "dark net",
+      "displayName": "Dark net",
+      "weaponType": "Default",
+      "rarity": "rare",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917762994-Dark_Net.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
+        }
+      ]
+    },
+    {
       "id": "v-day-default-fleur-de-amour",
       "category": "snipers",
       "name": "fleur de amour",
@@ -4134,6 +4774,38 @@
           "condition": "Mint Condition",
           "price": 50,
           "trend": 150
+        }
+      ]
+    },
+    {
+      "id": "skin-case-2-default-monarch",
+      "category": "snipers",
+      "name": "monarch",
+      "displayName": "Monarch",
+      "weaponType": "Default",
+      "rarity": "rare",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917864683-Monarch.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
+          "trend": 0
         }
       ]
     },
@@ -4485,6 +5157,38 @@
         {
           "condition": "Mint Condition",
           "price": 30,
+          "trend": 0
+        }
+      ]
+    },
+    {
+      "id": "skin-case-2-default-disco",
+      "category": "snipers",
+      "name": "disco",
+      "displayName": "Disco",
+      "weaponType": "Default",
+      "rarity": "uncommon",
+      "crate": "skin-case-2",
+      "imagePath": "https://images.sniperduels.com/weapons/1780917798987-Disco.webp",
+      "demand": "Medium",
+      "tradeable": true,
+      "marketStatus": "Active",
+      "defaultVariantIndex": 0,
+      "description": null,
+      "variants": [
+        {
+          "condition": "Well Worn",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Standard Issue",
+          "price": 0,
+          "trend": 0
+        },
+        {
+          "condition": "Mint Condition",
+          "price": 0,
           "trend": 0
         }
       ]
