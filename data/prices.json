@@ -1,13 +1,23 @@
 {
-  "fetchedAt": "2026-06-13T09:16:12.235Z",
+  "fetchedAt": "2026-06-13T20:38:16.744Z",
   "source": "https://sniperduels.shop/api/gems/listings",
   "fetchedOk": true,
   "cheapestPerK": 2.65,
   "cheapestBulkPerK": 2.65,
   "platformInStock": false,
-  "totalStockK": 662,
-  "vendorCount": 2,
+  "totalStockK": 639,
+  "vendorCount": 3,
   "listings": [
+    {
+      "id": "cmpx6d51z01ip01peeukdkpq7",
+      "vendorId": "2955850478",
+      "pricePerK": 2.85,
+      "minOrderK": 1,
+      "maxOrderK": 500,
+      "stockK": 168,
+      "bulkTiers": null,
+      "type": "vendor"
+    },
     {
       "id": "cmo4wnp2z000v01rza0dvyzpt",
       "vendorId": "9954296194",
@@ -43,7 +53,7 @@
       "pricePerK": 2.9,
       "minOrderK": 1,
       "maxOrderK": 500,
-      "stockK": 661,
+      "stockK": 470,
       "bulkTiers": null,
       "type": "vendor"
     }
